@@ -1,0 +1,56 @@
+
+
+[ {
+                "value": "Akshay",
+                "label": "Akshay",
+                "desc": "the write less, do more, work library",
+                "icon": "jquery_32x32.png"
+            },
+            {
+                "value": "Rohan P",
+                "label": "Rohan P",
+                "desc": "the official user interface library for more",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "Sumit M",
+                "label": "Sumit M",
+                "desc": "from right bottom corner to ",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "Mukesh M",
+                "label": "Mukech M",
+                "desc": "the official user interface library for jQuery",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "Akansha R",
+                "label": "Akansha R",
+                "desc": "the bar chart part next to the profile photo.",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+               "value": "Nikita B",
+                "label": "Nikita B",
+                "desc": "next to the profile the bar chart part  photo.",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "Sonal S",
+                "label": "Sonal S",
+                "desc": "what are you looking for and comment",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "Kapil G",
+                "label": "KApil G",
+                "desc": " for and comment what are you looking",
+                "icon": "jqueryui_32x32.png"
+            },
+            {
+                "value": "Sizzle",
+                "label": "Sizzle",
+                "desc": "a pure-food selector engine",
+                "icon": "sizzlejs_32x32.png"
+            } ]
