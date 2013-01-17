@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/lightBoxStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/lightBoxTwoStyle.css" />
+<link rel="stylesheet" href="css/onoffstyle.css">
+<link rel="stylesheet" type="text/css" href="css/lightBoxThreeStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
+<script src="scripts/slider.js" type="text/javascript"></script>
+<script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('#scrollbar1').tinyscrollbar();
+		$('#scrollbar2').tinyscrollbar();
+		$('#scrollbar3').tinyscrollbar();
+
+		$('#wrapper').myslider({
+			'width' : '200px',
+			'sliderstyle' : 'vote',
+			'totalbarwidth' : '100px',
+			'text' : '77 % Member Ratings',
+			'bandclass' : 'voteband',
+			band : [ {
+				'color' : '#555',
+				'width' : '100',
+				'text' : 'Kayani',
+				'textcolor' : '#888'
+			}, {
+				'color' : '#555',
+				'width' : '50',
+				'text' : 'Gilani',
+				'textcolor' : '#888',
+				'textsize' : '10px'
+			}, {
+				'color' : '#555',
+				'width' : '70',
+				'text' : 'Sumit',
+				'textcolor' : '#888',
+				'textsize' : '10px'
+			} ]
+		});
+
+	});
+</script>
+
+
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"
+	type="text/javascript"></script>
+
+<style type="text/css">
+#project-label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+#project-icon {
+	float: left;
+	height: 32px;
+	width: 32px;
+}
+
+#project-description {
+	margin: 0;
+	padding: 0;
+}
+
+.ui-autocomplete {
+	border-radius: 0 0 0 0;
+	max-height: 400px;
+	overflow-y: auto;
+	width: 400px !important;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+     * we use height instead, but this forces the menu to always be this tall
+     */
+* html .ui-autocomplete {
+	height: 300px;
+}
+
+#wrapper {
+	height: 115px;
+	width: 200px;
+	vertical-align: top;
+}
+
+.questiontext {
+	color: #333;
+	margin: 5px auto 10px;
+	width: 150px;
+	font-weight: bold;
+}
+
+.bar {
+	font-size: 12px;
+}
+
+.content {
+	margin-bottom: 300px;
+	font-size: 14px;
+}
+
+.voteband {
+	-webkit-box-shadow: 6px 3px 6px #777;
+	box-shadow: 6px 3px 6px #777;
+}
+
+.lightbox1-wrapper {
+	background: none repeat scroll 0 0 white;
+	display: none;
+	left: 15%;
+	position: absolute;
+	top: 10%;
+}
+
+.lightbox2-wrapper {
+	background: none repeat scroll 0 0 white;
+	display: none;
+	left: 15%;
+	position: absolute;
+	top: 10%;
+}
+
+.lightbox3-wrapper {
+	background: none repeat scroll 0 0 white;
+	visibility: hidden;
+	left: 15%;
+	position: absolute;
+	top: 10%;
+}
+
+#overlay {
+	top: 0;
+	display: none;
+	position: absolute;
+	opacity: 0.4;
+	filter: alpha(opacity =     40);
+}
+</style>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('#scrollbar-tab1').tinyscrollbar();
+		$('#scrollbar-tab2').tinyscrollbar();
+
+		var hite = $(window).height(); // returns height of browser viewport
+
+		var wth = $(window).width(); // returns width of browser viewport
+		wth = wth + 50;
+
+		$("#overlay").css({
+			"display" : "block",
+			"background" : "#AAA",
+			"height" : "" + hite + "px",
+			"width" : "" + wth + "px"
+		});
+		$(".lightbox1-wrapper").css({
+			"display" : "block"
+		});
+		$("body").css({
+			"overflow" : "hidden"
+		})
+
+		$("#lightbox-next-button").click(function() {
+
+			//var hite = $(window).height();   // returns height of browser viewport
+
+			//var wth = $(window).width();   // returns width of browser viewport
+
+			//$("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+			$(".lightbox1-wrapper").css({
+				"display" : "none"
+			});
+			$(".lightbox2-wrapper").css({
+				"display" : "block"
+			});
+
+			//$("body").css({"overflow":"hidden"})
+		});
+
+		$("#lightbox-next-button2").click(function() {
+
+			//var hite = $(window).height();   // returns height of browser viewport
+
+			//var wth = $(window).width();   // returns width of browser viewport
+
+			//$("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+			$(".lightbox2-wrapper").css({
+				"display" : "none"
+			});
+			$(".lightbox3-wrapper").css({
+				"display" : "block"
+			});
+			$(".lightbox3-wrapper").css({
+				"visibility" : "visible"
+			});
+			$("#lightbox3-tab1-content").css({
+				"visibility" : "visible"
+			});
+
+			//$("body").css({"overflow":"hidden"})
+		});
+
+		$("#lightbox-next-button3").click(function() {
+
+			//var hite = $(window).height();   // returns height of browser viewport
+
+			//var wth = $(window).width();   // returns width of browser viewport
+
+			//$("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+			$("#overlay").css({
+				"display" : "none"
+			});
+			$(".lightbox3-wrapper").css({
+				"display" : "none"
+			});
+			$("body").css({
+				"overflow" : "auto"
+			})
+		});
+
+	});
+</script>
+
+
+
+<script type="text/javascript">
+	$(function() {
+
+		$("#project").autocomplete({
+			minLength : 2,
+			source : function(request, response) {
+				$.ajax({
+					url : "search.json",
+					dataType : "json",
+					data : {
+						term : request.term
+					},
+					success : function(data) {
+						response($.map(data, function(item) {
+							return {
+								value : item.value,
+								label : item.label,
+								desc : item.desc,
+								icon : item.icon
+							};
+						}));
+					}
+				});
+			},
+
+			select : function(event, ui) {
+				$("#project").val(ui.item.label);
+
+				return false;
+			}
+		}).data("autocomplete")._renderItem = function(ul, item) {
+			return $("<li>")
+					.data("item.autocomplete", item)
+					.append(
+							"<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>"
+									+ item.label
+									+ "</span><br>"
+									+ item.desc
+									+ "</div></a>").appendTo(ul);
+		};
+
+	});
+</script>
+
+
+
+</head>
+<body>
+	<!-- Header Part -->
+	<div class="pageheader">
+		<div class="pageheader-logo">
+			<span class="company-logo"> MastTag<span
+				style="font-size: 10px; font-weight: bold; margin-left: 3px;">beta</span>
+			</span>
+		</div>
+		<div id="tip"
+			style="color: white; display: inline-block; margin-left: 10px; cursor: pointer;"
+			title="We ask for your age only for statistical purposes.">
+			Alert
+			<div id="tip-arrow"></div>
+
+
+		</div>
+		<div class="pageheader-searchbar">
+			<input class="pageheader-textarea"
+				placeholder="Search for people, places and products" id="project" />
+			<button class="pageheader-searchbutton"></button>
+		</div>
+		<div class="pageheader-right">
+			<div class="pageheader-friends">
+				<span class="pageheader-menu">Friends</span>
+			</div>
+			<div class="pageheader-home">
+				<span class="pageheader-menu">Home</span>
+			</div>
+			<div class="pageheader-howitworks">
+				<span class="pageheader-menu">How it works</span>
+			</div>
+
+			<div class="pageheader-alert">
+				<div
+					style="background-image: url('images/profilepic.png'); display: inline-block; height: 27px; background-size: 100% auto; width: 27px; margin-top: 1px;"></div>
+				<span class="pageheader-menu"
+					style="margin-top: 5px; padding: 2px 9px 3px; display: inline-block; vertical-align: top;">Pratap
+					Singh</span>
+
+				<ul>
+					<li>Alerts</li>
+					<li>Invite</li>
+					<li>Account Settings</li>
+					<li>Billing</li>
+					<li>Log out</li>
+				</ul>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- Page Content -->
+	<div class="pagecontent">
+
+		<div class="pagecontentintrobar">
+			<div class="pagecontent-introbardisplaypic">
+				<div class="displaypic"
+					style="background-image: url('images/profilepic.png');"></div>
+				<div class="social-plugins">
+					<div class="social-plugins-image1 social-plugins-image"></div>
+					<div class="social-plugins-image2 social-plugins-image"></div>
+					<div class="social-plugins-image3 social-plugins-image"></div>
+					<div class="social-plugins-image4 social-plugins-image"></div>
+				</div>
+			</div>
+			<div class="pagecontent-introbaruserinfo">
+				<span class="pagecontent-introbaruserinfo-name"> Hello Pratap
+					Singh </span> <span class="pagecontent-introbaruserinfo-1"> Blood
+					Group: </span> <span class="pagecontent-introbaruserinfo-2">
+					Company Info: </span> <span class="pagecontent-introbaruserinfo-3">
+					Lives At: </span>
+
+			</div>
+			<div
+				style="display: inline-block; vertical-align: top; margin-bottom: 5px;">
+				<div id="wrapper"></div>
+				<div class="newsfeed-comment-commenttext-button-fb">
+					<span class="newsfeed-comment-commenttext-button-span">Share</span>
+				</div>
+				<div class="newsfeed-comment-commenttext-button">
+					<span class="newsfeed-comment-commenttext-button-span">Tweet</span>
+				</div>
+
+			</div>
+
+			<div
+				style="width: 390px; overflow: hidden; display: inline-block; height: 164px; float: right;">
+
+
+				<div id="NavigateFordward" class="horizantal-scroll-left"></div>
+
+				<div id="FixedWindow"
+					style="width: 350px; overflow: hidden; display: inline-block;">
+					<div id="CategoryList" style="width: 1057px; overflow: auto;">
+
+						<div class="pagecontent-introbarfriendsthumbails">
+							<div class="pagecontent-introbarfriendsthumbails-line1">
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="pagecontent-introbarfriendsthumbails-line2">
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pagecontent-introbarfriendsthumbails">
+							<div class="pagecontent-introbarfriendsthumbails-line1">
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="pagecontent-introbarfriendsthumbails-line2">
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagecontent-introbarfriendsthumbails">
+							<div class="pagecontent-introbarfriendsthumbails-line1">
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="pagecontent-introbarfriendsthumbails-line2">
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+								<div class="introbarfriendsthumbails-pic"
+									style="background-image: url('images/profile-pictures.jpg');">
+									<div class="introbarfriendsthumbails-button">
+										<span class="thumbnailes-button-span">Inivite</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+				<div id="NavigateBackward" class="horizantal-scroll-right"></div>
+
+			</div>
+
+		</div>
+
+		<div class="pagecontent-body">
+
+
+
+
+
+			<div class="pagecontent-yourproducts">
+				<div class="pagecontent-yourproducts-title">
+					<span class="left-right-title">Your Products </span>
+				</div>
+
+				<div id="scrollbar1">
+					<div class="scrollbar">
+						<div class="track">
+							<div class="thumb">
+								<div class="end"></div>
+							</div>
+						</div>
+					</div>
+					<div class="viewport">
+						<div class="overview">
+
+
+							<div class="yourproducts-products">
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="pagecontent-yourproducts-button">
+					<span class="left-right-button">Add a new </span>
+				</div>
+
+
+			</div>
+
+
+
+
+
+			<div class="pagecontent-newsfeed">
+				<div class="newsfeed-text">
+					<textarea class="newsfeed-textarea" style="resize: none;"
+						placeholder="What are you looking for.." cols="" rows=""></textarea>
+					<div class="newsfeed-button">
+						<span class="newsfeed-button-text">Post</span>
+					</div>
+				</div>
+				<div class="newsfeed">
+					<div class="newsfeed-product">
+						<div class="newsfeed-product-part1">
+
+
+
+							<div style="margin-top: 15px">
+								<div class="newsfeed-comment-image"
+									style="background-image: url('images/profile-pictures.jpg');"></div>
+								<div style="display: inline-block; margin-left: 10px;">
+									<div class="newsfeed-comment-username">Akshay Soni</div>
+									<div class="newsfeed-comment-text">Commment d they
+										maintain that clarity on any kind o</div>
+									<div class="newsfeed-comment-translation">See Translation</div>
+									<div class="newsfeed-comment-likebar">like | comment | 4
+										hours before near Bangkok, Krung Thep</div>
+
+									<div class="newsfeed-comment-commentdiv">
+										<div class="newsfeed-comment-commenttext">
+											<div class="newsfeed-comment-commenttext-image"
+												style="background-image: url('images/profile-pictures.jpg');">
+											</div>
+											<div class="newsfeed-comment-commenttext-wrapper">
+												<div class="newsfeed-comment-commenttext-wrapper-text">
+													<span>Akshay Soni</span>Commment d they maintain that
+												</div>
+												<div
+													class="newsfeed-comment-commenttext-wrapper-translation">See
+													Translation</div>
+												<div class="newsfeed-comment-commenttext-wrapper-likebar">
+													4 hours before from mobile | like | 4 likes</div>
+											</div>
+
+										</div>
+
+
+										<div class="newsfeed-comment-commenttext">
+											<div class="newsfeed-comment-commenttext-image"
+												style="background-image: url('images/profile-pictures.jpg');">
+											</div>
+											<div class="newsfeed-comment-commenttext-wrapper">
+												<div class="newsfeed-comment-commenttext-wrapper-text">
+													<span>Akshay Soni</span>Commment d they maintain that
+												</div>
+												<div
+													class="newsfeed-comment-commenttext-wrapper-translation">See
+													Translation</div>
+												<div class="newsfeed-comment-commenttext-wrapper-likebar">
+													4 hours before from mobile | like | 4 likes</div>
+											</div>
+
+										</div>
+
+
+										<div class="newsfeed-comment-commenttext">
+											<div class="newsfeed-comment-commenttext-image"
+												style="background-image: url('images/profile-pictures.jpg');">
+											</div>
+											<div class="newsfeed-comment-commenttext-wrapper">
+												<div class="newsfeed-comment-commenttext-wrapper-text">
+													<span>Akshay Soni</span>Commment d they maintain that lab
+													la lab
+												</div>
+												<div
+													class="newsfeed-comment-commenttext-wrapper-translation">See
+													Translation</div>
+												<div class="newsfeed-comment-commenttext-wrapper-likebar">
+													4 hours before from mobile | like | 4 likes</div>
+											</div>
+
+										</div>
+
+										<div class="newsfeed-comment-commenttext">
+											<div class="newsfeed-comment-commenttext-image"
+												style="background-image: url('images/profile-pictures.jpg');">
+											</div>
+											<div class="newsfeed-comment-commenttext-wrapper">
+												<div class="newsfeed-comment-commenttext-wrapper-text">
+													<span>Akshay Soni</span>Commment d they maintain that
+												</div>
+												<div
+													class="newsfeed-comment-commenttext-wrapper-translation">See
+													Translation</div>
+												<div class="newsfeed-comment-commenttext-wrapper-likebar">
+													4 hours before from mobile | like | 4 likes</div>
+											</div>
+
+										</div>
+
+										<div class="newsfeed-comment-writecomment">
+											<div class="newsfeed-comment-commenttext-image"
+												style="background-image: url('images/profile-pictures.jpg');">
+											</div>
+											<div class="newsfeed-comment-commenttext-wrapper">
+												<textarea
+													class="newsfeed-comment-commenttext-wrapper-textarea"
+													style="resize: none;" cols="" rows=""></textarea>
+												<div class="newsfeed-comment-commenttext-button-fb">
+													<span class="newsfeed-comment-commenttext-button-span">Share</span>
+												</div>
+												<div class="newsfeed-comment-commenttext-button">
+													<span class="newsfeed-comment-commenttext-button-span">Tweet</span>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+
+
+
+
+
+						</div>
+
+						<div class="newsfeed-product-part2"
+							style="width: 85%; margin: 10px auto;">
+							<span
+								style="color: #3355A4; font-weight: bold; margin-right: 4px;">Pratap
+								Singh</span>likes three produts
+						</div>
+						<div class="newsfeed-product-part2"
+							style="width: 85%; margin: 10px auto;">
+							<span
+								style="color: #3355A4; font-weight: bold; margin-right: 4px;">Steve
+								Johnathan</span>and <span
+								style="color: #3355A4; font-weight: bold; margin-right: 4px;">Anirudha
+								T</span>are now friends.
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="pagecontent-wishlist">
+				<div class="pagecontent-wishlist-title">
+					<span class="left-right-title">Wish List </span>
+				</div>
+
+				<div id="scrollbar2">
+					<div class="scrollbar">
+						<div class="track">
+							<div class="thumb">
+								<div class="end"></div>
+							</div>
+						</div>
+					</div>
+					<div class="viewport">
+						<div class="overview">
+
+
+
+							<div class="yourproducts-products">
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="yourproducts-products-name">Samsung Galaxy R</div>
+								<div class="yourproducts-products-body">
+									<div class="yourproducts-products-image"
+										style="background-image: url('images/product.png');"></div>
+									<div class="yourproducts-products-info">
+										<div class="products-like-unlike">
+
+											<div class="products-like"></div>
+											<div class="products-unlike"></div>
+											<div class="products-like-unlike-status">0 likes, 0
+												dislikes</div>
+
+										</div>
+										<div class="products-history">
+											Added on <span class="products-history-date">Dec 21,
+												2012</span>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+
+
+
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+				<div class="pagecontent-yourproducts-button">
+					<span class="left-right-button">Add a new </span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer Part -->
+	<div class="pagefooter">Contact Us | Terms & Conditions</div>
+
+
+
+	<div id="tooltip">
+
+		<div class="notifications-header">Notifications</div>
+
+
+		<div id="scrollbar3">
+			<div class="scrollbar">
+				<div class="track">
+					<div class="thumb">
+						<div class="end"></div>
+					</div>
+				</div>
+			</div>
+			<div class="viewport">
+				<div class="overview">
+
+					<div style="width: 100%">
+						<ul class="notification-ul">
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Commented on your product
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Tagged you in a photo
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="see-all">See all</div>
+
+
+	</div>
+
+	<!-- Light box One -->
+
+	<div class="lightbox1-wrapper" style="z-index: 1002">
+
+		<form action="">
+			<div class="breadcrumb-one">
+
+
+				<div style="width: 455px; margin: auto">
+					<div class="breadcrumb-1" id="step0-tip"></div>
+					<div class="breadcrumb-text" id="step1">
+						<span class="breadcrumb-text-text">Step 1</span>
+					</div>
+					<div class="breadcrumb-1" id="step1-tip"></div>
+					<div class="breadcrumb-text" id="step2">
+						<span class="breadcrumb-text-text">Step 2</span>
+					</div>
+					<div class="breadcrumb-1" id="step2-tip"></div>
+					<div class="breadcrumb-text" id="step3">
+						<span class="breadcrumb-text-text">Step 3</span>
+					</div>
+					<div class="breadcrumb-1" id="step3-tip"></div>
+
+				</div>
+
+			</div>
+			<div class="lightbox1-content">
+				<div class="lightbox1-line">
+					<div class="lightbox1-product-list">
+						<select id="categoryId" required style="width: 100px">
+							<option value="car">Car</option>
+
+							<option value="mobile">Mobile phone</option>
+							<option value="laptop">Laptop</option>
+							<option value="tablet">Tablet</option>
+							<option value="bike">Bike</option>
+							<option value="camera">Camera</option>
+						</select>
+					</div>
+					<div class="lightbox1-product-brand">
+						Brands <select id="productId" required style="width: 100px">
+						</select>
+					</div>
+					<div class="lightbox1-product-model">
+						Models <select id="modelId" required style="width: 100px">
+						</select>
+					</div>
+					<div class="lightbox1-product-rating" id="star-line1"></div>
+					<div class="lightbox1-product-review">
+						<a id="tip"> Write Review</a>
+						<div id="tip-arrow"></div>
+						<div id="tooltip">
+							<textarea id="lightbox1-line1-comment" cols="" rows=""> </textarea>
+							<a href="#" id="lightbox1-line1-comment-submit"
+								onclick="commentline1()">submit</a>
+						</div>
+
+						<div class="lightbox1-product-review-text">
+							Review: <span id="lightbox1-product-review-text1"> </span>
+						</div>
+
+
+					</div>
+					<div style="display: inline-block">
+						&nbsp;&nbsp;Upload Image:<input type="file" name="img"></input>
+
+					</div>
+
+				</div>
+				<div class="lightbox1-line">
+					<div class="lightbox1-product-list">
+						<select id="categoryId2" required style="width: 100px">
+							<option value="car">Car</option>
+							<option value="mobile">Mobile phone</option>
+							<option value="laptop">Laptop</option>
+							<option value="tablet">Tablet</option>
+							<option value="bike">Bike</option>
+							<option value="camera">Camera</option>
+						</select>
+					</div>
+					<div class="lightbox1-product-brand">
+						Brands <select id="productId2" required style="width: 100px">
+						</select>
+					</div>
+					<div class="lightbox1-product-model">
+						Models <select id="modelId2" required style="width: 100px">
+						</select>
+					</div>
+					<div class="lightbox1-product-rating" id="star-line2"></div>
+					<div class="lightbox1-product-review">
+						<a id="tip2"> Write Review</a>
+						<div id="tip-arrow2"></div>
+						<div id="tooltip2">
+							<textarea id="lightbox1-line2-comment" cols="" rows=""> </textarea>
+							<a href="#" id="lightbox1-line2-comment-submit"
+								onclick="commentline2()">submit</a>
+						</div>
+						<div class="lightbox1-product-review-text">
+							Review: <span id="lightbox1-product-review-text2"> </span>
+						</div>
+					</div>
+					<div style="display: inline-block">
+						&nbsp;&nbsp;Upload Image:<input type="file" name="img"></input>
+
+					</div>
+				</div>
+				<div class="lightbox1-line">
+					<div class="lightbox1-product-list">
+						<select id="categoryId3" required style="width: 100px">
+							<option value="car">Car</option>
+							<option value="mobile">Mobile phone</option>
+							<option value="laptop">Laptop</option>
+							<option value="tablet">Tablet</option>
+							<option value="bike">Bike</option>
+							<option value="camera">Camera</option>
+						</select>
+					</div>
+					<div class="lightbox1-product-brand">
+						Brands <select id="productId3" required style="width: 100px">
+						</select>
+					</div>
+					<div class="lightbox1-product-model">
+						Models <select id="modelId3" required style="width: 100px">
+						</select>
+					</div>
+					<div class="lightbox1-product-rating" id="star-line3"></div>
+					<div class="lightbox1-product-review">
+						<a id="tip3"> Write Review</a>
+						<div id="tip-arrow3"></div>
+						<div id="tooltip3">
+							<textarea id="lightbox1-line3-comment" cols="" rows=""> </textarea>
+							<a href="#" id="lightbox1-line3-comment-submit"
+								onclick="commentline3()">submit</a>
+						</div>
+						<div class="lightbox1-product-review-text">
+							Review: <span id="lightbox1-product-review-text3"> </span>
+						</div>
+					</div>
+					<div style="display: inline-block">
+						&nbsp;&nbsp;Upload Image:<input type="file" name="img"></input>
+
+					</div>
+
+
+				</div>
+			</div>
+			<div id="lightbox1-addproduct"style="float: right; margin-right: 35px; font-style: italic; text-decoration: underline; cursor: pointer;"> add product</div>
+			<div class="lightbox-button">
+				<div class="lightbox-button-div" id="lightbox-next-button">
+					<span class="lightbox-button-text-span">Next</span>
+				</div>
+				&nbsp;&nbsp;Select atleast three
+				
+			</div>
+		</form>
+
+
+		<script type="text/javascript">
+			$(function() {
+
+				$('#star-line1').raty({
+					half : true
+
+				});
+				$('#star-line2').raty({
+					half : true
+
+				});
+				$('#star-line3').raty({
+					half : true
+
+				});
+				var productsSelect = $('#productId');
+				productsSelect.attr('disabled', true);
+				var modelSelect = $('#modelId');
+				modelSelect.attr('disabled', true);
+				$('#categoryId').change(
+						function() {
+							var categoryId = $(this).val();
+
+							$.getJSON('products.json', function(products) {
+								productsSelect.attr('disabled', false);
+
+								productsSelect.empty();
+								productsSelect.append($('<option/>').attr(
+										'value', '').text(
+										'-- Select Product --'));
+								$.each(products, function(index, product) {
+									productsSelect.append($('<option/>').attr(
+											'value', product.ProductId).text(
+											product.ProductName));
+								});
+							});
+						});
+				$('#productId').change(
+						function() {
+							var productId = $(this).val();
+							$.getJSON('model.json', function(models) {
+								modelSelect.attr('disabled', false);
+								modelSelect.empty();
+								modelSelect.append($('<option/>').attr('value',
+										'').text('-- Select Product --'));
+								$.each(models, function(index, model) {
+									modelSelect.append($('<option/>').attr(
+											'value', model.ModelId).text(
+											model.ModelName));
+								});
+							});
+						});
+
+				var productsSelect2 = $('#productId2');
+				productsSelect2.attr('disabled', true);
+				var modelSelect2 = $('#modelId2');
+				modelSelect2.attr('disabled', true);
+				$('#categoryId2').change(
+						function() {
+							var categoryId = $(this).val();
+
+							$.getJSON('products.json', function(products) {
+								productsSelect2.attr('disabled', false);
+
+								productsSelect2.empty();
+								productsSelect2.append($('<option/>').attr(
+										'value', '').text(
+										'-- Select Product --'));
+								$.each(products, function(index, product) {
+									productsSelect2.append($('<option/>').attr(
+											'value', product.ProductId).text(
+											product.ProductName));
+								});
+							});
+						});
+				$('#productId2').change(
+						function() {
+							var productId = $(this).val();
+							$.getJSON('model.json', function(models) {
+								modelSelect2.attr('disabled', false);
+								modelSelect2.empty();
+								modelSelect2.append($('<option/>').attr(
+										'value', '').text(
+										'-- Select Product --'));
+								$.each(models, function(index, model) {
+									modelSelect2.append($('<option/>').attr(
+											'value', model.ModelId).text(
+											model.ModelName));
+								});
+							});
+						});
+
+				var productsSelect3 = $('#productId3');
+				productsSelect3.attr('disabled', true);
+				var modelSelect3 = $('#modelId3');
+				modelSelect3.attr('disabled', true);
+				$('#categoryId3').change(
+						function() {
+							var categoryId = $(this).val();
+
+							$.getJSON('products.json', function(products) {
+								productsSelect3.attr('disabled', false);
+
+								productsSelect3.empty();
+								productsSelect3.append($('<option/>').attr(
+										'value', '').text(
+										'-- Select Product --'));
+								$.each(products, function(index, product) {
+									productsSelect3.append($('<option/>').attr(
+											'value', product.ProductId).text(
+											product.ProductName));
+								});
+							});
+						});
+				$('#productId3').change(
+						function() {
+							var productId = $(this).val();
+							$.getJSON('model.json', function(models) {
+								modelSelect3.attr('disabled', false);
+								modelSelect3.empty();
+								modelSelect3.append($('<option/>').attr(
+										'value', '').text(
+										'-- Select Product --'));
+								$.each(models, function(index, model) {
+									modelSelect3.append($('<option/>').attr(
+											'value', model.ModelId).text(
+											model.ModelName));
+								});
+							});
+						});
+
+			});
+
+			
+			
+			var i=4;
+			
+			
+			
+			
+			
+			$('#lightbox1-addproduct').click(function() {
+				
+				
+				
+				var newLine = "<div class='lightbox1-line'><div class='lightbox1-product-list'>"+
+				"<select id='categoryId' required style='width: 100px'>"+
+				"<option value='car'>Car</option>"+
+				"<option value='mobile'>Mobile phone</option>"+
+						"<option value='laptop'>Laptop</option>"+
+						"<option value='tablet'>Tablet</option>"+
+						"<option value='bike'>Bike</option>"+
+						"<option value='camera'>Camera</option>"+
+					"</select>"+
+				"</div>"+
+				"<div class='lightbox1-product-brand'>"+
+					"Brands <select id='productId' required style='width: 100px'>"+
+					"</select>"+
+				"</div>"+
+				"<div class='lightbox1-product-model'>"+
+					"Models <select id='modelId' required style='width: 100px'>"+
+					"</select>"+
+				"</div>"+
+				"<div class='lightbox1-product-rating' id='star-line"+i+"'></div>"+
+				"<div class='lightbox1-product-review'>"+
+					"<a id='tip'> Write Review</a>"+
+					"<div id='tip-arrow'></div>"+
+					"<div id='tooltip'>"+
+						"<textarea id='lightbox1-line1-comment' cols='' rows=''> </textarea>"+
+						"<a href='#' id='lightbox1-line1-comment-submit'"+
+							"onclick='commentline1()'>submit</a>"+
+					"</div>"+
+					"<div class='lightbox1-product-review-text'>"+
+						"Review: <span id='lightbox1-product-review-text1'> </span>"+
+					"</div>"+
+				"</div>"+
+				"<div style='display: inline-block'>"+
+					"&nbsp;&nbsp;Upload Image:<input type='file' name='img'></input>"+
+				"</div></div>";
+				
+				
+				$('.lightbox1-content').append(newLine);
+				var lineId= '#star-line'+i.toString();
+				$(lineId).raty({
+					half : true
+
+				});
+				
+				i=i+1;
+			});
+			
+			
+			
+			var flagnoti = 0;
+			var flagnoti2 = 0;
+			var flagnoti3 = 0;
+			/*first tooltip */
+			$('#tip').click(function(e) {
+				e.stopPropagation();
+				if (flagnoti == 0) {
+
+					$('#tip-arrow').css('visibility', 'visible');
+					$('#tooltip').css('visibility', 'visible');
+					flagnoti = 1;
+				} else {
+					$('#tip-arrow').css('visibility', 'hidden');
+					$('#tooltip').css('visibility', 'hidden');
+					flagnoti = 0;
+
+				}
+
+			});
+
+			$("#tooltip").click(function(e) {
+				e.stopPropagation();
+			});
+
+			function commentline1() {
+				var comment = $("#lightbox1-line1-comment").val();
+				if (comment != " " && comment != "") {
+					$("#tip").html("Edit Review");
+					$("#lightbox1-product-review-text1").html(comment);
+					$('#tip-arrow').css('visibility', 'hidden');
+					$('#tooltip').css('visibility', 'hidden');
+					flagnoti = 0;
+				} else {
+					alert("Review is required");
+				}
+
+			};
+
+			/*second tooltip */
+
+			$('#tip2').click(function(e) {
+				e.stopPropagation();
+				if (flagnoti2 == 0) {
+
+					$('#tip-arrow2').css('visibility', 'visible');
+					$('#tooltip2').css('visibility', 'visible');
+					flagnoti2 = 1;
+				} else {
+					$('#tip-arrow2').css('visibility', 'hidden');
+					$('#tooltip2').css('visibility', 'hidden');
+					flagnoti2 = 0;
+
+				}
+
+			});
+
+			$("#tooltip2").click(function(e) {
+				e.stopPropagation();
+			});
+
+			function commentline2() {
+				var comment = $("#lightbox1-line2-comment").val();
+				if (comment != " " && comment != "") {
+					$("#tip2").html("Edit Review");
+					$("#lightbox1-product-review-text2").html(comment);
+					$('#tip-arrow2').css('visibility', 'hidden');
+					$('#tooltip2').css('visibility', 'hidden');
+					flagnoti2 = 0;
+				} else {
+					alert("Review is required");
+				}
+
+			};
+
+			/*third tooltip */
+
+			$('#tip3').click(function(e) {
+				e.stopPropagation();
+				if (flagnoti3 == 0) {
+
+					$('#tip-arrow3').css('visibility', 'visible');
+					$('#tooltip3').css('visibility', 'visible');
+					flagnoti3 = 1;
+				} else {
+					$('#tip-arrow3').css('visibility', 'hidden');
+					$('#tooltip3').css('visibility', 'hidden');
+					flagnoti3 = 0;
+
+				}
+
+			});
+
+			$("#tooltip3").click(function(e) {
+				e.stopPropagation();
+			});
+
+			function commentline3() {
+				var comment = $("#lightbox1-line3-comment").val();
+				if (comment != " " && comment != "") {
+					$("#tip3").html("Edit Review");
+					$("#lightbox1-product-review-text3").html(comment);
+					$('#tip-arrow3').css('visibility', 'hidden');
+					$('#tooltip3').css('visibility', 'hidden');
+					flagnoti3 = 0;
+				} else {
+					alert("Review is required");
+				}
+
+			};
+
+			$("body").click(function() {
+				$('#tip-arrow').css('visibility', 'hidden');
+				$('#tooltip').css('visibility', 'hidden');
+				flagnoti = 0;
+				$('#tip-arrow2').css('visibility', 'hidden');
+				$('#tooltip2').css('visibility', 'hidden');
+				flagnoti2 = 0;
+				$('#tip-arrow3').css('visibility', 'hidden');
+				$('#tooltip3').css('visibility', 'hidden');
+				flagnoti3 = 0;
+			});
+		</script>
+
+
+
+	</div>
+
+	<div class="lightbox2-wrapper" style="z-index: 1002">
+		<div class="breadcrumb-2">
+
+			<div style="width: 455px; margin: auto">
+				<div class="breadcrumb-1" id="step0-tip"></div>
+				<div class="breadcrumb-text" id="step1">
+					<span class="breadcrumb-text-text">Step 1</span>
+				</div>
+				<div class="breadcrumb-1" id="step1-tip"></div>
+				<div class="breadcrumb-text" id="step2">
+					<span class="breadcrumb-text-text">Step 2</span>
+				</div>
+				<div class="breadcrumb-1" id="step2-tip"></div>
+				<div class="breadcrumb-text" id="step3">
+					<span class="breadcrumb-text-text">Step 3</span>
+				</div>
+				<div class="breadcrumb-1" id="step3-tip"></div>
+
+			</div>
+
+		</div>
+		<div class="lightbox2-div1">Connect more networks to improve
+			your profile</div>
+		<div class="lightbox2-button-wrapper">
+
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img src="images/fc-webicon-facebook.png" alt="Smiley face"
+						height="40" width="40" style="vertical-align: middle;"> <span
+						class="lightbox2-social-name-text">Facebook</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button1">&#xF011;</a> <span></span>
+					</section>
+				</div>
+			</div>
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img src="images/fc-webicon-twitter.png" alt="Smiley face"
+						height="40" width="40" style="vertical-align: middle;"><span
+						class="lightbox2-social-name-text">Twitter</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button2">&#xF011;</a> <span></span>
+					</section>
+				</div>
+			</div>
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img src="images/fc-webicon-googleplus.png" alt="Smiley face"
+						height="40" width="40" style="vertical-align: middle;"><span
+						class="lightbox2-social-name-text">Google Plus</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button3">&#xF011;</a> <span></span>
+					</section>
+				</div>
+			</div>
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img src="images/fc-webicon-linkedin.png" alt="Smiley face"
+						height="40" width="40" style="vertical-align: middle;"><span
+						class="lightbox2-social-name-text">Linkedin</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button4">&#xF011;</a> <span></span>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div style="text-align: center; margin-bottom: 15px;">
+			<div class="lightbox-button-div" id="lightbox-next-button2">
+				<span class="lightbox-button-text-span">Next</span>
+			</div>
+
+
+		</div>
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#button1').on('click', function() {
+					$(this).toggleClass('on');
+				});
+				$('#button2').on('click', function() {
+					$(this).toggleClass('on');
+				});
+				$('#button3').on('click', function() {
+					$(this).toggleClass('on');
+				});
+				$('#button4').on('click', function() {
+					$(this).toggleClass('on');
+				});
+			});
+		</script>
+
+	</div>
+
+
+	<div class="lightbox3-wrapper" style="z-index: 1002">
+		<div class="breadcrumb-3">
+			<div style="width: 455px; margin: auto">
+				<div class="breadcrumb-1" id="step0-tip"></div>
+				<div class="breadcrumb-text" id="step1">
+					<span class="breadcrumb-text-text">Step 1</span>
+				</div>
+				<div class="breadcrumb-1" id="step1-tip"></div>
+				<div class="breadcrumb-text" id="step2">
+					<span class="breadcrumb-text-text">Step 2</span>
+				</div>
+				<div class="breadcrumb-1" id="step2-tip"></div>
+				<div class="breadcrumb-text" id="step3">
+					<span class="breadcrumb-text-text">Step 3</span>
+				</div>
+				<div class="breadcrumb-1" id="step3-tip"></div>
+
+			</div>
+		</div>
+		<div class="lightbox3-content-wrapper">
+			<div class="lightbox3-div1">Invite Your Friends</div>
+			<div style="height: 25px;">
+				<ul class="tabs">
+					<li id="lightbox3-tab1"><a>Unregistered</a>
+					</li>
+					<li id="lightbox3-tab2"><a>All</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="lightbox3-tab-wrapper">
+				<div id="lightbox3-tab1-content">
+					<input type="checkbox" onClick="toggle1(this)" /> Select All<br />
+					<div id="scrollbar-tab1">
+						<div class="scrollbar">
+							<div class="track">
+								<div class="thumb">
+									<div class="end"></div>
+								</div>
+							</div>
+						</div>
+						<div class="viewport">
+							<div class="overview">
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div id="lightbox3-tab2-content">
+					<input type="checkbox" onClick="toggle2(this)" /> Select All<br />
+					<div id="scrollbar-tab2">
+						<div class="scrollbar">
+							<div class="track">
+								<div class="thumb">
+									<div class="end"></div>
+								</div>
+							</div>
+						</div>
+						<div class="viewport">
+							<div class="overview">
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+
+								<div class="tab-line">
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab2"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+									<div class="tab-item">
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42">
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<div style="text-align: center; margin-bottom: 15px;">
+			<div class="lightbox-button-div" id="lightbox-next-button3">
+				<span class="lightbox-button-text-span">Finish</span>
+			</div>
+
+
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+			});
+
+			$("#lightbox3-tab1").click(function(e) {
+
+				$('#lightbox3-tab1-content').css('visibility', 'visible');
+				$('#lightbox3-tab2-content').css('visibility', 'hidden');
+
+				$('#lightbox3-tab1').css('color', '#FFFFFF');
+				$('#lightbox3-tab2').css('color', '#999999');
+
+			});
+			$("#lightbox3-tab2").click(function(e) {
+
+				$('#lightbox3-tab2-content').css('visibility', 'visible');
+				$('#lightbox3-tab1-content').css('visibility', 'hidden');
+
+				$('#lightbox3-tab2').css('color', '#FFFFFF');
+				$('#lightbox3-tab1').css('color', '#999999');
+
+			});
+
+			function toggle1(source) {
+				checkboxes = document.getElementsByName('tab1');
+				for ( var i in checkboxes)
+					checkboxes[i].checked = source.checked;
+			}
+
+			function toggle2(source) {
+				checkboxes = document.getElementsByName('tab2');
+				for ( var i in checkboxes)
+					checkboxes[i].checked = source.checked;
+			}
+		</script>
+
+
+	</div>
+
+
+
+
+	<div id="overlay" style="z-index: 1001"></div>
+
+	<script type="text/javascript">
+		$("#NavigateBackward").click(function() {
+			$("#FixedWindow").animate({
+				scrollLeft : "+=352"
+			}, "slow");
+
+		});
+
+		$("#NavigateFordward").click(function() {
+			$("#FixedWindow").animate({
+				scrollLeft : "-=352"
+			}, "slow");
+		});
+
+		var flagnoti = 0;
+		$('#tip').click(function(e) {
+			e.stopPropagation();
+			if (flagnoti == 0) {
+
+				$('#tip-arrow').css('visibility', 'visible');
+				$('#tooltip').css('visibility', 'visible');
+				flagnoti = 1;
+			} else {
+				$('#tip-arrow').css('visibility', 'hidden');
+				$('#tooltip').css('visibility', 'hidden');
+				flagnoti = 0;
+
+			}
+
+		});
+
+		$("body").click(function() {
+			$('#tip-arrow').css('visibility', 'hidden');
+			$('#tooltip').css('visibility', 'hidden');
+			flagnoti = 0;
+		});
+
+		$("#tooltip").click(function(e) {
+			e.stopPropagation();
+		});
+	</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

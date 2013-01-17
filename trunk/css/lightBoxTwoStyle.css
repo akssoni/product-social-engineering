@@ -1,0 +1,199 @@
+body{
+
+font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+
+}
+.lightbox2-social{
+height: 60px;
+}
+
+.lightbox2-wrapper {
+ // border: 2px solid #1A2A4D;
+    border-radius: 6px 6px 6px 6px;
+    width: 950px;
+     box-shadow: 0 0 20px #1A2A4D;
+}
+
+.lightbox2-button-wrapper{
+ margin: 20px auto auto;
+    width: 315px;
+}
+
+
+.lightbox2-social-name{
+ 
+    display: inline-block;
+    height: 40px;
+}
+
+.lightbox2-social-button{
+display: inline-block;
+float: right;
+}
+
+.lightbox2-social-name-text{
+
+margin-left: 10px;
+}
+
+.lightbox2-div1{
+
+ font-size: 15px;
+    margin: 20px auto;
+    text-align: center;
+    width: auto;
+
+}
+/* breadcrumbs */
+
+.breadcrumb-2{
+ background: none repeat scroll 0 0 #ADBBD7;
+    border-bottom: 1px solid #1A2A4D;
+    border-radius: 4px 4px 0 0;
+    color: #ADBBD7;
+    height: 40px;
+}
+
+.breadcrumb-2 #step2{
+
+color: white !important;
+font-weight: bold !important;
+
+}
+
+.breadcrumb-1{
+border-bottom: 20px solid transparent;
+    border-left: 20px solid #63B0E4;
+    border-top: 20px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 0;
+ 
+    margin-left: -4px;
+    vertical-align: top;
+    width: 0;
+
+}
+
+
+.breadcrumb-text{
+ display: inline-block;
+    height: 40px;
+    width: 125px;
+      margin-left: -4px;
+       text-align: center;
+    }
+
+.breadcrumb-text-text{
+ display: inline-block;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#step0-tip{
+ border-top: 20px solid #5C77AE;
+  border-bottom: 20px solid #5C77AE;
+   border-left: 20px solid #ADBBD7;
+
+}
+
+
+#step1-tip{
+ border-left: 20px solid #5C77AE;
+}
+
+#step1{
+background: none repeat scroll 0 0 #5C77AE;
+}
+
+
+
+#step2-tip{
+ border-left: 20px solid #33559A;
+}
+
+#step2{
+background: none repeat scroll 0 0 #33559A;
+
+}
+
+#step1-tip{
+border-bottom: 20px solid #33559A;
+    border-top: 20px solid #33559A;
+}
+
+
+
+
+
+#step3-tip{
+ border-left: 20px solid #29447B;
+}
+
+#step3{
+background: none repeat scroll 0 0 #29447B;
+}
+
+#step2-tip{
+border-bottom: 20px solid #29447B;
+    border-top: 20px solid #29447B;
+}
+
+
+#step4-tip{
+ border-left: 20px solid #1A2A4D;
+}
+
+#step4{
+background: none repeat scroll 0 0 #1A2A4D;
+}
+
+#step3-tip{
+border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+.lightbox-button-div{
+ 
+  background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63B0E4), color-stop(100%,#008DD5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #63B0E4 0%,#008DD5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #63B0E4 0%,#008DD5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #63B0E4 0%,#008DD5 100%); /* IE10+ */
+background: linear-gradient(to bottom, #63B0E4 0%,#008DD5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', endColorstr='#008DD5',GradientType=0 ); /* IE6-9 */      
+ 
+ 
+    border: 1px solid #3586C2;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+  
+    margin-left: 15px;
+    margin-right: 0;
+    margin-top: 5px;
+     display: inline-block;
+
+
+}
+
+.lightbox-button-div:hover {
+    background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;    
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63B0E4), color-stop(100%,#4FA8E2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #63B0E4 0%,#4FA8E2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #63B0E4 0%,#4FA8E2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #63B0E4 0%,#4FA8E2 100%); /* IE10+ */
+background: linear-gradient(to bottom, #63B0E4 0%,#4FA8E2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', endColorstr='#4FA8E2',GradientType=0 ); /* IE6-9 */
+   
+}
+
+.lightbox-button-text-span{
+
+ color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 15px;
+}
+
