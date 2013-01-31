@@ -533,8 +533,9 @@ margin-top: 7px;
 .yourproducts-products-image{
 
     display: inline-block;
-    height: 85px;
+    height: 75px;
     width: 75px;
+     background-size: 100% auto;
 
 }
 .yourproducts-products-info{
@@ -1132,6 +1133,7 @@ background: none repeat scroll 0 0 #F7F7F7;
  min-height: 500px;
   //min-width: 900px;
     width: 30%;
+    padding-left: 15px;
 }
 
 
@@ -1196,7 +1198,7 @@ border-top: none;
 .search-results-col1{
  display: inline-block;
     vertical-align: top;
-    width: 39%;
+    width: 38%;
 }
 
 
