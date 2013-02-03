@@ -273,15 +273,6 @@ margin-top: 10px;
 }
 
 
-
-
-
-
-
-
-
-
-
 .pagecontent-introbarbarchart {
    
     display: inline-block;
@@ -530,6 +521,20 @@ margin-top: 7px;
 
 }
 
+.yourproducts-products-image-expert{
+
+    display: inline-block;
+ 
+}
+
+.yourproducts-products-image-expert-div{
+
+  //  display: inline-block;
+    height: 75px;
+    width: 75px;
+     background-size: 100% auto;
+
+}
 .yourproducts-products-image{
 
     display: inline-block;
@@ -538,6 +543,15 @@ margin-top: 7px;
      background-size: 100% auto;
 
 }
+
+.yourproducts-products-info-expert{
+ display: inline-block;
+    width: 70%;
+    margin-top: 5px;
+    vertical-align: top;
+
+}
+
 .yourproducts-products-info{
  display: inline-block;
     margin-left: 20px;
@@ -575,6 +589,15 @@ color: #777;
  color: #0085CC;
  display: block;
 }
+
+
+/* Expert review section */
+
+
+
+
+
+
 
 
 
