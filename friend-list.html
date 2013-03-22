@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+
+<link rel="stylesheet" type="text/css" href="css/friend-list.css">
+
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
+<script src="scripts/slider.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+       
+          $('#scrollbar3').tinyscrollbar();
+        
+        $('#wrapper').myslider(
+		{
+		'width':'200px',
+		'sliderstyle':'vote',
+		'totalbarwidth':'100px',
+		'text':'77 % Member Ratings',
+		'bandclass':'voteband',
+		band:[
+		{'color':'#555','width':'100','text':'Kayani','textcolor':'#888' },
+		{'color':'#555','width':'50','text':'Gilani','textcolor':'#888','textsize':'10px'},
+		{'color':'#555','width':'70','text':'Sumit','textcolor':'#888','textsize':'10px'}
+		]
+	});
+        
+        
+
+    });   
+</script>
+
+
+<script src="scripts/jquery-ui.js" type="text/javascript"></script>
+
+<style type="text/css">
+#project-label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+#project-icon {
+	float: left;
+	height: 32px;
+	width: 32px;
+}
+
+#project-description {
+	margin: 0;
+	padding: 0;
+}
+
+.ui-autocomplete {
+	border-radius: 0 0 0 0;
+	max-height: 400px;
+	overflow-y: auto;
+	width: 400px !important;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+     * we use height instead, but this forces the menu to always be this tall
+     */
+* html .ui-autocomplete {
+	height: 300px;
+}
+
+#wrapper {
+	height: 115px;
+	width: 200px;
+	vertical-align: top;
+}
+
+.questiontext {
+	color: #333;
+	margin: 5px auto 10px;
+	width: 150px;
+	font-weight: bold;
+}
+
+.bar {
+	font-size: 12px;
+}
+
+.content {
+	margin-bottom: 300px;
+	font-size: 14px;
+}
+
+.voteband {
+	-webkit-box-shadow: 6px 3px 6px #777;
+	box-shadow: 6px 3px 6px #777;
+}
+</style>
+<script type="text/javascript">
+ $(function() {
+	
+ 
+        $( "#project" ).autocomplete({
+            minLength: 2,
+            source: function( request, response ) {
+                	$.ajax({
+                   		 url: "search.json",
+                    		dataType: "json",
+                    		data: {term: request.term},
+                    		success: function(data) {
+                                response($.map(data, function(item) {
+                                	return {
+                                    		value: item.value,
+                                    		label: item.label,
+                                   	 	desc: item.desc,
+				    		icon: item.icon				
+                                    		};
+                            		}));
+                        	}
+                    	});
+                },
+            
+            select: function( event, ui ) {
+                $( "#project" ).val( ui.item.label );
+                
+                return false;
+            }
+        })
+        .data( "autocomplete" )._renderItem = function( ul, item ) {
+            return $( "<li>" )
+                .data( "item.autocomplete", item )
+                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>" + item.label + "</span><br>" + item.desc + "</div></a>" )
+                .appendTo( ul );
+        };
+        
+        
+       
+    });
+    
+    
+    
+    
+    </script>
+
+
+
+</head>
+<body>
+	<!-- Header Part -->
+	<div class="pageheader">
+		<div class="pageheader-logo">
+			<span class="company-logo"> MastTag<span
+				style="font-size: 10px; font-weight: bold; margin-left: 3px;">beta</span>
+			</span>
+		</div>
+		<div id="tip"
+			style="color: white; display: inline-block; margin-left: 10px; cursor: pointer;"
+			title="We ask for your age only for statistical purposes.">
+			Alert
+			<div id="tip-arrow"></div>
+
+
+		</div>
+		<div class="pageheader-searchbar">
+			<input class="pageheader-textarea"
+				placeholder="Search for people, places and products" id="project" />
+			<button class="pageheader-searchbutton"></button>
+		</div>
+		<div class="pageheader-right">
+			<div class="pageheader-friends">
+				<span class="pageheader-menu">Friends</span>
+			</div>
+			<div class="pageheader-home">
+				<span class="pageheader-menu">Home</span>
+			</div>
+			<div class="pageheader-howitworks">
+				<span class="pageheader-menu">How it works</span>
+			</div>
+
+			<div class="pageheader-alert">
+				<div
+					style="background-image: url('images/profilepic.png'); display: inline-block; height: 27px; background-size: 100% auto; width: 27px; margin-top: 1px;"></div>
+				<span class="pageheader-menu"
+					style="margin-top: 5px; padding: 2px 9px 3px; display: inline-block; vertical-align: top;">Pratap
+					Singh</span>
+
+				<ul>
+					<li>Alerts</li>
+					<li>Invite</li>
+					<li>Account Settings</li>
+					<li>Billing</li>
+					<li>Log out</li>
+				</ul>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- Page Content -->
+	<div class="pagecontent">
+		<div class="friendslist-title-bar"><span >Friends</span> <br />  <span style="color: #555; font-size: 11px;">303 friends</span></div>
+		<div class="friendslist-container">
+			<div class="friendslist-container-col1">
+
+				<ul class="friendslist-ul">
+					<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+
+				</ul>
+
+			</div>
+			<div class="friendslist-container-col2">
+			
+			<ul class="friendslist-ul">
+					<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br>12 mutual friends
+							</div> </a></li>
+
+				</ul>
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+		</div>
+
+	</div>
+
+	<!-- footer Part -->
+	<div class="pagefooter">Contact Us | Terms & Conditions</div>
+
+
+
+	<div id="tooltip">
+
+		<div class="notifications-header">Notifications</div>
+
+
+		<div id="scrollbar3">
+			<div class="scrollbar">
+				<div class="track">
+					<div class="thumb">
+						<div class="end"></div>
+					</div>
+				</div>
+			</div>
+			<div class="viewport">
+				<div class="overview">
+
+					<div style="width: 100%">
+						<ul class="notification-ul">
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Commented on your product
+									</div> </a>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Tagged you in a photo
+									</div> </a>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+									<span class="newsfeed-comment-commenttext-button-span-1">Not
+										now</span>
+
+								</div>
+								<div class="newsfeed-comment-commenttext-button-fb-1">
+
+									<span class="newsfeed-comment-commenttext-button-span-1">Accept</span>
+								</div>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a>
+							</li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="see-all">See all</div>
+
+
+	</div>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+  
+  var flagnoti=0;
+  $('#tip').click(function(e){
+  e.stopPropagation();
+ if(flagnoti==0){
+
+$('#tip-arrow').css('visibility', 'visible');
+$('#tooltip').css('visibility', 'visible');
+ flagnoti=1;
+ }
+ else{
+$('#tip-arrow').css('visibility', 'hidden');
+ $('#tooltip').css('visibility', 'hidden');
+ flagnoti=0;
+ 
+} 
+    
+});
+
+
+$("body").click(function(){
+ $('#tip-arrow').css('visibility', 'hidden');
+ $('#tooltip').css('visibility', 'hidden');
+ flagnoti=0;
+});
+
+$("#tooltip").click(function(e){
+  e.stopPropagation();
+});
+
+
+
+ 
+  
+  
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
