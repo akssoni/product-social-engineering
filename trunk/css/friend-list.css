@@ -1,0 +1,47 @@
+.friendslist-container{
+	margin: auto;
+    width: 60%;	
+}
+
+.friendslist-container-col1, .friendslist-container-col2{	
+	width: 49%;
+	display: inline-block;	
+}
+
+.friendslist-image-div{
+display: inline-block;
+    margin: 20px 5px 5px;
+    vertical-align: top;
+}
+
+.friendslist-name{
+	color: #3B5998; font-weight: bold;
+	font-size: 12px;
+	
+}
+
+.friendslist-ul li {
+    border-bottom: 1px solid #C5C5C5;
+    padding: 7px;
+}
+
+.friendslist-ul {
+    list-style: none outside none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.friendslist-title-bar{
+	
+ background: none repeat scroll 0 0 #E8EBF3;
+    color: #8897BD;
+    font-size: 15px;
+    height: 35px;
+    margin: 20px auto auto;
+    padding-top: 10px;
+    text-align: center;
+     line-height: 13px;
+    width: 60%;
+}
+
