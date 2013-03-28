@@ -16,23 +16,42 @@
        
           $('#scrollbar3').tinyscrollbar();
         
-        $('#wrapper').myslider(
-		{
-		'width':'200px',
-		'sliderstyle':'vote',
-		'totalbarwidth':'100px',
-		'text':'77 % Member Ratings',
-		'bandclass':'voteband',
-		band:[
-		{'color':'#555','width':'100','text':'Kayani','textcolor':'#888' },
-		{'color':'#555','width':'50','text':'Gilani','textcolor':'#888','textsize':'10px'},
-		{'color':'#555','width':'70','text':'Sumit','textcolor':'#888','textsize':'10px'}
-		]
-	});
+                  
+      
         
         
 
     });   
+    
+    
+    function showLightBox() {
+             
+        var hite = $(document).height();   // returns height of browser viewport
+
+    var wth = $(window).width();   // returns width of browser viewport
+    wth = wth + 50;
+
+    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+    $(".lightbox-mutual-friends").css({"display" : "block" });
+    $('#scrollbar4').tinyscrollbar();
+    $("body").css({"overflow":"hidden"})
+        
+        
+        
+        
+        };
+        
+         function hideLightBox() {
+
+    $("#overlay").css({"display" : "none" });
+    $(".lightbox-mutual-friends").css({"display" : "none" });
+    $("body").css({"overflow":"auto"})
+        
+        };
+        
+        
+    
+    
 </script>
 
 
@@ -207,41 +226,41 @@
 
 				<ul class="friendslist-ul">
 					<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 
 				</ul>
 
@@ -250,41 +269,41 @@
 			
 			<ul class="friendslist-ul">
 					<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img>
+							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br>12 mutual friends
-							</div> </a></li>
+									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+							</div></li>
 
 				</ul>
 			
@@ -484,6 +503,119 @@
 
 
 	</div>
+
+<div class="lightbox-mutual-friends" style="z-index: 1002">
+
+<div class="local-lightbox-header">Mutual Friends</div>
+<div id="scrollbar4">
+			<div class="scrollbar">
+				<div class="track">
+					<div class="thumb">
+						<div class="end"></div>
+					</div>
+				</div>
+			</div>
+			<div class="viewport">
+				<div class="overview">
+
+					<div style="width: 100%">
+							
+							
+							
+							<ul class="notification-ul">
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+								<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 15px;'>
+										<span style='color: #335598; font-weight: bold;'>Akshay
+											Soni</span> 
+									</div> </a>
+								
+								</li>
+							</ul>
+							
+				</div>
+				</div>
+				</div>
+				</div>
+ 
+ <div style="border-top: 1px solid #C5C5C5;"></div>
+ 
+		<div style="text-align: center;">
+			<div class="search-result-button" style=""
+				width: 60px;" onclick="hideLightBox()">
+
+
+				<span class="search-result-button-span">Ok</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="overlay" style="z-index: 1001"></div>
 
 
 

@@ -285,7 +285,7 @@
 	<!-- Header Part -->
 	<div class="pageheader">
 		<div class="pageheader-logo">
-			<span class="company-logo"> MastTag<span
+			<span class="company-logo"> SiteName<span
 				style="font-size: 10px; font-weight: bold; margin-left: 3px;">beta</span>
 			</span>
 		</div>
@@ -1499,9 +1499,9 @@
 				"</div>"+
 				"<div class='lightbox1-product-rating' id='star-line"+i+"'></div>"+
 				"<div class='lightbox1-product-review'>"+
-					"<a id='tip'> Write Review</a>"+
-					"<div id='tip-arrow'></div>"+
-					"<div id='tooltip'>"+
+					"<a id='tip1'> Write Review</a>"+
+					"<div id='tip-arrow1'></div>"+
+					"<div id='tooltip1'>"+
 						"<textarea id='lightbox1-line1-comment' cols='' rows=''> </textarea>"+
 						"<a href='#' id='lightbox1-line1-comment-submit'"+
 							"onclick='commentline1()'>submit</a>"+
@@ -1531,33 +1531,33 @@
 			var flagnoti2 = 0;
 			var flagnoti3 = 0;
 			/*first tooltip */
-			$('#tip').click(function(e) {
+			$('#tip1').click(function(e) {
 				e.stopPropagation();
 				if (flagnoti == 0) {
 
-					$('#tip-arrow').css('visibility', 'visible');
-					$('#tooltip').css('visibility', 'visible');
+					$('#tip-arrow1').css('visibility', 'visible');
+					$('#tooltip1').css('visibility', 'visible');
 					flagnoti = 1;
 				} else {
-					$('#tip-arrow').css('visibility', 'hidden');
-					$('#tooltip').css('visibility', 'hidden');
+					$('#tip-arrow1').css('visibility', 'hidden');
+					$('#tooltip1').css('visibility', 'hidden');
 					flagnoti = 0;
 
 				}
 
 			});
 
-			$("#tooltip").click(function(e) {
+			$("#tooltip1").click(function(e) {
 				e.stopPropagation();
 			});
 
 			function commentline1() {
 				var comment = $("#lightbox1-line1-comment").val();
 				if (comment != " " && comment != "") {
-					$("#tip").html("Edit Review");
+					$("#tip1").html("Edit Review");
 					$("#lightbox1-product-review-text1").html(comment);
-					$('#tip-arrow').css('visibility', 'hidden');
-					$('#tooltip').css('visibility', 'hidden');
+					$('#tip-arrow1').css('visibility', 'hidden');
+					$('#tooltip1').css('visibility', 'hidden');
 					flagnoti = 0;
 				} else {
 					alert("Review is required");
@@ -2328,18 +2328,18 @@
 			}, "slow");
 		});
 
-		var flagnoti = 0;
+		var flagnoti1 = 0;
 		$('#tip').click(function(e) {
 			e.stopPropagation();
-			if (flagnoti == 0) {
+			if (flagnoti1 == 0) {
 
 				$('#tip-arrow').css('visibility', 'visible');
 				$('#tooltip').css('visibility', 'visible');
-				flagnoti = 1;
+				flagnoti1 = 1;
 			} else {
 				$('#tip-arrow').css('visibility', 'hidden');
 				$('#tooltip').css('visibility', 'hidden');
-				flagnoti = 0;
+				flagnoti1 = 0;
 
 			}
 
@@ -2348,7 +2348,7 @@
 		$("body").click(function() {
 			$('#tip-arrow').css('visibility', 'hidden');
 			$('#tooltip').css('visibility', 'hidden');
-			flagnoti = 0;
+			flagnoti1 = 0;
 		});
 
 		$("#tooltip").click(function(e) {
