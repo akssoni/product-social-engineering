@@ -82,3 +82,15 @@ select, input{
 	
 	 background: none repeat scroll 0 0 #33559A;
 }
+
+.forgotPasswordLink{
+	
+	text-decoration: none;
+	color: #98A9CA;
+	
+}
+.forgotPasswordLink:hover{
+	
+	text-decoration: underline;
+	
+}
