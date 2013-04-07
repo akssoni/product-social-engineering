@@ -45,3 +45,158 @@ display: inline-block;
     width: 60%;
 }
 
+
+
+
+
+/* Scroll Bar for Lightbox */
+
+#scrollbar4 {
+    clear: both;
+   
+    width: 99%;
+}
+#scrollbar4 .viewport {
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+    width: 96%;
+}
+#scrollbar4 .overview {
+    left: 0;
+    list-style: none outside none;
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#scrollbar4 .thumb .end, #scrollbar4 .thumb {
+    background-color: #555555;
+     
+}
+#scrollbar4 .scrollbar {
+    float: right;
+    position: relative;
+    width: 10px;
+}
+#scrollbar4 .track {
+    background-color: #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 8px;
+}
+#scrollbar4 .thumb {
+   border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 20px;
+
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+#scrollbar4 .thumb .end {
+    height: 5px;
+    overflow: hidden;
+    width: 8px;
+    display: none;
+   
+}
+#scrollbar4 .disable {
+    display: none;
+}
+
+
+#scrollbar5 {
+    clear: both;
+   
+    width: 99%;
+}
+#scrollbar5 .viewport {
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+    width: 96%;
+}
+#scrollbar5 .overview {
+    left: 0;
+    list-style: none outside none;
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#scrollbar5 .thumb .end, #scrollbar5 .thumb {
+    background-color: #555555;
+     
+}
+#scrollbar5 .scrollbar {
+    float: right;
+    position: relative;
+    width: 10px;
+}
+#scrollbar5 .track {
+    background-color: #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 8px;
+}
+#scrollbar5 .thumb {
+   border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 20px;
+
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+#scrollbar5 .thumb .end {
+    height: 5px;
+    overflow: hidden;
+    width: 8px;
+    display: none;
+   
+}
+#scrollbar5 .disable {
+    display: none;
+}
+
+.lightbox-mutual-friends, .lightbox-mutual-products{
+
+ background: none repeat scroll 0 0 white;
+    display: none;
+    height: 243px;
+    padding: 0;
+    width: 350px;	
+    left: 40%;
+    position: absolute;
+    top: 30%;
+    
+      border-radius: 6px 6px 6px 6px;
+
+     box-shadow: 0 0 20px #1A2A4D;
+
+}
+
+
+
+
+.local-lightbox-header{
+	 background-color: #33559A;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: bold;
+    height: 22px;
+    margin-bottom: 2px;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+
+
+

@@ -179,7 +179,7 @@ display: inline-block;
     width: 350px;
 	 font-style: italic;
 	}
-#tooltip, #tooltip2, #tooltip3{
+#tooltip1, #tooltip2, #tooltip3{
 visibility:hidden;
   //  display: none;    
   
@@ -197,7 +197,7 @@ visibility:hidden;
 }
 
 
-#tip-arrow, #tip-arrow2, #tip-arrow3{
+#tip-arrow1, #tip-arrow2, #tip-arrow3{
 
 visibility:hidden;
  margin-left: 20px;
@@ -212,7 +212,7 @@ border-color: transparent transparent #AAA;
 }
 
 
-#tip, #tip2, #tip3{
+#tip1, #tip2, #tip3{
 cursor: pointer;
 
 }

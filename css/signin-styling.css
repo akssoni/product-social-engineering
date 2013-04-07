@@ -1,0 +1,84 @@
+.pageheader {
+    background: none repeat scroll 0 0 #33559A;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 2px solid;
+    box-shadow: 0 6px 14px #333333;
+    height: 450px;
+    padding-left: 0%;
+}
+
+
+
+.loginpage-header{
+ border-bottom: 1px solid #3B3234;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    height: 50px;
+    margin: 10px auto auto;
+    width: 90%;
+}
+
+
+.pageheader-howitworks {
+	border: none;
+	}
+	
+	
+	.pageheader-alert {
+	border: none;
+	}
+	
+	.signup-div {
+    color: white;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 400px;
+}
+
+select, input{
+	
+	margin-top: 5px;
+    border: medium none;
+    padding: 4px;
+
+}
+
+
+
+
+.username-password{
+	display: inline-block;	
+	
+}
+
+
+.pageheader-right {
+	
+	margin-right: 0px;
+}
+
+.login-button {
+    background: none repeat scroll 0 0 #6079AB !important;
+    border-color: #29447E #29447E #1A356E;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    height: 18px;
+    margin-top: 4px;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 50px;
+    cursor: pointer;
+}
+
+.login-button span{	
+}
+
+
+.pageheader-right div:hover{
+	
+	 background: none repeat scroll 0 0 #33559A;
+}
