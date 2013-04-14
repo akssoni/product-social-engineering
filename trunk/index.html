@@ -1904,7 +1904,7 @@
 						</div>
 						<div class="viewport">
 							<div class="overview">
-								<div class="tab-line">
+								
 									<div class="tab-item" id="Akshay">
 										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
@@ -1931,45 +1931,45 @@
 											alt="Smiley face" height="42" width="42"> <span>Four</span>
 									</div>
 									<div class="tab-item" id="Five">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Five</span>
 									</div>
 
-								</div>
-								<div class="tab-line">
+							
+								
 									<div class="tab-item" id="Six">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Six</span>
 									</div>
 									<div class="tab-item" id="Seven">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Seven</span>
 									</div>
 									<div class="tab-item" id="Eight">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Eight</span>
 									</div>
 									<div class="tab-item" id="Nine">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Nine</span>
 									</div>
 									<div class="tab-item" id="Ten">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Ten</span>
 									</div>
-									<div class="tab-item" id="Eleven">
-										<input class="inner-checkbox" type="checkbox" name="tab1"
+									<div class="tab-item" id="Eleven" >
+										<input class="inner-checkbox" type="checkbox" name="tab2"
 											value="one"></input> <img src="images/profile-pictures.jpg"
 											alt="Smiley face" height="42" width="42"> <span>Eleven</span>
 									</div>
 
-								</div>
+								
 								
 
 								
@@ -2067,7 +2067,9 @@
 			$("#mfs-textbox").keyup( function() {
 				
 				
-				var frendname = $("#mfs-textbox").val();
+				var frendname = $("#mfs-textbox").val().toLowerCase();
+				
+				
 			
 				$('.tab-item').css('display','none');
 				
@@ -2079,7 +2081,15 @@
 					}
 				else
 					{
-					$('div[id*="'+frendname+'"]').css('display','inline-block');
+					
+
+					$(".tab-item").filter(function() {
+					    return $(this).text().toLowerCase().indexOf(frendname) > -1;
+					}).css("display","inline-block");
+					
+					
+					
+					//$('div[mfs*="'+frendname+'"]').css('display','inline-block');
 					}
 				
 				
