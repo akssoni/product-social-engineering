@@ -1790,7 +1790,8 @@
 			<div class="lightbox3-tab-wrapper">
 				<div id="lightbox3-tab1-content">
 					<input type="checkbox" onClick="toggle1(this)" /> Select All<br />
-					
+					<input 
+				placeholder="Search for friend" id="multi-friend-selector" />
 					<div id="selected-friend-list">
 					
 					</div>
@@ -2189,8 +2190,6 @@
 					checkboxes[i].checked = source.checked;
 			}
 			
-
-			
 			
 			function selectFriend(friendno) {
 				var friendId = friendno + "list";
@@ -2206,6 +2205,53 @@
 				$("#selected-friend-list").append("<span id="+friendId+">"+friendno+"</span>");
 				}
 			}
+			
+			
+			
+			$(function() {
+
+				$("#multi-friend-selector").autocomplete({
+					minLength : 2,
+					source : function(request, response) {
+						$.ajax({
+							url : "search.json",
+							dataType : "json",
+							data : {
+								term : request.term
+							},
+							success : function(data) {
+								response($.map(data, function(item) {
+									return {
+										value : item.value,
+										label : item.label,
+										desc : item.desc,
+										icon : item.icon
+									};
+								}));
+							}
+						});
+					},
+
+					select : function(event, ui) {
+						$("#multi-friend-selector").val(ui.item.label);
+
+						return false;
+					}
+				}).data("autocomplete")._renderItem = function(ul, item) {
+					return $("<li>")
+							.data("item.autocomplete", item)
+							.append(
+									"<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>"
+											+ item.label
+											+ "</span><br>"
+											+ item.desc
+											+ "</div></a>").appendTo(ul);
+				};
+
+			});
+			
+			
+			
 			
 		</script>
 
