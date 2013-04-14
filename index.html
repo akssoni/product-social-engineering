@@ -2071,7 +2071,17 @@
 			
 				$('.tab-item').css('display','none');
 				
-				$('div[id*="'+frendname+'"]').css('display','inline-block');
+				
+				if(frendname=="")
+					{
+					
+					$('.tab-item').css('display','inline-block');
+					}
+				else
+					{
+					$('div[id*="'+frendname+'"]').css('display','inline-block');
+					}
+				
 				
 				
 				
