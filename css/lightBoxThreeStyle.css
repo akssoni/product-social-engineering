@@ -139,7 +139,7 @@ ul.tabs li a:hover {  }
 
 
 
-#lightbox3-tab2{
+#lightbox3-tab2, #lightbox3-tab1{
 color: #999999;
  border: 1px solid transparent;
     border-radius: 0 6px 0 0;
@@ -148,29 +148,28 @@ border-left: 1px solid #AAAAAA;
     margin-left: -1px;
 
 }
-#lightbox3-tab1{
-color: #FFFFFF;
- border: 1px solid transparent;
-    border-radius: 6px 0 0 0;
-}
 
+#lightbox3-tab1{
+	color: #FFFFFF;
+	  border-radius: 6px 0 0 0;
+	}
 
 #lightbox3-tab1-content{
 
 position: absolute;
-width: 450px;
+width: 750px;
  border: 1px solid #1A2A4D;
-  padding-top: 5px;
-   padding-left: 5px;
+  
+  
    border-radius: 0 4px 4px 4px;
 }
 #lightbox3-tab2-content{
 visibility: hidden;
 position: absolute;
-width: 450px;
+width: 750px;
  border: 1px solid #1A2A4D;
-  padding-top: 5px;
-   padding-left: 5px;
+  
+  
    border-radius: 0 4px 4px 4px;
 
 }
@@ -182,13 +181,13 @@ display: inline-block;
 
 height: 330px;
      margin: auto;
-    width: 455px;
+    width: 760px;
 }
 
 .lightbox3-div1{
 
  font-size: 15px;
-    margin: 20px auto 10px;
+    margin: 8px auto -18px;
     text-align: center;
     width: auto;
 
@@ -198,23 +197,31 @@ height: 330px;
 .inner-checkbox{
 
  vertical-align: top;
+ margin-top: 18px;
 }
 
 
 /* Scroll Bar */
 
 
+
+
+
 #scrollbar-tab1 {
+   
     clear: both;
-    margin: 5px 0 0;
-    width: 98%;
+    margin: 0 auto 0;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    width: 99%;
 }
 #scrollbar-tab1 .viewport {
-    height: 223px;
+    height: 212px;
     overflow: hidden;
     position: relative;
-    width: 96%;
+    width: 97%;
     margin-bottom: 5px;
+     margin: auto;
 }
 #scrollbar-tab1 .overview {
     left: 0;
@@ -265,17 +272,28 @@ height: 330px;
 
 
 
+
+
+
+
+
+
+
 #scrollbar-tab2 {
+   
     clear: both;
-    margin: 5px 0 0;
-    width: 98%;
+    margin: 0 auto 0;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    width: 99%;
 }
 #scrollbar-tab2 .viewport {
-    height: 223px;
+    height: 212px;
     overflow: hidden;
     position: relative;
-    width: 96%;
+    width: 97%;
     margin-bottom: 5px;
+     margin: auto;
 }
 #scrollbar-tab2 .overview {
     left: 0;
@@ -318,7 +336,7 @@ height: 330px;
     display: none;
    
 }
-#scrollbar-tab1 .disable {
+#scrollbar-tab2 .disable {
     display: none;
 }
 
@@ -375,5 +393,92 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
 	
 }
 
+#mfs-textbox{
+	
+	 border: 1px solid #CCCCCC;
+    padding: 3px;
+    width: 660px;
+}
+.tab-item{
+	
+	 border: 1px solid #ADBBD7;
+    margin-top: 3px;
+    width: 173px;
+      height: 48px;
+	
+}
+
+.tab-item div{
+	display: inline-block;
+    margin-top: 18px;
+    vertical-align: top;
+    width: 100px;
+    word-wrap: normal;
+	
+}
+
+.tab-item img{
+	
+	padding-top: 3px;
+}
 
 
+
+/* 	#D6DDEB */
+
+.button-positive{
+background: none repeat scroll 0 0 #6079AB !important;
+    border-color: #29447E #29447E #1A356E;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: 18px;
+    margin-top: 4px;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 100px;	
+	
+}
+
+.button-negative{
+	background: none repeat scroll 0 0 #EEEEEE !important;
+   border-color: #999999 #999999 #888888;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: 18px;
+    margin-top: 4px;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 85px;	
+}
+
+.mfs-button-wrapper{
+	
+	 float: right;
+   
+    width: 205px;
+}
+.mfs-header{
+	
+	 background: none repeat scroll 0 0 #EEEEEE;
+    padding-bottom: 8px;
+    padding-top: 7px;
+}
+
+.mfs-footer{
+	
+	background: none repeat scroll 0 0 #EEEEEE;
+    height: 32px;
+    padding-top: 3px;
+}
