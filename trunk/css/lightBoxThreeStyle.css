@@ -393,7 +393,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
 	
 }
 
-#mfs-textbox{
+#mfs-textbox-1, #mfs-textbox-2 {
 	
 	 border: 1px solid #CCCCCC;
     padding: 3px;

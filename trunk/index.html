@@ -1802,7 +1802,7 @@
 					<input type="checkbox" onClick="toggle1(this)" /><label>Select All</label>
 					
 					
-					<input id="mfs-textbox" type="text" placeholder="Friends..."/>
+					<input id="mfs-textbox-1" type="text" placeholder="Friends..."/>
 					
 					</div>
 					<div id="scrollbar-tab1">
@@ -1948,7 +1948,7 @@
 					<input type="checkbox" onClick="toggle2(this)" /><label>Select All</label>
 					
 					
-					<input id="mfs-textbox" type="text" placeholder="Friends..."/>
+					<input id="mfs-textbox-2" type="text" placeholder="Friends..."/>
 					
 					</div>
 					<div id="scrollbar-tab2">
@@ -2144,53 +2144,60 @@
 				}
 			}
 			
-			
-			function multiFriendSelector()
-			{
-				
-				alert("sdjkls");
-				var frendname = $("#mfs-textbox").val();
-				
-				$('.tab-item').csss('display','none');
-				
-				$('div[id*="aks"]').css('display','inline-block');
+						
+			$("#mfs-textbox-1").keyup( function() {
 				
 				
-				
-			}
-			
-			$("#mfs-textbox").keyup( function() {
-				
-				
-				var frendname = $("#mfs-textbox").val().toLowerCase();
+				var frendname = $("#mfs-textbox-1").val().toLowerCase();
 				
 				
 			
-				$('.tab-item').css('display','none');
+				$('#scrollbar-tab1 .viewport .overview .tab-item').css('display','none');
 				
 				
 				if(frendname=="")
 					{
 					
-					$('.tab-item').css('display','inline-block');
+					$('#scrollbar-tab1 .viewport .overview .tab-item').css('display','inline-block');
 					}
 				else
 					{
 					
 
-					$(".tab-item").filter(function() {
+					$("#scrollbar-tab1 .viewport .overview .tab-item").filter(function() {
 					    return $(this).text().toLowerCase().indexOf(frendname) > -1;
 					}).css("display","inline-block");
-					
-					
 					
 					//$('div[mfs*="'+frendname+'"]').css('display','inline-block');
 					}
 				
+				});
+			
+				$("#mfs-textbox-2").keyup( function() {
 				
 				
+				var frendname = $("#mfs-textbox-2").val().toLowerCase();
 				
 				
+			
+				$('#scrollbar-tab2 .viewport .overview .tab-item').css('display','none');
+				
+				
+				if(frendname=="")
+					{
+					
+					$('#scrollbar-tab2 .viewport .overview .tab-item').css('display','inline-block');
+					}
+				else
+					{
+					
+
+					$("#scrollbar-tab2 .viewport .overview .tab-item").filter(function() {
+					    return $(this).text().toLowerCase().indexOf(frendname) > -1;
+					}).css("display","inline-block");
+					
+					//$('div[mfs*="'+frendname+'"]').css('display','inline-block');
+					}
 				
 				});
 			
