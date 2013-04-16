@@ -179,7 +179,7 @@ display: inline-block;
 
 .lightbox3-content-wrapper{
 
-height: 330px;
+height: 350px;
      margin: auto;
     width: 760px;
 }
@@ -187,7 +187,7 @@ height: 330px;
 .lightbox3-div1{
 
  font-size: 15px;
-    margin: 8px auto -18px;
+    margin: 24px auto -4px;
     text-align: center;
     width: auto;
 
@@ -389,23 +389,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
 
 .selected-friend{
 	
-	background: #888;
+	background: #D6DDEB;
 	
 }
 
 #mfs-textbox-1, #mfs-textbox-2 {
 	
-	 border: 1px solid #CCCCCC;
+	border: 1px solid #CCCCCC;
+    margin-left: 5px;
     padding: 3px;
-    width: 660px;
+    width: 420px;
 }
 .tab-item{
 	
-	 border: 1px solid #ADBBD7;
     margin-top: 3px;
     width: 173px;
       height: 48px;
-	
+	cursor: pointer;
 }
 
 .tab-item div{
@@ -481,4 +481,20 @@ background: none repeat scroll 0 0 #6079AB !important;
 	background: none repeat scroll 0 0 #EEEEEE;
     height: 32px;
     padding-top: 3px;
+}
+
+#mfs-search-span-1, #mfs-search-span-2{
+	display: none;
+	 color: #555555;
+    margin-left: 10px;
+	
+}
+
+#mfs-checkbox-1, #mfs-checkbox-2{
+	
+	margin-left: 14px;
+}
+
+.mfs-header label{
+	margin-left: 5px;
 }
