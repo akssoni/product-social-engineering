@@ -111,9 +111,69 @@
 
 						<div class="rightpane-content-line-expand"
 							id="general-line-name-content">
-
-							khsfksh rsh gdrkg
 							<div>
+							<div class="general-content-right-header">Edit Name</div>
+							<div class="general-content-right-content">
+							
+							<table>
+							<tr>
+							<td><label>First:</label>
+							</td>
+							<td><input type="text">
+							</td>
+							</tr>
+							
+							<tr>
+							<td><label>Middle:</label>
+							</td>
+							<td><input type="text">
+							</td>
+							</tr>
+							
+							<tr>
+							<td><label>Last:</label>
+							</td>
+							<td><input type="text">
+							</td>
+							</tr>
+							
+							<tr>
+							<td><label>Alternate Name:</label>
+							</td>
+							<td><input type="text" placeholder="optional">
+							</td>
+							</tr>
+							
+							
+							<tr>
+							<td>
+							</td>
+							<td>
+							<input type="checkbox">
+							<label>Include this on my profile</label>
+							</td>
+							</tr>
+							
+							
+							</table>
+							
+							
+							
+							
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							</div>
+
+
+
+							
+							<div class="rightpane-content-button-wrapper">
 								<div class="rightpane-content-savechanges button-positive"
 									onclick="settingLineHideSubmit('#general-line-name','#general-line-name-content')">Save
 									Changes</div>
@@ -136,8 +196,39 @@
 						<div class="rightpane-content-line-expand"
 							id="general-line-username-content">
 
-							khsfksh rsh gdrkg
-							<div>
+							<div class="general-content-right-header">Edit User Name</div>
+							<div class="general-content-right-content">
+								<span>Your user name is <strong>akssoni</strong></span>
+								<div>
+								
+								<table>
+								<tr>
+								<td>
+								<label>New User Name:</label>
+								</td>
+								<td>
+								<input type="text">
+								</td>
+								
+								
+								</tr>
+								
+								
+								</table>
+								
+								
+								
+								
+						
+							
+							
+							</div>						
+							
+							</div>
+							
+
+						
+							<div class="rightpane-content-button-wrapper">
 								<div class="rightpane-content-savechanges button-positive"
 									onclick="settingLineHideSubmit('#general-line-username','#general-line-username-content')">Save Changes</div>
 
@@ -155,9 +246,29 @@
 
 						<div class="rightpane-content-line-expand"
 							id="general-line-email-content">
-
-							khsfksh rsh gdrkg
+							<div class="general-content-right-header">Edit Email</div>
+							
+							<div class="general-content-right-content">
+							<span>Your email is <strong>akshaysoni@aol.com</strong></span>
 							<div>
+								<table>
+								<tr>
+								<td>
+								<label>New email:</label>
+								</td>
+								<td>
+								<input type="text">
+								</td>
+								
+								
+								</tr>
+								
+								
+								</table>
+							
+							</div>
+							</div>
+							<div class="rightpane-content-button-wrapper">
 								<div class="rightpane-content-savechanges button-positive"
 									onclick="settingLineHideSubmit('#general-line-email','#general-line-email-content')">Save Changes</div>
 
@@ -166,7 +277,7 @@
 							</div>
 						</div>
 
-						<div class="rightpane-content-line" id="general-line-password" >
+						<div class="rightpane-content-line rightpane-content-line-last" id="general-line-password" >
 							<div class="rightpane-content-line-right">Password</div>
 							<div class="rightpane-content-line-left">Last password
 								changed 12 months before</div>
@@ -177,8 +288,37 @@
 						<div class="rightpane-content-line-expand"
 							id="general-line-password-content">
 
-							khsfksh rsh gdrkg
-							<div>
+							<div class="general-content-right-header">Edit Password</div>
+							
+							
+							
+							<div class="general-content-right-content">
+							<table>
+							<tr>
+							<td><label>Old Password:</label>
+							</td>
+							<td><input type="password">
+							</td>
+							</tr>
+							
+							<tr>
+							<td><label>New Password:</label>
+							</td>
+							<td><input type="password">
+							</td>
+							</tr>
+							
+							<tr>
+							<td><label>Re-enter new Password:</label>
+							</td>
+							<td><input type="password">
+							</td>
+							</tr>
+							</table>
+							
+							</div>
+							
+							<div class="rightpane-content-button-wrapper">
 								<div class="rightpane-content-savechanges button-positive"
 									onclick="settingLineHideSubmit('#general-line-password','#general-line-password-content')">Save Changes</div>
 
@@ -202,12 +342,80 @@
 						<div class="rightpane-header">Privacy Setting</div>
 						
 
+			
+			
+			
+			<div class="rightpane-content-line" id="privacy-line-1" >
+							<div class="rightpane-content-line-right">Who can see my stuff?</div>
+							<div class="rightpane-content-line-left">
+								</div>
+							<div class="rightpane-content-line-edit" onclick="settingLineShow('#privacy-line-1','#privacy-line-content-1')" >Edit</div>
+						</div>
+
+						<div class="rightpane-content-line-expand"
+							id="privacy-line-content-1">
+							<div class="general-content-right-header">Who can see my stuff?</div>
+							
+							<div class="general-content-right-content">
+							<span>Need to finalize</span>
+							
+							</div>
+							<div class="rightpane-content-button-wrapper">
+								<div class="rightpane-content-savechanges button-positive"
+									onclick="settingLineHideSubmit('#privacy-line-1','#privacy-line-content-1')">Save Changes</div>
+
+								<div class="rightpane-content-cancel button-negative"
+									onclick="settingLineHideSubmit('#privacy-line-1','#privacy-line-content-1')">Cancel</div>
+							</div>
+						</div>
+
+						
+			<div class="rightpane-content-line rightpane-content-line-last" id="privacy-line-2" >
+							<div class="rightpane-content-line-right">Who can look me up?</div>
+							<div class="rightpane-content-line-left">
+								</div>
+							<div class="rightpane-content-line-edit" onclick="settingLineShow('#privacy-line-2','#privacy-line-content-2')" >Edit</div>
+						</div>
+
+						<div class="rightpane-content-line-expand"
+							id="privacy-line-content-2">
+							<div class="general-content-right-header">Who can look me up?</div>
+							
+							<div class="general-content-right-content">
+							<span>Need to finalize</span>
+							
+							</div>
+							<div class="rightpane-content-button-wrapper">
+								<div class="rightpane-content-savechanges button-positive"
+									onclick="settingLineHideSubmit('#privacy-line-2','#privacy-line-content-2')">Save Changes</div>
+
+								<div class="rightpane-content-cancel button-negative"
+									onclick="settingLineHideSubmit('#privacy-line-2','#privacy-line-content-2')">Cancel</div>
+							</div>
+						</div>
+
+						
+			
+
+
+
+
+
+
+
+
 					</div>
 
 				</div>
 				<div class="account-setting-rightpane-content" id="right-pane-3">
 					<div class="account-setting-rightpane-content-innerwrapper">
 						<div class="rightpane-header">Masttag Support</div>
+						<div style="padding: 20px;">
+						
+						Note: We use our Community Standards to evaluate these reports, and do our best to address reports within 48 hours. Have questions? Please visit Reporting Help.
+						
+						</div>
+
 
 
 					</div>
