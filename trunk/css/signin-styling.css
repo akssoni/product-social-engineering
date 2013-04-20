@@ -3,7 +3,7 @@
     border-bottom: 1px solid #AAAAAA;
     border-top: 2px solid;
     box-shadow: 0 6px 14px #333333;
-    height: 450px;
+    height: 59px;
     padding-left: 0%;
 }
 
@@ -28,7 +28,7 @@
 	}
 	
 	.signup-div {
-    color: white;
+    color: #444;
     margin-left: 10%;
     margin-top: 20px;
     width: 400px;
@@ -94,3 +94,66 @@ select, input{
 	text-decoration: underline;
 	
 }
+.pageheader-textarea {
+    border: 0 none;
+    font-size: 12px;
+    height: 18px;
+    margin-left: 50px;
+    padding-left: 5px;
+    width: 350px;
+}
+
+.pageheader-searchbutton {
+    background: url("../images/search-icon.png") repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    cursor: pointer;
+    height: 22px;
+    margin-left: -25px;
+    vertical-align: super;
+    width: 22px;
+}
+
+.company-logo {
+    display: block;
+    font-size: 23px;
+    padding-top: 0;
+
+}
+
+.pageheader-logo {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+   
+}
+
+.pageheader-searchbar {
+    display: inline-block;
+    margin-left: 0;
+    padding-top: 4px;
+    vertical-align: text-bottom;
+}
+
+.signup-div select, .signup-div input {
+    border: 1px solid #444444;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+
+.password-request-submit-message{
+	
+	 padding: 40px 50px 50px;
+    text-align: center;
+	
+}
+
+.password-new-message{
+	 padding: 40px 50px 50px;
+    text-align: center;
+	
+	
+	
+}
+
