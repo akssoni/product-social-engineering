@@ -151,3 +151,88 @@ select, input {
     padding: 40px 50px 50px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+/* slider */
+
+
+ul.sch_menu {
+    background: url("navigation.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 50px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px 0 0 15px;
+    width: 1500px;
+}
+
+
+div.sch_menu {
+    background: none repeat scroll 0 0 #D7E9F3;
+    border-radius: 0 0 0 0;
+    height: 52px;
+    margin-left: 11px;
+    overflow: auto;
+    position: relative;
+    width: 604px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+
+.sch_menu li {
+    display: block;
+    float: left;
+    padding: 0 4px;
+}
+
+
+.sch_menu li button {
+    background: none repeat scroll 0 0 #2F3D46;
+    border: medium none;
+    border-radius: 13px 13px 13px 13px;
+    box-shadow: 5px -1px 5px #A5B0B5;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+    outline: medium none;
+    padding: 2px 25px 4px;
+    text-align: center;
+}
+
+/* footer Styling */
+
+
+
+html, body {
+height: 100%;
+}
+.signin-page-wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -100px;
+}
+.signin-footer, .signin-page-push {
+height: 100px;
+}
+
+
+
+.signin-footer{
+	
+	//height: 100px;
+	background: #676767;
+	//margin-top: 30px;
+}
+
+
+
