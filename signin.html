@@ -16,6 +16,37 @@
     
    
     
+    
+    function showSignUp() {
+        
+        var hite = $(document).height();   // returns height of browser viewport
+
+    var wth = $(window).width();   // returns width of browser viewport
+    wth = wth + 50;
+
+    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+    $(".signin-page-lightbox-signup").css({"display" : "block" });
+  
+    $("body").css({"overflow":"hidden"})
+       
+        };
+    
+    
+     function hideLightBox() {
+
+$("#overlay").css({"display" : "none" });
+$(".signin-page-lightbox-signup").css({"display" : "none" });
+
+$("body").css({"overflow":"auto"})
+    
+    };
+    
+    
+    
+    
+    
+    
+    
 </script>
 
 
@@ -37,7 +68,8 @@
 			</div>
 			
 			<div class="pageheader-right">
-
+			<div class="signin-page-facebook-like-plugin">Facebook Like Plugin</div>
+				<div style="display: inline-block;">
 				<div class="username-password">
 					<input type="text" placeholder="Email or User name"/>
 					<input type="password" placeholder="Password"/>
@@ -53,10 +85,23 @@
 
 				</div>
 				
-				<div style="color: #98A9CA;">
-				<input  type="checkbox" />
+				<div class="signin-page-signup-button">
+
+					<span class="login-button-span"
+						style="margin-top: 0px; display: inline-block; vertical-align: top;" onclick="showSignUp()">Sign Up</span>
+
+					
+
+
+				</div>
+				
+				
+				<div style="color: rgb(152, 169, 202); width: 350px; margin-top: -5px;">
+				<input  type="checkbox"  style="padding: 0px; margin: 0pt;"/>
 				<label >Keep me logged in</label>
 				<label style="margin-left: 34px;"><a class="forgotPasswordLink" href="#" >Forgot your password?</a></label>
+				</div>
+				
 				</div>
 			</div>
 		</div>
@@ -65,16 +110,32 @@
 		<div class="signup-div-wrapper">
 		<div class="signin-page-search-fb-tw-wrapper">
 		<div class="signin-page-search-box">
+		
+		<div class="signin-page-search-title">
 		Your friends’ recommendations, on everything.
+		</div>
+		
+		
 		<div class="pageheader-searchbar">
 			<input class="signin-page-search-textarea"
 				placeholder="Search for people, places and products" id="project" />
-			<button class="pageheader-searchbutton"></button>
+			
+			
+			<div class="signin-search-button">Search</div>
 		</div>
 		</div>
+		
+		
+		
+		
+		</div>
+		
+		
+		
 		
 		
 		<div class="signin-fb-tw">
+		<div class="signin-fb-tw-text">Want to sign in with Facebook or Twitter</div>
 		<div class="signin-fb-button">
 		<a>
 		Sign in Facebook
@@ -88,23 +149,73 @@
 		
 		</div>
 		
+		
+	
+
+		
+		</div>
+	
+	
+	
+		<div class="signin-page-three-col-wrapper">
+		<div class="signin-page-col1">
+		Top Reviews of the week
+		
+		</div>
+		<div class="signin-page-col2">
+		
+		Top product of the week
+		</div>
+		<div class="signin-page-col3">
+		
+		Top Reviewers of the week
 		</div>
 		
-		<div class="signup-div">
-		<div class="signup" style="font-size: 19px;" >Sign Up</div>
+		
+		
+		
+		
+		
+		</div>	
+	
+	<!-- Page Content -->
+	
+	
+		
+	
+	<div class="signin-page-push"></div>
+	
+	</div>
+	
+	
+	<div class="signin-footer">
+	
+	Footer
+	
+	</div>
+	
+	
+	
+	
+	<div class="signin-page-lightbox-signup" style="z-index: 1002">
+
+<div class="signin-page-lightbox-signup-header">Sign Up</div>
+
+<div class="signup-div">
+		<div style="font-size: 19px;" class="signup">Sign Up</div>
 		<div class="signup-text">It's free and always will be</div>
 		<form>
 		<div>
-		<input type="text" placeholder="First Name"/>
+		<input type="text" placeholder="First Name">
 		</div>
 		<div>
-		<input type="text" placeholder="Last Name"/>
+		<input type="text" placeholder="Last Name">
 		</div>
 		<div>
-		<input type="text" placeholder="Your Email"/>
+		<input type="text" placeholder="Your Email">
 		</div>
 		<div>
-		<input type="text" placeholder="New password"/>
+		<input type="password" placeholder="New password">
 		</div>
 		<div>
 		<label>Birthday:</label>
@@ -274,60 +385,32 @@
 		</div>
 		<div>
 		
-		<input  type="radio" value="1" >
-<label >Female</label>
-<input  type="radio" value="0">
-<label >Male</label>
+		<input type="radio" value="1">
+<label>Female</label>
+<input type="radio" value="0">
+<label>Male</label>
 		
 		</div>
-		<button>Sign Up</button>
+		<div style="text-align: center;">
+			<div class="signin-page-lightbox-signup-button"  onclick="hideLightBox()">
+
+
+				<a class="signin-page-lightbox-signup-button-span">Sign Up</a>
+			</div>
+		</div>
 		</form>
 		
 		</div>
-	
+ 
 
+ 
 		
-		</div>
-	
-	
-	
-		<div class="signin-page-three-col-wrapper">
-		<div class="signin-page-col1">
-		Top Reviews of the week
-		
-		</div>
-		<div class="signin-page-col2">
-		
-		Top product of the week
-		</div>
-		<div class="signin-page-col3">
-		
-		Top Reviewers of the week
-		</div>
-		
-		
-		
-		
-		
-		
-		</div>	
-	
-	<!-- Page Content -->
-	
-	
-		
-	
-	<div class="signin-page-push"></div>
-	
+
 	</div>
 	
 	
-	<div class="signin-footer">
 	
-	Footer
-	
-	</div>
-	
+	<div id="overlay" style="z-index: 1001"></div>
 
 </body>
 
