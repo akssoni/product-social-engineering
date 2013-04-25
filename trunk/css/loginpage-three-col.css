@@ -1,0 +1,41 @@
+.signin-page-col1-item {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+     margin-bottom: 5px;
+}
+.signin-page-col1-item-image {
+    border-bottom: 1px solid #AAAAAA;
+    text-align: center;
+}
+.signin-page-col1-item-text {
+}
+.signin-page-col1-item-review {
+    display: inline-block;
+    font-size: 12px;
+    margin: 5px auto;
+    vertical-align: top;
+    width: 80%;
+}
+.signin-page-col1-item-stat {
+    margin: auto auto 7px;
+    width: 150px;
+}
+.signin-page-col1-header {
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.signin-page-col1-item-header {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.signin-page-col1-item-review-wrapper {
+}
+.signin-page-col1-item-review-wrapper img {
+    margin: 5px;
+}
+.signin-page-col1-item-reviewer {
+    font-weight: bold;
+}

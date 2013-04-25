@@ -11,7 +11,7 @@
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
     height: 48px;
     margin: 6px auto auto;
-    width: 90%;
+    width: 95%;
 }
 .pageheader-howitworks {
     border: medium none;
@@ -42,19 +42,34 @@ select, input {
 .login-button {
     background: none repeat scroll 0 0 #6079AB !important;
     border-color: #29447E #29447E #1A356E;
+   
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  
+    
+    
+    
+    
+    
+  //  background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E;
+  //  border-color: #3B6E22 #3B6E22 #2C5115;
+    border-radius: 6px 6px 6px 6px;
     border-style: solid;
     border-width: 1px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  //  box-shadow: 0 1px 1px #A4E388 inset;
     color: white;
     cursor: pointer;
     display: inline-block;
+    font-size: 13px;
     font-weight: bold;
-    height: 18px;
-    margin-top: 4px;
-    padding-top: 3px;
+    height: 24px;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
     text-align: center;
     vertical-align: top;
-    width: 50px;
+    width: 80px;
+    
+    
 }
 .login-button span {
 }
@@ -213,20 +228,22 @@ html, body {
 .signin-page-col1 {
     border: 1px solid;
     display: inline-block;
-    height: 300px;
+  //  height: 300px;
     width: 32%;
 }
 .signin-page-col2 {
     border: 1px solid;
     display: inline-block;
-    height: 300px;
+  //  height: 300px;
     width: 33%;
+    vertical-align: top;
 }
 .signin-page-col3 {
     border: 1px solid;
     display: inline-block;
-    height: 300px;
+  //  height: 300px;
     width: 32%;
+	vertical-align: top;
 }
 .signin-page-lightbox-signup {
     background: none repeat scroll 0 0 white;
