@@ -23,9 +23,10 @@
     width: 33.33%;
 }
 .signin-page-col1-item {
-    padding: 6px 3px 0;
+    padding: 12px 6px 0;
 }
 .signin-page-col1-item-image {
+    border-right: 2px solid #EEEEEE;
     display: inline-block;
     text-align: center;
 }
@@ -45,21 +46,26 @@
     vertical-align: top;
 }
 .signin-page-col1-header {
+    background: none repeat scroll 0 0 #E85581;
+    color: white;
     font-size: 13px;
+    font-weight: bolder;
     height: 38px;
     line-height: 38px;
+    margin-bottom: 5px;
     padding-left: 15px;
 }
 .signin-page-col1-item-header {
-    background: none repeat scroll 0 0 #8094BC;
+    background: none repeat scroll 0 0 #CB202D;
     color: #FFFFFF;
     font-size: 12px;
+    font-weight: bold;
     height: 25px;
     line-height: 25px;
     padding-left: 15px;
 }
 .signin-page-col1-item-review-wrapper {
-    background: none repeat scroll 0 0 #EEEEEE;
+    background: none repeat scroll 0 0 #FAE9EA;
 }
 .signin-page-col1-item-review-wrapper img {
     margin: 5px;
@@ -69,22 +75,23 @@
 }
 .signin-page-col3-item {
     background: none repeat scroll 0 0 #EEEEEE;
-    border-left: 3px solid #FFFFFF;
-    border-right: 3px solid #FFFFFF;
-    border-top: 6px solid #FFFFFF;
-    height: 130px;
+    border-left: 6px solid #FFFFFF;
+    border-right: 6px solid #FFFFFF;
+    border-top: 12px solid #FFFFFF;
+    height: 110px;
 }
 .signin-page-col3-item-header {
     display: inline-block;
     font-size: 13px;
+    font-weight: bold;
     margin-left: 20px;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .signin-page-col3-item-image {
     display: inline-block;
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
     width: 90px;
 }
 .signin-page-col3-item-text {
@@ -93,11 +100,16 @@
 }
 .signin-page-col3-item-stat {
     display: inline-block;
+    margin-left: 20px;
 }
 .signin-page-col3-header, .signin-page-col2-header {
+    background: none repeat scroll 0 0 #FCB72E;
+    color: #FFFFFF;
     font-size: 13px;
+    font-weight: bolder;
     height: 38px;
     line-height: 38px;
+    margin-bottom: 5px;
     padding-left: 15px;
 }
 .signin-page-col3-item-stat-inner {
@@ -105,26 +117,32 @@
     width: 75px;
 }
 .signin-page-col2-item {
-    height: 150px;
-    padding: 6px 4px 0;
+    padding: 12px 6px 0;
 }
 .signin-page-col2-item-header {
-    background: none repeat scroll 0 0 #8094BC;
+    background: none repeat scroll 0 0 #FCB72E;
     color: #FFFFFF;
     font-size: 12px;
+    font-weight: bold;
     height: 25px;
     line-height: 25px;
     padding-left: 15px;
 }
 .signin-page-col2-item-image {
+    display: inline-block;
     text-align: center;
 }
 .signin-page-col2-item-text {
-    margin-top: 2px;
-    text-align: center;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 30px;
+    vertical-align: top;
+    width: 140px;
 }
 .signin-page-col2-item-stat {
-    background: none repeat scroll 0 0 #B8C9E5;
-    height: 20px;
-    line-height: 20px;
+}
+
+
+.signin-page-col3-header {
+    background: none repeat scroll 0 0 #62A250;
 }

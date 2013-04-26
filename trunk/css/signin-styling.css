@@ -42,7 +42,6 @@ select, input {
 .login-button {
     background: none repeat scroll 0 0 #6079AB !important;
     border-color: #29447E #29447E #1A356E;
-   // border-radius: 6px 6px 6px 6px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -100,7 +99,7 @@ select, input {
     margin-left: 30px;
 }
 .signup-div-wrapper {
-    box-shadow: 0 13px 32px -22px #333333;
+    box-shadow: 0 27px 35px -20px #666666;
     font-size: 14px;
     height: 140px;
     margin: 30px auto auto;
@@ -249,7 +248,9 @@ html, body {
     position: relative;
 }
 .signin-page-search-title {
+    color: #FF7400;
     font-size: 26px;
+    font-weight: bold;
     margin-bottom: 20px;
     margin-top: 5px;
 }
@@ -259,7 +260,6 @@ html, body {
 .signin-page-signup-button, .signin-page-lightbox-signup-button {
     background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E;
     border-color: #3B6E22 #3B6E22 #2C5115;
-  //  border-radius: 6px 6px 6px 6px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 1px #A4E388 inset;
