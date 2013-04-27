@@ -1,0 +1,246 @@
+.bulk-page-wrapper {
+    margin: auto;
+    width: 70%;
+}
+.bulk-page-banner {
+}
+.bulk-page-main-div {
+    margin-top: 30px;
+}
+.bulk-page-main-mfs {
+    border-right: 2px solid #CCCCCC;
+    display: inline-block;
+    width: 50%;
+}
+.bulk-page-main-email {
+    display: inline-block;
+    width: 49%;
+}
+.bulk-page-banner-text {
+    color: #666666;
+    font-size: 32px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 45px;
+    text-align: center;
+}
+.bulk-page-banner-subtext {
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+#lightbox3-tab1-content {
+    border-radius: 0 4px 4px 4px;
+    margin: auto;
+    width: 325px;
+}
+#lightbox3-tab2-content {
+    border: 1px solid #1A2A4D;
+    border-radius: 0 4px 4px 4px;
+    position: absolute;
+    visibility: hidden;
+    width: 750px;
+}
+.tab-item {
+    display: inline-block;
+}
+.lightbox3-content-wrapper {
+    height: 350px;
+    margin: auto;
+    width: 760px;
+}
+.lightbox3-div1 {
+    font-size: 15px;
+    margin: 24px auto -4px;
+    text-align: center;
+    width: auto;
+}
+#scrollbar-tab1 {
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 98%;
+}
+#scrollbar-tab1 .viewport {
+    height: 350px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+}
+#scrollbar-tab1 .overview {
+    left: 0;
+    list-style: none outside none;
+    position: absolute;
+    top: 0;
+    width: 99%;
+}
+#scrollbar-tab1 .thumb .end, #scrollbar-tab1 .thumb {
+    background: none repeat scroll 0 0 #555555;
+}
+#scrollbar-tab1 .scrollbar {
+    float: right;
+    position: relative;
+    width: 10px;
+}
+#scrollbar-tab1 .track {
+    background-color: #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 8px;
+}
+#scrollbar-tab1 .thumb {
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+#scrollbar-tab1 .thumb .end {
+    display: none;
+    height: 5px;
+    overflow: hidden;
+    width: 8px;
+}
+#scrollbar-tab1 .disable {
+    display: none;
+}
+.lightbox-button-div {
+    background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #3586C2;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 0;
+    margin-top: 5px;
+}
+.lightbox-button-div:hover {
+    background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
+}
+.lightbox-button-text-span {
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 15px;
+}
+.selected-friend {
+    background: none repeat scroll 0 0 #D6DDEB;
+}
+#mfs-textbox-1, #mfs-textbox-2 {
+    border: 2px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+    width: 90%;
+}
+.tab-item {
+    margin-top: 3px;
+    width: 98%;
+}
+.bulk-page-mfs-name {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 18px;
+    vertical-align: top;
+    width: 126px;
+    word-wrap: normal;
+}
+.tab-item img {
+    border-radius: 9px 9px 9px 9px;
+    margin-left: 5px;
+    padding-top: 3px;
+}
+.button-positive {
+    background: none repeat scroll 0 0 #6079AB !important;
+    border-color: #29447E #29447E #1A356E;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: 18px;
+    margin-top: 4px;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 100px;
+}
+.button-negative {
+    background: none repeat scroll 0 0 #EEEEEE !important;
+    border-color: #999999 #999999 #888888;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: 18px;
+    margin-top: 4px;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 85px;
+}
+.mfs-button-wrapper {
+    float: right;
+    width: 205px;
+}
+.mfs-header {
+    border-radius: 8px 8px 8px 8px;
+    padding-top: 7px;
+    text-align: center;
+}
+.mfs-footer {
+    background: none repeat scroll 0 0 #EEEEEE;
+    height: 32px;
+    padding-top: 3px;
+}
+#mfs-search-span-1 {
+    color: #888888;
+    font-weight: bold;
+    height: 13px;
+    line-height: 13px;
+    margin-left: 15px;
+    text-align: left;
+    visibility: hidden;
+}
+#mfs-checkbox-1, #mfs-checkbox-2 {
+    margin-left: 14px;
+}
+.mfs-header label {
+    margin-left: 5px;
+}
+.bulk-page-mfs-button {
+    background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E;
+    border-color: #3B6E22 #3B6E22 #2C5115;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px #A4E388 inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 50px;
+}
