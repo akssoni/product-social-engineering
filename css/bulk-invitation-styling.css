@@ -147,6 +147,12 @@
     margin-top: 3px;
     width: 98%;
 }
+
+.tab-item:HOVER{
+	background: none repeat scroll 0 0 #EEEEEE;
+}
+
+
 .bulk-page-mfs-name {
     display: inline-block;
     font-size: 11px;
