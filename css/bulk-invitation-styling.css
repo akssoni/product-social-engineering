@@ -40,11 +40,10 @@
     width: 325px;
 }
 #lightbox3-tab2-content {
-    border: 1px solid #1A2A4D;
     border-radius: 0 4px 4px 4px;
-    position: absolute;
-    visibility: hidden;
-    width: 750px;
+    margin: auto;
+    width: 325px;
+    display: none;
 }
 .tab-item {
     display: inline-block;
@@ -114,6 +113,66 @@
 #scrollbar-tab1 .disable {
     display: none;
 }
+
+
+
+#scrollbar-tab2 {
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 98%;
+}
+#scrollbar-tab2 .viewport {
+    height: 350px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+}
+#scrollbar-tab2 .overview {
+    left: 0;
+    list-style: none outside none;
+    position: absolute;
+    top: 0;
+    width: 99%;
+}
+#scrollbar-tab2 .thumb .end, #scrollbar-tab2 .thumb {
+    background: none repeat scroll 0 0 #555555;
+}
+#scrollbar-tab2 .scrollbar {
+    float: right;
+    position: relative;
+    width: 10px;
+}
+#scrollbar-tab2 .track {
+    background-color: #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 8px;
+}
+#scrollbar-tab2 .thumb {
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+#scrollbar-tab2 .thumb .end {
+    display: none;
+    height: 5px;
+    overflow: hidden;
+    width: 8px;
+}
+#scrollbar-tab2 .disable {
+    display: none;
+}
+
+
+
 .lightbox-button-div {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
     border: 1px solid #3586C2;
@@ -215,7 +274,7 @@
     height: 32px;
     padding-top: 3px;
 }
-#mfs-search-span-1 {
+#mfs-search-span-1, #mfs-search-span-2 {
     color: #888888;
     font-weight: bold;
     height: 13px;
@@ -287,4 +346,29 @@
 .bulk-invitation-email-button-wrapper {
     margin-left: 70px;
     width: 265px;
+}
+.bulk-friend-mfs-tab-wrapper {
+   
+    height: 90px;
+    left: -38px;
+    position: absolute;
+    top: 8px;
+    width: 38px;
+}
+.bulk-invitation-mafs-tabs-wrapper {
+    margin: auto;
+    position: relative;
+    width: 325px;
+}
+.bulk-friend-mfs-tab1, .bulk-friend-mfs-tab2 {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 2px solid #CCCCCC;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    height: 42px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    padding-top: 3px;
+    width: 38px;
 }
