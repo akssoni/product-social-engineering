@@ -14,6 +14,8 @@
 }
 .bulk-page-main-email {
     display: inline-block;
+    padding-top: 6px;
+    vertical-align: top;
     width: 49%;
 }
 .bulk-page-banner-text {
@@ -147,12 +149,9 @@
     margin-top: 3px;
     width: 98%;
 }
-
-.tab-item:HOVER{
-	background: none repeat scroll 0 0 #EEEEEE;
+.tab-item:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
 }
-
-
 .bulk-page-mfs-name {
     display: inline-block;
     font-size: 11px;
@@ -234,7 +233,7 @@
 .bulk-page-mfs-button {
     background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E;
     border-color: #3B6E22 #3B6E22 #2C5115;
-    border-radius: 6px 6px 6px 6px;
+    border-radius: 4px 4px 4px 4px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 1px #A4E388 inset;
@@ -243,10 +242,49 @@
     display: inline-block;
     float: right;
     font-size: 12px;
-    height: 25px;
-    line-height: 25px;
+    height: 22px;
+    line-height: 22px;
     margin-right: 5px;
-    margin-top: 10px;
+    margin-top: 12px;
     text-align: center;
     width: 50px;
+}
+.bulk-invitation-email-textbox {
+    border: 2px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 5px;
+    width: 250px;
+}
+.bulk-invitation-email-textarea {
+    border: 2px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    color: #555555;
+    display: block;
+    font-family: 'lucida grande';
+    font-size: 12px;
+    height: 115px;
+    line-height: 1.6em;
+    margin-left: 70px;
+    overflow: hidden;
+    padding: 5px;
+    resize: none;
+    width: 250px;
+}
+.bulk-invitation-email-note {
+    color: #555555;
+    font-size: 12px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    margin-left: 70px;
+    padding-left: 5px;
+}
+.bulk-invitation-email-button-wrapper {
+    margin-left: 70px;
+    width: 265px;
 }
