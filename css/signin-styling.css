@@ -68,6 +68,7 @@ select, input {
     display: inline-block;
     float: right;
     margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
     vertical-align: top;
 }
@@ -80,7 +81,7 @@ select, input {
     font-size: 15px;
     height: 35px;
     line-height: 35px;
-    margin-top: 15px;
+    margin: 10px auto auto;
     width: 200px;
 }
 .signin-tw-button {
@@ -92,11 +93,11 @@ select, input {
     font-size: 15px;
     height: 35px;
     line-height: 35px;
-    margin-top: 15px;
+    margin: 10px auto auto;
     width: 200px;
 }
 .signin-fb-button a, .signin-tw-button a {
-    margin-left: 30px;
+    margin-left: 6px;
 }
 .signup-div-wrapper {
     box-shadow: 0 27px 35px -20px #666666;
@@ -178,7 +179,7 @@ select, input {
 }
 .signin-page-search-fb-tw-wrapper {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 10px;
     vertical-align: top;
     width: 675px;
 }
@@ -291,3 +292,5 @@ html, body {
     margin-top: 10px;
     vertical-align: top;
 }
+
+
