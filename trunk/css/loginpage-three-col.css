@@ -4,41 +4,38 @@
     width: 80%;
 }
 .signin-page-col1 {
-   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
+    -moz-box-sizing: border-box;
     display: inline-block;
     width: 33.33%;
 }
 .signin-page-col2 {
-   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
+    -moz-box-sizing: border-box;
     display: inline-block;
     margin-left: -4px;
     vertical-align: top;
     width: 33.33%;
 }
 .signin-page-col3 {
-   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
+    -moz-box-sizing: border-box;
     display: inline-block;
     margin-left: -4px;
     vertical-align: top;
     width: 33.33%;
 }
 .signin-page-col1-item {
-    padding: 12px 6px 0;
+    padding: 8px 6px 0;
 }
 .signin-page-col1-item-image {
-    border-right: 2px solid #EEEEEE;
+    border-left: 1px solid #D6DDEB;
+    border-right: 1px solid #D6DDEB;
+    cursor: pointer;
     display: inline-block;
     text-align: center;
 }
 .signin-page-col1-item-text {
 }
 .signin-page-col1-item-review {
+    cursor: pointer;
     display: inline-block;
     font-size: 11px;
     margin: 5px auto;
@@ -52,18 +49,27 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     vertical-align: top;
 }
 .signin-page-col1-header {
-    background: none repeat scroll 0 0 #E85581;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #33559A;
+    border-color: #FFFFFF #FFFFFF -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 6px 6px medium;
     color: white;
     font-size: 13px;
     font-weight: bolder;
-    height: 38px;
-    line-height: 38px;
-    margin-bottom: 5px;
+    height: 40px;
+    line-height: 35px;
     padding-left: 15px;
 }
 .signin-page-col1-item-header {
-    background: none repeat scroll 0 0 #CB202D;
+    background: none repeat scroll 0 0 #8599C2;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: 12px;
     font-weight: bold;
     height: 25px;
@@ -71,9 +77,10 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     padding-left: 15px;
 }
 .signin-page-col1-item-review-wrapper {
-    background: none repeat scroll 0 0 #FAE9EA;
+    background: none repeat scroll 0 0 #D6DDEB;
 }
 .signin-page-col1-item-review-wrapper img {
+    cursor: pointer;
     margin: 5px;
 }
 .signin-page-col1-item-reviewer {
@@ -83,10 +90,11 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     background: none repeat scroll 0 0 #EEEEEE;
     border-left: 6px solid #FFFFFF;
     border-right: 6px solid #FFFFFF;
-    border-top: 12px solid #FFFFFF;
+    border-top: 8px solid #FFFFFF;
     height: 110px;
 }
 .signin-page-col3-item-header {
+    cursor: pointer;
     display: inline-block;
     font-size: 13px;
     font-weight: bold;
@@ -94,6 +102,7 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     margin-top: 25px;
 }
 .signin-page-col3-item-image {
+    cursor: pointer;
     display: inline-block;
     float: left;
     margin-left: 10px;
@@ -109,13 +118,21 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     margin-left: 20px;
 }
 .signin-page-col3-header, .signin-page-col2-header {
-    background: none repeat scroll 0 0 #FCB72E;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #33559A;
+    border-color: #FFFFFF #FFFFFF -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 6px 6px medium;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: bolder;
-    height: 38px;
-    line-height: 38px;
-    margin-bottom: 5px;
+    height: 40px;
+    line-height: 35px;
     padding-left: 15px;
 }
 .signin-page-col3-item-stat-inner {
@@ -123,11 +140,12 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     width: 75px;
 }
 .signin-page-col2-item {
-    padding: 12px 6px 0;
+    padding: 8px 6px 0;
 }
 .signin-page-col2-item-header {
-    background: none repeat scroll 0 0 #FCB72E;
+    background: none repeat scroll 0 0 #8599C2;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: 12px;
     font-weight: bold;
     height: 25px;
@@ -135,6 +153,8 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     padding-left: 15px;
 }
 .signin-page-col2-item-image {
+    border: 1px solid #D6DDEB;
+    cursor: pointer;
     display: inline-block;
     text-align: center;
 }
@@ -147,8 +167,6 @@ box-sizing: border-box;         /* Opera/IE 8+ */
 }
 .signin-page-col2-item-stat {
 }
-
-
 .signin-page-col3-header {
-    background: none repeat scroll 0 0 #62A250;
+    background: none repeat scroll 0 0 #33559A;
 }

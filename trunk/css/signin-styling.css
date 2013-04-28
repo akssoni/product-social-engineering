@@ -48,15 +48,15 @@ select, input {
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
-    height: 24px;
+    height: 22px;
+    line-height: 22px;
     margin-left: 10px;
-    margin-top: 5px;
-    padding-top: 5px;
+    margin-top: 3px;
     text-align: center;
     vertical-align: top;
-    width: 80px;
+    width: 60px;
 }
 .login-button span {
 }
@@ -178,9 +178,9 @@ select, input {
 }
 .signin-page-search-fb-tw-wrapper {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 5px;
     vertical-align: top;
-    width: 650px;
+    width: 675px;
 }
 html, body {
     height: 100%;
@@ -248,14 +248,15 @@ html, body {
     position: relative;
 }
 .signin-page-search-title {
-    color: #FF7400;
-    font-size: 26px;
+    color: #33559A;
+    font-size: 27px;
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 5px;
 }
 .signin-fb-tw-text {
     font-size: 12px;
+    font-weight: bold;
 }
 .signin-page-signup-button, .signin-page-lightbox-signup-button {
     background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E;
@@ -266,12 +267,12 @@ html, body {
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
-    height: 24px;
-    margin-left: 10px;
-    margin-top: 5px;
-    padding-top: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-top: 3px;
     text-align: center;
     vertical-align: top;
     width: 80px;
