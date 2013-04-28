@@ -1,0 +1,14 @@
+.search-result-line {
+   border-bottom: 1px solid #DDDDDD;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.result-button-wrapper{
+ display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
