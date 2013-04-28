@@ -46,8 +46,7 @@
 }
 .signin-page-col1-item-stat, .signin-page-col2-item-stat {
     display: inline-block;
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 0;
     vertical-align: top;
 }
 .signin-page-col1-header {
@@ -69,11 +68,15 @@
     padding-left: 15px;
 }
 .signin-page-col1-item-header, .signin-page-col2-item-header {
+    border-bottom: 1px solid #D6DDEB;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
-    height: 25px;
+    height: 23px;
     line-height: 25px;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .signin-page-col1-item-review-wrapper {
     background: none repeat scroll 0 0 #D6DDEB;
@@ -95,6 +98,7 @@
     height: 100px;
 }
 .signin-page-col3-item-header {
+    color: #14223E;
     cursor: pointer;
     display: inline-block;
     font-size: 13px;
@@ -113,7 +117,7 @@
 }
 .signin-page-col3-item-text {
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 .signin-page-col3-item-stat {
     display: inline-block;
@@ -139,8 +143,6 @@
 }
 .signin-page-col3-item-stat-inner {
     color: #555555;
-    display: inline-block;
-    font-weight: bold;
     width: 75px;
 }
 .signin-page-col3-header {
@@ -159,6 +161,7 @@
     display: inline-block;
     font-size: 11px;
     font-weight: bold;
+     vertical-align: middle;
 }
 .signin-page-col-share {
     display: inline-block;
@@ -176,8 +179,10 @@
     vertical-align: middle;
 }
 .signin-page-col-stat1 {
+    margin-left: 20px;
 }
 .signin-page-col-stat2 {
+    margin-left: 20px;
 }
 .signin-page-col2-item-image {
     border-bottom: 1px solid #D6DDEB;

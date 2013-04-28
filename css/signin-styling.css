@@ -52,7 +52,7 @@ select, input {
     font-weight: bold;
     height: 22px;
     line-height: 22px;
-    margin-left: 10px;
+    margin-left: 3px;
     margin-top: 3px;
     text-align: center;
     vertical-align: top;
@@ -195,7 +195,7 @@ html, body {
     height: 100px;
 }
 .signin-footer {
-    background: none repeat scroll 0 0 #676767;
+    background: none repeat scroll 0 0 #EDF0F5;
 }
 .signin-page-search-textarea {
     border: 1px solid #D9D4CD;
@@ -271,7 +271,7 @@ html, body {
     font-size: 14px;
     font-weight: bold;
     height: 30px;
-    line-height: 30px;
+    line-height: 27px;
     margin-left: 15px;
     margin-top: 3px;
     text-align: center;
@@ -282,7 +282,7 @@ html, body {
     background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E !important;
 }
 .signin-page-lightbox-signup-button {
-    line-height: 18px;
+    line-height: 30px;
     margin-left: 0;
     margin-top: 15px;
 }
@@ -292,5 +292,43 @@ html, body {
     margin-top: 10px;
     vertical-align: top;
 }
+
+
+.signin-footer-inside-wrapper{
+	 margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 80%;
+    color: #4766A4;
+}
+
+.signin-footer-inside-wrapper td{
+	
+	padding-right: 25px;
+}
+
+.signin-footer-inside-wrapper td:HOVER{
+	
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+.signin-footer-inside-wrapper tr{
+	
+	line-height: 20px;
+}
+
+.signin-footer-endnote{
+	
+	margin-top: 15px;
+}
+
+
+
+
+
+
 
 
