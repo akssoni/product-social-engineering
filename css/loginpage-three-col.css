@@ -144,6 +144,9 @@
 .signin-page-col3-item-stat-inner {
     color: #555555;
     width: 75px;
+    margin-top: 5px;
+    vertical-align: top;
+    display: inline-block;
 }
 .signin-page-col3-header {
     background: none repeat scroll 0 0 #33559A;
