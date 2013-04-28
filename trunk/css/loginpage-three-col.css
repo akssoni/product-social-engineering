@@ -1,6 +1,7 @@
 .signin-page-three-col-wrapper {
     box-shadow: 0 0 20px 1px #AAAAAA;
     margin: 30px auto;
+    padding-bottom: 8px;
     width: 80%;
 }
 .signin-page-col1 {
@@ -22,12 +23,13 @@
     vertical-align: top;
     width: 33.33%;
 }
-.signin-page-col1-item {
-    padding: 8px 6px 0;
+.signin-page-col1-item, .signin-page-col2-item {
+    padding: 8px 6px 0 8px;
 }
-.signin-page-col1-item-image {
+.signin-page-col1-item-image, .signin-page-col2-item-image {
     border-left: 1px solid #D6DDEB;
     border-right: 1px solid #D6DDEB;
+    border-top: 1px solid #D6DDEB;
     cursor: pointer;
     display: inline-block;
     text-align: center;
@@ -35,17 +37,17 @@
 .signin-page-col1-item-text {
 }
 .signin-page-col1-item-review {
-    cursor: pointer;
+    color: #555555;
     display: inline-block;
     font-size: 11px;
     margin: 5px auto;
     vertical-align: top;
-    width: 80%;
+    width: 79%;
 }
-.signin-page-col1-item-stat {
+.signin-page-col1-item-stat, .signin-page-col2-item-stat {
     display: inline-block;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 5px;
     vertical-align: top;
 }
 .signin-page-col1-header {
@@ -66,15 +68,12 @@
     line-height: 35px;
     padding-left: 15px;
 }
-.signin-page-col1-item-header {
-    background: none repeat scroll 0 0 #8599C2;
-    color: #FFFFFF;
+.signin-page-col1-item-header, .signin-page-col2-item-header {
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
     height: 25px;
     line-height: 25px;
-    padding-left: 15px;
 }
 .signin-page-col1-item-review-wrapper {
     background: none repeat scroll 0 0 #D6DDEB;
@@ -84,6 +83,8 @@
     margin: 5px;
 }
 .signin-page-col1-item-reviewer {
+    color: #1F335C;
+    cursor: pointer;
     font-weight: bold;
 }
 .signin-page-col3-item {
@@ -91,7 +92,7 @@
     border-left: 6px solid #FFFFFF;
     border-right: 6px solid #FFFFFF;
     border-top: 8px solid #FFFFFF;
-    height: 110px;
+    height: 100px;
 }
 .signin-page-col3-item-header {
     cursor: pointer;
@@ -99,15 +100,16 @@
     font-size: 13px;
     font-weight: bold;
     margin-left: 20px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .signin-page-col3-item-image {
     cursor: pointer;
     display: inline-block;
     float: left;
+    height: 80px;
     margin-left: 10px;
     margin-top: 10px;
-    width: 90px;
+    width: 80px;
 }
 .signin-page-col3-item-text {
     margin-left: 20px;
@@ -136,37 +138,59 @@
     padding-left: 15px;
 }
 .signin-page-col3-item-stat-inner {
+    color: #555555;
     display: inline-block;
-    width: 75px;
-}
-.signin-page-col2-item {
-    padding: 8px 6px 0;
-}
-.signin-page-col2-item-header {
-    background: none repeat scroll 0 0 #8599C2;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 12px;
     font-weight: bold;
-    height: 25px;
-    line-height: 25px;
-    padding-left: 15px;
-}
-.signin-page-col2-item-image {
-    border: 1px solid #D6DDEB;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-}
-.signin-page-col2-item-text {
-    display: inline-block;
-    margin-left: 25px;
-    margin-top: 30px;
-    vertical-align: top;
-    width: 140px;
-}
-.signin-page-col2-item-stat {
+    width: 75px;
 }
 .signin-page-col3-header {
     background: none repeat scroll 0 0 #33559A;
+}
+.signin-page-col-like {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    width: 45px;
+}
+.signin-page-col-like img {
+    vertical-align: middle;
+}
+.signin-page-col-star {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+}
+.signin-page-col-share {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    width: 45px;
+}
+.signin-page-col-tweet {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    width: 45px;
+}
+.signin-page-col-share img, .signin-page-col-tweet img {
+    vertical-align: middle;
+}
+.signin-page-col-stat1 {
+}
+.signin-page-col-stat2 {
+}
+.signin-page-col2-item-image {
+    border-bottom: 1px solid #D6DDEB;
+}
+.signin-page-col2-item {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 10px;
+}
+.signin-page-col1-item-review a {
+    color: #1F335C;
+    cursor: pointer;
+    font-weight: bold;
+}
+.signin-page-col1-item-review a:hover {
+    text-decoration: underline;
 }
