@@ -9,7 +9,7 @@ body {
     box-shadow: 0 0 24px 0 #222222;
     display: inline-block;
     margin-left: 100px;
-    margin-top: 130px;
+    margin-top: 100px;
     padding: 25px;
     vertical-align: top;
 }
@@ -52,17 +52,86 @@ body {
     line-height: 23px;
     text-align: center;
 }
-
-.reg-lightbox-1-search-bottom-text span{
+.reg-lightbox-1-search-bottom-text span {
     color: #33559A;
     font-weight: bold;
 }
-
 .reg-lightbox-1-search-dropdown {
     height: 35px;
     line-height: 35px;
 }
-
-
 .reg-lightbox-1-search-item {
+    border-radius: 8px 8px 8px 8px;
+    margin: 5px;
+    padding: 5px;
+}
+.reg-lightbox-1-search-item:hover {
+    box-shadow: 0 0 9px #C8C8C8;
+}
+.img-wrapper {
+    display: inline-block;
+}
+.data {
+    display: inline-block;
+    vertical-align: top;
+}
+.data h3 {
+    margin-top: 0;
+}
+.stat {
+}
+.properties {
+    height: 35px;
+}
+#scrollbar-lightbox {
+    clear: both;
+    margin: 5px 0 10px;
+    width: 103%;
+}
+#scrollbar-lightbox .viewport {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 97%;
+}
+#scrollbar-lightbox .overview {
+    left: 0;
+    list-style: none outside none;
+    position: absolute;
+    top: 0;
+    width: 99%;
+}
+#scrollbar-lightbox .thumb .end, #scrollbar-lightbox .thumb {
+    background-color: #555555;
+}
+#scrollbar-lightbox .scrollbar {
+    float: right;
+    position: relative;
+    width: 10px;
+}
+#scrollbar-lightbox .track {
+    background-color: #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 8px;
+}
+#scrollbar-lightbox .thumb {
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+#scrollbar-lightbox .thumb .end {
+    display: none;
+    height: 5px;
+    overflow: hidden;
+    width: 8px;
+}
+#scrollbar-lightbox .disable {
+    display: none;
 }
