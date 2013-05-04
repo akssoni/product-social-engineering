@@ -31,12 +31,12 @@
         var hite = $(document).height();   // returns height of browser viewport
 
     var wth = $(window).width();   // returns width of browser viewport
-    wth = wth + 50;
+  
 
     $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
     $(".signin-page-lightbox-signup").css({"display" : "block" });
   
-    $("body").css({"overflow":"hidden"})
+    $("body").css({"overflow":"auto","overflow-x":"hidden"})
        
         };
     
