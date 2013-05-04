@@ -25,7 +25,6 @@ body {
 }
 .landing-header-button-div {
 }
-
 .landing-content {
     margin: 170px auto auto;
     min-height: 100%;
@@ -36,11 +35,11 @@ body {
 }
 .landing-bottom {
     background: none repeat scroll 0 0 rgba(112, 136, 184, 0.2);
+    color: #555555;
     height: 160px;
     position: fixed;
     width: 100%;
     z-index: 5;
-    color: #555;
 }
 .landing-bottom-skip {
     height: 20px;
@@ -125,26 +124,41 @@ body {
     vertical-align: top;
     width: 145px;
 }
-
 .landing-header-skip, .landing-bottom-skip {
+    margin-top: -8px;
     text-align: right;
-    width: 90%;
+    width: 95%;
 }
-
-.landing-header-skip a, .landing-bottom-skip a {
-    font-size: 14px;
+.landing-bottom-skip div, .landing-header-skip div {
+    background: none repeat scroll 0 0 #6079AB !important;
+    border-color: #29447E #29447E #1A356E;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
     font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 3px;
+    margin-top: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 65px;
 }
-
-.landing-header-skip a:HOVER, .landing-bottom-skip a:HOVER {
-
-	text-decoration: underline;
-	cursor: pointer;
-	}
-	
+.landing-header-skip a, .landing-bottom-skip a {
+}
+.landing-header-skip a:hover, .landing-bottom-skip a:hover {
+}
 .landing-bottom-skip {
-   margin-top: 10px;
+    margin-top: 10px;
 }
+
+
+.landing-bottom-selected-item{
 	
-	
-	
+	 padding-left: 14px;
+}
