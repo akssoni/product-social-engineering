@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/reg-lightbox-2-styling.css">
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('.lightbox2-right-rating-div').raty({ readOnly: true, score: 3 });
+		
+	});
+
+	
+</script>
+
+</head>
+<body>
+
+
+<div class="reg-lightbox-2-wrapper">
+
+<div class="lightbox2-header-div">
+<div class="lightbox2-header-text">
+Harrahs Resort Atlantic City Hotel
+</div>
+<div class="lightbox2-header-subtext">Hotels</div>
+</div>
+<div class="lightbox2-left-pane">
+<div class="lightbox2-left-upper-div">
+
+</div>
+<div class="lightbox2-left-bottom-div">
+
+<div class="lightbox2-left-bottom-links">
+Web images
+</div>
+
+
+<div class="lightbox2-left-bottom-links">
+               
+                    <span style="text-align:center;float:none;cursor:pointer" class="fileinput-button">
+                        <span>Upload New</span>                                                     
+                        <input type="file" name="files[]" title="Click to Select a file">
+                    </span>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+<div class="lightbox2-right-pane">
+<div class="lightbox2-right-textarea-div">
+
+<div class="lightbox2-right-textarea-div-text">
+Write your recommendation here:
+</div>
+
+
+<div>
+<textarea id="ReviewText" class="addItemReview" rows="2" name="ReviewText" data-val-required="Masttag is a helpful place!&lt;br/&gt;Add some text on why this is great" data-val="true" data-error-tooltip="true" data-default-text="I think this is awesome becauseÉ" cols="20">I think this is awesome because</textarea>
+</div>
+
+
+</div>
+<div class="lightbox2-right-dropdowns">
+
+<label>Category</label>
+<select name="Category">
+  <option value="">Mobile</option>
+  <option value="">Electronics</option>
+  <option value="">Vehicle</option>
+  <option value="">Travel</option>
+</select>
+<label style="margin-left: 15px">Brand</label>
+<select name="Brand">
+  <option value="">Nokia</option>
+  <option value="">Apple</option>
+  <option value="">Sony</option>
+  <option value="">Maruti</option>
+</select>
+
+
+
+</div>
+
+
+
+<div class="lightbox2-right-rating">
+<div class="lightbox2-right-rating-text">Your rating</div>
+<div class="lightbox2-right-rating-div"></div>
+</div>
+<div class="lightbox2-right-buttons">
+
+<div class="lightbox2-right-pane-button-cancel">
+<a>Cancel</a>
+</div>
+
+<div class="lightbox2-right-pane-button-add">
+<a>Add</a>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

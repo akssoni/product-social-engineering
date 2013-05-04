@@ -1,0 +1,220 @@
+
+.reg-lightbox-2-wrapper {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 24px 0 #222222;
+    display: none;
+    height: 360px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 25px;
+    vertical-align: top;
+    width: 700px;
+    position: fixed;
+    left: 12%;
+    top: 5%;
+    z-index: 1002;
+     background: none repeat scroll 0 0 #FFFFFF;
+}
+.lightbox2-header-div {
+    margin-bottom: 10px;
+}
+.lightbox2-header-text {
+    color: #666666;
+    font-size: 18px;
+    font-weight: bold;
+    height: 18px;
+    line-height: 5px;
+}
+.lightbox2-header-subtext {
+    color: #666666;
+    font-weight: bold;
+    height: 15px;
+    line-height: 15px;
+}
+.lightbox2-left-pane {
+    display: inline-block;
+    height: 300px;
+    width: 346px;
+}
+.lightbox2-left-upper-div {
+    border: 1px solid #BBBBBB;
+    border-radius: 6px 6px 6px 6px;
+    height: 300px;
+    width: 345px;
+}
+.lightbox2-left-bottom-div {
+    margin-top: 10px;
+}
+.lightbox2-right-pane {
+    display: inline-block;
+    height: 300px;
+    vertical-align: top;
+    width: 344px;
+}
+.lightbox2-right-textarea-div {
+}
+.lightbox2-right-rating {
+    margin-left: 25px;
+    margin-top: 12px;
+}
+.lightbox2-right-buttons {
+    margin-top: 78px;
+    text-align: right;
+}
+.lightbox2-right-pane-button-cancel {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #DEDEDE) repeat scroll 0 0 transparent;
+    border: 1px solid #B2B2B2;
+    border-radius: 6px 6px 6px 6px;
+    color: #777777;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 9px;
+    margin-right: 4px;
+    margin-top: 5px;
+    min-height: 14px;
+    position: relative;
+    text-align: center;
+    width: 75px;
+    cursor: pointer;
+}
+.lightbox2-right-pane-button-add {
+    background: -moz-linear-gradient(center top , #67AE55, #578843) repeat scroll 0 0 #69A74E;
+    border-color: #3B6E22 #3B6E22 #2C5115;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px #A4E388 inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: top;
+    width: 75px;
+}
+.myfileupload-buttonbar input {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transform: translate(-300px, 0pt) scale(4);
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 100px 200px;
+    cursor: pointer;
+    direction: ltr;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.myui-button {
+    background-color: red;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.lightbox2-left-bottom-links {
+    color: #555555;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.lightbox2-left-bottom-links:hover {
+    color: #33559A;
+}
+.fileinput-button {
+    cursor: pointer;
+    float: none;
+    margin-right: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.fileinput-button input {
+    border-width: 0;
+    cursor: pointer;
+    direction: ltr;
+    font-size: 23px;
+    height: 15px;
+    margin: 0;
+    opacity: 0;
+    outline: medium none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+}
+.addItemReview {
+    border: 1px solid #7088B8;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 2px #33559A inset;
+    font-family: lucida Grande;
+    font-size: 12px;
+    height: 100px;
+    line-height: 20px;
+    margin-left: 10px;
+    outline: medium none;
+    padding: 6px 6px 6px 10px;
+    resize: none;
+    width: 320px;
+}
+.lightbox2-right-textarea-div-text {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    width: 80%;
+}
+.lightbox2-right-rating-text {
+    color: #666666;
+    display: inline-block;
+    font-weight: bold;
+}
+.lightbox2-right-rating-div {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.lightbox2-right-dropdowns {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.lightbox2-right-dropdowns label {
+    color: #666666;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+.reg-lightbox-close{
+	
+	  color: #888888;
+    cursor: pointer;
+    font-family: Lucida Console;
+    font-size: 13px;
+    font-weight: bold;
+    height: 36px;
+    position: absolute;
+    right: -16px;
+    top: 7px;
+    width: 36px;
+    z-index: 8040;
+	
+	
+}
