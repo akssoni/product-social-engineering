@@ -1,0 +1,58 @@
+body {
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    margin: auto;
+    min-width: 1200px;
+}
+
+.landing-header{
+	 background: none repeat scroll 0 0 rgba(112, 136, 184, 0.15);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    color: #555555;
+    font-size: 16px;
+    padding-bottom: 30px;
+    position: fixed;
+    text-align: center;
+    top: 59px;
+    width: 100%;
+    z-index: 4;
+	
+	
+}
+.landing-header-text{
+	
+	font-size: 30px;
+	font-weight: bold;
+}
+.landing-header-button{}
+.landing-header-button-div{}
+.landing-header-skip{}
+.landing-content{
+	
+	margin: auto;
+	
+	 margin-top: 165px;
+	  min-height: 100%;
+    position: relative;
+    width: 980px;
+    z-index: 1;
+    height: 900px;
+    border: 1px solid;
+	
+}
+.landing-bottom{
+	
+	 background: none repeat scroll 0 0 rgba(112, 136, 184, 0.15);
+    position: fixed;
+  height: 160px;
+    width: 100%;
+    z-index: 5;
+}
+
+.landing-bottom-skip{
+	
+	text-align: right;
+	
+	height: 20px;
+	line-height: 20px;
+}
