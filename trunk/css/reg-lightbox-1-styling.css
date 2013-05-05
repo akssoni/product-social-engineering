@@ -9,7 +9,7 @@ body {
     box-shadow: 0 0 24px 0 #222222;
     display: none;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 25px;
    
      position: fixed;
@@ -94,7 +94,7 @@ body {
     width: 103%;
 }
 #scrollbar-lightbox .viewport {
-    height: 300px;
+    height: 335px;
     overflow: hidden;
     position: relative;
     width: 97%;
@@ -141,6 +141,31 @@ body {
     display: none;
 }
 
+.reg-lighbox-1-add-new{
+	text-align: center;
+	font-weight: bold;
+	color: #777;
+}
 
+.reg-lighbox-1-add-new-button{
+	
+	 background: -moz-linear-gradient(center top , #FFFFFF 0%, #DEDEDE) repeat scroll 0 0 transparent;
+    border: 1px solid #B2B2B2;
+    border-radius: 6px 6px 6px 6px;
+    color: #777777;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 9px;
+    margin-right: 4px;
+    margin-top: 5px;
+    min-height: 14px;
+    position: relative;
+    text-align: center;
+    width: 90px;
+}
 
 
