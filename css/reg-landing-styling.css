@@ -12,7 +12,7 @@ body {
     height: 120px;
     position: fixed;
     text-align: center;
-    top: 50px;
+    top: 40px;
     width: 100%;
     z-index: 4;
 }
@@ -26,7 +26,7 @@ body {
 .landing-header-button-div {
 }
 .landing-content {
-    margin: 170px auto auto;
+    margin: 160px auto auto;
     min-height: 100%;
     padding-bottom: 300px;
     position: relative;
@@ -171,4 +171,59 @@ body {
     top: 0;
 }
 
+.pageheader {
+    background: none repeat scroll 0 0 #33559A;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 2px solid;
+    height: 35px;
+    left: 0;
+    padding-left: 6%;
+    position: fixed;
+    top: 0;
+    width: 94%;
+    z-index: 1000;
+    box-shadow: 0 1px 5px #333333;
+}
 
+.pageheader-alert ul {
+    background: none repeat scroll 0 0 #33559A;
+    display: none;
+    list-style: none outside none;
+    margin-left: -10px;
+    margin-top: 2px;
+    min-width: 110px;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.pageheader-alert {
+    border-left: medium none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    padding: 0 16px 0 9px;
+    vertical-align: top;
+}
+
+.pageheader-right {
+    display: inline-block;
+    float: right;
+    margin-right: 70px;
+    vertical-align: top;
+}
+
+
+.company-logo {
+    display: block;
+    padding-top: 2px;
+}
+
+.pageheader-logo {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 21px;
+    margin-left: 20px;
+}
