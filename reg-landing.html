@@ -88,7 +88,7 @@
 	  
 	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
 	    
-	    $('.lightbox2-right-rating-div').raty({ readOnly: true, score: 3 });
+	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
 	       
 	        };
 	    
@@ -104,7 +104,12 @@
 	    
 	 
 	
-	
+	    function removeSelctedElement(src){
+	    	
+	    	$(src).parent().addClass("selected-item-removed");
+	    	$(src).parent().css('display', 'none');
+	    	
+	    };
 
 	
 </script>
@@ -910,6 +915,8 @@ Cars and Accessories
 
 
 <div class="landing-bottom">
+<div class="landing-bottom-header">Your Recommendations</div>
+
 <div class="landing-bottom-skip">
 <div>
 <a>I'm done</a>
@@ -920,7 +927,7 @@ Cars and Accessories
 
 
 
-<div class="landing-content-item-list-element">
+<div class="landing-content-item-list-element landing-bottom-selected-item-element">
 
 
 <img class="landing-content-item-list-img" data-original="https://d39z3y5zwcbmdt.cloudfront.net/items/8366/cropped.jpg" alt="Psychonauts - Xbox" src="https://d39z3y5zwcbmdt.cloudfront.net/items/8366/cropped.jpg">
@@ -935,13 +942,14 @@ Cars and Accessories
 <span class="tooltip">Friends</span>
 </div>
 
+<div class="selected-remove-button" onclick="removeSelctedElement(this)">X</div>
 
 </div>
 
 
 
 
-<div class="landing-content-item-list-element">
+<div class="landing-content-item-list-element landing-bottom-selected-item-element">
 
 <img  class="landing-content-item-list-img" data-original="https://d39z3y5zwcbmdt.cloudfront.net/items/8489/cropped.jpg" alt="Ocean Sprayå¨ Craisins (Case of 6)" src="https://d39z3y5zwcbmdt.cloudfront.net/items/8489/cropped.jpg" >
 
@@ -955,9 +963,18 @@ Cars and Accessories
 <span class="tooltip">Friends</span>
 </div>
 
+<div class="selected-remove-button">X</div>
+
+<div class="selected-remove-button" onclick="removeSelctedElement(this)">X</div>
 
 </div>
 
+
+<div class="landing-bottom-addnew" onclick="showLB1()">
+
++
+
+</div>
 
 
 

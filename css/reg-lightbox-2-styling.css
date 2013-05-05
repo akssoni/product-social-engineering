@@ -218,3 +218,64 @@
 	
 	
 }
+
+
+.selected-remove-button{
+	
+	 background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 10px 10px 10px 10px;
+    color: #888888;
+    cursor: pointer;
+    font-family: Lucida Console;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    top: 12px;
+    width: 15px;
+    z-index: 8040;
+	display: none;
+}
+
+
+.landing-bottom-selected-item-element:HOVER .selected-remove-button{
+	display: block;
+}
+
+.landing-bottom-addnew{
+	 background: none repeat scroll 0 0 #E2E7F1;
+    border: 1px dashed #C7C2BC;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 55px;
+    font-weight: bold;
+    height: 90px;
+    line-height: 75px;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 120px;
+	
+}
+
+.landing-bottom-addnew:HOVER{
+	box-shadow: 0 0 10px #AAAAAA;
+	cursor: pointer;
+	}
+	
+	
+	
+.landing-bottom-header{	
+	
+	 font-size: 13px;
+    font-weight: bold;
+    margin-left: 22px;
+    margin-top: 18px;
+    position: absolute;
+    
+    
+}
