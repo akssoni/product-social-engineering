@@ -137,7 +137,44 @@
 	    	    
 	    	 
 	    	
-	    	  
+	    function showUpload(input){
+	    	
+	    	
+	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
+	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
+	    	
+	    	
+	    	$(".lightbox2-left-image-upload").css({"display" : "block" });
+	    	
+	    	
+	    	
+	    	 if (input.files && input.files[0]) {
+	                var reader = new FileReader();
+
+	                reader.onload = function (e) {
+	                    $('#user-image')
+	                        .attr('src', e.target.result)
+	                        .width(200)
+	                        .height(200);
+	                };
+
+	                reader.readAsDataURL(input.files[0]);
+	            }
+	    	
+	    	
+	    };	 
+	    
+	    function closeUpload(){
+	    	
+	    	
+	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
+	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });   	
+	    	$(".lightbox2-left-image-upload").css({"display" : "none" });
+	    	
+	    }
+	    	    	    
+	    	    	    
+	    	    	    
 	    
 </script>
 
@@ -1382,11 +1419,24 @@ Try searching again with different keywords
 
 
 
+<div class="lightbox2-left-image-upload">
+<div>
+ <img id="user-image" src="#" alt="your image" />
+ </div>
+ <div class="lightbox2-search-button-keyword lightbox2-upload-button-keyword">
+ <a>Upload</a>
+ </div>
+ 
+<div  onclick="closeUpload()" class="reg-lightbox-close">X</div>
+
+</div>
+
+
 
 			</div>
 <div class="lightbox2-left-bottom-div">
 
-<div class="lightbox2-left-bottom-links">
+<div class="lightbox2-left-bottom-links" onclick="closeUpload()">
 Web images
 </div>
 
@@ -1395,7 +1445,7 @@ Web images
                
                     <span style="text-align:center;float:none;cursor:pointer" class="fileinput-button">
                         <span>Upload New</span>                                                     
-                        <input type="file" name="files[]" title="Click to Select a file">
+                        <input onchange="showUpload(this);" type="file" name="files[]" title="Click to Select a file">
                     </span>
 </div>
 
