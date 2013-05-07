@@ -547,28 +547,27 @@ $("body").css({"overflow":"auto"})
 	
 	<div class="signin-page-lightbox-signup" style="z-index: 1002">
 
-<div class="signin-page-lightbox-signup-header">Sign Up</div>
 
 <div class="signup-div">
 		<div style="font-size: 19px;" class="signup">Sign Up</div>
 		<div class="signup-text">It's free and always will be</div>
 		<form>
 		<div>
-		<input type="text" placeholder="First Name">
+		<input type="text" placeholder="First Name" required>
 		</div>
 		<div>
-		<input type="text" placeholder="Last Name">
+		<input type="text" placeholder="Last Name" required>
 		</div>
 		<div>
-		<input type="text" placeholder="Your Email">
+		<input type="text" placeholder="Your Email" required>
 		</div>
 		<div>
-		<input type="password" placeholder="New password">
+		<input type="password" placeholder="New password" required>
 		</div>
 		<div>
 		<label>Birthday:</label>
 		<div></div>
-		<select><option value="-1">Month:</option>
+		<select ><option value="-1">Month:</option>
 												<option value="1">Jan</option>
 												<option value="2">Feb</option>
 												<option value="3">Mar</option>
@@ -582,7 +581,7 @@ $("body").css({"overflow":"auto"})
 												<option value="11">Nov</option>
 												<option value="12">Dec</option>
 											</select> 
-											<select>
+											<select >
 											<option value="-1">Day:</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -616,7 +615,7 @@ $("body").css({"overflow":"auto"})
 												<option value="30">30</option>
 												<option value="31">31</option>
 											</select> 
-											<select>
+											<select >
 											<option value="-1">Year:</option>
 												<option value="2013">2013</option>
 												<option value="2012">2012</option>
@@ -733,24 +732,21 @@ $("body").css({"overflow":"auto"})
 		</div>
 		<div>
 		
-		<input type="radio" value="1">
+		<input type="radio" value="1" >
 <label>Female</label>
 <input type="radio" value="0">
 <label>Male</label>
 		
 		</div>
 		<div style="text-align: center;">
-			<div class="signin-page-lightbox-signup-button"  onclick="hideLightBox()">
-
-
-				<a class="signin-page-lightbox-signup-button-span">Sign Up</a>
-			</div>
+			
+			<input class="signin-page-lightbox-signup-button" type="submit" value="Sign Up" style="height: 34px; margin-top: 10px;  padding-bottom: 6px;">
 		</div>
 		</form>
 		
 		</div>
  
-
+<div  onclick="hideLightBox()" class="signin-lightbox-close">X</div>
  
 		
 
