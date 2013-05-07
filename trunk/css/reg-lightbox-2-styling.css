@@ -359,3 +359,16 @@
     cursor: pointer;
     overflow: hidden;
 }
+
+
+
+.lightbox2-left-image-upload{
+	display: none;
+	position: relative;
+	padding-top: 25px;
+}
+
+
+
+
+
