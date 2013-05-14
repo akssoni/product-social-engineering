@@ -5,18 +5,17 @@ body {
     min-width: 1200px;
 }
 .reg-lightbox-1-wrapper, .reg-lightbox-1-1-wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 24px 0 #222222;
     display: none;
+    left: 25%;
     margin-left: 100px;
     margin-top: 30px;
     padding: 25px;
-   
-     position: fixed;
-    left: 25%;
+    position: fixed;
     top: 8%;
     z-index: 1002;
-     background: none repeat scroll 0 0 #FFFFFF;
 }
 .reg-lightbox-1-textarea {
     -moz-border-bottom-colors: none;
@@ -32,7 +31,7 @@ body {
     font-weight: bold;
     height: 20px;
     padding-left: 5px;
-    width: 350px;
+    width: 400px;
 }
 .reg-lightbox-1-searchbutton {
     -moz-border-bottom-colors: none;
@@ -79,6 +78,7 @@ body {
 }
 .data {
     display: inline-block;
+    margin-left: 10px;
     vertical-align: top;
 }
 .data h3 {
@@ -141,16 +141,19 @@ body {
 #scrollbar-lightbox .disable {
     display: none;
 }
-
-.reg-lighbox-1-add-new{
-	text-align: center;
-	font-weight: bold;
-	color: #777;
+.reg-lighbox-1-add-new {
+    color: #777777;
+    font-weight: bold;
+    text-align: center;
 }
-
-.reg-lighbox-1-add-new-button{
-	
-	 
+.reg-lighbox-1-add-new-button {
+    background: none repeat scroll 0 0 #6079AB !important;
+    border-color: #29447E #29447E #1A356E;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-size: 12px;
@@ -164,20 +167,4 @@ body {
     position: relative;
     text-align: center;
     width: 90px;
-    
-    
-     background: none repeat scroll 0 0 #6079AB !important;
-    border-color: #29447E #29447E #1A356E;
-    border-radius: 6px 6px 6px 6px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    color: white;
 }
-
-
-
-
-
-
-
