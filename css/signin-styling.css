@@ -323,3 +323,16 @@ html, body {
 .signin-footer-endnote {
     margin-top: 15px;
 }
+
+
+.signup-error {
+     color: #EE0000;
+   
+    height: 15px;
+    margin-top: -15px;
+}
+
+
+.signup-text {
+  height: 30px;
+}
