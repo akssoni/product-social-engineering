@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+<link rel="stylesheet" type="text/css" href="css/reg-landing-styling.css">
+
+
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		 var hite = $(window).height() - 160;   // returns height of browser viewport
+		    $(".landing-bottom").css({"top" : ""+hite+"px" });
+	
+		$(window).resize(function() {
+			 var hite = $(window).height() - 160;   // returns height of browser viewport
+			    $(".landing-bottom").css({"top" : ""+hite+"px" });
+	    });
+		
+	});
+	
+	
+	 function showLB1() {
+	        
+	        var hite = $(document).height();   // returns height of browser viewport
+
+	    var wth = $(window).width();   // returns width of browser viewport
+	  
+
+	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+	    $(".reg-lightbox-1-wrapper").css({"display" : "block" });
+	  
+	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
+	       
+	        };
+	    
+	    
+	     function hideLB1() {
+
+	$("#overlay").css({"display" : "none" });
+	$(".reg-lightbox-1-wrapper").css({"display" : "none" });
+
+	$("body").css({"overflow":"auto"})
+	    
+	    };
+	    
+ function showLB11() {
+	        
+	        var hite = $(document).height();   // returns height of browser viewport
+
+	    var wth = $(window).width();   // returns width of browser viewport
+	  
+	    hideLB1(); 
+
+	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+	    $(".reg-lightbox-1-1-wrapper").css({"display" : "block" });
+	  
+	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
+	    $('#scrollbar-lightbox').tinyscrollbar();
+	       
+	        };
+	    
+	    
+	     function hideLB11() {
+
+	$("#overlay").css({"display" : "none" });
+	$(".reg-lightbox-1-1-wrapper").css({"display" : "none" });
+
+	$("body").css({"overflow":"auto"})
+	    
+	    };
+	    
+	
+	    
+ function showLB2() {
+	        
+	        var hite = $(document).height();   // returns height of browser viewport
+
+	    var wth = $(window).width();   // returns width of browser viewport
+	  
+
+	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+	    $(".reg-lightbox-2-wrapper").css({"display" : "block" });
+	  
+	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
+	    
+	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
+	       
+	        };
+	    
+	    
+	     function hideLB2() {
+
+	$("#overlay").css({"display" : "none" });
+	$(".reg-lightbox-2-wrapper").css({"display" : "none" });
+
+	$("body").css({"overflow":"auto"})
+	    
+	    };
+	    
+	 
+	
+	    function removeSelctedElement(src){
+	    	
+	    	$(src).parent().addClass("selected-item-removed");
+	    	$(src).parent().css('display', 'none');
+	    	
+	    };
+
+	
+	    
+	  
+	    
+	    
+	    function showSearchAgain() {
+
+	    	
+	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
+	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "block" });
+	    	
+	    	    
+	    	    };
+	    	    
+	    	    function hideSearchAgain() {
+
+	    	    	
+	    	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
+	    	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });
+	    	    	
+	    	    	    
+	    	    	    };	    
+	    	    
+	    	 
+	    	
+	    function showUpload(input){
+	    	
+	    	
+	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
+	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
+	    	
+	    	
+	    	$(".lightbox2-left-image-upload").css({"display" : "block" });
+	    	
+	    	
+	    	
+	    	 if (input.files && input.files[0]) {
+	                var reader = new FileReader();
+
+	                reader.onload = function (e) {
+	                    $('#user-image')
+	                        .attr('src', e.target.result)
+	                        .width(200)
+	                        .height(200);
+	                };
+
+	                reader.readAsDataURL(input.files[0]);
+	            }
+	    	
+	    	
+	    };	 
+	    
+	    function closeUpload(){
+	    	
+	    	
+	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
+	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });   	
+	    	$(".lightbox2-left-image-upload").css({"display" : "none" });
+	    	
+	    }
+	    	    	    
+	    	    	    
+	    	    	    
+	    
+</script>
+
+</head>
+<body>
+
+
+<!-- Header Part -->
+	<div class="pageheader">
+		<div class="pageheader-logo">
+			<span class="company-logo"> Masttag<span
+				style="font-size: 9px; font-weight: bold; margin-left: 3px;">beta</span>
+			</span>
+		</div>
+	
+		
+		<div class="pageheader-right">
+			
+
+			<div class="pageheader-alert">
+				<div
+					style="background-image: url('images/profilepic.png'); display: inline-block; height: 27px; background-size: 100% auto; width: 27px; margin-top: 3px;"></div>
+				<span class="pageheader-menu"
+					style="margin-top: 7px; padding: 2px 9px 3px; display: inline-block; vertical-align: top;">Pratap
+					Singh</span>
+
+				<ul>
+					
+					<li>Account Settings</li>
+					
+					<li>Log out</li>
+				</ul>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- End of header -->
+
+
+
+
+<div class="lightbox2-button-wrapper">
+
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img width="40" height="40" style="vertical-align: middle;" alt="Smiley face" src="images/fc-webicon-facebook.png"> <span class="lightbox2-social-name-text">Facebook</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button1" class="on">a</a> <span></span>
+					</section>
+				</div>
+			</div>
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img width="40" height="40" style="vertical-align: middle;" alt="Smiley face" src="images/fc-webicon-twitter.png"><span class="lightbox2-social-name-text">Twitter</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button2">a</a> <span></span>
+					</section>
+				</div>
+			</div>
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img width="40" height="40" style="vertical-align: middle;" alt="Smiley face" src="images/fc-webicon-googleplus.png"><span class="lightbox2-social-name-text">Google Plus</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button3" class="on">a</a> <span></span>
+					</section>
+				</div>
+			</div>
+			<div class="lightbox2-social">
+				<div class="lightbox2-social-name">
+					<img width="40" height="40" style="vertical-align: middle;" alt="Smiley face" src="images/fc-webicon-linkedin.png"><span class="lightbox2-social-name-text">Linkedin</span>
+				</div>
+				<div class="lightbox2-social-button">
+					<section class="button-section">
+						<a id="button4" class="on">a</a> <span></span>
+					</section>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Overlay -->
+
+<div id="overlay" style="z-index: 1001"></div>
+
+
+</body>
+
+</html>
