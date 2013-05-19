@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
 <link rel="stylesheet" type="text/css" href="css/reg-landing-styling.css">
+<link rel="stylesheet" type="text/css" href="css/reg-invitation-styling.css">
 
 
 <script src="scripts/jquery.min.js" type="text/javascript"></script>
@@ -76,7 +77,7 @@
 	    
 	
 	    
- function showLB2() {
+ function showLB3() {
 	        
 	        var hite = $(document).height();   // returns height of browser viewport
 
@@ -84,19 +85,19 @@
 	  
 
 	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-lightbox-2-wrapper").css({"display" : "block" });
+	    $(".lightbox-facebook-wrapper").css({"display" : "block" });
 	  
 	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
 	    
-	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
+	   
 	       
 	        };
 	    
 	    
-	     function hideLB2() {
+	     function hideLB3() {
 
 	$("#overlay").css({"display" : "none" });
-	$(".reg-lightbox-2-wrapper").css({"display" : "none" });
+	$(".lightbox-facebook-wrapper").css({"display" : "none" });
 
 	$("body").css({"overflow":"auto"})
 	    
@@ -104,73 +105,19 @@
 	    
 	 
 	
-	    function removeSelctedElement(src){
-	    	
-	    	$(src).parent().addClass("selected-item-removed");
-	    	$(src).parent().css('display', 'none');
-	    	
-	    };
-
+	  
 	
 	    
 	  
 	    
 	    
-	    function showSearchAgain() {
-
-	    	
-	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
-	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "block" });
-	    	
-	    	    
-	    	    };
-	    	    
-	    	    function hideSearchAgain() {
-
-	    	    	
-	    	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
-	    	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });
-	    	    	
-	    	    	    
-	    	    	    };	    
+	     
 	    	    
 	    	 
 	    	
-	    function showUpload(input){
-	    	
-	    	
-	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
-	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
-	    	
-	    	
-	    	$(".lightbox2-left-image-upload").css({"display" : "block" });
-	    	
-	    	
-	    	
-	    	 if (input.files && input.files[0]) {
-	                var reader = new FileReader();
-
-	                reader.onload = function (e) {
-	                    $('#user-image')
-	                        .attr('src', e.target.result)
-	                        .width(200)
-	                        .height(200);
-	                };
-
-	                reader.readAsDataURL(input.files[0]);
-	            }
-	    	
-	    	
-	    };	 
+	   
 	    
-	    function closeUpload(){
-	    	
-	    	
-	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
-	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });   	
-	    	$(".lightbox2-left-image-upload").css({"display" : "none" });
-	    	
-	    }
+	    
 	    	    	    
 	    	    	    
 	    	    	    
@@ -215,7 +162,9 @@
 	<!-- End of header -->
 
 
-
+<div class="reg-invitation-header">
+Connect more networks to improve your profile
+</div>
 
 <div class="lightbox2-button-wrapper">
 
@@ -225,7 +174,7 @@
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button1" class="on">a</a> <span></span>
+						<a id="button1" class="on">Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -235,7 +184,7 @@
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button2">a</a> <span></span>
+						<a id="button2">Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -245,7 +194,7 @@
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button3" class="on">a</a> <span></span>
+						<a id="button3" class="on">Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -255,7 +204,7 @@
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button4" class="on">a</a> <span></span>
+						<a id="button4" class="on" onclick="showLB3()">Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -263,7 +212,269 @@
 
 
 
+<div class="lightbox-facebook-wrapper">
 
+
+
+			
+
+			<div class="lightbox3-tab-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<div id="lightbox3-tab1-content">
+				
+					<div class="mfs-header">
+					
+					<input id="mfs-checkbox-1" type="checkbox" onClick="toggle1(this)" /><label>Select All</label>
+					
+					
+					<input id="mfs-textbox-1" type="text" placeholder="Search..."/>
+					
+					<span id="mfs-search-span-1"></span>
+					
+					</div>
+					<div id="scrollbar-tab1">
+						<div class="scrollbar">
+							<div class="track">
+								<div class="thumb">
+									<div class="end"></div>
+								</div>
+							</div>
+						</div>
+						<div class="viewport">
+							<div class="overview">
+								
+									<div class="tab-item" id="mfs-thumb-tab1-1" onclick='selectFriend("mfs-thumb-tab1-1")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Akshay Tab1</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-2" onclick='selectFriend("mfs-thumb-tab1-2")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>One</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-3" onclick='selectFriend("mfs-thumb-tab1-3")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Two</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-4" onclick='selectFriend("mfs-thumb-tab1-4")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Three</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-5" onclick='selectFriend("mfs-thumb-tab1-5")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Four</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-6" onclick='selectFriend("mfs-thumb-tab1-6")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Five</div>
+									</div>
+
+							
+								
+									<div class="tab-item" id="mfs-thumb-tab1-7" onclick='selectFriend("mfs-thumb-tab1-7")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Six</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-8" onclick='selectFriend("mfs-thumb-tab1-8")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Seven</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-9" onclick='selectFriend("mfs-thumb-tab1-9")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Eight</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-10" onclick='selectFriend("mfs-thumb-tab1-10")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Nine</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-11" onclick='selectFriend("mfs-thumb-tab1-11")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Ten</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-12" onclick='selectFriend("mfs-thumb-tab1-12")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Eleven</div>
+									</div>
+
+								<div class="tab-item" id="mfs-thumb-tab1-13" onclick='selectFriend("mfs-thumb-tab1-13")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Six</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-14" onclick='selectFriend("mfs-thumb-tab1-14")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Seven</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-15" onclick='selectFriend("mfs-thumb-tab1-15")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Eight</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-16" onclick='selectFriend("mfs-thumb-tab1-16")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Nine</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-17" onclick='selectFriend("mfs-thumb-tab1-17")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Ten</div>
+									</div>
+									<div class="tab-item" id="mfs-thumb-tab1-18" onclick='selectFriend("mfs-thumb-tab1-18")'>
+										<input class="inner-checkbox" type="checkbox" name="tab1"
+											value="one"></input> <img src="images/profile-pictures.jpg"
+											alt="Smiley face" height="42" width="42"> <div>Eleven</div>
+									</div>
+								
+
+								
+
+								
+
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="mfs-footer">
+					<div class="mfs-button-wrapper">
+					
+					<div class="mfs-button-yes button-positive" onclick="hideLB3()">Send Invitation</div>
+
+								<div class="mfs-button-no button-negative" onclick="hideLB3()" >Cancel</div>
+					
+					
+					</div>
+					</div>
+				</div>
+
+
+				
+			
+
+
+			</div>
+
+		</div>
+
+		<div style="text-align: center; margin-bottom: 14px;">
+			<div class="lightbox-button-div" id="lightbox-next-button3">
+				<span class="lightbox-button-text-span">Finish</span>
+			</div>
+
+
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+			});
+
+		
+
+			function toggle1(source) {
+								
+				checkboxes = document.getElementsByName('tab1');
+						
+				if ( $('#mfs-checkbox-1').is(":checked") ){
+					
+					$('#scrollbar-tab1 .viewport .overview .tab-item').addClass('selected-friend');
+				}
+				else{
+					$('#scrollbar-tab1 .viewport .overview .tab-item').removeClass('selected-friend');
+					
+				}
+					for ( var i in checkboxes)
+					checkboxes[i].checked = source.checked;
+			}
+
+			
+			
+			function selectFriend(friendno) {
+				
+			
+				var friendnoString = "#" + friendno;
+			
+				if($(friendnoString).hasClass('selected-friend')){
+					$(friendnoString+' input').attr('checked', false);
+					$(friendnoString).removeClass('selected-friend');
+				}
+				else{
+				$(friendnoString).addClass('selected-friend');
+				$(friendnoString+' input').attr('checked', true);
+				
+				}
+				
+				
+			}
+			
+						
+			$("#mfs-textbox-1").keyup( function() {
+				
+				
+				var frendname = $("#mfs-textbox-1").val().toLowerCase();
+				
+				
+			
+				$('#scrollbar-tab1 .viewport .overview .tab-item').css('display','none');
+				$('#scrollbar-tab1 .viewport .overview .tab-item').removeClass("tab-item-selected-1");
+				$("#mfs-search-span-1").html("");
+				
+				if(frendname=="")
+					{
+					
+					$('#scrollbar-tab1 .viewport .overview .tab-item').css('display','inline-block');
+					}
+				else
+					{
+					
+						
+					
+					$("#scrollbar-tab1 .viewport .overview .tab-item").filter(function() {
+					    return $(this).text().toLowerCase().indexOf(frendname) > -1;
+					}).css("display","inline-block");
+					
+					$("#scrollbar-tab1 .viewport .overview .tab-item").filter(function() {
+					    return $(this).text().toLowerCase().indexOf(frendname) > -1;
+					}).addClass("tab-item-selected-1");
+					
+					var n = $(".tab-item-selected-1").length;
+					
+					$("#mfs-search-span-1").html(n+' results for : '+frendname);
+					$("#mfs-search-span-1").css('display','inline-block');
+					}
+				
+				});
+			
+				
+			
+			
+			
+			
+			
+		</script>
+
+
+
+</div>
 
 
 
