@@ -8,73 +8,18 @@
 
 <script src="scripts/jquery.min.js" type="text/javascript"></script>
 <script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
-<script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
+
+<script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
 
 
 <script type="text/javascript">
 	$(document).ready(function() {
 		
-		 var hite = $(window).height() - 160;   // returns height of browser viewport
-		    $(".landing-bottom").css({"top" : ""+hite+"px" });
-	
-		$(window).resize(function() {
-			 var hite = $(window).height() - 160;   // returns height of browser viewport
-			    $(".landing-bottom").css({"top" : ""+hite+"px" });
-	    });
+		
 		
 	});
 	
 	
-	 function showLB1() {
-	        
-	        var hite = $(document).height();   // returns height of browser viewport
-
-	    var wth = $(window).width();   // returns width of browser viewport
-	  
-
-	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-lightbox-1-wrapper").css({"display" : "block" });
-	  
-	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
-	       
-	        };
-	    
-	    
-	     function hideLB1() {
-
-	$("#overlay").css({"display" : "none" });
-	$(".reg-lightbox-1-wrapper").css({"display" : "none" });
-
-	$("body").css({"overflow":"auto"})
-	    
-	    };
-	    
- function showLB11() {
-	        
-	        var hite = $(document).height();   // returns height of browser viewport
-
-	    var wth = $(window).width();   // returns width of browser viewport
-	  
-	    hideLB1(); 
-
-	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-lightbox-1-1-wrapper").css({"display" : "block" });
-	  
-	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
-	    $('#scrollbar-lightbox').tinyscrollbar();
-	       
-	        };
-	    
-	    
-	     function hideLB11() {
-
-	$("#overlay").css({"display" : "none" });
-	$(".reg-lightbox-1-1-wrapper").css({"display" : "none" });
-
-	$("body").css({"overflow":"auto"})
-	    
-	    };
-	    
 	
 	    
  function showLB3() {
@@ -87,6 +32,8 @@
 	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
 	    $(".lightbox-facebook-wrapper").css({"display" : "block" });
 	  
+	    $('#scrollbar-tab1').tinyscrollbar();
+	    
 	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
 	    
 	   
@@ -174,7 +121,7 @@ Connect more networks to improve your profile
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button1" class="on">Connect</a> <span></span>
+						<a id="button1" class="on" onclick="showLB3()" >Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -204,7 +151,7 @@ Connect more networks to improve your profile
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button4" class="on" onclick="showLB3()">Connect</a> <span></span>
+						<a id="button4" class="on">Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -228,13 +175,18 @@ Connect more networks to improve your profile
 				
 				<div id="lightbox3-tab1-content">
 				
+				
+					<div class="mfs-header-text">
+					
+					Select friends from Facebook
+					</div>			
 					<div class="mfs-header">
 					
 					<input id="mfs-checkbox-1" type="checkbox" onClick="toggle1(this)" /><label>Select All</label>
 					
 					
 					<input id="mfs-textbox-1" type="text" placeholder="Search..."/>
-					
+					<button class="reg-lightbox-1-searchbutton"></button>
 					<span id="mfs-search-span-1"></span>
 					
 					</div>
@@ -460,8 +412,9 @@ Connect more networks to improve your profile
 					
 					$("#mfs-search-span-1").html(n+' results for : '+frendname);
 					$("#mfs-search-span-1").css('display','inline-block');
+					 
 					}
-				
+				 $('#scrollbar-tab1').tinyscrollbar();
 				});
 			
 				
