@@ -126,27 +126,17 @@ body {
     font-weight: bold;
     padding: 4px 15px;
 }
-
-
-
 .pageheader {
-	position: relative;
-	}
-	
-.reg-invitation-header{
-	
-	height: 50px;
-	line-height: 50px;
-	font-weight: bold;
-	font-size: 22px;
-	color: #666;
-	text-align: center;
+    position: relative;
 }
-
-
-
-
-
+.reg-invitation-header {
+    color: #666666;
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
 body {
     font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
     font-size: 12px;
@@ -271,19 +261,20 @@ ul.tabs li a:hover {
     color: #FFFFFF;
 }
 #lightbox3-tab1-content {
-    border: 1px solid #1A2A4D;
-    border-radius: 0 4px 4px 4px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 24px 0 #222222;
+    padding: 20px;
     position: absolute;
     width: 750px;
-    background: #FFF;
 }
 #lightbox3-tab2-content {
+    background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #1A2A4D;
     border-radius: 0 4px 4px 4px;
     position: absolute;
     visibility: hidden;
     width: 750px;
-    background: #FFF;
 }
 .tab-item {
     display: inline-block;
@@ -437,9 +428,16 @@ ul.tabs li a:hover {
     background: none repeat scroll 0 0 #D6DDEB;
 }
 #mfs-textbox-1, #mfs-textbox-2 {
-    border: 1px solid #CCCCCC;
+    border-color: #BBBBBB;
+    border-radius: 5px 0 0 5px;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
     margin-left: 5px;
-    padding: 3px;
+    padding-left: 5px;
     width: 420px;
 }
 .tab-item {
@@ -468,42 +466,44 @@ ul.tabs li a:hover {
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
-    height: 18px;
+    height: 22px;
+    line-height: 22px;
     margin-top: 4px;
-    padding-top: 3px;
     text-align: center;
     vertical-align: top;
-    width: 100px;
+    width: 110px;
 }
 .button-negative {
-    background: none repeat scroll 0 0 #EEEEEE !important;
-    border-color: #999999 #999999 #888888;
+    background: none repeat scroll 0 0 #FFFFFF !important;
+    border-color: #AAAAAA;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    color: #333333;
+    color: #666666;
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
-    height: 18px;
+    height: 22px;
+    line-height: 22px;
     margin-top: 4px;
-    padding-top: 3px;
     text-align: center;
     vertical-align: top;
     width: 85px;
 }
 .mfs-button-wrapper {
     float: right;
-    width: 205px;
+    width: 220px;
 }
 .mfs-header {
     background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 4px 4px 4px 4px;
     padding-bottom: 8px;
     padding-top: 7px;
 }
 .mfs-footer {
     background: none repeat scroll 0 0 #EEEEEE;
-    height: 32px;
+    border-radius: 4px 4px 4px 4px;
+    height: 35px;
     padding-top: 3px;
 }
 #mfs-search-span-1, #mfs-search-span-2 {
@@ -517,24 +517,30 @@ ul.tabs li a:hover {
 .mfs-header label {
     margin-left: 5px;
 }
-
-
-
-.lightbox-facebook-wrapper{
-	position: absolute;
-	display: none;
-	top: 15%;
-	left: 20%;
-	z-index: 1002;
+.lightbox-facebook-wrapper {
+    display: none;
+    left: 20%;
+    position: absolute;
+    top: 15%;
+    z-index: 1002;
 }
-
-
-
-
-
-
-
-
-
-
-
+.mfs-header-text {
+    color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 0;
+    text-align: center;
+}
+.reg-lightbox-1-searchbutton {
+    background: url("../images/search-icon.png") repeat scroll 0 0 #FFFFFF;
+    border-color: #BBBBBB;
+    border-radius: 0 5px 5px 0;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    cursor: pointer;
+    height: 24px;
+    margin-left: -5px;
+    vertical-align: top;
+    width: 22px;
+}
