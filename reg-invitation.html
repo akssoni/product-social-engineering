@@ -121,7 +121,7 @@ Connect more networks to improve your profile
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button1" class="on" onclick="showLB3()" >Connect</a> <span></span>
+						<a id="button1" class="on" onclick="showFacebookLB()" >Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -131,7 +131,7 @@ Connect more networks to improve your profile
 				</div>
 				<div class="lightbox2-social-button">
 					<section class="button-section">
-						<a id="button2">Connect</a> <span></span>
+						<a id="button2" onclick="showTwitterLB()">Connect</a> <span></span>
 					</section>
 				</div>
 			</div>
@@ -157,7 +157,16 @@ Connect more networks to improve your profile
 			</div>
 		</div>
 
+<div style="text-align: center; margin-bottom: 14px;">
+			<div class="lightbox-button-div" id="lightbox-next-button3">
+				<span class="lightbox-button-text-span">Finish</span>
+			</div>
 
+
+		</div>
+		
+		
+		<!-- Start of Genral Lightbox -->
 
 <div class="lightbox-facebook-wrapper">
 
@@ -316,6 +325,7 @@ Connect more networks to improve your profile
 					
 					</div>
 					</div>
+					<div class="reg-lightbox-close" onclick="hideLB3()">X</div>
 				</div>
 
 
@@ -325,15 +335,12 @@ Connect more networks to improve your profile
 
 			</div>
 
+	
 		</div>
 
-		<div style="text-align: center; margin-bottom: 14px;">
-			<div class="lightbox-button-div" id="lightbox-next-button3">
-				<span class="lightbox-button-text-span">Finish</span>
-			</div>
-
-
-		</div>
+		
+		
+		
 
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -427,8 +434,42 @@ Connect more networks to improve your profile
 
 
 
-</div>
 
+<!-- End of Genral Lightbox -->
+
+<!-- Start of Facebook/Twitter Lightbox -->
+
+<script type="text/javascript">
+
+function showFacebookLB(){
+	
+	
+	$('.mfs-header-text').html('Select friends from Facebook');
+	$('.button-positive').removeClass('button-twitter');
+	$('.selected-friend').css({'background': '#D6DDEB'});
+	
+	showLB3();
+	
+}
+
+function showTwitterLB(){
+	
+	
+	$('.mfs-header-text').html('Select followers from Twitter');
+	$('.button-positive').addClass('button-twitter');
+	$('.selected-friend').css({'background': '#C1E2F5'});
+	
+	showLB3();
+	
+}
+
+</script>
+
+
+
+<!-- End of Facebook/Twitter Lightbox -->
+
+<!-- Overlay -->
 
 
 
