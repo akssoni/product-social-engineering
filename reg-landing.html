@@ -86,7 +86,7 @@
 
 	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
 	    $(".reg-lightbox-2-wrapper").css({"display" : "block" });
-	  
+
 	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
 	    
 	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
@@ -102,6 +102,37 @@
 	$("body").css({"overflow":"auto"})
 	    
 	    };
+	
+	    
+ function showLB2New() {
+	        
+	        var hite = $(document).height();   // returns height of browser viewport
+
+	    var wth = $(window).width();   // returns width of browser viewport
+	  
+
+	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+	    $(".reg-new-lightbox-2-wrapper").css({"display" : "block" });
+	   // $(".lightbox2-header-text").html("<input type='text' placeholder='Product name'/>")
+	   // $(".lightbox2-header-subtext").html("<input type='text' placeholder='Category'/>")
+	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
+	    
+	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
+	       
+	        };
+	    
+	    
+	     function hideLB2New() {
+
+	$("#overlay").css({"display" : "none" });
+	$(".reg-new-lightbox-2-wrapper").css({"display" : "none" });
+
+	$("body").css({"overflow":"auto"})
+	    
+	    };
+	    
+	    
+	    
 	    
 	 
 	
@@ -1263,7 +1294,7 @@ Cars and Accessories
 		<div class="reg-lighbox-1-add-new">
 		
 		Can't find what you're looking for?    
-		<div class="reg-lighbox-1-add-new-button">
+		<div class="reg-lighbox-1-add-new-button" onclick="showLB2New()">
 		<a>Add new +</a>
 		</div>
 		</div>
@@ -1286,6 +1317,156 @@ Cars and Accessories
 Harrahs Resort Atlantic City Hotel
 </div>
 <div class="lightbox2-header-subtext">Hotels</div>
+</div>
+<div class="lightbox2-left-pane">
+<div class="lightbox2-left-upper-div">
+
+
+
+<div class="lightbox2-left-webimage-grid-wrapper">
+
+<div class="lightbox2-left-webimage-header">A web search turned up the following images:</div>
+
+				<div style="width: 375px; text-align: center; height: 250px; margin-bottom: 5px; margin-left: 5px;"
+					class="ImageResultBoxContainerWrapper">
+					<img src='https://d3uhxfg7zn5mo6.cloudfront.net/Image?url=https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3ETFZapNT-GNiVfoKpaGXVbn9N1usMIYqEb1Y40vwoe79XNaodrUQBv1h' style='height: 100%; max-width: 350px;'>
+					
+				</div>
+
+
+
+<div class="lightbox2-left-webimage-footer">No relevant images? <a onclick="showSearchAgain()">Click Here</a></div>
+
+</div>
+
+
+
+<div class="lightbox2-left-webimage-keyword-wrapper">
+
+<div class="lightbox2-header-keyward">
+Try searching again with different keywords
+</div>
+<div class="lightbox2-textbox-div-keyward">
+<input class="lightbox2-textbox-keyward" type="text" value="" style="width:260px">
+</div>
+
+<div class="lightbox2-search-button-keyword" onclick="hideSearchAgain()">
+<a>Search</a>
+</div>
+
+<div  onclick="hideSearchAgain()" class="reg-lightbox-close">X</div>
+
+
+</div>
+
+
+
+
+<div class="lightbox2-left-image-upload">
+<div>
+ <img id="user-image" src="#" alt="your image" />
+ </div>
+ <div class="lightbox2-search-button-keyword lightbox2-upload-button-keyword">
+ <a>Upload</a>
+ </div>
+ 
+<div  onclick="closeUpload()" class="reg-lightbox-close">X</div>
+
+</div>
+
+
+
+			</div>
+<div class="lightbox2-left-bottom-div">
+
+<div class="lightbox2-left-bottom-links" onclick="closeUpload()">
+Web images
+</div>
+
+
+<div class="lightbox2-left-bottom-links">
+               
+                    <span style="text-align:center;float:none;cursor:pointer" class="fileinput-button">
+                        <span>Upload New</span>                                                     
+                        <input onchange="showUpload(this);" type="file" name="files[]" title="Click to Select a file">
+                    </span>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+<div class="lightbox2-right-pane">
+<div class="lightbox2-right-textarea-div">
+
+<div class="lightbox2-right-textarea-div-text">
+Write your recommendation here:
+</div>
+
+
+<div>
+<textarea id="ReviewText" class="addItemReview" rows="2" name="ReviewText" data-val-required="Masttag is a helpful place!&lt;br/&gt;Add some text on why this is great" data-val="true" data-error-tooltip="true" data-default-text="I think this is awesome becauseÉ" cols="20">I think this is awesome because</textarea>
+</div>
+
+
+</div>
+<div class="lightbox2-right-dropdowns">
+
+<label>Category</label>
+<select name="Category">
+  <option value="">Mobile</option>
+  <option value="">Electronics</option>
+  <option value="">Vehicle</option>
+  <option value="">Travel</option>
+</select>
+<label style="margin-left: 15px">Brand</label>
+<select name="Brand">
+  <option value="">Nokia</option>
+  <option value="">Apple</option>
+  <option value="">Sony</option>
+  <option value="">Maruti</option>
+</select>
+
+
+
+</div>
+
+
+
+<div class="lightbox2-right-rating">
+<div class="lightbox2-right-rating-text">Your rating</div>
+<div class="lightbox2-right-rating-div"></div>
+</div>
+<div class="lightbox2-right-buttons">
+
+<div onclick="hideLB2()" class="lightbox2-right-pane-button-cancel">
+<a>Cancel</a>
+</div>
+
+<div onclick="hideLB2()" class="lightbox2-right-pane-button-add">
+<a>Add</a>
+</div>
+</div>
+
+
+
+</div>
+<div  onclick="hideLB2()" class="reg-lightbox-close">X</div>
+</div>
+
+<!-- New LightBox 2 -->
+
+<div class="reg-new-lightbox-2-wrapper">
+
+<div class="lightbox2-header-div">
+<div class="lightbox2-header-text">
+<input type="text" placeholder="Product Name"/>
+</div>
+<div class="lightbox2-header-subtext"><input type="text" placeholder="Category"/></div>
 </div>
 <div class="lightbox2-left-pane">
 <div class="lightbox2-left-upper-div">
@@ -1509,11 +1690,11 @@ Write your recommendation here:
 </div>
 <div class="lightbox2-right-buttons">
 
-<div onclick="hideLB2()" class="lightbox2-right-pane-button-cancel">
+<div onclick="hideLB2New()" class="lightbox2-right-pane-button-cancel">
 <a>Cancel</a>
 </div>
 
-<div onclick="hideLB2()" class="lightbox2-right-pane-button-add">
+<div onclick="hideLB2New()" class="lightbox2-right-pane-button-add">
 <a>Add</a>
 </div>
 </div>
@@ -1521,10 +1702,8 @@ Write your recommendation here:
 
 
 </div>
-<div  onclick="hideLB2()" class="reg-lightbox-close">X</div>
+<div  onclick="hideLB2New()" class="reg-lightbox-close">X</div>
 </div>
-
-
 
 
 

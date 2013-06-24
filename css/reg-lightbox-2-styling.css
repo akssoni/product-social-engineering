@@ -1,4 +1,4 @@
-.reg-lightbox-2-wrapper {
+.reg-lightbox-2-wrapper, .reg-new-lightbox-2-wrapper {
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 24px 0 #222222;
@@ -30,6 +30,26 @@
     height: 15px;
     line-height: 15px;
 }
+
+.lightbox2-header-text input{
+	 border: 1px solid #BBBBBB;
+    color: #777777;
+    font-size: 15px;
+    height: 22px;
+    margin-top: -10px;
+    padding: 0;
+    width: 380px;
+	}
+	
+.lightbox2-header-subtext input{
+	  border: 1px solid #BBBBBB;
+    font-size: 10px;
+    height: 17px;
+    margin-top: 2px;
+    padding: 0;
+    width: 150px;
+	}	
+
 .lightbox2-left-pane {
     display: inline-block;
     height: 300px;
