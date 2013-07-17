@@ -1,18 +1,52 @@
-
-.pageheader{
-	height: 85px;
+.pageheader {
+    height: 85px;
 }
-.loginpage-header{
-	 border-bottom: medium none;
+.loginpage-header {
+    border-bottom: medium none;
     box-shadow: none;
     margin-top: 30px;
     width: 85%;
 }
-.pageheader-logo{}
-.company-logo{
-	font-size: 30px;
+.pageheader-logo {
 }
-.pageheader-right{
-	 float: none;
+.company-logo {
+    font-size: 30px;
+}
+.pageheader-right {
+    float: none;
     margin-left: 15px;
+}
+.signin-error-content-div {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    margin: 100px auto auto;
+    width: 580px;
+}
+.signin-error-content-header {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 19px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    padding: 5px;
+    width: 95%;
+}
+.signin-error-content-body {
+}
+.signin-error-content-body-div1 {
+	 background-color: #FFEBE8;
+    border: 1px solid #DD3C10;
+     margin: 18px auto auto;
+    width: 95%;
+    padding: 5px;
+}
+.signin-error-content-body-div1-head {
+font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+}
+	}
+
+.signin-error-content-body-div1-content {
+	
 }
