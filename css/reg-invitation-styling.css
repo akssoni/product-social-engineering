@@ -116,9 +116,24 @@ body {
     margin-right: 0;
     margin-top: 5px;
 }
+
+.lightbox-button-skip {
+    background: -moz-linear-gradient(center top , #DF6933 0%, #CC4220 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #CA3F1E;
+   
+}
+
+
+
 .lightbox-button-div:hover {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
 }
+
+.lightbox-button-skip:hover {
+    background: -moz-linear-gradient(center top , #DF6933 0%, #D95C2D 100%) repeat scroll 0 0 transparent;
+}
+
+
 .lightbox-button-text-span {
     color: white;
     display: block;
@@ -404,19 +419,7 @@ ul.tabs li a:hover {
 #scrollbar-tab2 .disable {
     display: none;
 }
-.lightbox-button-div {
-    background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
-    border: 1px solid #3586C2;
-    border-radius: 4px 4px 4px 4px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 0;
-    margin-top: 5px;
-}
-.lightbox-button-div:hover {
-    background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
-}
+
 .lightbox-button-text-span {
     color: white;
     display: block;
