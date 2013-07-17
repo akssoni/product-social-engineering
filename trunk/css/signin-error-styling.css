@@ -24,6 +24,7 @@
 }
 .signin-error-content-header {
     border-bottom: 1px solid #CCCCCC;
+    color: #1C2A47;
     font-size: 19px;
     height: 30px;
     line-height: 30px;
@@ -34,35 +35,91 @@
 .signin-error-content-body {
 }
 .signin-error-content-body-div1 {
-	 background-color: #FFEBE8;
+    background-color: #FFEBE8;
     border: 1px solid #DD3C10;
-     margin: 18px auto auto;
-    width: 95%;
+    margin: 18px auto auto;
     padding: 5px;
+    width: 95%;
 }
 .signin-error-content-body-div1-head {
-font-size: 11px;
+    font-size: 11px;
     font-weight: bold;
     line-height: 18px;
 }
-	}
-
 .signin-error-content-body-div1-content {
-	
+}
+.signin-error-content-body-div2 {
+    margin-left: 80px;
+    margin-top: 15px;
+}
+.signin-error-content-body-div2-header {
+    color: #777777;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 35px;
+    vertical-align: top;
+    width: 130px;
+}
+.signin-error-content-body-div2-content1 {
+    border-color: #D8D8D9;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+}
+.signin-error-content-body-div2-content2 {
+    display: inline-block;
+    margin-left: 15px;
+    padding-top: 10px;
+    vertical-align: top;
+}
+.signin-error-content-body-div3 {
+    margin-left: 80px;
+    margin-top: 5px;
+}
+.signin-error-content-body-div3-header {
+    color: #777777;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 5px;
+    vertical-align: top;
+    width: 130px;
+}
+.signin-error-content-body-div3-content {
+    display: inline-block;
+}
+.signin-error-content-body-div4 {
+    margin-left: 210px;
+    margin-top: 10px;
+}
+.signin-error-content-body-div5 {
+    margin-left: 210px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.signin-error-content-body-div2{}
-.signin-error-content-body-div2-header{}
-.signin-error-content-body-div2-content1{}
-.signin-error-content-body-div2-content2{}
+.signin-error-content-body-div3-content-checkbox{
 
-.signin-error-content-body-div3{}
-.signin-error-content-body-div3-header{}
+margin-top: 5px;
+}
+
+.signin-error-page-link{
+	
+	color: #3B5998;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signin-error-page-link:hover{
+	
+	
+    text-decoration: underline;
+}
 
 
-.signin-error-content-body-div4{}
-.signin-error-content-body-div5{}
-
-
-
-
+.signin-footer {
+    display: none;
+}
