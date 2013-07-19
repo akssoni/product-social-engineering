@@ -1,0 +1,41 @@
+.signin-page-col1-header {
+	border-right: none;
+	
+	}
+	
+.signin-page-col2-header {
+	border-left: none;
+	
+	}	
+	
+	.signin-page-col3 {
+  
+    background: none repeat scroll 0 0 #EEEEEE;
+    
+}
+
+
+.signin-page-lightbox-signupin {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 24px 0 #222222;
+    display: none;
+    height: 360px;
+   left: 22%;
+   
+    padding: 25px;
+    position: absolute;
+    top: 20%;
+    width: 700px;
+    z-index: 1002;
+}
+
+.signin-page-lightbox-signupin-div1{}
+.signin-page-lightbox-signupin-div1-login{
+	
+	display: inline-block;
+}
+.signin-page-lightbox-signupin-div1-fbtw{
+	display: inline-block;
+}
+.signin-page-lightbox-signupin-div2{}

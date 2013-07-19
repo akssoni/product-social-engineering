@@ -20,7 +20,11 @@
     	
     
     	
+    
     	
+    	$(".signin-page-col2-item").click(function(){
+    		showSignUpIn();
+    		});
 
     });   
     
@@ -50,6 +54,32 @@ $(".signin-page-lightbox-signup").css({"display" : "none" });
 $("body").css({"overflow":"auto"})
     
     };
+    
+    function hideLightBoxSignInUp() {
+
+    	$("#overlay").css({"display" : "none" });
+    	$(".signin-page-lightbox-signupin").css({"display" : "none" });
+
+    	$("body").css({"overflow":"auto"})
+    	    
+    	    };
+    
+    
+  
+    
+  function showSignUpIn() {
+        
+        var hite = $(document).height();   // returns height of browser viewport
+
+    var wth = $(window).width();   // returns width of browser viewport
+  
+
+    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+    $(".signin-page-lightbox-signupin").css({"display" : "block" });
+  
+    $("body").css({"overflow":"auto","overflow-x":"hidden"})
+       
+        };
     
     
     
@@ -171,46 +201,20 @@ $("body").css({"overflow":"auto"})
 	
 		<div class="signin-page-three-col-wrapper">
 		<div class="signin-page-col1">
-		<div class="signin-page-col1-header">Top Reviews of The Week</div>
-		<div class="signin-page-col1-item">
-		
-		<div class="signin-page-col1-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col1-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star" id="rate-one"></div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		<div class="signin-page-col1-item-text">
-		<div class="signin-page-col1-item-review-wrapper">
-		<img width="50" height="50" alt="" src="images/profile-pictures.jpg">
-		<div class="signin-page-col1-item-review"><div class="signin-page-col1-item-reviewer">Akshay Soni </div>This item is awes wesome This item is awesome This item is awesome ..... <a>more</a></div>
-		</div>
-		
-		
-		</div>
-		
-		</div>
+		<div class="signin-page-col1-header">Search Results</div>
 		
 		
 		
-		<div class="signin-page-col1-item">
 		
-		<div class="signin-page-col1-item-image">
+		
+		
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
 		
 		<img width="100" height="100" alt="" src="images/product.png">
 		</div>
-		<div class="signin-page-col1-item-stat">
+		<div class="signin-page-col2-item-stat">
 		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
 		<div class="signin-page-col-stat1">
 		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
@@ -223,27 +227,17 @@ $("body").css({"overflow":"auto"})
 		
 		
 		  </div>
-		<div class="signin-page-col1-item-text">
-		<div class="signin-page-col1-item-review-wrapper">
-		<img width="50" height="50" alt="" src="images/profile-pictures.jpg">
-		<div class="signin-page-col1-item-review"><div class="signin-page-col1-item-reviewer">Akshay Soni </div>This item is awes wesome This item is awesome This item is awesome ..... <a>more</a></div>
-		</div>
 		
 		
 		</div>
 		
-		</div>
+		<div class="signin-page-col2-item">
 		
-		
-		
-		
-		<div class="signin-page-col1-item">
-		
-		<div class="signin-page-col1-item-image">
+		<div class="signin-page-col2-item-image">
 		
 		<img width="100" height="100" alt="" src="images/product.png">
 		</div>
-		<div class="signin-page-col1-item-stat">
+		<div class="signin-page-col2-item-stat">
 		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
 		<div class="signin-page-col-stat1">
 		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
@@ -256,16 +250,79 @@ $("body").css({"overflow":"auto"})
 		
 		
 		  </div>
-		<div class="signin-page-col1-item-text">
-		<div class="signin-page-col1-item-review-wrapper">
-		<img width="50" height="50" alt="" src="images/profile-pictures.jpg">
-		<div class="signin-page-col1-item-review"><div class="signin-page-col1-item-reviewer">Akshay Soni </div>This item is awes wesome This item is awesome This item is awesome ..... <a>more</a></div>
-		</div>
 		
 		
 		</div>
 		
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
 		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+		
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+		
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+	
 		
 		
 		
@@ -276,7 +333,32 @@ $("body").css({"overflow":"auto"})
 		
 		</div>
 		<div class="signin-page-col2">
-		<div class="signin-page-col2-header">Top Products of The Week</div>
+		<div class="signin-page-col2-header"></div>
+		
+		
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+		
 		
 		<div class="signin-page-col2-item">
 		
@@ -377,109 +459,129 @@ $("body").css({"overflow":"auto"})
 		
 		</div>
 		<div class="signin-page-col3">
-		<div class="signin-page-col3-header">Top Reviewers of The Week</div>
+		<div class="signin-page-col3-header">Sponcered Search</div>
 		
 		
 		
 		
-		<div class="signin-page-col3-item">
-		<div class="signin-page-col3-item-header">Akshay Soni</div>
-		<div class="signin-page-col3-item-image">
+		<div class="signin-page-col2-item">
 		
-		<img width="80" height="80" alt="" src="images/profile-pictures.jpg">
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
 		</div>
-		<div class="signin-page-col3-item-text">
-		
-		<div class="signin-page-col3-item-stat">
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Followers</div>
-		<div>12 Following</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
 		</div>
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Reviews</div>
-		<div class="signin-page-col3-item-rate">12 Rating</div>
-		</div>
-		
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
 		</div>
 		
+		
+		  </div>
+		
+		
 		</div>
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
+		
+		</div>
+		<div class="signin-page-col2-item">
+		
+		<div class="signin-page-col2-item-image">
+		
+		<img width="100" height="100" alt="" src="images/product.png">
+		</div>
+		<div class="signin-page-col2-item-stat">
+		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
+		<div class="signin-page-col-stat1">
+		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
+		<div class="signin-page-col-star">3.5 stars</div>
+		</div>
+		<div class="signin-page-col-stat2">
+		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
+		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
+		</div>
+		
+		
+		  </div>
+		
 		
 		</div>
 		
-		<div class="signin-page-col3-item">
-		<div class="signin-page-col3-item-header">Akshay Soni</div>
-		<div class="signin-page-col3-item-image">
 		
-		<img width="80" height="80" alt="" src="images/profile-pictures.jpg">
-		</div>
-		<div class="signin-page-col3-item-text">
 		
-		<div class="signin-page-col3-item-stat">
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Followers</div>
-		<div>12 Following</div>
-		</div>
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Reviews</div>
-		<div class="signin-page-col3-item-rate">12 Rating</div>
-		</div>
 		
-		</div>
-		
-		</div>
-		
-		</div>
-		
-		<div class="signin-page-col3-item">
-		<div class="signin-page-col3-item-header">Akshay Soni</div>
-		<div class="signin-page-col3-item-image">
-		
-		<img width="80" height="80" alt="" src="images/profile-pictures.jpg">
-		</div>
-		<div class="signin-page-col3-item-text">
-		
-		<div class="signin-page-col3-item-stat">
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Followers</div>
-		<div>12 Following</div>
-		</div>
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Reviews</div>
-		<div class="signin-page-col3-item-rate">12 Rating</div>
-		</div>
-		
-		</div>
-		
-		</div>
-		
-		</div>
 		
 	
 	
-	<div class="signin-page-col3-item">
-		<div class="signin-page-col3-item-header">Akshay Soni</div>
-		<div class="signin-page-col3-item-image">
-		
-		<img width="80" height="80" alt="" src="images/profile-pictures.jpg">
-		</div>
-		<div class="signin-page-col3-item-text">
-		
-		<div class="signin-page-col3-item-stat">
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Followers</div>
-		<div>12 Following</div>
-		</div>
-		<div class="signin-page-col3-item-stat-inner">
-		<div>12 Reviews</div>
-		<div class="signin-page-col3-item-rate">12 Rating</div>
-		</div>
-		
-		</div>
-		
-		</div>
-		
-		</div>
-		
+	
 		
 	
 	
@@ -755,6 +857,94 @@ $("body").css({"overflow":"auto"})
 
 	</div>
 	
+
+<div class="signin-page-lightbox-signupin" style="z-index: 1002">
+
+<div class="signin-page-lightbox-signupin-div1">
+<div class="signin-page-lightbox-signupin-div1-login">
+
+
+
+
+
+
+<div style="display: inline-block;">
+				<div class="username-password">
+					<input type="text" placeholder="Email or User name"/>
+					<input type="password" placeholder="Password"/>
+				</div>
+
+				<div class="login-button">
+
+					<span class="login-button-span"
+						style="margin-top: 0px; display: inline-block; vertical-align: top;">Log In</span>
+
+					
+
+
+				</div>
+				
+				
+				
+				
+				<div style="color: rgb(152, 169, 202); width: 350px; margin-top: -5px;">
+				<input  type="checkbox"  style="padding: 0px; margin: 0pt;"/>
+				<label >Keep me logged in</label>
+				<label style="margin-left: 34px;"><a class="forgotPasswordLink" href="#" >Forgot your password?</a></label>
+				</div>
+				
+				</div>
+
+
+
+
+
+</div>
+
+<div class="signin-page-lightbox-signupin-div1-fbtw">
+
+
+
+<div class="signin-fb-tw">
+		<div class="signin-fb-tw-text">Want to sign in with Facebook or Twitter</div>
+		<div class="signin-fb-button">
+		<a>
+		<img width="35" height="35" alt="" src="images/facebook-logo-square-black.png" style="vertical-align: top;">
+		Sign in Facebook
+		</a>
+		</div>
+		<div class="signin-tw-button">
+		<a>
+		<img width="35" height="35" alt="" src="images/twitter-logo-square-black.png" style="vertical-align: top;">
+		Sign in with Twitter
+		</a>
+		</div>
+		
+		</div>
+
+
+</div>
+</div>
+<div class="signin-page-lightbox-signupin-div2">
+
+
+
+<div class="signin-page-signup-button">
+
+					<span class="login-button-span"
+						style="margin-top: 0px; display: inline-block; vertical-align: top;" onclick="showSignUp()">Sign Up</span>
+
+					
+
+
+				</div>
+
+
+</div>
+
+<div  onclick="hideLightBoxSignInUp()" class="signin-lightbox-close">X</div>
+
+</div>	
 	
 	
 	<div id="overlay" style="z-index: 1001"></div>
