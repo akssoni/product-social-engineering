@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
 
 <link rel="stylesheet" type="text/css" href="css/signin-styling.css">
-<link rel="stylesheet" type="text/css" href="css/loginpage-three-col.css">
+
 <link rel="stylesheet" type="text/css" href="css/signin-search-styling.css">
 
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -22,7 +22,7 @@
     	
     
     	
-    	$(".signin-page-col2-item").click(function(){
+    	$(".search-result-line").click(function(){
     		showSignUpIn();
     		});
 
@@ -82,6 +82,12 @@ $("body").css({"overflow":"auto"})
         };
     
     
+    
+   function showSignUpInForm(){
+	   $(".signin-page-lightbox-signupin").css({"display" : "none" });
+	   
+	   $(".signin-page-lightbox-signup").css({"display" : "block" });
+   }
     
     
     
@@ -147,455 +153,366 @@ $("body").css({"overflow":"auto"})
 		</div>
 </div>
 		
-		<div class="signup-div-wrapper">
-		<div class="signin-page-search-fb-tw-wrapper">
-		<div class="signin-page-search-box">
-		
-		<div class="signin-page-search-title">
-		Your friends’ recommendations, on everything.
-		</div>
-		
-		
-		<div class="pageheader-searchbar">
-			<input class="signin-page-search-textarea"
-				placeholder="Search for people, places and products" id="project" />
-			
-			
-			<div class="signin-search-button">Search</div>
-		</div>
-		</div>
-		
-		
-		
-		
-		</div>
-		
-		
-		
-		
-		
-		<div class="signin-fb-tw">
-		<div class="signin-fb-tw-text">Want to sign in with Facebook or Twitter</div>
-		<div class="signin-fb-button">
-		<a>
-		<img width="35" height="35" alt="" src="images/facebook-logo-square-black.png" style="vertical-align: top;">
-		Sign in Facebook
-		</a>
-		</div>
-		<div class="signin-tw-button">
-		<a>
-		<img width="35" height="35" alt="" src="images/twitter-logo-square-black.png" style="vertical-align: top;">
-		Sign in with Twitter
-		</a>
-		</div>
-		
-		</div>
-		
-		
-	
-
-		
-		</div>
-	
-	
-	
-		<div class="signin-page-three-col-wrapper">
-		<div class="signin-page-col1">
-		<div class="signin-page-col1-header">Search Results</div>
-		
-		
-		
-		
-		
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-	
-		
-		
-		
-		
-		
-
-
-		
-		</div>
-		<div class="signin-page-col2">
-		<div class="signin-page-col2-header"></div>
-		
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-	
-		
-	
-		
-		
-		
-		</div>
-		<div class="signin-page-col3">
-		<div class="signin-page-col3-header">Sponcered Search</div>
-		
-		
-		
-		
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		<div class="signin-page-col2-item">
-		
-		<div class="signin-page-col2-item-image">
-		
-		<img width="100" height="100" alt="" src="images/product.png">
-		</div>
-		<div class="signin-page-col2-item-stat">
-		<div class="signin-page-col1-item-header"> Samsung DUOS Grand</div>
-		<div class="signin-page-col-stat1">
-		<div class="signin-page-col-like">2 <img width="22" height="22" alt="" src="images/thumbsup.png" /></div>
-		<div class="signin-page-col-star">3.5 stars</div>
-		</div>
-		<div class="signin-page-col-stat2">
-		<div class="signin-page-col-share">6 <img width="22" height="22" alt="" src="images/facebook-logo-square-blue.png" /></div>
-		<div class="signin-page-col-tweet">7 <img width="22" height="22" alt="" src="images/twitter-logo-square-blue.png" /></div>
-		</div>
-		
-		
-		  </div>
-		
-		
-		</div>
-		
-		
-		
-		
 		
 	
 	
 	
 		
-	
-	
-	
-		</div>
-		
-		
-		
-		
-		
-		
-		</div>	
 	
 	<!-- Page Content -->
+	
+	
+	
+	
+	
+	
+		<div class="pagecontent-body search-results-body">
+
+
+
+
+			<div class="search-results-col1">
+				<div class="search-results-col1-header">SEARCH FILTERS</div>
+				<div class="search-results-col1-links"
+					style="background: #D8DFEA; font-weight: bold;">All results</div>
+				<div class="search-results-col1-links">Products</div>
+				<div class="search-results-col1-links">People</div>
+				<div class="search-results-col1-links">Pages</div>
+				<div class="search-results-col1-links">Campaign</div>
+
+			</div>
+
+
+
+
+
+			<div class="pagecontent-search">
+
+
+				<div style="font-size: 16px; margin-left: 20px;">All Results</div>
+
+				<div class="signin-search-col">
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+
+					
+
+				</div>
+
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+
+</div>
+
+<div class="signin-search-col">
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+
+					
+
+				</div>
+
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+
+</div>
+
+
+<div class="signin-search-col">
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+
+					
+
+				</div>
+
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+				<div class="search-result-line">
+					<div class="yourproducts-products-image"
+						style="background-image: url('images/product.png');"></div>
+					<div class="yourproducts-products-info">
+
+						<div style="font-size: 13px; font-weight: bold">Maruti Eco</div>
+						<div>{Rating}</div>
+						<div>Reviews and rating</div>
+						<div>
+							I own this car <span> Write a review </span>
+						</div>
+
+
+
+
+					</div>
+					
+				</div>
+
+
+</div>
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="search-results-col2"></div>
+		</div>
+	
+	
+	
 	
 	
 		
@@ -868,13 +785,13 @@ $("body").css({"overflow":"auto"})
 
 
 
-<div style="display: inline-block;">
+<div style="display: inline-block; margin-top: 20px; margin-left: 20px;">
 				<div class="username-password">
-					<input type="text" placeholder="Email or User name"/>
-					<input type="password" placeholder="Password"/>
+					<input type="text" placeholder="Email or User name" style="display: block; border: 1px solid;" />
+					<input type="password" placeholder="Password" style="display: block; border: 1px solid; margin-top: 10px;" />
 				</div>
 
-				<div class="login-button">
+				<div class="login-button" style="margin-top: 20px; margin-left: 20px;">
 
 					<span class="login-button-span"
 						style="margin-top: 0px; display: inline-block; vertical-align: top;">Log In</span>
@@ -887,13 +804,13 @@ $("body").css({"overflow":"auto"})
 				
 				
 				
-				<div style="color: rgb(152, 169, 202); width: 350px; margin-top: -5px;">
+				<div style="color: rgb(152, 169, 202); margin-top: 5px;">
 				<input  type="checkbox"  style="padding: 0px; margin: 0pt;"/>
 				<label >Keep me logged in</label>
-				<label style="margin-left: 34px;"><a class="forgotPasswordLink" href="#" >Forgot your password?</a></label>
+				<label style="display: block; margin-left: 5px;"><a class="forgotPasswordLink" href="#" >Forgot your password?</a></label>
 				</div>
 				
-				</div>
+</div>
 
 
 
@@ -927,9 +844,9 @@ $("body").css({"overflow":"auto"})
 </div>
 <div class="signin-page-lightbox-signupin-div2">
 
-a
 
-<div class="signin-page-signup-button">
+
+<div class="signin-page-signup-button" onclick="showSignUpInForm()">
 
 					<span class="login-button-span"
 						style="margin-top: 0px; display: inline-block; vertical-align: top;" onclick="showSignUp()">Sign Up</span>
