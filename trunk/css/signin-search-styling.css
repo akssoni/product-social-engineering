@@ -1,18 +1,4 @@
-.signin-page-col1-header {
-	border-right: none;
-	
-	}
-	
-.signin-page-col2-header {
-	border-left: none;
-	
-	}	
-	
-	.signin-page-col3 {
-  
-    background: none repeat scroll 0 0 #EEEEEE;
-    
-}
+
 
 
 .signin-page-lightbox-signupin {
@@ -34,8 +20,31 @@
 .signin-page-lightbox-signupin-div1-login{
 	
 	display: inline-block;
+	vertical-align: top;
 }
 .signin-page-lightbox-signupin-div1-fbtw{
 	display: inline-block;
 }
 .signin-page-lightbox-signupin-div2{}
+
+
+.pagecontent-search{
+	
+	width: auto;
+}
+
+.signin-search-col{
+	
+	display: inline-block;
+}
+
+.search-result-line{
+	
+	cursor: pointer;
+}
+
+
+.signin-fb-tw {
+    background: none;
+    
+}
