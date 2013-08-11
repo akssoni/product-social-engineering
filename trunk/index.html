@@ -353,6 +353,28 @@ function showLB2New() {
 	opacity: 0.4;
 	filter: alpha(opacity =     40);
 }
+.choose_file{
+    position:absolute;
+	top:153px;
+	left:75px;
+    display:inline-block;    
+    border-radius:8px;
+    border:#ebebeb solid 1px;
+    width:128px; 
+    padding: 4px 6px 4px 8px;
+    font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
+    color: #7f7f7f;
+    margin-top: 2px;
+    background:white
+}
+.choose_file input[type="file"]{
+    -webkit-appearance:none; 
+    position:absolute;
+    top:165; left:120;
+    opacity:0;
+margin-top:-24px;
+width:115px;	
+}
 </style>
 
 
@@ -442,6 +464,7 @@ function showLB2New() {
 			<div class="pageheader-alert">
 				<img src="images/profilepic.png"
 					style="display: inline-block; height: 27px; background-size: 100% auto; width: 27px; margin-top: 1px;"></img>
+			
 				<span class="pageheader-menu"
 					style="margin-top: 5px; padding: 2px 9px 3px; display: inline-block; vertical-align: top;">Pratap
 					Singh</span>
@@ -465,6 +488,13 @@ function showLB2New() {
 		<div class="pagecontentintrobar">
 			<div class="pagecontent-introbardisplaypic">
 				<img class="displaypic" src="images/profilepic.png"></img>
+						<div class="choose_file">
+		<select>				
+       <option>Edit profile Picture</option>
+	   <option>Edit thumbnail</option>
+	     </select>    
+        <input name="Select File" type="file" />
+    </div>
 				<div class="social-plugins">
 					<div class="social-plugins-image1 social-plugins-image"></div>
 					<div class="social-plugins-image2 social-plugins-image"></div>
@@ -473,14 +503,14 @@ function showLB2New() {
 				</div>
 			</div>
 			<div class="pagecontent-introbaruserinfo">
-				<span class="pagecontent-introbaruserinfo-name"> Hello Pratap
+				<span class="pagecontent-introbaruserinfo-name">Pratap
 					Singh </span> <span class="pagecontent-introbaruserinfo-1"> Blood
 					Group: </span> <span class="pagecontent-introbaruserinfo-2">
 					Company Info: </span> <span class="pagecontent-introbaruserinfo-3">
 					Lives At: </span>
 
 			</div>
-			<div
+			 <!--<div
 				style="display: inline-block; vertical-align: top; margin-bottom: 5px;">
 				<div id="wrapper"></div>
 				<div class="newsfeed-comment-commenttext-button-fb">
@@ -490,26 +520,26 @@ function showLB2New() {
 					<span class="newsfeed-comment-commenttext-button-span">Tweet</span>
 				</div>
 
-			</div>
+			</div>-->
 
 			<div
-				style="width: 390px; overflow: hidden; display: inline-block; height: 164px; float: right;">
+				style="width: 320px; overflow: hidden; display: inline-block; height: 164px; float: right; margin-right:-25px;">
 
 
 				<div id="NavigateFordward" class="horizantal-scroll-left"></div>
 
 				<div id="FixedWindow"
-					style="width: 350px; overflow: hidden; display: inline-block;">
+					style="width: 280px; overflow: hidden; display: inline-block;">
 					<div id="CategoryList" style="width: 1057px; overflow: auto;">
 
 						<div class="pagecontent-introbarfriendsthumbails">
 							<div class="pagecontent-introbarfriendsthumbails-line1">
-								<div class="introbarfriendsthumbails-pic"
+								<!--<div class="introbarfriendsthumbails-pic"
 									style="background-image: url('images/profile-pictures.jpg');">
 									<div class="introbarfriendsthumbails-button">
 										<span class="thumbnailes-button-span">Inivite</span>
 									</div>
-								</div>
+								</div>-->
 								<div class="introbarfriendsthumbails-pic"
 									style="background-image: url('images/profile-pictures.jpg');">
 									<div class="introbarfriendsthumbails-button">
@@ -537,12 +567,12 @@ function showLB2New() {
 							</div>
 
 							<div class="pagecontent-introbarfriendsthumbails-line2">
-								<div class="introbarfriendsthumbails-pic"
+								<!--<div class="introbarfriendsthumbails-pic"
 									style="background-image: url('images/profile-pictures.jpg');">
 									<div class="introbarfriendsthumbails-button">
 										<span class="thumbnailes-button-span">Inivite</span>
 									</div>
-								</div>
+								</div>-->
 								<div class="introbarfriendsthumbails-pic"
 									style="background-image: url('images/profile-pictures.jpg');">
 									<div class="introbarfriendsthumbails-button">
@@ -829,13 +859,13 @@ function showLB2New() {
 
 			<div class="pagecontent-newsfeed">
 				<div class="newsfeed-text">
-					<textarea class="newsfeed-textarea" style="resize: none;"
+					<textarea class="newsfeed-textarea" style="resize: none; margin-top:-175px; vertical-align:top;"
 						placeholder="What are you looking for.." cols="" rows=""></textarea>
-					<div class="newsfeed-button">
+					<div class="newsfeed-button"  style="margin-top:-100px;">
 						<span class="newsfeed-button-text">Post</span>
 					</div>
 				</div>
-				<div class="newsfeed">
+				<div class="newsfeed" style="margin-top:-100px;">
 					<div class="newsfeed-product">
 						<div class="newsfeed-product-part1">
 
