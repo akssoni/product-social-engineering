@@ -14,253 +14,80 @@
 
 <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
 
 <link rel="stylesheet"
 	href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 <script src="scripts/jquery.min.js" type="text/javascript"></script>
+
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
 <script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
 <script src="scripts/slider.js" type="text/javascript"></script>
 <script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
 
-		$('#scrollbar1').tinyscrollbar();
-		$('#scrollbar2').tinyscrollbar();
-		$('#scrollbar3').tinyscrollbar();
-
-		$('#wrapper').myslider({
-			'width' : '200px',
-			'sliderstyle' : 'vote',
-			'totalbarwidth' : '100px',
-			'text' : '77 % Member Ratings',
-			'bandclass' : 'voteband',
-			band : [ {
-				'color' : '#555',
-				'width' : '100',
-				'text' : 'Kayani',
-				'textcolor' : '#888'
-			}, {
-				'color' : '#555',
-				'width' : '50',
-				'text' : 'Gilani',
-				'textcolor' : '#888',
-				'textsize' : '10px'
-			}, {
-				'color' : '#555',
-				'width' : '70',
-				'text' : 'Sumit',
-				'textcolor' : '#888',
-				'textsize' : '10px'
-			} ]
-		});
-
-	
-	
-	
-	
-	});
-	
-	
-	
-
-	
-	
-	
-	 function showLB1() {
-	        
-	        var hite = $(document).height();   // returns height of browser viewport
-
-	    var wth = $(window).width();   // returns width of browser viewport
-	  
-
-	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-lightbox-1-wrapper").css({"display" : "block" });
-	  
-	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
-	       
-	        };
-	    
-	    
-	     function hideLB1() {
-
-	$("#overlay").css({"display" : "none" });
-	$(".reg-lightbox-1-wrapper").css({"display" : "none" });
-
-	$("body").css({"overflow":"auto"})
-	    
-	    };
-	    
-function showLB11() {
-	        
-	        var hite = $(document).height();   // returns height of browser viewport
-
-	    var wth = $(window).width();   // returns width of browser viewport
-	  
-	    hideLB1(); 
-
-	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-lightbox-1-1-wrapper").css({"display" : "block" });
-	  
-	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
-	    $('#scrollbar-lightbox').tinyscrollbar();
-	       
-	        };
-	    
-	    
-	     function hideLB11() {
-
-	$("#overlay").css({"display" : "none" });
-	$(".reg-lightbox-1-1-wrapper").css({"display" : "none" });
-
-	$("body").css({"overflow":"auto"})
-	    
-	    };
-	    
-	
-	    
-function showLB2() {
-	        
-	        var hite = $(document).height();   // returns height of browser viewport
-
-	    var wth = $(window).width();   // returns width of browser viewport
-	  
-
-	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-lightbox-2-wrapper").css({"display" : "block" });
-
-	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
-	    
-	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
-	       
-	        };
-	    
-	    
-	     function hideLB2() {
-
-	$("#overlay").css({"display" : "none" });
-	$(".reg-lightbox-2-wrapper").css({"display" : "none" });
-
-	$("body").css({"overflow":"auto"})
-	    
-	    };
-	
-	    
-function showLB2New() {
-	        
-	        var hite = $(document).height();   // returns height of browser viewport
-
-	    var wth = $(window).width();   // returns width of browser viewport
-	  
-
-	    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-	    $(".reg-new-lightbox-2-wrapper").css({"display" : "block" });
-	   // $(".lightbox2-header-text").html("<input type='text' placeholder='Product name'/>")
-	   // $(".lightbox2-header-subtext").html("<input type='text' placeholder='Category'/>")
-	    $("body").css({"overflow":"auto","overflow-x":"hidden"})
-	    
-	    $('.lightbox2-right-rating-div').raty({ readOnly: false, score: 0 });
-	       
-	        };
-	    
-	    
-	     function hideLB2New() {
-
-	$("#overlay").css({"display" : "none" });
-	$(".reg-new-lightbox-2-wrapper").css({"display" : "none" });
-
-	$("body").css({"overflow":"auto"})
-	    
-	    };
-	    
-	    
-	    
-	    
-	 
-	
-	
-
-	
-	    
-	  
-	    
-	    
-	    function showSearchAgain() {
-
-	    	
-	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
-	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "block" });
-	    	
-	    	    
-	    	    };
-	    	    
-	    	    function hideSearchAgain() {
-
-	    	    	
-	    	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
-	    	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });
-	    	    	
-	    	    	    
-	    	    	    };	    
-	    	    
-	    	 
-	    	
-	    function showUpload(input){
-	    	
-	    	
-	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
-	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "none" });
-	    	
-	    	
-	    	$(".lightbox2-left-image-upload").css({"display" : "block" });
-	    	
-	    	
-	    	
-	    	 if (input.files && input.files[0]) {
-	                var reader = new FileReader();
-
-	                reader.onload = function (e) {
-	                    $('#user-image')
-	                        .attr('src', e.target.result)
-	                        .width(200)
-	                        .height(200);
-	                };
-
-	                reader.readAsDataURL(input.files[0]);
-	            }
-	    	
-	    	
-	    };	 
-	    
-	    function closeUpload(){
-	    	
-	    	
-	    	$(".lightbox2-left-webimage-keyword-wrapper").css({"display" : "none" });
-	    	$(".lightbox2-left-webimage-grid-wrapper").css({"display" : "block" });   	
-	    	$(".lightbox2-left-image-upload").css({"display" : "none" });
-	    	
-	    }
-	    	    	    
-	    
-	    
-	    
-	function showLargeImageResult(url){
-	    	
-		
-		$(".ImageResultBoxContainerWrapper").html("<img src='"+url+"' style='height: 100%;'>");
-	    	
-	    	
-	    }
-	
-	
-	
-	
-	
-	
-</script>
 
 
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"
 	type="text/javascript"></script>
+
+
+<script src="scripts/masttag-master-1.0.js" type="text/javascript"></script>
+
+
+<style>
+.ui-tooltip, .arrow:after {
+background: white;
+border: 1px solid rgba(100, 100, 100, 0.8);
+}
+.ui-tooltip {
+padding: 10px 20px;
+
+border-radius: 4px;
+border: 1px solid rgba(100, 100, 100, 0.4);
+
+background: none repeat scroll 0 0 padding-box rgba(255, 255, 255, 0.98);
+
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+.arrow {
+
+width: 70px;
+height: 16px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: -16px;
+}
+.arrow.top {
+top: -16px;
+bottom: auto;
+}
+.arrow.left {
+left: 20%;
+}
+.arrow:after {
+content: "";
+position: absolute;
+left: 20px;
+top: -20px;
+width: 25px;
+height: 25px;
+box-shadow: 6px 5px 9px -9px rgba(100, 100, 100, 0.4);
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+tranform: rotate(45deg);
+}
+.arrow.top:after {
+bottom: -20px;
+top: auto;
+}
+</style>
+
 
 <style type="text/css">
 #project-label {
@@ -382,49 +209,7 @@ width:115px;
 
 
 
-<script type="text/javascript">
-	$(function() {
 
-		$("#project").autocomplete({
-			minLength : 2,
-			source : function(request, response) {
-				$.ajax({
-					url : "search.json",
-					dataType : "json",
-					data : {
-						term : request.term
-					},
-					success : function(data) {
-						response($.map(data, function(item) {
-							return {
-								value : item.value,
-								label : item.label,
-								desc : item.desc,
-								icon : item.icon
-							};
-						}));
-					}
-				});
-			},
-
-			select : function(event, ui) {
-				$("#project").val(ui.item.label);
-
-				return false;
-			}
-		}).data("autocomplete")._renderItem = function(ul, item) {
-			return $("<li>")
-					.data("item.autocomplete", item)
-					.append(
-							"<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>"
-									+ item.label
-									+ "</span><br>"
-									+ item.desc
-									+ "</div></a>").appendTo(ul);
-		};
-
-	});
-</script>
 
 
 
@@ -503,7 +288,7 @@ width:115px;
 				</div>
 			</div>
 			<div class="pagecontent-introbaruserinfo">
-				<span class="pagecontent-introbaruserinfo-name">Pratap
+				<span class="pagecontent-introbaruserinfo-name" title="tooltip">Pratap
 					Singh </span> <span class="pagecontent-introbaruserinfo-1"> Blood
 					Group: </span> <span class="pagecontent-introbaruserinfo-2">
 					Company Info: </span> <span class="pagecontent-introbaruserinfo-3">
@@ -874,7 +659,7 @@ width:115px;
 							<div style="margin-top: 15px">
 								<img class="newsfeed-comment-image" src="images/profile-pictures.jpg"></img>
 								<div style="display: inline-block; margin-left: 10px;">
-									<div class="newsfeed-comment-username">Akshay Soni</div>
+									<div class="newsfeed-comment-username" title="Tooltip">Akshay Soni</div>
 									<div class="newsfeed-comment-text">Commment d they
 										maintain that clarity on any kind o</div>
 									<div class="newsfeed-comment-translation">See Translation</div>
@@ -1905,20 +1690,7 @@ Write your recommendation here:
 
 <!-- End of Add new Flow -->
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	<script type="text/javascript">
+		<script type="text/javascript">
 		$("#NavigateBackward").click(function() {
 			$("#FixedWindow").animate({
 				scrollLeft : "+=352"
@@ -1959,6 +1731,18 @@ Write your recommendation here:
 			e.stopPropagation();
 		});
 	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
 
 
 
