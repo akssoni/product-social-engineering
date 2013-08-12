@@ -621,6 +621,7 @@ background-attachment: scroll;
  color: #335598;
     font-size: 12px;
     font-weight: bold;
+    display: inline-block;
 }
 .newsfeed-comment-text{
   margin-bottom: 5px;
