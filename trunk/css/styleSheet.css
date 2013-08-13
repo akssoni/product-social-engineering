@@ -9,7 +9,7 @@ body {
     border-bottom: 1px solid #AAAAAA;
     border-top: 2px solid;
     box-shadow: 0 6px 14px #333333;
-    height: 30px;
+    height: 32px;
     padding-left: 8%;
     
 }
@@ -149,15 +149,15 @@ border-bottom: 1px solid #AAAAAA;
 .pagecontent-introbardisplaypic {
     display: inline-block;
     margin-top: 10px;
-     width: 175px;
-	 margin-left:-32px;
+     width: 150px;
+	
 }
 .pagecontent-introbaruserinfo {
     display: inline-block;
     margin-top: 10px;
     vertical-align: top;
-    width: 150px;
-	margin-left:-20px;
+    width: 130px;
+	
 }
 
 .social-plugins-image{
@@ -316,7 +316,7 @@ margin-top: 10px;
 }
 .pagecontent-body {
     margin: 0px auto auto;
-    width: 90%;
+    width: 95%;
     /* border-top: 1px solid #33559A; */
      padding-top: 10px;
 }
