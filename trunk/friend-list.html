@@ -757,7 +757,9 @@ top: auto;
 
   
   var flagnoti=0;
-  var flagtool=0;
+  var flagX = 0;
+  var  flagY = 0;
+	 
   
   $('#tip').click(function(e){
   e.stopPropagation();
@@ -789,33 +791,39 @@ $('#tip-arrow').css('visibility', 'hidden');
 	 
 	  $('.lightbox-mutual-products').css('visibility', 'hidden');
 	 
-	 if(flagtool==0){
+	  
+	  var position = $(this).offset();
+		
+		var lightboxtop = position.top + 22;
+		var lightboxleft = position.left - 20;
+		var tooltop = position.top + 14;
+		var toolleft = position.left + 15;
+	  
+	if(flagX==position.left && flagY==position.top){
 
+		$('.lightbox-mutual-friends').css('visibility', 'hidden');
+		 $('.tooltip-tip').css('visibility', 'hidden');
+		 flagX = 0;
+		 flagY = 0;
+		 
+	}
+	else{
 		  $('#scrollbar4').tinyscrollbar();
 		 
 	$('.lightbox-mutual-friends').css('visibility', 'visible');
 	$('.tooltip-tip').css('visibility', 'visible');
-	var position = $(this).offset();
 	
-	var lightboxtop = position.top + 22;
-	var lightboxleft = position.left - 20;
-	var tooltop = position.top + 14;
-	var toolleft = position.left + 15;
 	
 	$('.lightbox-mutual-friends').css('left', lightboxleft+'px');
 	$('.lightbox-mutual-friends').css('top', lightboxtop+'px');
 	$('.tooltip-tip').css('left', toolleft+'px');
 	$('.tooltip-tip').css('top', tooltop+'px');
 	
-	 flagtool=1;
-	 }
-	 else{
-	
-	 $('.lightbox-mutual-friends').css('visibility', 'hidden');
-	 $('.tooltip-tip').css('visibility', 'hidden');
-	 flagtool=0;
+	flagX = position.left;
+	 flagY = position.top;
 	 
-	} 
+	 }
+	 
 	    
 	});
 
@@ -827,33 +835,37 @@ $('#tip-arrow').css('visibility', 'hidden');
 	  $('.lightbox-mutual-friends').css('visibility', 'hidden');
 	  
 	  
-	 if(flagtool==0){
+	  var position = $(this).offset();
+		
+		var lightboxtop = position.top + 22;
+		var lightboxleft = position.left - 20;
+		var tooltop = position.top + 14;
+		var toolleft = position.left + 15;
+		
+		
+	  
+	 if(flagX==position.left && flagY==position.top){
+		 
+		 $('.lightbox-mutual-products').css('visibility', 'hidden');
+		 $('.tooltip-tip').css('visibility', 'hidden');
+		 flagX = 0;
+		 flagY = 0;
 
+	 }
+	 else{
 		  $('#scrollbar5').tinyscrollbar();
 		 
 	$('.lightbox-mutual-products').css('visibility', 'visible');
 	$('.tooltip-tip').css('visibility', 'visible');
-	var position = $(this).offset();
-	
-	var lightboxtop = position.top + 22;
-	var lightboxleft = position.left - 20;
-	var tooltop = position.top + 14;
-	var toolleft = position.left + 15;
-	
+		
 	$('.lightbox-mutual-products').css('left', lightboxleft+'px');
 	$('.lightbox-mutual-products').css('top', lightboxtop+'px');
 	$('.tooltip-tip').css('left', toolleft+'px');
 	$('.tooltip-tip').css('top', tooltop+'px');
-	
-	 flagtool=1;
-	 }
-	 else{
-	
-	 $('.lightbox-mutual-products').css('visibility', 'hidden');
-	 $('.tooltip-tip').css('visibility', 'hidden');
-	 flagtool=0;
+	flagX = position.left;
+	 flagY = position.top;
 	 
-	} 
+	 }
 	    
 	});
   
@@ -866,14 +878,23 @@ $("body").click(function(){
  $('.lightbox-mutual-products').css('visibility', 'hidden');
  $('.tooltip-tip').css('visibility', 'hidden');
  flagnoti=0;
- flagtool=0;
+ flagX = 0;
+ flagY = 0;
+ 
  
 });
 
 $("#tooltip").click(function(e){
   e.stopPropagation();
 });
- 
+
+$(".lightbox-mutual-products").click(function(e){
+	  e.stopPropagation();
+	});
+	
+$(".lightbox-mutual-friends").click(function(e){
+	  e.stopPropagation();
+	});	
 </script>
 
 </body>
