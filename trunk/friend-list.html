@@ -28,120 +28,7 @@
 
     });   
     
-    
-    function showLightBox() {
-             
-        var hite = $(document).height();   // returns height of browser viewport
-
-    var wth = $(window).width();   // returns width of browser viewport
-    wth = wth + 50;
-
-    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-    $(".lightbox-mutual-friends").css({"display" : "block" });
-    $('#scrollbar4').tinyscrollbar();
-    $("body").css({"overflow":"hidden"})
-       
-        };
-        
-        
-        function showLightBox2() {
-            
-            var hite = $(document).height();   // returns height of browser viewport
-
-        var wth = $(window).width();   // returns width of browser viewport
-        wth = wth + 50;
-
-        $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-        $(".lightbox-mutual-products").css({"display" : "block" });
-        $('#scrollbar5').tinyscrollbar();
-        $("body").css({"overflow":"hidden"})
-           
-            };
-        
-        
-         function hideLightBox() {
-
-    $("#overlay").css({"display" : "none" });
-    $(".lightbox-mutual-friends").css({"display" : "none" });
-    $(".lightbox-mutual-products").css({"display" : "none" });
-    $("body").css({"overflow":"auto"})
-        
-        };
-        
-        
-        
-        
-      
-
-
-        $(function() {
-        	//$( ".pagecontent-introbaruserinfo-name" ).tooltip({ content: "Awesome title!" });
-        	//alert("hi");
-        	
-        	
-        	$( ".mutualfriend-span" ).tooltip({
-        		
-        		
-        		events: {
-        			  def:     "mouseenter,mouseleave",    // default show/hide events for an element
-        			  input:   "focus,blur",               // for all input elements
-        			  widget:  "focus mouseenter,blur mouseleave",  // select, checkbox, radio, button
-        			  tooltip: "mouseenter,mouseleave"     // the tooltip element
-        			  },
-        		
-        		
-        		position: {
-        		
-        		using: function( position, feedback ) {
-        		$( this ).css( position );
-        		$( "<div>" )
-        		.addClass( "arrow" )
-        		.addClass( feedback.vertical )
-        		.addClass( feedback.horizontal )
-        		.appendTo( this );
-        		}
-        		},
-        		
-        		
-        		
-        		content: "<ul class='notification-ul'>"+
-				"<li><a><img src='images/profile-pictures.jpg' height='50' width='50' ></img>"+
-				"<div style='display: inline-block; vertical-align: top; margin: 15px;'>"+
-					"<span style='color: #335598; font-weight: bold;'>Akshay Soni</span> "+
-				"</div> </a>"+			
-			"</li>"+
-			"<li><a><img src='images/profile-pictures.jpg' height='50' width='50'></img>"+
-				"<div style='display: inline-block; vertical-align: top; margin: 15px;'>"+
-					"<span style='color: #335598; font-weight: bold;'>Akshay Soni</span>"+ 
-				"</div> </a>"+				
-			"</li>"+
-			"<li><a><img src='images/profile-pictures.jpg' height='50' width='50' ></img>"+
-				"<div"+
-					"style='display: inline-block; vertical-align: top; margin: 15px;'>"+
-					"<span style='color: #335598; font-weight: bold;'>Akshay Soni</span> "+
-				"</div> </a>"+				
-			"</li>"+
-			"</ul>",
-			
-			disabled: true    
-        			
-        			
-        			
-        		}).click(function(){    
-        		    if($(this).tooltip('option', 'disabled'))
-        		        $(this).tooltip('option', {disabled: false}).tooltip('open');
-        		    else
-        		        $(this).tooltip('option', {disabled: true}).tooltip('close');
-        		});
-        		
-        	
-        	
-
-        });
-
-        
-    
-    
+   
 </script>
 
 
@@ -377,43 +264,43 @@ top: auto;
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span class="mutualfriend-span"  title="Tooltip">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
+							</div></li>
+						<li><a><img src='images/profile-pictures.jpg' height='70'
+							width='70' alt=""></img></a>
+							<div class="friendslist-image-div">
+								<span class="friendslist-name">Akshay
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span class="mutualfriend-span" onclick="showLightBox()" title="Tooltip">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
-							</div></li>
-							<li><a><img src='images/profile-pictures.jpg' height='70'
-							width='70' alt=""></img></a>
-							<div class="friendslist-image-div">
-								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 
 				</ul>
@@ -426,43 +313,43 @@ top: auto;
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
-									<br><span onclick="showLightBox2()">3 mutual products</span>
+									Soni</span> <br><span class="mutualfriend-span"  >12 mutual friends</span>
+									<br><span class="mutualproduct-span">3 mutual products</span>
 							</div></li>
 
 				</ul>
@@ -682,7 +569,7 @@ top: auto;
 							
 							
 							
-							<ul class="notification-ul">
+							<ul class="notification-ul mutual-ul">
 								<li><a><img src='images/profile-pictures.jpg'
 									height='50' width='50' alt=""></img>
 									<div
@@ -762,16 +649,7 @@ top: auto;
 				</div>
 				</div>
  
- <div style="border-top: 1px solid #C5C5C5;"></div>
- 
-		<div style="text-align: center;">
-			<div class="search-result-button" style=""
-				width: 60px;" onclick="hideLightBox()">
 
-
-				<span class="search-result-button-span">Ok</span>
-			</div>
-		</div>
 
 	</div>
 
@@ -794,7 +672,7 @@ top: auto;
 							
 							
 							
-							<ul class="notification-ul">
+							<ul class="notification-ul mutual-ul">
 								<li><a><img src='images/profile-pictures.jpg'
 									height='50' width='50' alt=""></img>
 									<div
@@ -868,20 +746,10 @@ top: auto;
 				</div>
 				</div>
  
- <div style="border-top: 1px solid #C5C5C5;"></div>
- 
-		<div style="text-align: center;">
-			<div class="search-result-button" style=""
-				width: 60px;" onclick="hideLightBox()">
-
-
-				<span class="search-result-button-span">Ok</span>
-			</div>
-		</div>
 
 	</div>
 
-
+<div class="tooltip-tip"> </div>
 
 	<div id="overlay" style="z-index: 1001"></div>
 
@@ -889,8 +757,14 @@ top: auto;
 
   
   var flagnoti=0;
+  var flagtool=0;
+  
   $('#tip').click(function(e){
   e.stopPropagation();
+  
+  $('.lightbox-mutual-friends').css('visibility', 'hidden');
+  $('.lightbox-mutual-products').css('visibility', 'hidden');
+  $('.tooltip-tip').css('visibility', 'hidden');
  if(flagnoti==0){
 
 $('#tip-arrow').css('visibility', 'visible');
@@ -905,12 +779,95 @@ $('#tip-arrow').css('visibility', 'hidden');
 } 
     
 });
+  
+  
+  
+  $('.mutualfriend-span').click(function(e){
+	  e.stopPropagation();
+	  $('#tip-arrow').css('visibility', 'hidden');
+	  $('#tooltip').css('visibility', 'hidden');
+	 
+	  $('.lightbox-mutual-products').css('visibility', 'hidden');
+	 
+	 if(flagtool==0){
 
+		  $('#scrollbar4').tinyscrollbar();
+		 
+	$('.lightbox-mutual-friends').css('visibility', 'visible');
+	$('.tooltip-tip').css('visibility', 'visible');
+	var position = $(this).offset();
+	
+	var lightboxtop = position.top + 22;
+	var lightboxleft = position.left - 20;
+	var tooltop = position.top + 14;
+	var toolleft = position.left + 15;
+	
+	$('.lightbox-mutual-friends').css('left', lightboxleft+'px');
+	$('.lightbox-mutual-friends').css('top', lightboxtop+'px');
+	$('.tooltip-tip').css('left', toolleft+'px');
+	$('.tooltip-tip').css('top', tooltop+'px');
+	
+	 flagtool=1;
+	 }
+	 else{
+	
+	 $('.lightbox-mutual-friends').css('visibility', 'hidden');
+	 $('.tooltip-tip').css('visibility', 'hidden');
+	 flagtool=0;
+	 
+	} 
+	    
+	});
+
+  
+  $('.mutualproduct-span').click(function(e){
+	  e.stopPropagation();
+	  $('#tip-arrow').css('visibility', 'hidden');
+	  $('#tooltip').css('visibility', 'hidden');
+	  $('.lightbox-mutual-friends').css('visibility', 'hidden');
+	  
+	  
+	 if(flagtool==0){
+
+		  $('#scrollbar5').tinyscrollbar();
+		 
+	$('.lightbox-mutual-products').css('visibility', 'visible');
+	$('.tooltip-tip').css('visibility', 'visible');
+	var position = $(this).offset();
+	
+	var lightboxtop = position.top + 22;
+	var lightboxleft = position.left - 20;
+	var tooltop = position.top + 14;
+	var toolleft = position.left + 15;
+	
+	$('.lightbox-mutual-products').css('left', lightboxleft+'px');
+	$('.lightbox-mutual-products').css('top', lightboxtop+'px');
+	$('.tooltip-tip').css('left', toolleft+'px');
+	$('.tooltip-tip').css('top', tooltop+'px');
+	
+	 flagtool=1;
+	 }
+	 else{
+	
+	 $('.lightbox-mutual-products').css('visibility', 'hidden');
+	 $('.tooltip-tip').css('visibility', 'hidden');
+	 flagtool=0;
+	 
+	} 
+	    
+	});
+  
+  
 
 $("body").click(function(){
  $('#tip-arrow').css('visibility', 'hidden');
  $('#tooltip').css('visibility', 'hidden');
+ $('.lightbox-mutual-friends').css('visibility', 'hidden');
+ $('.lightbox-mutual-products').css('visibility', 'hidden');
+ $('.tooltip-tip').css('visibility', 'hidden');
  flagnoti=0;
+ flagtool=0;
+ 
 });
 
 $("#tooltip").click(function(e){

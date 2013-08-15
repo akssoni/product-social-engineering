@@ -57,7 +57,7 @@ display: inline-block;
     width: 99%;
 }
 #scrollbar4 .viewport {
-    height: 175px;
+    height: 210px;
     overflow: hidden;
     position: relative;
     width: 96%;
@@ -115,7 +115,7 @@ display: inline-block;
     width: 99%;
 }
 #scrollbar5 .viewport {
-    height: 175px;
+    height: 210px;
     overflow: hidden;
     position: relative;
     width: 96%;
@@ -167,19 +167,18 @@ display: inline-block;
 }
 
 .lightbox-mutual-friends, .lightbox-mutual-products{
-
- background: none repeat scroll 0 0 white;
-    display: none;
-    height: 243px;
-    padding: 0;
-    width: 350px;	
+ background: none repeat scroll 0 0 #F7F7F7;
+    border: 2px solid #777777;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 2px 4px #555555;
+    display: block;
+    height: 240px;
     left: 40%;
+    padding: 0;
     position: absolute;
     top: 30%;
-    
-      border-radius: 6px 6px 6px 6px;
-
-     box-shadow: 0 0 20px #1A2A4D;
+    visibility: hidden;
+    width: 300px;
 
 }
 
@@ -187,16 +186,32 @@ display: inline-block;
 
 
 .local-lightbox-header{
-	 background-color: #33559A;
-    border-radius: 5px 5px 0 0;
-    color: white;
+	border-radius: 5px 5px 0 0;
+    color: #555555;
+    font-size: 12px;
     font-weight: bold;
-    height: 22px;
+    height: 13px;
     margin-bottom: 2px;
     padding-left: 10px;
     padding-top: 7px;
 }
 
+.tooltip-tip{
+	 border-color: transparent transparent #555555;
+    border-style: dashed dashed solid;
+    border-width: 0 10px 10px;
+    height: 0;
+    position: absolute;
+    //top: 30px;
+    visibility: hidden;
+    width: 0;
+    z-index: 1005;
+	
+}
 
-
-
+.mutual-ul li {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #C5C5C5;
+    margin: 7px;
+    padding: 4px;
+}
