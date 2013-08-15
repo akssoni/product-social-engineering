@@ -1,0 +1,25 @@
+body{
+	
+	 background-color: #ECEFF5;
+}
+
+.static-wrapper{
+	
+	margin: 20px auto 0;
+    padding: 20px 20px;
+    width: 70%;
+     border: 1px solid #CCCCCC;
+      background-color: #FFF;
+	
+}
+.static-header{
+	 border-bottom: 1px solid #AAA;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.static-content{
+	color: #444444;
+    font-size: 13px;
+    margin-top: 10px;
+}
