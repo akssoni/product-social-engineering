@@ -14,6 +14,7 @@
 <script src="scripts/jquery-ui.js" type="text/javascript"></script>
 
 
+
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
@@ -79,6 +80,16 @@
         	
         	
         	$( ".mutualfriend-span" ).tooltip({
+        		
+        		
+        		events: {
+        			  def:     "mouseenter,mouseleave",    // default show/hide events for an element
+        			  input:   "focus,blur",               // for all input elements
+        			  widget:  "focus mouseenter,blur mouseleave",  // select, checkbox, radio, button
+        			  tooltip: "mouseenter,mouseleave"     // the tooltip element
+        			  },
+        		
+        		
         		position: {
         		
         		using: function( position, feedback ) {
@@ -90,6 +101,8 @@
         		.appendTo( this );
         		}
         		},
+        		
+        		
         		
         		content: "<ul class='notification-ul'>"+
 				"<li><a><img src='images/profile-pictures.jpg' height='50' width='50' ></img>"+
@@ -108,11 +121,21 @@
 					"<span style='color: #335598; font-weight: bold;'>Akshay Soni</span> "+
 				"</div> </a>"+				
 			"</li>"+
-			"</ul>"
+			"</ul>",
+			
+			disabled: true    
         			
         			
         			
+        		}).click(function(){    
+        		    if($(this).tooltip('option', 'disabled'))
+        		        $(this).tooltip('option', {disabled: false}).tooltip('open');
+        		    else
+        		        $(this).tooltip('option', {disabled: true}).tooltip('close');
         		});
+        		
+        	
+        	
 
         });
 
@@ -354,14 +377,14 @@ top: auto;
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span class="mutualfriend-span" onclick="showLightBox()" title="Tooltip">12 mutual friends</span>
+									Soni</span> <br><span class="mutualfriend-span"  title="Tooltip">12 mutual friends</span>
 									<br><span onclick="showLightBox2()">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
 							width='70' alt=""></img></a>
 							<div class="friendslist-image-div">
 								<span class="friendslist-name">Akshay
-									Soni</span> <br><span onclick="showLightBox()">12 mutual friends</span>
+									Soni</span> <br><span class="mutualfriend-span" onclick="showLightBox()" title="Tooltip">12 mutual friends</span>
 									<br><span onclick="showLightBox2()">3 mutual products</span>
 							</div></li>
 							<li><a><img src='images/profile-pictures.jpg' height='70'
