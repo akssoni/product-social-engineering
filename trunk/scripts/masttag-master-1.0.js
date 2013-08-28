@@ -296,4 +296,87 @@ function showLB2New() {
 	
 	
 	
+	function showUploadProfileImage() {
+        
+        var hite = $(document).height();   // returns height of browser viewport
+
+    var wth = $(window).width();   // returns width of browser viewport
+  
+
+    $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+    $(".profile-picture-upload-lightbox").css({"display" : "block" });
+   
+    $("body").css({"overflow":"auto","overflow-x":"hidden"})
+    
+   
+       
+        };
+        
+        function showChooseProfileImage() {
+            
+            var hite = $(document).height();   // returns height of browser viewport
+
+        var wth = $(window).width();   // returns width of browser viewport
+      
+
+        $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+        $(".profile-picture-choose-lightbox").css({"display" : "block" });
+       
+        $("body").css({"overflow":"auto","overflow-x":"hidden"})
+        
+       
+           
+            };
+            
+            
+            function showRemoveProfileImage() {
+                
+                var hite = $(document).height();   // returns height of browser viewport
+
+            var wth = $(window).width();   // returns width of browser viewport
+          
+
+            $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+            $(".profile-picture-remove-lightbox").css({"display" : "block" });
+           
+            $("body").css({"overflow":"auto","overflow-x":"hidden"})
+            
+           
+               
+                };
+    
+    
+     function hideUploadProfileImage() {
+
+$("#overlay").css({"display" : "none" });
+$(".profile-picture-upload-lightbox").css({"display" : "none" });
+
+$("body").css({"overflow":"auto"})
+    
+    };
+    
+    function hideChooseProfileImage() {
+
+    	$("#overlay").css({"display" : "none" });
+    	$(".profile-picture-choose-lightbox").css({"display" : "none" });
+
+    	$("body").css({"overflow":"auto"})
+    	    
+    	    };
+    	    
+    	    
+    	    
+    	    function hideRemoveProfileImage() {
+
+    	    	$("#overlay").css({"display" : "none" });
+    	    	$(".profile-picture-remove-lightbox").css({"display" : "none" });
+
+    	    	$("body").css({"overflow":"auto"})
+    	    	    
+    	    	    };
+    	    	    
+    
+    
+	
+	
 	

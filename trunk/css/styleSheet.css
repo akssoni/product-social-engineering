@@ -115,7 +115,7 @@ background: #29447B;
     position: absolute;
     z-index: 10;
 }
-.pageheader-alert:hover > ul {
+.pageheader-alert:HOVER > ul {
     display: block;
     
    
