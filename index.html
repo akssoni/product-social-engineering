@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="css/onoffstyle.css">
 <link rel="stylesheet" type="text/css" href="css/lightBoxThreeStyle.css" />
 
+<link rel="stylesheet" type="text/css" href="css/masttag-tooltip-styling.css" />
+
 
 
 
@@ -279,12 +281,25 @@ width:115px;
 			<div class="pagecontent-introbardisplaypic">
 				<img class="displaypic" src="images/profilepic.png"></img>
 						<div class="choose_file">
-		<select>				
-       <option>Edit profile Picture</option>
-	   <option>Edit thumbnail</option>
-	     </select>    
-        <input name="Select File" type="file" />
-    </div>
+
+						<div class="profile-upload">
+
+							<a href="#" class="upload-tooltip"> Edit Profile Picture <span>
+									<b></b>
+									
+										<div onclick="showUploadProfileImage()">Upload a Photo</div>
+										<div onclick="showChooseProfileImage()">Choose from Photos</div>
+										<div onclick="showRemoveProfileImage()">Remove</div>
+									</span>
+									</a>
+
+
+
+
+						</div>
+
+
+					</div>
 				<div class="social-plugins">
 					<div class="social-plugins-image1 social-plugins-image"></div>
 					<div class="social-plugins-image2 social-plugins-image"></div>
@@ -1669,6 +1684,46 @@ Write your recommendation here:
 
 </div>
 <div  onclick="hideLB2New()" class="reg-lightbox-close">X</div>
+</div>
+
+
+<!-- Profile Picture Upload Image Lightbox -->
+
+<div class="profile-picture-upload-lightbox">
+
+Upload your Profile Picture - Under Construction
+
+
+<div  onclick="hideUploadProfileImage()" class="reg-lightbox-close">X</div>
+
+</div>
+
+
+
+
+<!-- Profile Picture Choose Image Lightbox -->
+
+<div class="profile-picture-choose-lightbox">
+
+
+Choose your Profile Picture - Under Construction
+
+
+<div  onclick="hideChooseProfileImage()" class="reg-lightbox-close">X</div>
+
+</div>
+
+
+
+<!-- Profile Picture Remove Image Lightbox -->
+
+<div class="profile-picture-remove-lightbox">
+
+Are you sure to remove your Profile Picture - Under Construction
+
+
+<div  onclick="hideRemoveProfileImage()" class="reg-lightbox-close">X</div>
+
 </div>
 
 
