@@ -18,6 +18,14 @@
 
 		$("#right-pane-1").addClass("account-setting-rightpane-content-show");
 		$("#left-menu-1").addClass("active-left-menu");
+		
+		
+		
+		$('.mfs-tab1-login-wrapper').css('display', 'block');
+		$('.mfs-tab1-content-wrapper').css('display', 'none');
+		$('.mfs-tab2-login-wrapper').css('display', 'block');
+		$('.mfs-tab2-content-wrapper').css('display', 'none');
+		
 	});
 
 	
@@ -108,10 +116,25 @@
 				</div>
 				
 				
-				
+				</div>
 				
 				
 				<div id="lightbox3-tab1-content">
+				
+				
+				
+				<div class="mfs-tab1-login-wrapper">
+				
+				 
+				
+				<div class="mfs-tab1-login-button">Sign in to facebook</div>
+				
+				</div>
+				
+				
+				
+				
+				<div class="mfs-tab1-content-wrapper">
 				
 					<div class="mfs-header">
 					
@@ -234,7 +257,7 @@
 							</div>
 						</div>
 					</div>
-					
+					</div>
 					
 				</div>
 				
@@ -255,6 +278,22 @@
 				
 				<div id="lightbox3-tab2-content">
 				
+					
+					<div class="mfs-tab2-login-wrapper">
+				
+				 
+				
+				<div class="mfs-tab2-login-button">Sign in to twitter</div>
+				
+				</div>
+					
+					
+					
+					
+					
+					<div class="mfs-tab2-content-wrapper">
+					
+					
 					<div class="mfs-header">
 					
 					
@@ -377,7 +416,7 @@
 						</div>
 					</div>
 					
-					
+					</div>
 				</div>
 				
 				
@@ -388,7 +427,7 @@
 				
 
 
-				</div>
+				
 			
 
 
@@ -685,6 +724,36 @@
 			$('#scrollbar-tab2').tinyscrollbar();
 			
 		});
+		
+		
+		
+		
+		
+		$(".mfs-tab1-login-button").click( function() {
+			
+			$('.mfs-tab1-login-wrapper').css('display', 'none');
+			$('.mfs-tab1-content-wrapper').css('display', 'block');
+		
+			
+			
+			$('#scrollbar-tab1').tinyscrollbar();
+			
+		});
+		
+		$(".mfs-tab2-login-button").click( function() {
+			
+			$('.mfs-tab2-login-wrapper').css('display', 'none');
+			$('.mfs-tab2-content-wrapper').css('display', 'block');
+		
+			
+			
+			$('#scrollbar-tab2').tinyscrollbar();
+			
+		});
+		
+		
+		
+		
 		
 		
 		
