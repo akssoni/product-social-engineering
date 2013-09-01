@@ -31,17 +31,40 @@ $(document).ready(function() {
 		});
 
 	
+		
+		
+		
+		
+	
+	
+	});
+
+
+$(window).scroll(function () {
+	  
+	
+	 var hite = $(window).height() - 30;   // returns height of browser viewport
+	 var scrollhite = document.documentElement.scrollTop + document.documentElement.clientHeight;
+	
+	 if( scrollhite <= 740 ){
+	 
+		 $(".pagecontent-yourproducts-button").css({"position" : "fixed" }); 
+	    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
+	    
+	 }
+	 else{
+		 
+		 $(".pagecontent-yourproducts-button").css({"position" : "absolute" });
+		 $(".pagecontent-yourproducts-button").css({"top" : "710px" });
+	 }
+
+	$(window).resize(function() {
 		 var hite = $(window).height() - 30;   // returns height of browser viewport
 		    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
-	
-		$(window).resize(function() {
-			 var hite = $(window).height() - 30;   // returns height of browser viewport
-			    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
-	    });
+		    
+		    
+    });
 		
-		
-		
-	
 	
 	});
 	
@@ -49,6 +72,8 @@ $(document).ready(function() {
 	$(function() {
 		//$( ".pagecontent-introbaruserinfo-name" ).tooltip({ content: "Awesome title!" });
 		//alert("hi");
+		
+		
 		
 		
 		$( ".newsfeed-comment-username" ).tooltip({
