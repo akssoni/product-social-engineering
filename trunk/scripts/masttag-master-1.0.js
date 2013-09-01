@@ -31,7 +31,16 @@ $(document).ready(function() {
 		});
 
 	
+		 var hite = $(window).height() - 30;   // returns height of browser viewport
+		    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
 	
+		$(window).resize(function() {
+			 var hite = $(window).height() - 30;   // returns height of browser viewport
+			    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
+	    });
+		
+		
+		
 	
 	
 	});

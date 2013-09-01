@@ -393,11 +393,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
     
     
     border: 1px solid #3586C2;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 10px 10px 0 0;
     cursor: pointer;
     float: right;
-    margin-right: 15px;
-    margin-top: 20px;
+    margin-left: 195px;
+    position: fixed;
 }
 .left-right-button {
     color: white;
@@ -405,6 +405,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
     font-size: 11px;
     font-weight: bold;
     padding: 6px 9px;
+   
 }
 .pagecontent-yourproducts-button:hover {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
