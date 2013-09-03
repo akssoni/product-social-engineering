@@ -35,38 +35,80 @@ $(document).ready(function() {
 		
 		
 		
-	
-	
-	});
-
-
-$(window).scroll(function () {
-	  
-	
-	 var hite = $(window).height() - 30;   // returns height of browser viewport
-	 var scrollhite = document.documentElement.scrollTop + document.documentElement.clientHeight;
-	
-	 if( scrollhite <= 740 ){
-	 
-		 $(".pagecontent-yourproducts-button").css({"position" : "fixed" }); 
-	    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
-	    
-	 }
-	 else{
-		 
-		 $(".pagecontent-yourproducts-button").css({"position" : "absolute" });
-		 $(".pagecontent-yourproducts-button").css({"top" : "710px" });
-	 }
-
-	$(window).resize(function() {
-		 var hite = $(window).height() - 30;   // returns height of browser viewport
-		    $(".pagecontent-yourproducts-button").css({"top" : ""+hite+"px" });
-		    
-		    
-    });
 		
+		
+		var flagUpload = 0;
+		
+		
+	    $(".displaypic-wrapper").on("mouseenter",function(){
+	    	$(".choose_file").css({"visibility" : "visible" });
+	    	
+	    	}).on("mouseleave",function(){
+	    		
+	    		if (flagUpload==0){
+	    		$(".choose_file").css({"visibility" : "hidden" });
+	    		
+	    		}
+	    	});
+
+	    
+	    
+	    
+		$('.upload-tooltip-span').click(function(e) {
+			e.stopPropagation();
+			if (flagUpload == 0) {
+
+				$('.profile-upload').css('visibility', 'visible');
+				
+				$('.upload-tooltip-span').css('background-color', '#33559A');
+				$('.upload-tooltip-span').css('color', '#FFFFFF');
+				
+				
+				
+				
+				
+				flagUpload = 1;
+			} else {
+				$('.profile-upload').css('visibility', 'hidden');
+
+				$('.upload-tooltip-span').css('background-color', '#FBFBFC');
+				$('.upload-tooltip-span').css('color', '#777777');
+				
+				
+				
+				flagUpload = 0;
+
+			}
+
+		});
+
+		$("body").click(function() {
+			$('.profile-upload').css('visibility', 'hidden');
+			$(".choose_file").css({"visibility" : "hidden" });
+			
+
+			$('.upload-tooltip-span').css('background-color', '#FBFBFC');
+			$('.upload-tooltip-span').css('color', '#777777');
+			
+			flagUpload = 0;
+			
+			
+			
+		});
+
+		$(".profile-upload").click(function(e) {
+			e.stopPropagation();
+		});
+		
+		
+	    
+	    
 	
+		
+		
 	});
+
+
 	
 	
 	$(function() {
@@ -409,8 +451,13 @@ $("body").css({"overflow":"auto"})
     	    	    
     	    	    };
     	    	    
+    	    	    
+    	    	    
+    	    	    
+    	    	    
+    	    	    
+    	   
     
-    
-	
+    	    	
 	
 	
