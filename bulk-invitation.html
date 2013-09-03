@@ -101,7 +101,14 @@
 	
 	<div class="bulk-page-main-mfs">
 	
+	<div class="mfs-initial-login">
 	
+	
+	<div class="mfs-initial-login-button mfs-initial-login-button-facebook">Sign in to facebook</div>
+	<div class="mfs-initial-login-button mfs-initial-login-button-twitter ">Sign in to twitter</div>
+	
+	
+	</div>
 	
 		
 
@@ -724,6 +731,18 @@
 			$('#scrollbar-tab2').tinyscrollbar();
 			
 		});
+		
+		
+		
+		
+		$(".mfs-initial-login-button").click( function() {
+			
+			$('.mfs-initial-login').css('display', 'none');
+			$('.lightbox3-tab-wrapper').css('display', 'block');
+		
+			
+		});
+		
 		
 		
 		
