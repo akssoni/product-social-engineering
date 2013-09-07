@@ -2,17 +2,18 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/productPageStyle.css">
-<link rel="stylesheet"
-	href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+
+<link rel="stylesheet" href="css/lightbox.css" media="screen"/>
 <script src="scripts/jquery.min.js" type="text/javascript"></script>
 <script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
 <script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
 <script src="scripts/slider.js" type="text/javascript"></script>
+<script src="scripts/lightbox-2.6.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
 
-        $('#scrollbar1').tinyscrollbar();
-        $('#scrollbar2').tinyscrollbar();
+       
           $('#scrollbar3').tinyscrollbar();
         
         $('#wrapper').myslider(
@@ -37,35 +38,7 @@
     
     
     
-    function showLightBox() {
-    
-    $('#star-rating-search').raty({
-         		half  : true
-         		
-         		});
-    
-    var hite = $(document).height();   // returns height of browser viewport
-
-var wth = $(window).width();   // returns width of browser viewport
-wth = wth + 50;
-
-$("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
-$(".lightbox-search-add").css({"display" : "block" });
-$("body").css({"overflow":"hidden"})
-    
-    
-    
-    
-    };
-    
-     function hideLightBox() {
-
-$("#overlay").css({"display" : "none" });
-$(".lightbox-search-add").css({"display" : "none" });
-$("body").css({"overflow":"auto"})
-    
-    };
-    
+  
     
     
     
@@ -325,18 +298,12 @@ $("body").css({"overflow":"auto"})
 						<div class="pagecontent-introbarfriendsthumbails">
 							<div class="pagecontent-introbarfriendsthumbails-line1">
 								
-								<div style="background-image: url('images/product.png');" class="introbarfriendsthumbails-pic">
+								<a class="example-image-link" href="images/product1.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product1.jpg" class="introbarfriendsthumbails-pic" /></a>
 									
-								</div>
-								<div style="background-image: url('images/product.png');" class="introbarfriendsthumbails-pic">
-									
-								</div>
-								<div style="background-image: url('images/product.png');" class="introbarfriendsthumbails-pic">
-									
-								</div>
-								<div style="background-image: url('images/product.png');" class="introbarfriendsthumbails-pic">
-									
-								</div>
+								<a class="example-image-link" href="images/product2.png" data-lightbox="example-2" title="Optional caption."><img src="images/product2.png" class="introbarfriendsthumbails-pic" /></a>
+								<a class="example-image-link" href="images/product3.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product3.jpg" class="introbarfriendsthumbails-pic" /></a>
+								<a class="example-image-link" href="images/product4.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product4.jpg" class="introbarfriendsthumbails-pic" /></a>
+								
 							</div>
 
 							
@@ -346,18 +313,12 @@ $("body").css({"overflow":"auto"})
 						<div class="pagecontent-introbarfriendsthumbails">
 							<div class="pagecontent-introbarfriendsthumbails-line1">
 								
-								<div style="background-image: url('images/product.png');" class="introbarfriendsthumbails-pic">
+								<a class="example-image-link" href="images/product5.png" data-lightbox="example-2" title="Optional caption."><img src="images/product5.png" class="introbarfriendsthumbails-pic" /></a>
 									
-								</div>
-								<div style="background-image: url('images/product.png');" class="introbarfriendsthumbails-pic">
-									
-								</div>
-								<div style="background-image: url('images/profile-pictures.jpg');" class="introbarfriendsthumbails-pic">
-									
-								</div>
-								<div style="background-image: url('images/profile-pictures.jpg');" class="introbarfriendsthumbails-pic">
-									
-								</div>
+								<a class="example-image-link" href="images/product6.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product6.jpg" class="introbarfriendsthumbails-pic" /></a>
+								<a class="example-image-link" href="images/product7.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product7.jpg" class="introbarfriendsthumbails-pic" /></a>
+								<a class="example-image-link" href="images/product8.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product8.jpg" class="introbarfriendsthumbails-pic" /></a>
+								
 							</div>
 
 							
@@ -367,18 +328,12 @@ $("body").css({"overflow":"auto"})
 							<div class="pagecontent-introbarfriendsthumbails-line1">
 								
 								</div>
-								<div style="background-image: url('images/profile-pictures.jpg');" class="introbarfriendsthumbails-pic">
+								<a class="example-image-link" href="images/product1.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product1.jpg" class="introbarfriendsthumbails-pic" /></a>
 									
-								</div>
-								<div style="background-image: url('images/profile-pictures.jpg');" class="introbarfriendsthumbails-pic">
-									
-								</div>
-								<div style="background-image: url('images/profile-pictures.jpg');" class="introbarfriendsthumbails-pic">
-									
-								</div>
-								<div style="background-image: url('images/profile-pictures.jpg');" class="introbarfriendsthumbails-pic">
-									
-								</div>
+								<a class="example-image-link" href="images/product2.png" data-lightbox="example-2" title="Optional caption."><img src="images/product2.png" class="introbarfriendsthumbails-pic" /></a>
+								<a class="example-image-link" href="images/product3.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product3.jpg" class="introbarfriendsthumbails-pic" /></a>
+								<a class="example-image-link" href="images/product4.jpg" data-lightbox="example-2" title="Optional caption."><img src="images/product4.jpg" class="introbarfriendsthumbails-pic" /></a>
+								
 							</div>
 
 							
