@@ -143,29 +143,8 @@ body {
     vertical-align: top;
     width: 130px;
 }
-.social-plugins-image {
-    cursor: pointer;
-    display: inline-block;
-    height: 20px;
-    margin-left: 3px;
-    margin-right: 3px;
-    width: 20px;
-}
-.social-plugins-image1 {
-    background: url("../images/fc-webicon-facebook-s.png") repeat scroll 0 0 transparent;
-}
-.social-plugins-image2 {
-    background: url("../images/fc-webicon-googleplus-s.png") repeat scroll 0 0 transparent;
-}
-.social-plugins-image3 {
-    background: url("../images/fc-webicon-linkedin-s.png") repeat scroll 0 0 transparent;
-}
-.social-plugins-image4 {
-    background: url("../images/fc-webicon-twitter-s.png") repeat scroll 0 0 transparent;
-}
 .pagecontent-introbarfriendsthumbails {
     display: inline-block;
-    height: 73px;
     margin-top: 8px;
     text-align: center;
     vertical-align: top;
@@ -182,8 +161,8 @@ body {
     border: 1px solid #999999;
     border-radius: 6px 6px 6px 6px;
     display: inline-block;
-    height: 70px;
-    width: 95px;
+    height: 65px;
+    width: 65px;
 }
 .introbarfriendsthumbails-button {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
@@ -258,15 +237,19 @@ body {
     float: right;
     width: 25%;
 }
-.pagecontent-yourproducts-title, .pagecontent-wishlist-title {
+.pagecontent-yourproducts-title, .pagecontent-wishlist-title, .pagecontent-yourreview-title {
     background: -moz-linear-gradient(center top , #517FC5 0%, #3F62AB 100%) repeat scroll 0 0 transparent;
     border: 1px solid #6179A1;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 3px 3px 3px #AAAAAA;
     color: white;
-    display: none;
+    display: block;
     height: 30px;
+    margin-top: 10px;
     width: 95%;
+}
+.pagecontent-yourreview-title {
+    margin-top: 20px;
 }
 .left-right-title {
     display: block;
@@ -305,9 +288,9 @@ body {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
 }
 .newsfeed-text {
-    display: inline-block;
+   display: block;
     margin: auto;
-    width: 98%;
+    width: 90%;
 }
 .newsfeed-textarea {
     border: 1px solid #AAAAAA;
@@ -336,7 +319,7 @@ body {
     padding: 5px 15px;
 }
 .newsfeed-product-part1 {
-    margin: 50px auto;
+    margin: 25px auto;
     width: 85%;
 }
 .newsfeed-product-part2 {
@@ -814,6 +797,7 @@ body {
     border-left: 1px solid #33559A;
     border-right: 1px solid #33559A;
     display: inline-block;
+    margin-top: 10px;
     min-height: 500px;
     padding-left: 15px;
     width: 48%;
@@ -848,12 +832,14 @@ body {
 }
 .search-results-col1 {
     display: inline-block;
+    margin-top: 10px;
     vertical-align: top;
     width: 25%;
 }
 .search-results-col2 {
     display: inline-block;
     float: right;
+    margin-top: 10px;
     width: 25%;
 }
 .search-results-col1-links {
