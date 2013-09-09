@@ -127,7 +127,7 @@ body {
     margin-top: 15px;
 }
 .pagecontentintrobar {
-    display: block;
+    display: none;
     height: 225px;
     margin: auto;
     width: 85%;
@@ -135,13 +135,13 @@ body {
 .pagecontent-introbardisplaypic {
     display: inline-block;
     margin-top: 10px;
-    width: 175px;
+    width: 150px;
 }
 .pagecontent-introbaruserinfo {
     display: inline-block;
     margin-top: 10px;
     vertical-align: top;
-    width: 220px;
+    width: 130px;
 }
 .social-plugins-image {
     cursor: pointer;
@@ -182,8 +182,8 @@ body {
     border: 1px solid #999999;
     border-radius: 6px 6px 6px 6px;
     display: inline-block;
-    height: 65px;
-    width: 65px;
+    height: 70px;
+    width: 95px;
 }
 .introbarfriendsthumbails-button {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
@@ -219,8 +219,8 @@ body {
 }
 .displaypic {
     border: 1px solid #AAAAAA;
-    height: 125px;
-    width: 140px;
+    height: 143px;
+    width: 143px;
 }
 .social-plugins {
     height: 22px;
@@ -239,10 +239,8 @@ body {
     margin-top: 4px;
 }
 .pagecontent-body {
-    border-top: 1px solid #33559A;
     margin: 0 auto auto;
-    padding-top: 10px;
-    width: 90%;
+    width: 95%;
 }
 .pagecontent-yourproducts {
     display: inline-block;
@@ -266,6 +264,7 @@ body {
     border-radius: 4px 4px 4px 4px;
     box-shadow: 3px 3px 3px #AAAAAA;
     color: white;
+    display: none;
     height: 30px;
     width: 95%;
 }
@@ -306,8 +305,9 @@ body {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
 }
 .newsfeed-text {
+    display: inline-block;
     margin: auto;
-    width: 90%;
+    width: 98%;
 }
 .newsfeed-textarea {
     border: 1px solid #AAAAAA;
@@ -363,6 +363,7 @@ body {
 }
 .yourproducts-products-image-expert {
     display: inline-block;
+    width: 32%;
 }
 .yourproducts-products-image-expert-div {
     background-size: 100% auto;
@@ -379,7 +380,7 @@ body {
     display: inline-block;
     margin-top: 5px;
     vertical-align: top;
-    width: 70%;
+    width: 66%;
 }
 .yourproducts-products-info {
     display: inline-block;
@@ -815,12 +816,9 @@ body {
     display: inline-block;
     min-height: 500px;
     padding-left: 15px;
-    width: 38%;
+    width: 48%;
 }
 .search-result-line {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 7px;
 }
 .search-result-button {
     background: -moz-linear-gradient(center top , #517FC5 0%, #3F62AB 100%) repeat scroll 0 0 transparent;
@@ -851,12 +849,12 @@ body {
 .search-results-col1 {
     display: inline-block;
     vertical-align: top;
-    width: 33%;
+    width: 25%;
 }
 .search-results-col2 {
     display: inline-block;
     float: right;
-    width: 27%;
+    width: 25%;
 }
 .search-results-col1-links {
     cursor: pointer;
