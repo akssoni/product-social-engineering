@@ -288,25 +288,29 @@ body {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 transparent;
 }
 .newsfeed-text {
-   display: block;
+    display: block;
     margin: auto;
-    width: 90%;
+    text-align: center;
+    width: 100%;
 }
 .newsfeed-textarea {
     border: 1px solid #AAAAAA;
     border-radius: 5px 5px 5px 5px;
     height: 55px;
+    margin: auto;
     padding: 5px;
-    width: 100%;
+    width: 88%;
 }
 .newsfeed-button {
     background: -moz-linear-gradient(center top , #517FC5 0%, #3F62AB 100%) repeat scroll 0 0 transparent;
     border: 1px solid #3586C2;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
+    display: block;
     float: right;
-    margin-right: 5px;
+    margin-right: 40px;
     margin-top: 8px;
+    width: 70px;
 }
 .newsfeed-button:hover {
     background: -moz-linear-gradient(center top , #517FC5 0%, #4E7AC1 100%) repeat scroll 0 0 transparent;
@@ -319,8 +323,9 @@ body {
     padding: 5px 15px;
 }
 .newsfeed-product-part1 {
+    background: none repeat scroll 0 0 #EDEEF4;
     margin: 25px auto;
-    width: 85%;
+    width: 500px;
 }
 .newsfeed-product-part2 {
     background: none repeat scroll 0 0 #EDEEF4;
@@ -328,7 +333,7 @@ body {
     padding-bottom: 5px;
     padding-left: 5px;
     padding-top: 5px;
-    width: 85%;
+    width: 500px;
 }
 .yourproducts-products {
     width: 95%;
@@ -422,6 +427,8 @@ body {
     border-radius: 6px 6px 6px 6px;
     display: inline-block;
     height: 65px;
+    margin-left: 12px;
+    margin-top: 10px;
     vertical-align: top;
     width: 65px;
 }
@@ -431,8 +438,14 @@ body {
     font-weight: bold;
 }
 .newsfeed-comment-text {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    height: 55px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: justify;
 }
 .newsfeed-comment-translation {
     color: #355498;
@@ -440,7 +453,9 @@ body {
 }
 .newsfeed-comment-likebar {
     color: #AAAAAA;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    text-align: right;
 }
 .newsfeed-comment-commentdiv {
     background: none repeat scroll 0 0 #EDEEF4;
@@ -799,7 +814,6 @@ body {
     display: inline-block;
     margin-top: 10px;
     min-height: 500px;
-    padding-left: 15px;
     width: 48%;
 }
 .search-result-line {
@@ -880,4 +894,17 @@ body {
     display: inline-block;
     margin-top: 5px;
     vertical-align: top;
+}
+.newsfeed-comment-user-name {
+    color: #3355A4;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: -16px;
+    padding-bottom: 5px;
+    width: 100px;
+}
+.myreview-comment-text {
+    height: 70px;
 }
