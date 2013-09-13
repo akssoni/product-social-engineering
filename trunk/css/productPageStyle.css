@@ -324,9 +324,9 @@ body {
 }
 .newsfeed-product-part1 {
     background: none repeat scroll 0 0 #EDEEF4;
+    cursor: pointer;
     margin: 25px auto;
     width: 500px;
-     cursor: pointer;
 }
 .newsfeed-product-part2 {
     background: none repeat scroll 0 0 #EDEEF4;
@@ -503,7 +503,8 @@ body {
 }
 .newsfeed-comment-commenttext-wrapper-textarea {
     display: block;
-    width: 300px;
+    margin-left: 10px;
+    width: 360px;
 }
 .newsfeed-comment-commenttext-button {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
@@ -914,13 +915,13 @@ body {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 24px 0 #222222;
     display: none;
-    left: 30%;
+    left: 28%;
     margin-top: 30px;
     padding: 25px;
     position: fixed;
     top: 8%;
-    z-index: 1002;
     width: 575px;
+    z-index: 1002;
 }
 .product-lightbox-close {
     color: #888888;
@@ -939,19 +940,25 @@ body {
     height: auto;
     width: 430px;
 }
-
-.lightbox-profile-image{
-	
-	margin-top: 0;
-	margin-left: 0;
+.lightbox-profile-image {
+    margin-left: 0;
+    margin-top: 0;
 }
-
-.lightbox-likebar{
-	
-	 color: #888888;
+.lightbox-likebar {
+    color: #888888;
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 5px;
-	
-	
+}
+
+
+.product-expert-comment{
+ background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: justify;
+    
 }
