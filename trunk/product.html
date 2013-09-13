@@ -404,7 +404,7 @@ window.onload=function(){
 				
 
 			<div class="newsfeed-product">
-						<div class="newsfeed-product-part1">
+						<div class="newsfeed-product-part1" onclick="showProductLB1()" >
 
 
 
@@ -914,8 +914,7 @@ window.onload=function(){
 
 
 		<div style="margin-top: 5px; text-align: center;">
-			<div class="search-result-button" style=""
-				width: 60px;" onclick="hideLightBox()">
+			<div class="search-result-button" style="width: 60px;" onclick="hideLightBox()">
 
 
 				<span class="search-result-button-span">Submit</span>
@@ -923,6 +922,17 @@ window.onload=function(){
 		</div>
 
 	</div>
+
+
+
+<div class="product-lightbox-1-wrapper">
+Under construction 
+
+
+<div  onclick="hideProductLB1()" class="product-lightbox-close">X</div>
+
+</div>
+
 
 	<div id="overlay" style="z-index: 1001"></div>
 
@@ -971,6 +981,32 @@ $("#tooltip").click(function(e){
 
 
 
+ 
+
+function showProductLB1() {
+       
+       var hite = $(document).height();   // returns height of browser viewport
+
+   var wth = $(window).width();   // returns width of browser viewport
+ 
+
+   $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+   $(".product-lightbox-1-wrapper").css({"display" : "block" });
+ 
+   $("body").css({"overflow":"auto","overflow-x":"hidden"})
+      
+       };
+   
+   
+    function hideProductLB1() {
+
+$("#overlay").css({"display" : "none" });
+$(".product-lightbox-1-wrapper").css({"display" : "none" });
+
+$("body").css({"overflow":"auto"})
+   
+   };
+ 
  
   
   
