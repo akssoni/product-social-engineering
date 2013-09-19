@@ -549,24 +549,26 @@ $("body").css({"overflow":"auto"})
 
 
 <div class="signup-div">
-		<div style="font-size: 19px;" class="signup">Sign Up</div>
+
+	<div class="signup-div-header">
+		<div class="signup">Create your free account</div>
 		<div class="signup-text">It's free and always will be</div>
-		<div class="signup-error">Please provide first name</div>
+		</div>
 		
 		<form>
 		<div>
-		<input type="text" placeholder="First Name" required>
+		<input class="signup-div-input-text" type="text" placeholder="First Name" required>
 		</div>
 		<div>
-		<input type="text" placeholder="Last Name" required>
+		<input class="signup-div-input-text" type="text" placeholder="Last Name" required>
 		</div>
 		<div>
-		<input type="text" placeholder="Your Email" required>
+		<input class="signup-div-input-text" type="text" placeholder="Your Email" required>
 		</div>
 		<div>
-		<input type="password" placeholder="New password" required>
+		<input class="signup-div-input-text" type="password" placeholder="New password" required>
 		</div>
-		<div>
+		<div class="signup-div-select-radio">
 		<label>Birthday:</label>
 		<div></div>
 		<select ><option value="-1">Month:</option>
@@ -732,19 +734,29 @@ $("body").css({"overflow":"auto"})
 											
 											
 		</div>
-		<div>
+		<div class="signup-div-select-radio">
 		
-		<input type="radio" value="1" >
-<label>Female</label>
-<input type="radio" value="0">
-<label>Male</label>
+		<input type="radio" name="sex" value="male">Female
+<input type="radio" name="sex" value="female">Male
 		
 		</div>
 		<div style="text-align: center;">
 			
 			<input class="signin-page-lightbox-signup-button" type="submit" value="Sign Up" style="height: 34px; margin-top: 10px;  padding-bottom: 6px;">
 		</div>
+		
+		<div class="signup-terms-conditions">
+		By signing up, you accept the Massttag <a href="#">Terms of Use</a>, <a href="#">Privacy</a> and <a href="#">Cookie Policy</a> 
+		</div>
 		</form>
+		
+		
+		<div class="signup-footer">
+		Already have an account? <span class="signup-footer-login">Login</span>
+		
+		</div>
+		
+		
 		
 		</div>
  
