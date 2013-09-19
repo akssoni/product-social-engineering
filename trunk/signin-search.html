@@ -781,22 +781,22 @@ $("body").css({"overflow":"auto"})
 	
 
 <div class="signin-page-lightbox-signupin" style="z-index: 1002">
-
+<div class="lightbox-content">
 <div class="signin-page-lightbox-signupin-div1">
 <div class="signin-page-lightbox-signupin-div1-login">
 
 
+<div class="signin-page-lightbox-logintext"> Login to Masstag</div>
 
 
 
-
-<div style="display: inline-block; margin-top: 20px; margin-left: 20px;">
-				<div class="username-password">
-					<input type="text" placeholder="Email or User name" style="display: block; border: 1px solid;" />
-					<input type="password" placeholder="Password" style="display: block; border: 1px solid; margin-top: 10px;" />
+<div style="display: inline-block; margin-top: 20px; ">
+				<div class="username-password username-password-lightbox">
+					<input type="text" placeholder="Email or User name" class="login-lightbox-inout"  />
+					<input type="password" placeholder="Password" class="login-lightbox-inout"  />
 				</div>
 
-				<div class="login-button" style="margin-top: 20px; margin-left: 20px;">
+				<div class="login-button lightbox-login-button" >
 
 					<span class="login-button-span"
 						style="margin-top: 0px; display: inline-block; vertical-align: top;">Log In</span>
@@ -809,9 +809,8 @@ $("body").css({"overflow":"auto"})
 				
 				
 				
-				<div style="color: rgb(152, 169, 202); margin-top: 5px;">
-				<input  type="checkbox"  style="padding: 0px; margin: 0pt;"/>
-				<label >Keep me logged in</label>
+				<div style="color: rgb(152, 169, 202); display: inline-block; margin-top: 28px; margin-left: 30px;">
+				
 				<label style="display: block; margin-left: 5px;"><a class="forgotPasswordLink" href="#" >Forgot your password?</a></label>
 				</div>
 				
@@ -847,14 +846,16 @@ $("body").css({"overflow":"auto"})
 
 </div>
 </div>
+
+</div>
+
 <div class="signin-page-lightbox-signupin-div2">
 
 
 
-<div class="signin-page-signup-button" onclick="showSignUpInForm()">
-
-					<span class="login-button-span"
-						style="margin-top: 0px; display: inline-block; vertical-align: top;" onclick="showSignUp()">Sign Up</span>
+<div onclick="showSignUpInForm()">
+Don't have account? 
+					<span  class="signup-text" onclick="showSignUp()">Sign up for Masttag</span>
 
 					
 
