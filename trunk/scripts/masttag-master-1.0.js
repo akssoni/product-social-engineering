@@ -135,6 +135,26 @@ $(document).ready(function() {
 			});
 		
 		
+		  $('.newsfeed-textarea-wrapper').on( 'keyup', 'textarea', function (e){
+	            $(this).css('height', 'auto' );
+	            $(this).height( this.scrollHeight );
+	                      
+	        });
+	        $('.newsfeed-textarea-wrapper').find( 'textarea' ).keyup();
+	        
+	        
+		
+
+			  $('.newsfeed-comment-commenttext-textarea-wrapper').on( 'keyup', 'textarea', function (e){
+		            $(this).css('height', 'auto' );
+		            $(this).height( this.scrollHeight );
+		                      
+		        });
+		        $('.newsfeed-comment-commenttext-textarea-wrapper').find( 'textarea' ).keyup();
+		        
+		
+		
+		
 		});
 
 	

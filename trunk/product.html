@@ -46,6 +46,9 @@ window.onload=function(){
        
           $('#scrollbar3').tinyscrollbar();
           $('#scrollbar1').tinyscrollbar();
+          
+          
+         
         
         $('#wrapper').myslider(
 		{
@@ -64,7 +67,29 @@ window.onload=function(){
 	});
         
         
+        
+        $('.newsfeed-textarea-wrapper').on( 'keyup', 'textarea', function (e){
+            $(this).css('height', 'auto' );
+            $(this).height( this.scrollHeight );
+                      
+        });
+        $('.newsfeed-textarea-wrapper').find( 'textarea' ).keyup();
+        
 
+        
+        
+        
+        $('.newsfeed-comment-commenttext-textarea-wrapper').on( 'keyup', 'textarea', function (e){
+            $(this).css('height', 'auto' );
+            $(this).height( this.scrollHeight );
+          //  $('#scrollbar1').tinyscrollbar();
+            $('#scrollbar1').tinyscrollbar_update('bottom');
+           
+        });
+        $('.newsfeed-comment-commenttext-textarea-wrapper').find( 'textarea' ).keyup();
+        
+        
+        
     });
     
    
@@ -391,7 +416,10 @@ window.onload=function(){
 <div style="display: inline-block; vertical-align: top; width: 100%;">
 			
 			<div class="newsfeed-text">
+					<div class="newsfeed-textarea-wrapper">
+			
 					<textarea rows="" cols="" placeholder="Write a review.." style="resize: none;" class="newsfeed-textarea"></textarea>
+					</div>
 					<div class="newsfeed-button">
 						<span class="newsfeed-button-text">Post</span>
 					</div>
@@ -974,7 +1002,7 @@ window.onload=function(){
 											<img src="images/profile-pictures.jpg" class="newsfeed-comment-commenttext-image">
 											<div class="newsfeed-comment-commenttext-wrapper">
 												<div class="newsfeed-comment-commenttext-wrapper-text">
-													<span>Akshay Soni</span>Commment d they maintain that
+													<span>Akshay Soni</span>Commment d they ma Style, substance, intelligence. It's all there in exciting new release. Enjoy the experience!! Straight out-of-the-box. But that isnÍt the impressive part. The rear of the device has a rubbery matte black finish giving it an elegant and premium look. intain that
 												</div>
 												<div class="newsfeed-comment-commenttext-wrapper-translation">See
 													Translation</div>
@@ -1062,7 +1090,9 @@ window.onload=function(){
 										<div class="newsfeed-comment-writecomment">
 											<img src="images/profile-pictures.jpg" class="newsfeed-comment-commenttext-image">
 											<div class="newsfeed-comment-commenttext-wrapper">
-												<textarea rows="" cols="" style="resize: none;" class="newsfeed-comment-commenttext-wrapper-textarea"></textarea>
+											<div class="newsfeed-comment-commenttext-textarea-wrapper">
+												<textarea rows="" cols="" class="newsfeed-comment-commenttext-wrapper-textarea"></textarea>
+											</div>	
 												<div class="newsfeed-comment-commenttext-button-fb">
 													<span class="newsfeed-comment-commenttext-button-span">Share</span>
 												</div>
