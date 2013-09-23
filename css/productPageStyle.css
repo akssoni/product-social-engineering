@@ -510,6 +510,7 @@ body {
     width: 360px;
     resize: none;
      overflow-y: hidden;
+      height: 43px;
 }
 .newsfeed-comment-commenttext-button {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
