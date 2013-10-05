@@ -159,6 +159,14 @@ window.onload=function(){
 	-webkit-box-shadow: 6px 3px 6px #777;
 	box-shadow: 6px 3px 6px #777;
 }
+
+#ui-id-2{
+
+position: fixed;
+
+}
+
+
 </style>
 <script type="text/javascript">
  $(function() {
@@ -198,11 +206,44 @@ window.onload=function(){
         };
         
         
+        
+        $( "#askQuestion" ).autocomplete({
+            minLength: 2,
+            source: function( request, response ) {
+                	$.ajax({
+                   		 url: "search.json",
+                    		dataType: "json",
+                    		data: {term: request.term},
+                    		success: function(data) {
+                                response($.map(data, function(item) {
+                                	return {
+                                    		value: item.value,
+                                    		label: item.label,
+                                   	 	desc: item.desc,
+				    		icon: item.icon				
+                                    		};
+                            		}));
+                        	}
+                    	});
+                },
+            
+            select: function( event, ui ) {
+                $( "#project" ).val( ui.item.label );
+                
+                return false;
+            }
+        })
+        .data( "autocomplete" )._renderItem = function( ul, item ) {
+            return $( "<li>" )
+                .data( "item.autocomplete", item )
+                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>" + item.label + "</span><br>" + item.desc + "</div></a>" )
+                .appendTo( ul );
+        };
        
     });
     
     
-    
+
     
     </script>
 
@@ -259,6 +300,11 @@ window.onload=function(){
 
 
 			</div>
+			<div class="ask-question" onclick="showQuestionLB1()">
+			??
+			
+			</div>
+			
 		</div>
 	</div>
 	<!-- Page Content -->
@@ -1110,9 +1156,38 @@ window.onload=function(){
 </div>
 </div>
 
-<div  onclick="hideProductLB1()" class="product-lightbox-close">X</div>
+<div  onclick="showProductLB1()" class="product-lightbox-close">X</div>
 
 </div>
+
+
+<div class="ask-question-lightbox" >
+
+<div>Write your question below</div>
+<div>
+<textarea rows="" cols=""></textarea>
+</div>
+
+
+<div>
+
+<div>
+<textarea id="askQuestion" rows="" cols=""></textarea>
+</div>
+<div>
+list will come here
+</div>
+</div>
+
+
+
+
+
+
+<div  onclick="hideQuestionLB1()" class="product-lightbox-close">X</div>
+
+</div>
+
 
 
 	<div id="overlay" style="z-index: 1001"></div>
@@ -1189,7 +1264,48 @@ $("body").css({"overflow":"auto"})
    
    };
  
+   
+   
+function showQuestionLB1() {
+       
+       var hite = $(document).height();   // returns height of browser viewport
+
+   var wth = $(window).width();   // returns width of browser viewport
  
+
+   $("#overlay").css({"display" : "block" , "background" : "#AAA", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+   $(".ask-question-lightbox").css({"display" : "block" });
+ 
+  
+   $("body").css({"overflow":"auto","overflow-x":"hidden"})
+      
+       };
+   
+   
+    function hideQuestionLB1() {
+
+$("#overlay").css({"display" : "none" });
+$(".ask-question-lightbox").css({"display" : "none" });
+
+$("body").css({"overflow":"auto"})
+   
+   };
+ 
+ 
+   
+   
+   
+   $(function() {
+		 
+		
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+   });
   
   
 </script>
