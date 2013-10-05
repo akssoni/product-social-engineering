@@ -228,8 +228,9 @@ position: fixed;
                 },
             
             select: function( event, ui ) {
-                $( "#project" ).val( ui.item.label );
-                
+            	
+                $( ".ask-question-list" ).append( ui.item.label );
+                $( "#askQuestion" ).val( "" );
                 return false;
             }
         })
@@ -1170,12 +1171,18 @@ position: fixed;
 
 
 <div>
+<div class="ask-question-list">
 
+</div>
 <div>
 <textarea id="askQuestion" rows="" cols=""></textarea>
 </div>
 <div>
-list will come here
+Your Expert etct etc 
+</div>
+
+<div>
+Send button etc
 </div>
 </div>
 
