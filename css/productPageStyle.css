@@ -984,10 +984,26 @@ body {
 	
 }
 
+.ask-question-list-remove{
+background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 10px 10px 10px 10px;
+    color: #888888;
+    cursor: pointer;
+   
+    font-family: Lucida Console;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    line-height: 15px;
+   // position: absolute;
+    right: 12px;
+    text-align: center;
+    top: 12px;
+    width: 15px;
+    z-index: 8040;
 
-
-
-
+}
 
 
 

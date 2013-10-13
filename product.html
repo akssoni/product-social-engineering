@@ -229,7 +229,7 @@ position: fixed;
             
             select: function( event, ui ) {
             	
-                $( ".ask-question-list" ).append( ui.item.label );
+                $( ".ask-question-list" ).append( '<div class="ask-question-list-item">'+ ui.item.label+'<div class="ask-question-list-remove">X</div></div>' );
                 $( "#askQuestion" ).val( "" );
                 return false;
             }
@@ -241,9 +241,24 @@ position: fixed;
                 .appendTo( ul );
         };
        
+        
+       
+    
+        
+        $( ".ask-question-list-remove" ).live( "click", function() {
+        	
+        	$( this ).parent().remove();
+        	
+        	
+        	});
+        
     });
     
-    
+
+
+ 
+
+
 
     
     </script>
@@ -1178,11 +1193,14 @@ position: fixed;
 <textarea id="askQuestion" rows="" cols=""></textarea>
 </div>
 <div>
-Your Expert etct etc 
+Your Expert 
+
+ 
 </div>
 
 <div>
 Send button etc
+
 </div>
 </div>
 
