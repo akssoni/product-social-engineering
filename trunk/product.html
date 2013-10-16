@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 
 <link rel="stylesheet" href="css/lightbox.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/masttag-1.0-autocomplete-styling.css">
+
 <script src="scripts/jquery.min.js" type="text/javascript"></script>
 <script src="scripts/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
 <script src="scripts/jquery.raty.min.js" type="text/javascript"></script>
@@ -122,7 +124,7 @@ window.onload=function(){
 	border-radius: 0 0 0 0;
 	max-height: 400px;
 	overflow-y: auto;
-	width: 400px !important;
+	
 	/* prevent horizontal scrollbar */
 	overflow-x: hidden;
 }
@@ -164,6 +166,7 @@ window.onload=function(){
 
 position: fixed;
 
+
 }
 
 
@@ -201,7 +204,7 @@ position: fixed;
         .data( "autocomplete" )._renderItem = function( ul, item ) {
             return $( "<li>" )
                 .data( "item.autocomplete", item )
-                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>" + item.label + "</span><br>" + item.desc + "</div></a>" )
+                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span class='masttag-autocomplete-span' >" + item.label + "</span><br>" + item.desc + "</div></a>" )
                 .appendTo( ul );
         };
         
@@ -237,7 +240,7 @@ position: fixed;
         .data( "autocomplete" )._renderItem = function( ul, item ) {
             return $( "<li>" )
                 .data( "item.autocomplete", item )
-                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span style='color: #335598;  font-weight: bold;'>" + item.label + "</span><br>" + item.desc + "</div></a>" )
+                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span class='masttag-autocomplete-span'>" + item.label + "</span><br>" + item.desc + "</div></a>" )
                 .appendTo( ul );
         };
        

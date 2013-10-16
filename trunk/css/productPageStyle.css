@@ -296,11 +296,10 @@ body {
 .newsfeed-textarea {
     border: 1px solid #AAAAAA;
     border-radius: 5px 5px 5px 5px;
- 
     margin: auto;
+    overflow-y: hidden;
     padding: 5px;
     width: 88%;
-    overflow-y: hidden;
 }
 .newsfeed-button {
     background: -moz-linear-gradient(center top , #517FC5 0%, #3F62AB 100%) repeat scroll 0 0 transparent;
@@ -488,7 +487,7 @@ body {
     margin: 4px 6px 1px 4px;
 }
 .newsfeed-comment-commenttext-wrapper-text {
-	text-align: justify;
+    text-align: justify;
     width: 380px;
 }
 .newsfeed-comment-commenttext-wrapper-translation {
@@ -506,11 +505,11 @@ body {
 }
 .newsfeed-comment-commenttext-wrapper-textarea {
     display: block;
+    height: 43px;
     margin-left: 10px;
-    width: 360px;
+    overflow-y: hidden;
     resize: none;
-     overflow-y: hidden;
-      height: 43px;
+    width: 360px;
 }
 .newsfeed-comment-commenttext-button {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
@@ -917,7 +916,7 @@ body {
     height: 70px;
 }
 .product-lightbox-1-wrapper {
-   background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 24px 0 #222222;
     display: none;
@@ -956,36 +955,30 @@ body {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
-
-.product-expert-comment{
- background: none repeat scroll 0 0 #EEEEEE;
+.product-expert-comment {
+    background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #CCCCCC;
     border-radius: 5px 5px 5px 5px;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 5px;
     text-align: justify;
-    
 }
-
-.ask-question-lightbox{
-	background: none repeat scroll 0 0 #FFFFFF;
+.ask-question-lightbox {
+    background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 24px 0 #222222;
     display: none;
-    left: 28%;
+    left: 26%;
     margin-top: 30px;
     padding: 25px;
     position: fixed;
     top: 8%;
-    width: 575px;
+    width: 625px;
     z-index: 1002;
-	
 }
-
-.ask-question-list-remove{
-  background: none repeat scroll 0 0 #FFFFFF;
+.ask-question-list-remove {
+    background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #888888;
     border-radius: 10px 10px 10px 10px;
     color: #888888;
@@ -1004,53 +997,48 @@ body {
     top: -9px;
     width: 15px;
 }
-
-
-.ask-question-textarea, #askQuestion{
-border-color: #BBBBBB;
+.ask-question-textarea, #askQuestion {
+    border-color: #BBBBBB;
     border-radius: 5px 5px 5px 5px;
     border-style: solid;
     border-width: 1px;
     font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    height: 30px;
-    line-height: 30px;
+    height: 35px;
+    line-height: 35px;
     padding-left: 5px;
     resize: none;
-    width: 500px;
+    width: 618px;
 }
-
-.ask-question-title, .ask-question-expert{
-	
-	color: #666666;
-    font-size: 14px;
+.ask-question-title, .ask-question-expert {
+    color: #999999;
+    font-size: 15px;
     font-weight: bold;
     height: 20px;
     line-height: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
-.ask-question-list{
-	 margin-top: 10px;
+.ask-question-list {
+    margin-top: 10px;
     min-height: 35px;
 }
-.ask-question-list-item{
-  border: 1px solid #AAAAAA;
+.ask-question-list-item {
+    border: 1px solid #AAAAAA;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 8px 0 #999999;
     color: #1996D9;
     display: inline-block;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 15px;
     margin-right: 15px;
     padding: 5px;
     position: relative;
 }
-
-.ask-question-button{
-	 background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
+.ask-question-button {
+    background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
     border: 1px solid #3586C2;
     border-radius: 4px 4px 4px 4px;
     cursor: pointer;
@@ -1058,31 +1046,19 @@ border-color: #BBBBBB;
     margin-left: 15px;
     margin-right: 0;
     margin-top: 5px;
-	
 }
-
-.ask-question-button-span{
-	
-	color: white;
+.ask-question-button-span {
+    color: white;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     padding: 5px 15px;
 }
-
-
-.ask-question-expert-list-element{
-	
-	color: #1996D9;
-	font-weight:bold;
-	text-decoration: underline;
-	cursor: pointer;
-	font-size: 12px;
-	display: inline-block;
-	
+.ask-question-expert-list-element {
+    color: #1996D9;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
 }
-
-
-
-
-
