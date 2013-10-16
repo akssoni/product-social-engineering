@@ -1,0 +1,52 @@
+.ui-autocomplete{
+	
+	
+}
+
+#ui-id-1{
+	 width: 370px !important;
+}
+
+.ui-menu-item {
+    border-bottom: 1px solid #BBBBBB;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ui-menu-item:HOVER {
+  
+}
+
+.ui-menu-item span:HOVER {
+   color: #FFF;
+}
+
+
+
+.masttag-autocomplete-span{
+color: #335598;
+font-weight: bold;
+}
+
+.ui-autocomplete a.ui-state-focus:HOVER {
+	 background: #33559A;
+	 color: #FFF!important;
+	
+}
+
+.ui-autocomplete a.ui-state-focus:HOVER .masttag-autocomplete-span{
+	 background: #33559A;
+	 color: #FFF!important;
+	
+}
+
+
+
+.ui-autocomplete a.ui-corner-all{
+	
+	
+	 border-radius: 0 0 0 0;
+} 
+	
+}
