@@ -434,9 +434,10 @@ body {
     width: 65px;
 }
 .newsfeed-comment-username {
-    color: #335598;
-    font-size: 12px;
+     color: #335598;
+    font-size: 16px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .newsfeed-comment-text {
     background: none repeat scroll 0 0 #EEEEEE;
@@ -444,7 +445,7 @@ body {
     border-radius: 5px 5px 5px 5px;
     height: 55px;
     margin-bottom: 1px;
-    margin-top: 10px;
+  
     padding: 5px;
     text-align: justify;
 }
@@ -481,6 +482,8 @@ body {
     height: 40px;
     vertical-align: top;
     width: 40px;
+     margin-left: 3px;
+    margin-top: 3px;
 }
 .newsfeed-comment-commenttext-wrapper {
     display: inline-block;
@@ -488,7 +491,7 @@ body {
 }
 .newsfeed-comment-commenttext-wrapper-text {
     text-align: justify;
-    width: 380px;
+    width: 350px;
 }
 .newsfeed-comment-commenttext-wrapper-translation {
     color: #3553BC;
@@ -497,6 +500,7 @@ body {
 .newsfeed-comment-commenttext-wrapper-likebar {
     color: #AAAAAA;
     margin-top: 1px;
+      text-align: right;
 }
 .newsfeed-comment-commenttext-wrapper-text span {
     color: #3355A4;
@@ -504,12 +508,11 @@ body {
     margin-right: 4px;
 }
 .newsfeed-comment-commenttext-wrapper-textarea {
-    display: block;
+   display: block;
     height: 43px;
-    margin-left: 10px;
     overflow-y: hidden;
     resize: none;
-    width: 360px;
+    width: 347px;
 }
 .newsfeed-comment-commenttext-button {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
@@ -566,7 +569,7 @@ body {
 }
 #scrollbar1 {
     clear: both;
-    margin: 5px 0 10px;
+     margin: 0 0 10px;
     width: 98%;
 }
 #scrollbar1 .viewport {
@@ -945,6 +948,18 @@ body {
     height: auto;
     width: 430px;
 }
+
+.lightbox-post {
+    height: auto;
+    width: auto;
+}
+
+.lightbox-post-wrapper{
+	
+	display: inline-block; 
+	width: 410px;
+}
+
 .lightbox-profile-image {
     margin-left: 0;
     margin-top: 0;
@@ -1022,7 +1037,7 @@ body {
 }
 .ask-question-list {
     margin-top: 10px;
-    min-height: 35px;
+  
 }
 .ask-question-list-item {
     border: 1px solid #AAAAAA;
@@ -1061,4 +1076,10 @@ body {
     font-size: 12px;
     font-weight: bold;
     text-decoration: underline;
+}
+
+
+.ask-question-expandable{
+	overflow-y: hidden;
+	
 }

@@ -70,11 +70,20 @@ window.onload=function(){
         
         
         
+        $('.newsfeed-textarea-wrapper').on( 'keypress', 'textarea', function (e){
+            $(this).css('height', 'auto' );
+            $(this).height( this.scrollHeight );
+                      
+        });
+        
+        $('.newsfeed-textarea-wrapper').find( 'textarea' ).keypress();
+        
         $('.newsfeed-textarea-wrapper').on( 'keyup', 'textarea', function (e){
             $(this).css('height', 'auto' );
             $(this).height( this.scrollHeight );
                       
         });
+        
         $('.newsfeed-textarea-wrapper').find( 'textarea' ).keyup();
         
 
@@ -88,7 +97,41 @@ window.onload=function(){
             $('#scrollbar1').tinyscrollbar_update('bottom');
            
         });
-        $('.newsfeed-comment-commenttext-textarea-wrapper').find( 'textarea' ).keyup();
+        
+      //  $('.newsfeed-comment-commenttext-textarea-wrapper').find( 'textarea' ).keyup();
+        
+        $('.newsfeed-comment-commenttext-textarea-wrapper').on( 'keypress', 'textarea', function (e){
+            $(this).css('height', 'auto' );
+            $(this).height( this.scrollHeight );
+         
+            $('#scrollbar1').tinyscrollbar_update('bottom');
+           
+        });
+        
+     //   $('.newsfeed-comment-commenttext-textarea-wrapper').find( 'textarea' ).keypress();
+        
+     
+     
+     
+        $('.ask-question-expandable-wrapper').on( 'keyup', 'textarea', function (e){
+            $(this).css('height', 'auto' );
+            $(this).height( this.scrollHeight );
+         
+           
+           
+        });
+        
+     
+        
+        $('.ask-question-expandable-wrapper').on( 'keypress', 'textarea', function (e){
+            $(this).css('height', 'auto' );
+            $(this).height( this.scrollHeight );
+         
+        
+           
+        });
+        
+    
         
         
         
@@ -202,10 +245,24 @@ position: fixed;
             }
         })
         .data( "autocomplete" )._renderItem = function( ul, item ) {
-            return $( "<li>" )
+        	 if(item.desc == 'divider'){
+        	return $( "<li>" )
+            
+           
                 .data( "item.autocomplete", item )
-                .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span class='masttag-autocomplete-span' >" + item.label + "</span><br>" + item.desc + "</div></a>" )
+                .append( "<a class='autocomplete-divider'><div style='display: inline-block; vertical-align: top; margin:5px;'><span>" + item.label + "</span></div></a>" )
                 .appendTo( ul );
+            }
+        	 else{
+        		 return $( "<li>" )
+                 
+                 
+                 .data( "item.autocomplete", item )
+                  .append( "<a><img src='images/profile-pictures.jpg' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'><span class='masttag-autocomplete-span' >" + item.label + "</span><br>" + item.desc + "</div></a>" )
+               .appendTo( ul );
+        		 
+        		 
+        	 }
         };
         
         
@@ -1028,12 +1085,14 @@ position: fixed;
 			</div>
 			<div class="viewport">
 				<div class="overview">
-
+<div title="Tooltip" class="newsfeed-comment-username">Akshay Soni</div>
 <div >
 								<img src="images/profile-pictures.jpg" class="newsfeed-comment-image lightbox-profile-image">
-								<div style="display: inline-block; margin-left: 10px;">
-									<div title="Tooltip" class="newsfeed-comment-username">Akshay Soni</div>
-									<div class="newsfeed-comment-text lightbox-comment">Commment d they maintain that clarity on any kind o Commment d they maintain that clarity on any kind o Commment d they maintain that clarity on any kind o Commment d they maintain that clarity on any kind o
+								
+								<div class="lightbox-post-wrapper">
+								
+								
+									<div class="newsfeed-comment-text lightbox-post">Commment d they maintain that clarity on any kind o Commment d they maintain that clarity on any kind o Commment d they maintain that clarity on any kind o Commment d they maintain that clarity on any kind o
 									
 									Commment d they maintain that clarity on any kind o
 									Commment d they maintain that clarity on any kind o
@@ -1043,7 +1102,8 @@ position: fixed;
 									
 									<div class="newsfeed-comment-likebar lightbox-likebar">like | comment | 4
 										hours before near Bangkok, Krung Thep</div>
-
+									
+									
 									<div class="newsfeed-comment-commentdiv">
 										<div class="newsfeed-comment-commenttext">
 											<img src="images/profile-pictures.jpg" class="newsfeed-comment-commenttext-image">
@@ -1149,10 +1209,11 @@ position: fixed;
 											<img src="images/profile-pictures.jpg" class="newsfeed-comment-commenttext-image">
 											<div class="newsfeed-comment-commenttext-wrapper">
 											<div class="newsfeed-comment-commenttext-textarea-wrapper">
-												<textarea rows="" cols="" class="newsfeed-comment-commenttext-wrapper-textarea" style="height: 43px;"></textarea>
+												<textarea rows="" cols="" class="newsfeed-comment-commenttext-wrapper-textarea" style="resize: none; height: 43px;"></textarea>
 											</div>	
 												<div class="newsfeed-comment-commenttext-button-fb">
 													<span class="newsfeed-comment-commenttext-button-span">Share</span>
+												
 												</div>
 												<div class="newsfeed-comment-commenttext-button">
 													<span class="newsfeed-comment-commenttext-button-span">Tweet</span>
@@ -1162,8 +1223,8 @@ position: fixed;
 
 										</div>
 									</div>
-
 								</div>
+							
 
 
 							</div>
@@ -1172,7 +1233,7 @@ position: fixed;
 </div>
 </div>
 
-<div  onclick="showProductLB1()" class="product-lightbox-close">X</div>
+<div  onclick="hideProductLB1()" class="product-lightbox-close">X</div>
 
 </div>
 
@@ -1180,8 +1241,8 @@ position: fixed;
 <div class="ask-question-lightbox" >
 
 <div class="ask-question-title">Write your question below</div>
-<div>
-<textarea class="ask-question-textarea" placeholder="Ask question..."></textarea>
+<div class="ask-question-expandable-wrapper">
+<textarea class="ask-question-textarea ask-question-expandable" placeholder="Ask question..."></textarea>
 </div>
 
 
