@@ -1,4 +1,11 @@
-[ 	    {
+[ 	    
+			{
+                "value": "People",
+                "label": "People",
+                "desc": "divider",
+                "icon": ""
+            },
+			{
                 "value": "Akshay",
                 "label": "Akshay",
                 "desc": "the write less, do more, work library",
@@ -47,8 +54,32 @@
                 "icon": "jqueryui_32x32.png"
             },
             {
-                "value": "Sizzle",
-                "label": "Sizzle",
+                "value": "Products",
+                "label": "Produts",
+                "desc": "divider",
+                "icon": ""
+            },
+            {
+               "value": "iPhone",
+                "label": "iPhone",
+                "desc": "next to the profile the bar chart part  photo.",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "MacBook Pro",
+                "label": "MacBook Pro",
+                "desc": "what are you looking for and comment",
+                "icon": "jqueryui_32x32.png"
+            },
+             {
+                "value": "iPad",
+                "label": "iPad",
+                "desc": " for and comment what are you looking",
+                "icon": "jqueryui_32x32.png"
+            },
+            {
+                "value": "Apple TV",
+                "label": "Apple TV",
                 "desc": "a pure-food selector engine",
                 "icon": "sizzlejs_32x32.png"
             } ]
