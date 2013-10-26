@@ -1,0 +1,16 @@
+.newsfeed-textarea-bottom{
+	
+	
+	
+   
+    border-radius: 0 0 3px 3px;
+   
+    border: 1px solid #AAA;
+    border-top: 0px solid;
+    height: 20px;
+    margin: auto;
+    width: 510px;
+    color: #777;
+    
+    background: none repeat scroll 0 0 #EFEFEF;
+}
