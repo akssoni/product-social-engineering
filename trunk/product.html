@@ -316,6 +316,10 @@ position: fixed;
         	
         	});
         
+        
+        $('.newsfeed-textarea-bottom-rate').raty({ readOnly: false, score: 0 });
+        
+        
     });
     
 
@@ -543,8 +547,55 @@ position: fixed;
 			
 					<textarea rows="" cols="" placeholder="Write a review.." style="resize: none;" class="newsfeed-textarea"></textarea>
 					</div>
-					<div class="newsfeed-textarea-bottom">
-					<a>Add Location</a> - <a>Add rating</a> - <a>invite friend</a> - <a>upload photo</a>
+
+
+
+
+
+
+
+						<div class="post-picture-upload">
+
+							<div class="post-picture-upload-thumnail">
+
+
+								<img class="post-picture-upload-thumnail-img"
+									data-original="https://d39z3y5zwcbmdt.cloudfront.net/items/8366/cropped.jpg"
+									alt="Psychonauts - Xbox"
+									src="https://d39z3y5zwcbmdt.cloudfront.net/items/8366/cropped.jpg">
+
+								
+
+
+								<div class="post-picture-upload-selected-remove-button"
+									onclick="removeSelctedElement(this)">X</div>
+
+							</div>
+
+
+							<div class="post-picture-upload-addnew" onclick="showLB1()">+</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<div class="newsfeed-textarea-bottom">
+					<a>Add Location</a> - 
+					<div class="newsfeed-textarea-bottom-rate"> </div>
+					
+					 - <a>invite friend</a> - <a>upload photo</a>
 					
 					</div>
 					
