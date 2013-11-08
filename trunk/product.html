@@ -545,7 +545,7 @@ position: fixed;
 			<div class="newsfeed-text">
 					<div class="newsfeed-textarea-wrapper">
 			
-					<textarea rows="" cols="" placeholder="Write a review.." style="resize: none;" class="newsfeed-textarea"></textarea>
+					<textarea  placeholder="Write a review.." style="resize: none;" class="newsfeed-textarea"></textarea>
 					</div>
 
 
@@ -573,7 +573,7 @@ position: fixed;
 							</div>
 
 
-							<div class="post-picture-upload-addnew" onclick="showLB1()">+</div>
+							<div class="post-picture-upload-addnew"><input type="file">+</div>
 						</div>
 
 
@@ -595,7 +595,7 @@ position: fixed;
 					<a>Add Location</a> - 
 					<div class="newsfeed-textarea-bottom-rate"> </div>
 					
-					 - <a>invite friend</a> - <a>upload photo</a>
+					 - <a>invite friend</a> - <a onclick="showUploadPic()">upload photo</a>
 					
 					</div>
 					
@@ -1455,9 +1455,22 @@ $("body").css({"overflow":"auto"})
    
    };
  
- 
    
    
+   function showUploadPic() {
+
+	   $(".post-picture-upload").css({"display" : "block" });
+	   $(".newsfeed-textarea").css({"height" : "100px" });
+		  
+	   
+	      };
+	      
+	      function removeSelctedElement(src){
+		    	
+		    	$(src).parent().addClass("selected-image-removed");
+		    	$(src).parent().css('display', 'none');
+		    	
+		    };     
    
    $(function() {
 		 
