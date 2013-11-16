@@ -158,16 +158,12 @@
     width: 135px;
 }
 
-
 .upload-tooltip-span{
-
     background-color: #FBFBFC;
     border: 1px solid #AAAAAA;
     color: #777777;
     padding: 3px;
-    cursor: pointer;
-    
-    
+    cursor: pointer;  
 }
 
 .profile-upload-brows, .profile-upload-web, .profile-upload-remove{
@@ -180,8 +176,6 @@
  overflow: hidden;
      position: relative;
 }
-
-
 
 .profile-upload-brows:HOVER, .profile-upload-web:HOVER, .profile-upload-remove:HOVER {
 	background-color: #33559A;

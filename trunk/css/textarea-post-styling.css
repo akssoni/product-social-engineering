@@ -98,14 +98,16 @@
 }
 
 
+.post-picture-upload-addnew:hover {
+    box-shadow: 0 0 10px #CCC;
+    cursor: pointer;
+}
+
 .newsfeed-textarea-bottom-rate{
 	
 	display: inline-block;
 	
 }
-
-
-
 
 
 .post-picture-upload-addnew input[type="file"] {
@@ -115,8 +117,6 @@
     opacity: 0;
     position: absolute;
 }
-
-
 
 
 .post-picture-upload-thumnail-img{

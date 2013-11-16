@@ -7,7 +7,7 @@ font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 
 
 .lightbox1-wrapper {
-  // border: 2px solid #1A2A4D;
+  
     border-radius: 6px 6px 6px 6px;
     box-shadow: 0 0 20px #1A2A4D;
     width: 950px;
@@ -141,12 +141,6 @@ border-bottom: 20px solid transparent;
 /* end breadcrumb */
 
 
-
-
-
-
-
-
 .lightbox1-line{
 
 height: 60px;
@@ -181,18 +175,17 @@ display: inline-block;
 	}
 #tooltip1, #tooltip2, #tooltip3{
 visibility:hidden;
-  //  display: none;    
+ 
   
     position: absolute;
   margin-top:9px;
-  //  width: 330px;
-  //  z-index: 100;
+ 
    
     background: none repeat scroll 0 0 padding-box rgba(255, 255, 255, 0.98);
     border: 1px solid rgba(100, 100, 100, 0.4);
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-  //	height: 405px;
+ 
     
 }
 

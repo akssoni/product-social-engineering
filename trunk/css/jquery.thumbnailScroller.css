@@ -11,6 +11,7 @@
 }
 .jThumbnailScroller .jTscrollerContainer {
     position: absolute;
+    
 }
 .jThumbnailScroller .jTscroller {
     display: inline-block;
