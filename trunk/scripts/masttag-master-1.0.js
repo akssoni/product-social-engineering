@@ -99,10 +99,9 @@ $(document).ready(function() {
 		$(".profile-upload").click(function(e) {
 			e.stopPropagation();
 		});
+		var dochite = $(document).height();
 		
-		
-	    
-	    
+		$('.pagecontent-newsfeed').css ('min-height', dochite+'px');
 	
 		
 		
