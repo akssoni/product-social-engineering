@@ -420,7 +420,7 @@ position: fixed;
 			
 			
 			<div >
-						<div class="search-result-button">
+						<div class="search-result-button add-to-wish-list">
 							<span class="search-result-button-span">Add to wishlist</span>
 						</div>
 
@@ -1470,7 +1470,20 @@ $("body").css({"overflow":"auto"})
 		    	$(src).parent().addClass("selected-image-removed");
 		    	$(src).parent().css('display', 'none');
 		    	
-		    };     
+		    };   
+		    
+		    
+		    
+		    $('.add-to-wish-list').click(function(){
+		    	
+		    	$(this).addClass('diable-button-clicked');
+				    
+		    	$(this).children().html('This button is Clicked');
+		    
+		    });
+		    
+		    
+		    
    
    $(function() {
 		 

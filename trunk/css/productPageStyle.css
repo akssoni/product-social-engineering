@@ -1268,3 +1268,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
 	overflow-y: hidden;
 	
 }
+
+
+.diable-button-clicked, .diable-button-clicked:HOVER{
+	
+	 background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #3586C2;
+   
+}
+
+
+
