@@ -302,7 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#517FC5', end
     width: 95%;
 }
 .left-right-title {
-    display: block;
+    display: inline-block;
     font-size: 15px;
     font-weight: bold;
     height: 20px;
@@ -1063,3 +1063,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#517FC5', end
     margin-top: 5px;
     vertical-align: top;
 }
+
+
+.wishlist-productlist-addnew{
+
+cursor: pointer;
+    float: right;
+    margin-right: 8px;
+    margin-top: 8px;
+
+
+}
+
