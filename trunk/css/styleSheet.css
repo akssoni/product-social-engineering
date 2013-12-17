@@ -469,9 +469,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#517FC5', end
 .products-history {
     margin-top: 5px;
 }
-.products-history-date {
+.products-history-content {
     color: #0085CC;
-    display: block;
+    
 }
 .newsfeed-post {
 }
@@ -1073,5 +1073,14 @@ cursor: pointer;
     margin-top: 8px;
 
 
+}
+
+
+
+//Change in Product thumnail fields 
+.product-history-content-owners{
+display: inline-block;
+    vertical-align: top;
+    width: 100px;
 }
 
