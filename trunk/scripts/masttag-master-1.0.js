@@ -105,6 +105,10 @@ $(document).ready(function() {
 	
 		
 		
+		$('.products-history-content-rating').raty({ readOnly: true, score: 3.5 });
+		
+		
+		
 	});
 
 
