@@ -445,9 +445,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#517FC5', end
 }
 .yourproducts-products-info {
     display: inline-block;
-    margin-left: 20px;
+   
     margin-top: 5px;
     vertical-align: top;
+    width: 150px;
 }
 .products-like {
     background: url("../images/like.png") repeat scroll 0 0 transparent;
@@ -1084,3 +1085,9 @@ display: inline-block;
     width: 100px;
 }
 
+
+.yourproducts-products-image-wrapper{
+	
+	
+	display: inline-block;
+}
