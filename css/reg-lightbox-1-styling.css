@@ -68,11 +68,46 @@ body {
     border-radius: 8px 8px 8px 8px;
     margin: 5px;
     padding: 5px;
+    position: relative;
 }
 .reg-lightbox-1-search-item:hover {
     box-shadow: 0 0 9px #C8C8C8;
     cursor: pointer;
 }
+
+.reg-lightbox-1-search-item-hover-buttons{
+	
+	 border: 1px solid;
+    border-radius: 11px;
+    color: #AAAAAA;
+    cursor: pointer;
+    display: none;
+    font-family: Lucida Console;
+    font-size: 13px;
+    font-weight: bold;
+    height: 13px;
+    position: absolute;
+    right: 4px;
+    text-align: center;
+    top: 4px;
+    width: 14px;
+    z-index: 8040;
+}
+
+.reg-lightbox-1-search-item:hover .reg-lightbox-1-search-item-hover-buttons{
+
+	
+	display: block;
+
+	
+	}
+	
+	
+	
+
+
+
+
 .img-wrapper {
     display: inline-block;
 }
