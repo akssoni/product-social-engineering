@@ -185,9 +185,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67AE55', end
 }
 
 .pageheader {
-    background: none repeat scroll 0 0 #33559A;
-    border-bottom: 1px solid #AAAAAA;
-    border-top: 2px solid;
+    background: none repeat scroll 0 0 #EEEEEE;
+   border-bottom: 1px solid #33569B;
     height: 35px;
     left: 0;
     padding-left: 6%;
@@ -195,7 +194,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67AE55', end
     top: 0;
     width: 94%;
     z-index: 1000;
-    box-shadow: 0 1px 5px #333333;
+    
 }
 
 .pageheader-alert ul {
