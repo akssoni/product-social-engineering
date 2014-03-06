@@ -174,8 +174,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63B0E4', end
 .pageheader-searchbar {
     display: block;
     margin-left: 0;
-    padding-top: 4px;
+   margin-top: 4px;
     vertical-align: text-bottom;
+     border: 1px solid #6677A1;
 }
 .signup-div select{
     background: none repeat scroll 0 0 #F9F9F9;

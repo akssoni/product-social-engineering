@@ -211,7 +211,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67AE55', end
 
 .pageheader-alert {
     border-left: medium none;
-    color: white;
+    color: #6677A1;
     cursor: pointer;
     display: inline-block;
     height: 35px;
