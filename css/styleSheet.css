@@ -50,7 +50,7 @@ body {
     vertical-align: top;
 }
 .pageheader-right div:hover {
-    background: none repeat scroll 0 0 #29447B;
+    background: none repeat scroll 0 0 #FFFFFF;
 }
 .pageheader-right div ul li:hover {
     background: none repeat scroll 0 0 #29447B;
@@ -317,7 +317,7 @@ body {
     width: 98%;
 }
 .newsfeed-button {
-    background: -moz-linear-gradient(center top , #517FC5 0%, #3F62AB 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: #EEE;
     border: 1px solid #3586C2;
     border-radius: 3px;
     cursor: pointer;
@@ -329,7 +329,7 @@ body {
     background: -moz-linear-gradient(center top , #517FC5 0%, #4E7AC1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 .newsfeed-button-text {
-    color: #FFFFFF;
+    color: #3586C2;
     display: block;
     font-size: 11px;
     font-weight: bold;
@@ -503,7 +503,7 @@ body {
     width: 335px;
 }
 .newsfeed-comment-commenttext-button {
-    background: -moz-linear-gradient(center top , #63B0E4 0%, #008DD5 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: #eee;
     border: 1px solid #3586C2;
     border-radius: 4px;
     cursor: pointer;
@@ -513,7 +513,7 @@ body {
     margin-top: 5px;
 }
 .newsfeed-comment-commenttext-button-span {
-    color: #FFFFFF;
+    color: #3586C2;
     display: block;
     font-size: 11px;
     font-weight: bold;
@@ -523,7 +523,7 @@ body {
     background: -moz-linear-gradient(center top , #63B0E4 0%, #4FA8E2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 .newsfeed-comment-commenttext-button-fb {
-    background: -moz-linear-gradient(center top , #517FC5 0%, #3F62AB 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: #EEE;
     border: 1px solid #3586C2;
     border-radius: 4px;
     cursor: pointer;
