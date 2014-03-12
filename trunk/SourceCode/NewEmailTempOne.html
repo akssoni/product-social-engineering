@@ -1,32 +1,70 @@
 <html>
 <head>
+
 <style>
+    
+@font-face
+{
+font-family: lato;
+src: url(/CSS/fonts/Lato/Lato-Light.woff);
+}    
+body{
+    font-family: lato, sans-serif;
+    font-weight: 100;
+    
+}
     
 .email-wrapper{
     width: 90%;
-    max-width: 600px;
+    max-width: 486px;
     margin: auto;
 }    
 .email-body-wrapper{
-    border: 1px solid #DDD;
-    border-radius: 6px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
 }    
 .email-body-header{
     border-bottom: 1px solid #DDD;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    height: 50px;
 }    
 .email-body-body{
     color: #999;
-    padding: 15px;
-}    
+    padding: 20px;
+}   
+    
+.email-body-username{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.email-body-mailtext{
+    
+    
+    
+    font-size: 25px
+}
+
+.email-body-mailfooter{
+    font-size: 13px;
+    margin-top: 20px
+    
+}
+
 .email-footer{ 
-    font-size: 11px;
+    font-size: 10px;
     color: #999;
-    margin-top: 10px;
-    line-height: 17px;
-    margin-left: 5px;
+    margin-top: 20px;
+   
+}
+
+.email-body-links{
+ 
+    color: #00aeef;
+}
+    
+.email-body-header-logo{
+  margin-top: 9px;   
 }
     
 </style>
@@ -37,15 +75,16 @@
 <div class="email-wrapper">
 <div class="email-body-wrapper">
 <div class="email-body-header">
-    <img src="img/musttag%20logo.png">
+    <img class="email-body-header-logo" src="img/musttag%20logo.png">
 </div>
 <div class="email-body-body">
-Hi Xyz, </br>
-Sheldon and other 5 tagged in your review on iPhone 5s.
-    
-</br>
-    
-For more updates login to musttag.
+<div class="email-body-username">Hi Xyz,</div>
+<div class="email-body-mailtext">
+<a class="email-body-links" href="#">Sheldon</a> and other 5 tagged in your review on <a class="email-body-links" href="#">iPhone 5s</a>.
+</div>    
+<div class="email-body-mailfooter">    
+For more updates <a class="email-body-links" href="#">login</a> to musttag.
+</div>
 </div>
     
     
