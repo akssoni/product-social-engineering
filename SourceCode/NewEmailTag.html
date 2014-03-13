@@ -5,11 +5,18 @@
     
 @font-face
 {
-font-family: lato;
-src: url(/CSS/fonts/Lato/Lato-Light.woff);
-}    
+font-family: latolite;
+src: url(CSS/fonts/Lato/Lato-Light.woff);
+}  
+    
+@font-face
+{
+font-family: latoregular;
+src: url(CSS/fonts/Lato/Lato-Regular.woff);
+}  
+    
 body{
-    font-family: lato, sans-serif;
+    font-family: latolite, sans-serif;
     font-weight: 100;
     
 }
@@ -34,7 +41,8 @@ body{
 }   
     
 .email-body-username{
-    font-weight: 400;
+    font-family: latoregular;
+    
     font-size: 25px;
 }
 
@@ -55,6 +63,7 @@ body{
     font-size: 10px;
     color: #999;
     margin-top: 20px;
+    line-height: 15px
    
 }
 
@@ -67,6 +76,12 @@ body{
   margin-top: 9px;   
 }
     
+.email-footer-links{
+    text-decoration: none;
+ color: #999;
+    border-bottom: 1px solid #BABABA;
+    
+}
 </style>
     
 </head>
@@ -80,7 +95,7 @@ body{
 <div class="email-body-body">
 <div class="email-body-username">Hi Xyz,</div>
 <div class="email-body-mailtext">
-<a class="email-body-links" href="#">Sheldon</a> and other 5 tagged in your review on <a class="email-body-links" href="#">iPhone 5s</a>.
+<a class="email-body-links" href="#">Sheldon</a> and 5 others tagged in your review on <a class="email-body-links" href="#">iPhone 5s</a>.
 </div>    
 <div class="email-body-mailfooter">    
 For more updates <a class="email-body-links" href="#">login</a> to musttag.
@@ -91,8 +106,10 @@ For more updates <a class="email-body-links" href="#">login</a> to musttag.
 </div>
     <div class="email-footer">
         
-Forgot your musttag password etc etc  <br />
-        You can unsubscribe from these emails or change your notification settings need help?
+Forgot your musttag password? <a class="email-footer-links" href="#">Get instructions on how to reset it</a>.<br />
+        You can <a class="email-footer-links" href="#">unsubscribe from these emails</a> or change your notification settings. Need <a class="email-footer-links" href="#">help?</a> <br />
+        If you received this message in error and did not sign uo for Mussttag. click <a class="email-footer-links" href="#">not my accoount</a>. <br />
+        Musstag. Inc. 556, Sector-4, R.K. Puram, New Delhi 110022
     </div>
 </div>    
     
