@@ -3,5 +3,49 @@ Masttag Common Styling Version 1.0
 Do not change
 */
 
+@font-face
+{
+font-family: latolite;
+src: url(fonts/Lato/Lato-Light.woff);
+}  
+    
+@font-face
+{
+font-family: latoregular;
+src: url(fonts/Lato/Lato-Regular.woff);
+}  
+
+body {
+    background: #FFFFFF;
+    color: #999999;
+    font-family: latoregular;
+}
 
 
+.page-master-header {
+    height: 50px;
+    
+}
+
+.page-master-header-logo {
+    display: inline-block;
+}
+
+.page-master-header-alert {
+    display: inline-block;
+}
+
+.page-master-header-searchbox {
+    display: inline-block;
+}
+
+.page-master-header-account-info {
+    display: inline-block;
+}
+
+
+.page-master-headr-logo-div {
+   background-image: url("../img/musttaglogo.png");
+    height: 32px;
+    width: 102px;
+}
