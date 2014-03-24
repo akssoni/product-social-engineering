@@ -49,3 +49,16 @@ body {
     height: 32px;
     width: 102px;
 }
+
+.page-master-header-account-info-thumbnail {
+    background-image: url("../img/userthumbnail.png");
+    height: 22px;
+    width: 22px;
+    background-size:22px 22px;
+    background-repeat:no-repeat;
+    display: inline-block
+}
+
+.page-master-header-account-info-username {
+    display: inline-block;
+}
