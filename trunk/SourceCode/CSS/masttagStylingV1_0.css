@@ -26,19 +26,25 @@ body {
 
 .page-master-header {
     height: 50px;
-    
+    padding-right: 57px;
+    padding-left: 57px;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .page-master-header-logo {
     display: inline-block;
+    margin-right: 28px;
+   
 }
 
 .page-master-header-alert {
     display: inline-block;
+   
 }
 
 .page-master-header-searchbox {
     display: inline-block;
+    margin-right: 15px;
 }
 
 .page-master-header-account-info {
@@ -47,7 +53,7 @@ body {
 
 
 .page-master-headr-logo-div {
-   background-image: url("../img/musttaglogo.png");
+    background-image: url("../img/musttaglogo.png");
     height: 32px;
     width: 102px;
 }
@@ -63,10 +69,12 @@ body {
 
 .page-master-header-account-info-username {
     display: inline-block;
+    vertical-align: top;
+    color: #ccc;
 }
 
 .page-master-subheader-product-thumbnail {
-     background-image: url("../img/iPhone5S.png");
+    background-image: url("../img/iPhone5S.png");
     height: 75px;
     width: 75px;
     background-size:75px 75px;
@@ -76,6 +84,7 @@ body {
 
 .page-master-subheader-product-info {
     display: inline-block;
+    
 }
 
 .page-master-subheader-product-info-rating i{
@@ -98,7 +107,7 @@ body {
 .masttag-regular-button:hover{
  
     border: 1px solid #00aeef;
-     color: #00aeef;
+    color: #00aeef;
 }
 
 .page-master-subheader-product-social-stat-button-div {
@@ -128,4 +137,35 @@ body {
 
 .page-master-subheader-product-ratingstat {
     display: inline-block;
+}
+
+.page-master-header-right {
+    display: inline-block;
+    float: right;
+}
+
+.page-master-header-left {
+    display: inline-block;
+}
+
+.page-master-header-search-text {
+    border: 1px solid #e7e7e7;
+    width: 350px;
+    height: 30px;
+    padding: 0 0 0 0;
+    font-size: 13px;
+    color: #bbbbbb;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.page-master-search-logo {
+    margin-left: -30px;
+}
+
+.page-master-subheader {
+    border-bottom: 1px solid #e7e7e7;
+    padding-right: 57px;
+    padding-left: 57px;
+   
 }
