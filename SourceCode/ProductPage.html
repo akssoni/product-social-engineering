@@ -2,26 +2,50 @@
 <head>
 <title>Masttag - Product Name</title>   
 <link rel="stylesheet" type="text/css" href="CSS/masttagStylingV1_0.css" />
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">  
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-base.css" />
+<noscript>
+<link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-mobile.css" />    
+</noscript>
+    
+<script>
+  var ADAPT_CONFIG = {
+    path: './CSS/',
+    dynamic: true,
+    range: [
+      '0 to 767px = unsemantic-grid-mobile.css',
+      '767px = unsemantic-grid-desktop.css'
+    ]
+  };
+</script>
+<script src="./scripts/adapt.min.js"></script>   
+<script src="./scripts/jquery.js"></script>   
+<script src="./scripts/html5.js"></script>       
 </head>
 <body>
 <div class="page-master-header">
+    
+<div class="page-master-header-left">
 <div class="page-master-header-logo">
    <div class="page-master-headr-logo-div"></div>
 </div>
 <div class="page-master-header-alert">
     <i class="fa fa-bell"></i>
 </div>
+</div>
+<div class="page-master-header-right">
 <div class="page-master-header-searchbox">
     <input type="text" class="page-master-header-search-text" autocomplete="on" />
-    <i class="fa fa-search"></i>
+    <i class="fa fa-search page-master-search-logo"></i>
 </div>
 <div class="page-master-header-account-info">
     <div class="page-master-header-account-info-thumbnail"></div>
     <div class="page-master-header-account-info-username">Howard Holowitz</div>
 </div>
 </div>
-<div class="page-master-subheader">
+</div>
+<div class="page-master-subheader grid-container">
+    <div class="page-master-subheader-product-details grid-25 mobile-grid-50">
     <div class="page-master-subheader-product-thumbnail"></div>
     <div class="page-master-subheader-product-info">
     <div class="page-master-subheader-product-info-name">iPhone 5S</div>
@@ -36,7 +60,8 @@
     #Smartphone #Apple #2013    
     </div>    
     </div>
-    <div class="page-master-subheader-product-social-stat">
+    </div>
+    <div class="page-master-subheader-product-social-stat grid-25 mobile-grid-50">
     <div class="page-master-subheader-product-social-stat-count">
     <span>Reviews 19</span>
     <span>Owners 19</span>
@@ -54,7 +79,7 @@
     </div>
         
     </div>
-    <div class="page-master-subheader-product-other-images">
+    <div class="page-master-subheader-product-other-images grid-25 mobile-grid-50">
     <div class="page-master-subheader-product-other-images-thumbnail-div">
         <img src="img/ProductThumbnails.png" width="30" height="30" />    
     </div>
@@ -74,31 +99,42 @@
         ...    
     </div>
     </div>
-    <div class="page-master-subheader-product-ratingstat">
+    <div class="page-master-subheader-product-ratingstat grid-25 mobile-grid-50">
     
       Over All Rating  
     </div>
     
 </div>
-<div class="page-product-master-content-wrapper">
-   <div class="page-product-master-col1">
-    
+<div class="page-product-master-content-wrapper grid-container">
+   <div class="page-product-master-col1 grid-20 mobile-grid-50">
+    <div class="page-product-master-col-header">
+        
     About
+       </div>
     
     </div>
-    <div class="page-product-master-col2-big">
-    
-    WRITE A REVIEW
+    <div class="page-product-master-col2-big grid-40 mobile-grid-50">
+    <div class="page-product-master-col-header">
+        
+     WRITE A REVIEW
+       </div>
+   
     
     </div>
-    <div class="page-product-master-col3">
-    
+    <div class="page-product-master-col3 grid-20 mobile-grid-50">
+    <div class="page-product-master-col-header">
+        
+     
+       </div>
     Apple Press info
     
     </div>
-    <div class="page-product-master-col4">
+    <div class="page-product-master-col4 grid-20 mobile-grid-50">
+    <div class="page-product-master-col-header">
+        
+     FRIEND OWNER OF PRODUCT
+       </div>
     
-    FRIEND OWNER OF PRODUCT
     
     </div>
     
