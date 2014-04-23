@@ -216,3 +216,45 @@ body {
 .review-with-stars {
     border-bottom: 1px solid #d9d9d9;
 }
+
+.page-product-col2-div-header {
+    display: inline-block;
+}
+
+.page-product-col2-comment-div-upper-photo {
+    height: 78px;
+width: 78px;
+border: 1px dashed #d9d9d9;
+    border-radius: 3px;
+font-size: 62px;
+display: inline-block;
+font-weight: bold;
+color: #d9d9d9;
+text-align: center;
+}
+
+.page-product-col2-comment-div-upper-div-textarea {
+    display: inline-block;
+}
+
+.page-product-col2-comment-div-lower-button {
+    display: inline-block;
+    float: right;
+}
+
+.page-product-col2-comment-div-upper {
+ border-bottom: 1px solid #d9d9d9;   
+}
+
+.page-product-col2-comment-div {
+ border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.page-product-col2-comment-div-lower {
+    
+}
+
+.page-product-col2-comment-div-lower-ratings {
+    display: inline-block;
+}
