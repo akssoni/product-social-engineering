@@ -258,3 +258,71 @@ text-align: center;
 .page-product-col2-comment-div-lower-ratings {
     display: inline-block;
 }
+
+.product-page-comment-small-textarea-img {
+    display: inline-block;
+}
+
+.page-product-master-col3-comment {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.product-page-comment-small-header {
+    border-bottom: 1px solid #d9d9d9;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.product-page-comment-small-header-headline {
+    font-size: 15px;
+    color: #999999;
+    font-weight: bold;
+}
+
+.product-page-comment-small-header-hashtags {
+ font-size: 13px;
+    color: #cccccc;
+}
+
+.product-page-comment-small-textarea-div {
+    border: 1px solid #EEEEEE;
+    margin-top: 5px;
+}
+
+.product-page-comment-small-textarea {
+    border: none;
+}
+
+.page-product-master-col-header {
+    height: 26px;
+font-size: 10px;
+font-weight: bold;
+margin-top: 16px;
+}
+
+.product-page-comment-small-comment {
+    
+}
+
+.product-page-comment-small-comment-wrapper {
+ padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.product-page-comment-small-comment-info {
+    margin-top: 5px;
+}
+
+.product-page-comment-small-header-image {
+ width: 99%;   
+}
+
+.product-page-comment-small-header-with-image {
+    padding: 1px;
+text-align: center;
+}
