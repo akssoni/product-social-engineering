@@ -20,7 +20,21 @@
 </script>
 <script src="./scripts/adapt.min.js"></script>   
 <script src="./scripts/jquery.js"></script>   
-<script src="./scripts/html5.js"></script>       
+<script src="./scripts/html5.js"></script>  
+<script src="./scripts/jquery.autosize.min.js"></script> 
+    
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>     
+<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script>         
+<script src="./scripts/masttagJS.js"></script>     
+    
+<script>
+$(document).ready(function(){
+    $('textarea').autosize();   
+});
+</script>
+        
+        
+        
 </head>
 <body>
 <div class="page-master-header">
@@ -35,7 +49,7 @@
 </div>
 <div class="page-master-header-right">
 <div class="page-master-header-searchbox">
-    <input type="text" class="page-master-header-search-text" autocomplete="on" />
+    <input type="text" id="project" class="page-master-header-search-text" autocomplete="on" />
     <i class="fa fa-search page-master-search-logo"></i>
 </div>
 <div class="page-master-header-account-info">
