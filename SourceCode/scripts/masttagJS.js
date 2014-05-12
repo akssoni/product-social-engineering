@@ -34,7 +34,7 @@ $(function() {
     })
     .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
       return $( "<li>" )
-        .append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
+        .append( "<a><img src='img/threeiPhone.png' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'>" + item.label + "<br>" + item.desc + "</div></a>" )
         .appendTo( ul );
     };
   });

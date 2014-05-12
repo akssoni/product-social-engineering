@@ -348,10 +348,29 @@ text-align: center;
     width: 348px;
     padding: 0px;
 }
-
-
 .ui-autocomplete li{
+    
+    border-bottom: 1px solid #aaa;
+}
+
+.ui-autocomplete li:last-child{
+    
+    border-bottom: none;
+}
+.ui-autocomplete li:hover{
  
-    
-    
+    background: #00aeef;
+    color: #fff;   
+}
+.page-column-element-wrapper {
+  border: 1px solid #d9d9d9;
+    border-radius: 5px;
+       padding: 8px;
+}
+
+.page-friend-owner-images-thumbnail-div {
+     height: 30px;
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
 }
