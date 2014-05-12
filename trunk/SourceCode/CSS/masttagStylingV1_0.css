@@ -338,3 +338,20 @@ text-align: center;
     display: none;
     
 }
+
+.ui-autocomplete{
+ 
+    list-style: none;
+    background: #ededed;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    width: 348px;
+    padding: 0px;
+}
+
+
+.ui-autocomplete li{
+ 
+    
+    
+}
