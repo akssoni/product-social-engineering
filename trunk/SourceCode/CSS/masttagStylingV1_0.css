@@ -54,7 +54,73 @@ textarea, input{
 
 .page-master-header-account-info {
     display: inline-block;
+    Border: 1px solid #FFF;
 }
+
+.page-master-header-account-info:hover {
+   Border: 1px solid #e7e7e7;
+Border-radius: 5px;
+    
+    
+}
+
+
+
+.page-master-header-account-info ul {
+	
+    Border: 1px solid #e7e7e7;
+    Border-radius: 5px;
+    Background: #ececec;
+    
+   
+	display: none;
+	list-style: none outside none;
+	margin-left: -10px;
+	margin-top: 0px;
+	min-width: 110px;
+	position: absolute;
+	z-index: 10;
+    padding: none;
+}
+
+.page-master-header-account-info:hover>ul {
+	display: block;
+}
+
+.page-master-header-account-info ul:hover {
+	display: block;
+}
+
+.page-master-header-account-info ul li {
+	
+    border-bottom: 1px solid #e7e7e7;
+	color: #999999;
+	height: 28px;
+	list-style: none outside none;
+	margin-left: -40px;
+	}
+
+.page-master-header-account-info ul li:first-child{
+    
+ border-radius: 5px 5px 0 0;   
+}
+
+.page-master-header-account-info ul li:last-child{
+    
+    border-radius: 0 0 5px 5px;
+}
+
+
+.page-master-header-account-info ul li:hover{
+    
+    Background: #00aeef;
+    color: #FFFFFF;
+}
+
+
+
+
+
 
 
 .page-master-headr-logo-div {
@@ -374,3 +440,13 @@ text-align: center;
     display: inline-block;
     cursor: pointer;
 }
+
+.page-product-master-col1-content div:last-child{
+    
+    border-bottom: none;
+}
+
+
+
+
+
