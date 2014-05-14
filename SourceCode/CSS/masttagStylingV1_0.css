@@ -22,6 +22,7 @@ body {
     color: #999999;
     font-family: latoregular;
     font-size: 13px;
+    margin: 0px;
 }
 
 textarea, input{
@@ -45,21 +46,25 @@ textarea, input{
 .page-master-header-alert {
     display: inline-block;
    font-size: 15px;
+    vertical-align: top;
+    margin-top: 10px;
 }
 
 .page-master-header-searchbox {
     display: inline-block;
     margin-right: 15px;
+    vertical-align: top;
 }
 
 .page-master-header-account-info {
-    display: inline-block;
+    display: block;
     Border: 1px solid #FFF;
+    padding-right: 6px;
 }
 
 .page-master-header-account-info:hover {
    Border: 1px solid #e7e7e7;
-Border-radius: 5px;
+Border-radius: 3px;
     
     
 }
@@ -68,19 +73,19 @@ Border-radius: 5px;
 
 .page-master-header-account-info ul {
 	
-    Border: 1px solid #e7e7e7;
-    Border-radius: 5px;
-    Background: #ececec;
+  //  Border: 1px solid #e7e7e7;
+    //Border-radius: 5px;
+   
     
    
 	display: none;
 	list-style: none outside none;
-	margin-left: -10px;
+	
 	margin-top: 0px;
-	min-width: 110px;
+	
 	position: absolute;
 	z-index: 10;
-    padding: none;
+   
 }
 
 .page-master-header-account-info:hover>ul {
@@ -94,20 +99,27 @@ Border-radius: 5px;
 .page-master-header-account-info ul li {
 	
     border-bottom: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
 	color: #999999;
 	height: 28px;
 	list-style: none outside none;
 	margin-left: -40px;
+     Background: #ececec;
 	}
 
 .page-master-header-account-info ul li:first-child{
     
- border-radius: 5px 5px 0 0;   
+ border-radius: 3px 3px 0 0;  
+margin-top: 3px;
+    border-top: 1px solid #e7e7e7;
+    
 }
 
 .page-master-header-account-info ul li:last-child{
     
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 3px 3px;
+    
 }
 
 
@@ -127,6 +139,7 @@ Border-radius: 5px;
     background-image: url("../img/musttaglogo.png");
     height: 32px;
     width: 102px;
+    
 }
 
 .page-master-header-account-info-thumbnail {
@@ -136,12 +149,16 @@ Border-radius: 5px;
     background-size:22px 22px;
     background-repeat:no-repeat;
     display: inline-block
+;
+    margin-top: 3px;
+    margin-left: 3px;
 }
 
 .page-master-header-account-info-username {
     display: inline-block;
     vertical-align: top;
     color: #ccc;
+    margin-top: 6px;
 }
 
 .page-master-subheader-product-thumbnail {
@@ -213,10 +230,12 @@ Border-radius: 5px;
 .page-master-header-right {
     display: inline-block;
     float: right;
+    margin-top: 10px;
 }
 
 .page-master-header-left {
     display: inline-block;
+    margin-top: 8px;
 }
 
 .page-master-header-search-text {
@@ -231,7 +250,7 @@ Border-radius: 5px;
 }
 
 .page-master-search-logo {
-    margin-left: -30px;
+    margin-left: -25px;
     font-size: 15px;
 }
 
@@ -408,26 +427,51 @@ text-align: center;
 .ui-autocomplete{
  
     list-style: none;
-    background: #ededed;
-    border: 1px solid #aaa;
-    border-radius: 3px;
+    
+   
+  
     width: 348px;
     padding: 0px;
+    padding-top: 3px;
 }
 .ui-autocomplete li{
     
-    border-bottom: 1px solid #aaa;
+    border: 1px solid #e7e7e7;
+    
+   
+    background: #ececec;
 }
 
-.ui-autocomplete li:last-child{
+.ui-autocomplete li span{
+ color: #00aeef   
     
-    border-bottom: none;
 }
+
+
+.ui-autocomplete li:last-child{
+      border-radius: 0 0 3px 3px;
+    
+}
+
+
+.ui-autocomplete li:first-child{
+      border-radius: 3px 3px 0 0;
+    
+}
+
 .ui-autocomplete li:hover{
  
     background: #00aeef;
     color: #fff;   
 }
+
+.ui-autocomplete li:hover span{
+ 
+   
+    color: #fff;   
+}
+
+
 .page-column-element-wrapper {
   border: 1px solid #d9d9d9;
     border-radius: 5px;
@@ -468,3 +512,35 @@ text-align: center;
 
 
 
+
+.page-product-newsfeed-col3-single {
+   
+}
+
+.page-product-newsfeed-col3-multiple {
+ 
+}
+
+.page-product-col3-newsfeed {
+ border: 1px solid #d9d9d9;
+border-radius: 5px;   
+}
+
+.page-product-col3-newsfeed-div{
+    
+    border-bottom: 1px solid;
+    
+}
+
+
+.page-product-col3-newsfeed-div:last-of-type{
+    
+    border-bottom:none;
+    
+}
+.page-header-username-menu {
+   
+    padding-left: 14px;
+vertical-align: sub;
+    padding-right: 14px;
+}
