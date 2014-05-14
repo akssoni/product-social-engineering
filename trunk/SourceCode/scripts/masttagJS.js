@@ -1,22 +1,22 @@
 $(function() {
     var projects = [
       {
-        value: "jquery",
-        label: "jQuery",
-        desc: "the write less, do more, JavaScript library",
+        value: "iPhone5S",
+        label: "iPhone5S",
+        desc: '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
         icon: "jquery_32x32.png"
       },
       {
-        value: "jquery-ui",
-        label: "jQuery UI",
-        desc: "the official user interface library for jQuery",
-        icon: "jqueryui_32x32.png"
+        value: "Lumia",
+        label: "Lumia",
+        desc: '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
+        icon: "jquery_32x32.png"
       },
       {
-        value: "sizzlejs",
-        label: "Sizzle JS",
-        desc: "a pure-JavaScript CSS selector engine",
-        icon: "sizzlejs_32x32.png"
+        value: "GalaxyS5",
+        label: "GalaxyS5",
+        desc: '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
+        icon: "jquery_32x32.png"
       }
     ];
  
@@ -34,7 +34,16 @@ $(function() {
     })
     .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
       return $( "<li>" )
-        .append( "<a><img src='img/threeiPhone.png' height='50' width='50'></img><div style='display: inline-block; vertical-align: top; margin:5px;'>" + item.label + "<br>" + item.desc + "</div></a>" )
+        .append( "<a><img src='img/threeiPhone.png' height='30' width='30' style='margin: 8px;'></img><div style='display: inline-block; vertical-align: top; margin:5px;'>" + item.label + "<br><span>" + item.desc + "</span></div></a>" )
         .appendTo( ul );
     };
+    
+    
+    
+    
+    
+    $(".page-master-header-account-info ul li").width($(".page-master-header-account-info").width()-2);
+    
+     $('textarea').autosize(); 
+    
   });
