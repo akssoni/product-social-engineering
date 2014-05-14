@@ -450,3 +450,21 @@ text-align: center;
 
 
 
+
+.page-product-newsfeed-col3-single div div{
+    display: inline-block;
+}
+
+
+.bold-999{
+    
+    font-weight: bold;
+    color: #999;
+}
+
+.review-head-with-stars-content-footer {
+    display: block;
+}
+
+
+
