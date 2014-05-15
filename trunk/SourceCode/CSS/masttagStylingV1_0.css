@@ -167,12 +167,16 @@ margin-top: 3px;
     width: 75px;
     background-size:75px 75px;
     background-repeat:no-repeat;
-    display: inline-block
+    display: inline-block;
+    margin-top: 20px;
+    
 }
 
 .page-master-subheader-product-info {
     display: inline-block;
     
+    vertical-align: top;
+    margin-top: 29px;
 }
 
 .page-master-subheader-product-info-rating i{
@@ -204,10 +208,12 @@ margin-top: 3px;
 
 .page-master-subheader-product-social-stat {
     display: inline-block;
+    margin-top: 46px;
 }
 
 .page-master-subheader-product-other-images {
     display: inline-block;
+    margin-top: 65px;
 }
 
 .page-master-subheader-product-other-images-thumbnail-div { 
@@ -259,6 +265,7 @@ margin-top: 3px;
     padding-right: 57px;
     padding-left: 57px;
    
+    height: 115px;
 }
 
 .page-product-master-col1-content {
@@ -543,4 +550,52 @@ border-radius: 5px;
     padding-left: 14px;
 vertical-align: sub;
     padding-right: 14px;
+}
+
+
+.grid-container{
+ 
+    max-width: 100% !important;
+    
+}    
+    
+.page-master-subheader-product-info-name {
+    font-size: 25px;
+    
+}
+
+.page-master-subheader-product-info-rating {
+    font-size: 12px;
+    
+    margin-top: 5px;
+}
+
+.page-master-subheader-product-info-hasttags {
+    color: #ccc;
+    
+}
+
+.page-master-subheader-product-social-stat-count {
+    
+}
+
+.page-master-subheader-product-social-stat-buttons {
+    margin-top: 10px;
+    
+}
+
+.page-master-subheader-product-social-stat-count-span1 {
+    
+}
+
+.page-master-subheader-product-social-stat-count-span2 {
+    color: #ccc;
+    
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+.page-product-master-content-wrapper {
+    padding-left: 57px;
+padding-right: 57px;
 }
