@@ -285,11 +285,17 @@ margin-top: 3px;
 .page-product-master-col1-content-two-link {
     border-top: 1px solid #d9d9d9;
     height: 35px;
+    padding-left: 12px;
+    line-height: 35px;
+    color: #00aeef;
 }
 
 .page-product-master-col1-content-three-features {
     border-top: 1px solid #d9d9d9;
     height: 35px;
+    padding-left: 12px;
+    color: #00aeef;
+    line-height: 35px;
 }
 
 .review-head-with-stars-stars {
@@ -299,10 +305,12 @@ margin-top: 3px;
 
 .review-head-with-stars-info {
     display: inline-block;
+    padding-bottom: 13px;
 }
 
 .review-head-with-stars-image {
     display: inline-block;
+    vertical-align: top;
 }
 
 .review-head-with-stars {
@@ -311,6 +319,7 @@ margin-top: 3px;
 
 .review-with-stars {
     border-bottom: 1px solid #d9d9d9;
+    padding: 12px;
 }
 
 .page-product-col2-div-header {
@@ -531,6 +540,8 @@ text-align: center;
 .page-product-col3-newsfeed {
  border: 1px solid #d9d9d9;
 border-radius: 5px;   
+    
+   margin-top: 14px;
 }
 
 .page-product-col3-newsfeed-div{
@@ -597,5 +608,59 @@ vertical-align: sub;
 
 .page-product-master-content-wrapper {
     padding-left: 57px;
-padding-right: 57px;
+    
+    padding-right: 57px;
+}
+
+.review-head-with-stars-content-footer span, .product-page-comment-small-comment-info span{
+    
+ font-size: 11px;
+    color: #ccc;
+    margin-right: 5px;
+}
+
+
+
+.review-head-with-stars-content{
+    
+ margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.page-product-master-col1 {
+    padding-left: 7px;
+padding-right: 7px;
+}
+
+.page-product-master-col2-big {
+    padding-left: 7px;
+padding-right: 7px;
+}
+
+.page-product-master-col3 {
+    padding-left: 7px;
+padding-right: 7px;
+}
+
+.page-product-master-col4 {
+    padding-left: 7px;
+padding-right: 7px;
+}
+
+.product-page-col2-nested-wrapper {
+    margin-top: 14px;
+}
+
+.product-page-col2-nested-div-left {
+    padding-left: 0px;
+    padding-right: 7px;
+}
+
+.product-page-col2-nested-div-right {
+ padding-right: 0px;
+    padding-left: 7px;
+}
+
+.product-page-comment-small {
+    margin-top: 14px;
 }
