@@ -17,20 +17,25 @@
       '767px = unsemantic-grid-desktop.css'
     ]
   };
+    
+    
 </script>
 <script src="./scripts/adapt.min.js"></script>   
 <script src="./scripts/jquery.js"></script>   
 <script src="./scripts/html5.js"></script>  
 <script src="./scripts/jquery.autosize.min.js"></script> 
-    
+     
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>     
-<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script>         
+<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script> 
+    <script src="./scripts/jquery.tinyscrollbar.min.js"></script>
 <script src="./scripts/masttagJS.js"></script>     
     
 <script>
 
 </script>
-        
+
+      
+    
 <link rel="stylesheet" type="text/css" href="CSS/masttagStylingV1_0.css" />        
         
 </head>
@@ -42,8 +47,12 @@
    <div class="page-master-headr-logo-div"></div>
 </div>
 <div class="page-master-header-alert">
-    <i class="fa fa-bell"></i>
-</div>
+    <i class="fa fa-bell" id="tip"></i>
+    <div id="tip-arrow"></div>
+    <div id="tip-arrow-nested"></div>
+    
+    </div>
+    
 </div>
 <div class="page-master-header-right">
 <div class="page-master-header-searchbox">
@@ -558,7 +567,87 @@
     
 Page footer
     
-</div>    
+</div> 
+    
+    
+    
+    <div id="tooltip">
+
+		<div class="notifications-header">Notifications</div>
+
+
+		<div id="scrollbar3">
+			<div class="scrollbar">
+				<div class="track">
+					<div class="thumb">
+						<div class="end"></div>
+					</div>
+				</div>
+			</div>
+			<div class="viewport">
+				<div class="overview">
+
+					<div style="width: 100%">
+						<ul class="notification-ul">
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+                            
+                                <div class="notification-li-button-wrapper" >
+                        
+								<div class="masttag-regular-solid-button notification-li-button">
+									Not Now
+
+								</div>
+								<div class="masttag-regular-solid-button notification-li-button">
+									Accept
+
+								</div>
+                                </div>
+                        </li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Commented on your product
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Tagged you in a photo
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a></li>
+							
+							
+							
+							
+							
+							
+						
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="see-all">See all</div>
+
+
+	</div>
     
 </body>
 

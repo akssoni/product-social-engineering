@@ -202,6 +202,27 @@ margin-top: 3px;
     color: #00aeef;
 }
 
+
+.masttag-regular-solid-button {
+    border: 1px solid #00aeef;
+    border-radius: 3px;
+    font-family: latoregular;
+    font-size: 12px;
+    color: #FFF;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    background: #00aeef
+}
+
+.masttag-regular-solid-button:hover{
+ 
+   background: #fff;
+    color: #00aeef;
+}
+
 .page-master-subheader-product-social-stat-button-div {
     display: inline-block;
 }
@@ -663,4 +684,143 @@ padding-right: 7px;
 
 .product-page-comment-small {
     margin-top: 14px;
+}
+
+#tip-arrow {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e7e7e7;
+border-style: dashed dashed solid;
+border-width: 0 10px 10px;
+height: 0;
+position: absolute;
+top: 36px;
+visibility: hidden;
+width: 0;
+z-index: 1000;
+    margin-left: -3px;
+}
+
+#tooltip {
+   background: #ececec;
+border: 1px solid #e7e7e7;
+border-radius: 3px;
+
+left: 8%;
+position: absolute;
+top: 46px;
+visibility: hidden;
+width: 330px;
+}
+
+
+#scrollbar3 {
+	clear: both;
+	width: 99%;
+}
+
+#scrollbar3 .viewport {
+	height: 426px;
+	overflow: hidden;
+	position: relative;
+	width: 96%;
+}
+
+#scrollbar3 .overview {
+	left: 0;
+	list-style: none outside none;
+	margin-left: 2px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#scrollbar3 .thumb .end,#scrollbar3 .thumb {
+	background-color: #9A9A9A;
+}
+
+#scrollbar3 .scrollbar {
+	float: right;
+	position: relative;
+	width: 10px;
+}
+
+#scrollbar3 .track {
+	//background-color: #DDDDDD;
+	border-radius: 10px;
+	height: 100%;
+	padding: 0 1px;
+	position: relative;
+	width: 8px;
+}
+
+#scrollbar3 .thumb {
+	border-radius: 10px;
+	cursor: pointer;
+	height: 20px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 8px;
+}
+
+#scrollbar3 .thumb .end {
+	display: none;
+	height: 5px;
+	overflow: hidden;
+	width: 8px;
+}
+
+#scrollbar3 .disable {
+	display: none;
+}
+#tip-arrow-nested {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ececec;
+border-style: dashed dashed solid;
+border-width: 0 10px 10px;
+height: 0;
+position: absolute;
+top: 37px;
+visibility: hidden;
+width: 0;
+z-index: 1000;
+    margin-left: -3px;
+}
+
+.notifications-header {
+    text-align: center;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notification-ul {
+    
+    list-style: none;
+    
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.see-all {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notification-ul li{
+    background: #f1f1f1;
+margin-bottom: 5px;
+margin-left: 5px;
+border: 1px solid #e7e7e7;
+    
+}
+.notification-li-button-wrapper {
+    display: inline-block;
+float: right;
+margin-right: 5px;
+margin-top: 15px;
+}
+
+.notification-li-button {
+ display: inline-block;   
 }
