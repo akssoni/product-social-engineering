@@ -29,6 +29,7 @@ textarea, input{
  
     outline: none;
     
+    border: none;
 }
 .page-master-header {
     height: 50px;
@@ -345,6 +346,8 @@ margin-top: 3px;
 
 .page-product-col2-div-header {
     display: inline-block;
+    margin-right: 5px;
+    position: relative;
 }
 
 .page-product-col2-comment-div-upper-photo {
@@ -366,10 +369,12 @@ text-align: center;
 .page-product-col2-comment-div-lower-button {
     display: inline-block;
     float: right;
+    margin-top: -3px;
 }
 
 .page-product-col2-comment-div-upper {
  border-bottom: 1px solid #d9d9d9;   
+ padding: 12px;
 }
 
 .page-product-col2-comment-div {
@@ -378,6 +383,7 @@ text-align: center;
 }
 
 .page-product-col2-comment-div-lower {
+    padding: 12px;
     
 }
 
@@ -541,10 +547,14 @@ text-align: center;
     
     font-weight: bold;
     color: #999;
+    font-size: 12px;
 }
 
 .review-head-with-stars-content-footer {
     display: block;
+    font-size: 11px;
+color: #ccc;
+margin-right: 5px;
 }
 
 
@@ -567,8 +577,9 @@ border-radius: 5px;
 
 .page-product-col3-newsfeed-div{
     
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #d9d9d9;
     
+    padding: 12px;
 }
 
 
@@ -709,6 +720,7 @@ position: absolute;
 top: 46px;
 visibility: hidden;
 width: 330px;
+    z-index: 999;
 }
 
 
@@ -824,3 +836,34 @@ margin-top: 15px;
 .notification-li-button {
  display: inline-block;   
 }
+
+
+#tip-arrow1, #tip-arrow2{
+     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #CCC;
+border-style: dashed dashed solid;
+border-width: 0 10px 10px;
+height: 0;
+position: absolute;
+top: 16px;
+width: 0;
+z-index: 500;
+margin-left: 46px;
+    
+    
+}
+
+#tip-arrow1-nested, #tip-arrow2-nested {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FFF;
+border-style: dashed dashed solid;
+border-width: 0 10px 10px;
+height: 0;
+position: absolute;
+top: 17px;
+width: 0;
+z-index: 500;
+margin-left: 46px;
+}
+
+
+
+
