@@ -1,0 +1,873 @@
+<html>
+    <head>	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <title>Masttag - Product Name</title>   
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+<script src="./scripts/jquery.js"></script>   
+<script src="./scripts/jquery.autosize.min.js"></script> 
+     
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>     
+<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script> 
+    <script src="./scripts/jquery.tinyscrollbar.min.js"></script>
+        
+        <script src="./scripts/html5.js"></script> 
+        
+        <link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-base.css" />
+<noscript>
+<link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-mobile.css" />    
+</noscript>
+    
+<script>
+  var ADAPT_CONFIG = {
+    path: './CSS/',
+    dynamic: true,
+    range: [
+      '0 to 767px = unsemantic-grid-mobile.css',
+      '767px = unsemantic-grid-desktop.css'
+    ]
+  };
+    
+    
+</script>
+<script src="./scripts/adapt.min.js"></script>   
+
+        
+        
+        
+<script src="./scripts/masttagJS.js"></script>     
+    
+
+        
+        
+        
+      
+    
+<link rel="stylesheet" type="text/css" href="CSS/masttagStylingV1_0.css" />        
+
+        
+        
+        
+        
+        
+        
+        
+		<script src="./scripts/shapeshiftJQ.js"></script>
+		
+        <style>
+        .container {
+    //border: 1px dashed #ccc;
+    position: relative;
+           width: 85%;
+            margin: auto;
+}
+
+.container > div {
+   // background: #EEE;
+   // height: 100px;
+    position: absolute;
+    width: 20%;
+}
+
+.container > div[data-ss-colspan='2'] { width: 40%; }
+
+.container .ss-placeholder-child {
+    background: transparent;
+    border: 1px dashed red;
+}
+        
+        </style>
+        
+        
+	</head>
+	<body>
+		
+        
+        <div class="page-master-header">
+    
+<div class="page-master-header-left">
+<div class="page-master-header-logo">
+   <div class="page-master-headr-logo-div"></div>
+</div>
+<div class="page-master-header-alert">
+    <i class="fa fa-bell" id="tip"></i>
+    <div id="tip-arrow"></div>
+    <div id="tip-arrow-nested"></div>
+    
+    </div>
+    
+</div>
+<div class="page-master-header-right">
+<div class="page-master-header-searchbox">
+    <input type="text" id="project" class="page-master-header-search-text" autocomplete="on" />
+    <i class="fa fa-search page-master-search-logo"></i>
+</div>
+    
+<div style="display: inline-block;">
+    
+    
+    
+    
+<div class="page-master-header-account-info">
+    <div class="page-master-header-account-info-thumbnail"></div>
+    <div class="page-master-header-account-info-username">Howard Holowitz</div>
+    <ul>
+					<li><span class="page-header-username-menu">Alerts</span></li>
+					<li><span class="page-header-username-menu">Invite</span></li>
+					<li><span class="page-header-username-menu">Account Settings</span></li>
+					<li><span class="page-header-username-menu">Billing</span></li>
+					<li><span class="page-header-username-menu">Log out</span></li>
+				</ul>
+    
+</div>
+    
+</div>
+    
+    
+</div>
+</div>
+        
+        
+      
+        
+        
+        <div class="page-master-subheader grid-container">
+    <div class="page-master-subheader-product-details grid-25 mobile-grid-50">
+    <div class="page-master-subheader-product-thumbnail"></div>
+    <div class="page-master-subheader-product-info">
+    <div class="page-master-subheader-product-info-name">iPhone 5S</div>
+    <div class="page-master-subheader-product-info-rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-o"></i>
+    </div>
+    <div class="page-master-subheader-product-info-hasttags">
+    #Smartphone #Apple #2013    
+    </div>    
+    </div>
+    </div>
+    <div class="page-master-subheader-product-social-stat grid-25 mobile-grid-50">
+    <div class="page-master-subheader-product-social-stat-count">
+    
+        <span class="page-master-subheader-product-social-stat-count-span1">Reviews</span><span class="page-master-subheader-product-social-stat-count-span2"> 19</span>
+        <span class="page-master-subheader-product-social-stat-count-span1">Owners</span><span class="page-master-subheader-product-social-stat-count-span2"> 19</span>
+        <span class="page-master-subheader-product-social-stat-count-span1">Wishlist</span><span class="page-master-subheader-product-social-stat-count-span2"> 19</span>
+        
+    </div>
+    <div class="page-master-subheader-product-social-stat-buttons">
+    
+        <div class="masttag-regular-button page-master-subheader-product-social-stat-button-div">
+            Tag to Wish List
+        </div>
+        <div class="masttag-regular-button page-master-subheader-product-social-stat-button-div">
+            Tag to Own List
+        </div>
+    </div>
+        
+    </div>
+    <div class="page-master-subheader-product-other-images grid-25 mobile-grid-50">
+    <div class="page-master-subheader-product-other-images-thumbnail-div">
+        <img src="img/ProductThumbnails.png" width="30" height="30" />    
+    </div>
+    <div class="page-master-subheader-product-other-images-thumbnail-div">
+        <img src="img/ProductThumbnails.png" width="30" height="30" />        
+    </div>
+    <div class="page-master-subheader-product-other-images-thumbnail-div">
+        <img src="img/ProductThumbnails.png" width="30" height="30" />    
+    </div>
+    <div class="page-master-subheader-product-other-images-thumbnail-div">
+        <img src="img/ProductThumbnails.png" width="30" height="30" />    
+    </div>
+    <div class="page-master-subheader-product-other-images-thumbnail-div">
+        <img src="img/ProductThumbnails.png" width="30" height="30" />    
+    </div>  
+    <div class="page-master-subheader-product-other-images-thumbnail-more">
+        ...    
+    </div>
+    </div>
+    <div class="page-master-subheader-product-ratingstat grid-25 mobile-grid-50">
+    
+      Over All Rating  
+    </div>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+		<div class="container">
+    <div>
+            
+    <div class="page-product-master-col-header">
+        
+    ABOUT
+        
+       </div>        
+         
+        
+         <div class="page-product-master-col1-content">
+       <div class="page-product-master-col1-content-one-info"> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue, urna a pellentesque consectetur, elit eros pulvinar nisl, non aliquam felis mi non felis. Maecenas mattis vehicula est, ac adipiscing nulla venenatis vel. Vestibulum vel vulputate dui. Etiam a nibh nulla. Donec vitae dui enim.
+       </div>
+        <div class="page-product-master-col1-content-two-link"> 
+           www.apple.com/iphone-5s
+            </div>
+        
+        <div class="page-product-master-col1-content-three-features"> 
+            View Features and tech specs
+            
+            </div>
+    </div>  
+        
+        
+        
+        
+        
+        
+         <div class="page-product-master-col-header">
+        
+    EXPERT REVIEWS
+        
+       </div>   
+    <div class="page-product-master-col1-content">
+       <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+          <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+          <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+        
+    </div>
+        
+        
+        
+        
+    </div>
+    <div data-ss-colspan='2'>  
+            
+       <div class="page-product-master-col-header">
+    <div class="page-product-col2-div-header">    
+     
+        <i class="fa fa-pencil-square-o"></i>
+        WRITE A REVIEW
+         <div id="tip-arrow1"></div>
+    <div id="tip-arrow1-nested"></div>
+        </div>
+        <div class="page-product-col2-div-header">   
+            <i class="fa fa-comments-o"></i>
+     INVITE A FRIEND TO WRITE A REVIEW
+            
+            <div id="tip-arrow2"></div>
+    <div id="tip-arrow2-nested"></div>
+            
+        </div>
+       </div>   
+          
+        <div class="page-product-col2-comment-div-wrapper">
+            
+            <div class="page-product-col2-comment-div">
+            
+            <div class="page-product-col2-comment-div-upper">
+                <div class="page-product-col2-comment-div-upper-photo">+
+                </div>
+                
+                <div class="page-product-col2-comment-div-upper-div-textarea">
+                    
+                    <textarea class="page-product-col2-comment-div-upper-textarea">
+                    
+                    </textarea>
+                    
+                </div>
+                
+                
+            </div>
+              
+                <div class="page-product-col2-comment-div-lower">
+                    <div class="page-product-col2-comment-div-lower-ratings">
+                        Your rating
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    
+                    <div class="page-product-col2-comment-div-lower-button masttag-regular-solid-button">
+                        Post
+                        
+                    </div>
+                    
+                    
+                </div>
+        
+            
+            </div>
+        
+            
+        </div>
+        
+        
+            
+    </div>
+    <div>
+            
+            
+    <div class="page-product-master-col-header">
+        
+     
+       </div>  
+        
+        
+        <div class="page-product-master-col3-comment">
+            <div class="product-page-comment-small-header">
+                <div class="product-page-comment-small-header-headline">
+                Apple Press Info
+                
+                </div>
+                <div class="product-page-comment-small-header-hashtags">
+                #iPhone5s, #Sales
+                
+                </div>
+                
+                </div>
+            
+            <div class="product-page-comment-small-comment-wrapper">
+            <div class="product-page-comment-small-comment">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis accumsan elementum. Sed quis lectus ut purus commodo varius ut vel erat. Nunc a pellentesque tortor, ut lobortis nisl.
+                
+                </div>
+            <div class="product-page-comment-small-comment-info">
+                
+               <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+                </div>
+            
+            <div class="product-page-comment-small-textarea-div">
+                <div class="product-page-comment-small-textarea-img">
+                    <img src="img/userthumbnail.png" width="22" height="22" />    
+                </div>
+                <textarea class="product-page-comment-small-textarea">
+                
+                </textarea>
+                
+                </div>
+            </div>
+            
+        </div>
+        
+            
+    </div>
+    
+    <div>
+            
+            
+            
+    <div class="page-product-master-col-header">
+        
+     FRIEND OWNER OF PRODUCT
+       </div>
+        
+        <div class="page-column-element-wrapper">
+            
+            <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+            
+            
+        </div>
+            
+    </div>
+    <div>
+            
+        <div class="page-product-master-col-header">
+        
+     YOUR REVIEW
+       </div>
+         <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. rtor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div> 
+            
+      
+        
+        
+            
+    </div>
+    <div data-ss-colspan='2'>
+            
+            
+            
+    <div class="page-product-master-col3-comment product-page-comment-small">
+            <div class="product-page-comment-small-header product-page-comment-small-header-with-image">
+                <img class="product-page-comment-small-header-image" src="img/threeiPhone.png" />
+                
+                </div>
+            
+             <div class="product-page-comment-small-comment-wrapper">
+            <div class="product-page-comment-small-comment-info">
+                
+               <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+                </div>
+            
+            <div class="product-page-comment-small-textarea-div">
+                <div class="product-page-comment-small-textarea-img">
+                    <img src="img/userthumbnail.png" width="22" height="22" />    
+                </div>
+                <textarea class="product-page-comment-small-textarea">
+                
+                </textarea>
+                
+                </div>
+            </div>
+            
+        </div>        
+            
+            
+    </div>
+   
+  
+            
+            
+    <div>
+            <div class="page-product-master-col3-comment product-page-comment-small">
+            <div class="product-page-comment-small-header product-page-comment-small-header-with-image">
+                <img class="product-page-comment-small-header-image" src="img/threeiPhone.png" />
+                
+                </div>
+            
+             <div class="product-page-comment-small-comment-wrapper">
+            <div class="product-page-comment-small-comment-info">
+                
+               <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+                </div>
+            
+            <div class="product-page-comment-small-textarea-div">
+                <div class="product-page-comment-small-textarea-img">
+                    <img src="img/userthumbnail.png" width="22" height="22" />    
+                </div>
+                <textarea class="product-page-comment-small-textarea">
+                
+                </textarea>
+                
+                </div>
+            </div>
+            
+        </div>        
+            </div>    
+            
+            
+            <div>
+                
+                
+                
+                 <div class="page-product-col3-newsfeed">
+            
+            <div class="page-product-newsfeed-col3-multiple page-product-col3-newsfeed-div">
+                
+                <div>
+                    
+                    <div class="page-friend-owner-images-thumbnail-div ">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+             <div class="page-friend-owner-images-thumbnail-div">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+                    
+                    
+                </div> 
+                
+                <div>
+                        <span class="bold-999">Brad Pitt</span> and <span class="bold-999">7 others</span> added <span class="bold-999">Moto G</span>to Owned list.
+                        <div class="review-head-with-stars-content-footer" style="display: block">
+                            3 Hours ago
+                        </div>    
+                        
+                    </div>
+                
+                </div>
+            <div class="page-product-newsfeed-col3-single page-product-col3-newsfeed-div">
+                
+                <div>
+                
+                    <div class="page-friend-owner-images-thumbnail-div" style="width: 20%; vertical-align: top;">
+        <img src="img/userthumbnail.png" width="30" height="30" />    
+        </div>
+                    <div style="width: 78%;">
+                        <span class="bold-999">Abc Pqr</span> and <span class="bold-999">Brad Pitt</span> are now friends.
+                        <div class="review-head-with-stars-content-footer" style="display: block">
+                            3 Hours ago
+                        </div>    
+                        
+                    </div>    
+                    
+                </div>    
+                
+                
+                
+                
+                </div>
+            
+            
+        </div>
+                
+                
+                
+            </div>    
+            
+            
+            
+            
+            <div>
+            
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            
+            </div>
+          
+            
+            <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+            
+             <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+            
+            
+             <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+            
+             <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+    </div>
+
+        
+        
+        
+        <div id="tooltip">
+
+		<div class="notifications-header">Notifications</div>
+
+
+		<div id="scrollbar3">
+			<div class="scrollbar">
+				<div class="track">
+					<div class="thumb">
+						<div class="end"></div>
+					</div>
+				</div>
+			</div>
+			<div class="viewport">
+				<div class="overview">
+
+					<div style="width: 100%">
+						<ul class="notification-ul">
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Friend request
+									</div> </a>
+                            
+                                <div class="notification-li-button-wrapper" >
+                        
+								<div class="masttag-regular-solid-button notification-li-button">
+									Not Now
+
+								</div>
+								<div class="masttag-regular-solid-button notification-li-button">
+									Accept
+
+								</div>
+                                </div>
+                        </li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Commented on your product
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Tagged you in a photo
+									</div> </a></li>
+							<li><a><img src='images/profile-pictures.jpg'
+									height='50' width='50' alt=""></img>
+									<div
+										style='display: inline-block; vertical-align: top; margin: 5px; color: #999999;'>
+										<span style='color: #737373; font-weight: bold;'>Akshay
+											Soni</span> <br>Mentioned you in a post
+									</div> </a></li>
+							
+							
+							
+							
+							
+							
+						
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="see-all">See all</div>
+
+
+	</div>
+	
+</body>
+</html>

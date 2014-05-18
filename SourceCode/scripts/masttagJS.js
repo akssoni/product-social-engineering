@@ -1,4 +1,20 @@
 $(function() {
+    
+    
+    
+    
+    	$(".container").shapeshift({
+                    minColumns: 5,
+                    enableDrag: false,
+                     gutterX : 14,
+                     gutterY : 14
+                    
+            });
+            
+    
+    
+    
+    
     var projects = [
       {
         value: "iPhone5S",
