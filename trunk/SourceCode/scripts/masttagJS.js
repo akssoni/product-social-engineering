@@ -105,5 +105,49 @@ var flagnoti1 = 0;
 			e.stopPropagation();
 		});
 		
+    
+    
+$(".product-page-add-to-wishlist").click(function(){
+//function showLB2New() {
+    
+    
+    //alert("akshay");
+	        
+	        var hite = $(document).height();   // returns height of browser viewport
+
+	    var wth = $(window).width();   // returns width of browser viewport
+	  
+
+	    $("#overlay").css({"display" : "block", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+	   $(".product-page-add-to-wishlist-lightbox").css({"display" : "block" });
+	   
+	    $("body").css({"overflow":"hidden"});
+	    
+	   
+	       
+	        });
+    
+    
+    
+    $(".product-page-add-to-wishlist-lightbox-close").click(function(){
+   
+        
+   // alert("akshay");    
+        $("#overlay").css({"display" : "none" });
+	$(".product-page-add-to-wishlist-lightbox").css({"display" : "none" });
+
+	$("body").css({"overflow":"auto"});
+    
+     });
 
  });
+
+
+
+	    
+	    
+	   
+
+
+
+
