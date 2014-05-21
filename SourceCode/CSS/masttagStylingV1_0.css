@@ -865,5 +865,55 @@ margin-left: 46px;
 }
 
 
+#overlay {
+	display: none;
+	background-color: rgba(0, 0, 0, .3);
+	position: absolute;
+	top: 0;
+    z-index: 1500;
+}
 
 
+.product-page-add-to-wishlist-lightbox {
+ background: none repeat scroll 0 0 #FFFFFF;
+border-radius: 5px 5px 5px 5px;
+display: none;
+
+position: relative;
+z-index: 1501;
+margin: auto;
+    margin-top: 130px;
+width: 445px;   
+}
+
+.product-page-add-to-wishlist-lightbox-close {
+ color: #888888;
+cursor: pointer;
+font-family: Lucida Console;
+font-size: 13px;
+font-weight: bold;
+height: 36px;
+position: absolute;
+right: -16px;
+top: 7px;
+width: 36px;
+z-index: 1502;   
+}
+
+.product-page-wishlist-lightbox-header {
+   font-size: 17px;
+height: 45px;
+line-height: 45px;
+border-bottom: 1px solid #aaa;
+font-weight: bold;
+padding-left: 10px;
+background: #ededed;
+}
+
+.product-page-wishlist-lightbox-body {
+    height: 250px;
+}
+
+.product-page-wishlist-lightbox-footer {
+    
+}
