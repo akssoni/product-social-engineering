@@ -108,6 +108,8 @@ Border-radius: 3px;
 	list-style: none outside none;
 	margin-left: -40px;
      Background: #ececec;
+    min-width: 126px;
+    
 	}
 
 .page-master-header-account-info ul li:first-child{
@@ -164,11 +166,9 @@ margin-top: 3px;
 }
 
 .page-master-subheader-product-thumbnail {
-    background-image: url("../img/iPhone5S.png");
+
     height: 75px;
     width: 75px;
-    background-size:75px 75px;
-    background-repeat:no-repeat;
     display: inline-block;
     margin-top: 20px;
     
@@ -287,8 +287,8 @@ margin-top: 3px;
 
 .page-master-subheader {
     border-bottom: 1px solid #e7e7e7;
-    padding-right: 57px;
-    padding-left: 57px;
+    padding-right: 4%;
+    padding-left: 4%;
    
     height: 115px;
 }
@@ -1122,4 +1122,93 @@ color: #bbbbbb;
     padding-top: 10px;
    
     color: #BBB;
+}
+
+.user-page-body-element-product-and-comment {
+    width: auto;
+    margin: 0px;
+}
+
+.user-page-body-element-product-and-comment-tag-button {
+    font-size: 11px;
+}
+
+.user-page-body-element-product-and-comment-content {
+ border-radius:0px;   
+}
+
+.user-page-body-element-product-and-comment-old-review {
+     border: 1px solid #d9d9d9;
+    border-top: none;
+     border-radius: 0 0 5px 5px;
+    
+}
+
+.page-user-col4-newsfeed {
+    margin-top: 0px;
+}
+
+.page-user-wishlist-element {
+    padding: 12px;
+   border-bottom: 1px solid #d9d9d9;
+}
+
+
+.page-user-wishlist-element-line {
+   
+    // text-align: center;
+}
+
+.page-user-wishlist-element-line-left {
+     width: 48%;
+    display: inline-block;
+}
+
+.page-user-wishlist-element-line-right {
+     width: 49%;
+    display: inline-block;
+    text-align: right;
+    
+}
+
+.page-user-wishlist-element-line1-right {
+    font-size: 24px;
+}
+
+.page-user-wishlist-element-line1-left {
+    vertical-align: super;
+    font-size: 13px;
+    font-weight: bold;
+    color: #AAA;
+}
+
+.page-user-wishlist-element-line2-left {
+    color: #00AEEF;
+}
+
+.page-user-wishlist-element-line2-right {
+    color: #BBB;
+    font-size: 11px;
+}
+
+
+
+.page-user-wishlist-element-line3-left {
+    color: #BBB;
+    font-size: 11px;
+}
+
+.page-user-wishlist-element-line3-right {
+    color: #BBB;
+    font-size: 11px;
+}
+
+.page-user-wishlist-wrapper {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    
+}
+
+.page-user-wishlist-wrapper:last-child{
+    border-bottom: none;
 }
