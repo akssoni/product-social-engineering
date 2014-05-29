@@ -8,10 +8,22 @@ $(function() {
                     enableDrag: false,
                      gutterX : 14,
                      gutterY : 14
-                    
+            
+            
             });
             
     
+    
+    
+        $(".landing-container").shapeshift({
+                    minColumns: 1,
+                    enableDrag: false,
+                     gutterX : 14,
+                     gutterY : 14,
+                    columns : 3
+            
+            
+            });
     
     
     
