@@ -1223,6 +1223,7 @@ color: #bbbbbb;
 
 .landing-page-master-header-wrapper {
     background: #f8f8f8;
+    padding-bottom: 70px;
 }
 
 .landing-page-review-head-with-line {
@@ -1256,4 +1257,81 @@ color: #ccc;
     display: inline-block;
 padding-left: 9px;
     padding-right: 0px;
+}
+
+.landing-page-subheader-one {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 84px;
+    padding-bottom: 70px;
+    font-weight: bold;
+}
+
+.landing-page-subheader-two-image {
+    width: 486px;
+    display: inline-block;
+}
+
+.landing-page-subheader-two-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.landing-page-subheader-two-right-top {
+    font-size: 19px;
+    color: #999;
+    margin-bottom: 28px;
+}
+
+.landing-page-subheader-two-right-bottom {
+    font-size: 14px;
+    color: #999;
+}
+
+.landing-page-subheader-two-right-button-div1 {
+ width: 39px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #e7e7e7;
+    height: 39px;
+    font-size: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.landing-page-subheader-two-right-button-div1 i{
+ line-height: 40px;   
+}
+
+.landing-page-subheader-two-right-button-div2 {
+ display: inline-block;  
+     height: 39px;
+     border: 1px solid #e7e7e7;
+    vertical-align: top;
+    line-height: 39px;
+    margin-left: -5px;
+    padding-left: 14px;
+    width: 181px;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+}
+
+.landing-page-subheader-two-right-button {
+    font-size: 14px;
+    font-weight: bold;
+    color: #bbb;
+    background: #FFF;
+    margin-bottom: 14px;
+}
+
+.landing-page-subheader-two-right-button:HOVER {
+    background-image: -moz-linear-gradient( 90deg, rgba(0,1,1,0.25098) 0%, rgba(128,128,128,0.25) 25%, rgba(255,255,255,0.25098) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgba(0,1,1,0.25098) 0%, rgba(128,128,128,0.25) 25%, rgba(255,255,255,0.25098) 100%);
+background-image: -ms-linear-gradient( 90deg, rgba(0,1,1,0.25098) 0%, rgba(128,128,128,0.25) 25%, rgba(255,255,255,0.25098) 100%);
+ cursor: pointer;
+}
+
+.landing-page-subheader-two {
+    width: 740px;
+margin: auto;
 }
