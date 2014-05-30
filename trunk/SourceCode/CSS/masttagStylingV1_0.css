@@ -1229,3 +1229,31 @@ color: #bbbbbb;
      font-size: 12px;
 color: #ccc;
 }
+
+.landing-page-search-wrapper {
+     padding-top: 10px;
+    text-align: center;
+}
+
+.landing-page-search-text-div {
+    display: inline-block;
+    
+    vertical-align: top;
+    position: relative;
+}
+
+.landing-page-search-text-div span{
+    display: none;
+}
+
+
+
+.landing-page-search-text-div input{
+ width: 405px;   
+}
+
+.landing-page-seach-select-div {
+    display: inline-block;
+padding-left: 9px;
+    padding-right: 0px;
+}
