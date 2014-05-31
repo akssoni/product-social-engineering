@@ -1335,3 +1335,12 @@ background-image: -ms-linear-gradient( 90deg, rgba(0,1,1,0.25098) 0%, rgba(128,1
     width: 740px;
 margin: auto;
 }
+
+.landing-page-2-element {
+    border-radius: 0 0 5px 5px;
+}
+
+.landing-page-2-select {
+    padding-left: 0px;
+padding-right: 10px;
+}
