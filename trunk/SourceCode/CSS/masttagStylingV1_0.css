@@ -143,6 +143,8 @@ margin-top: 3px;
     background-image: url("../img/musttaglogo.png");
     height: 32px;
     width: 102px;
+    background-size: 102px;
+background-repeat: no-repeat;
     
 }
 
@@ -1343,4 +1345,116 @@ margin: auto;
 .landing-page-2-select {
     padding-left: 0px;
 padding-right: 10px;
+}
+
+.invite-friends-list-view-content-element-line1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.invite-friends-list-view-content-element-line2 {
+     display: inline-block;
+    
+}
+
+.invite-friends-list-view-content-element-line2-div1 {
+    
+}
+
+.invite-friends-list-view-content-element-line2-div2 {
+    
+}
+
+.invite-friends-list-view-head-line1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.invite-friends-list-view-head {
+    background: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 5px 5px 0 0;
+}
+
+.invite-friends-list-view-wrapper {
+    border: 1px solid #d9d9d9;
+border-radius: 5px 5px 5px 5px;
+}
+
+.invite-friends-list-view-content-footer-left {
+    display: inline-block;
+}
+
+.invite-friends-list-view-content-footer-left:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.invite-friends-list-view-content-footer-right-button {
+    display: inline-block;
+float: right;
+margin-top: -3px;
+}
+
+.invite-friends-list-view-content-footer-wrapper {
+    padding: 10px 10px 10px 15px;
+     border-top: 1px solid #d9d9d9;
+}
+
+.invite-friends-list-view-content-element-left {
+    display: inline-block;
+}
+
+.invite-friends-list-view-content-element-right {
+    float: right;
+    padding-top: 9px;
+}
+
+.invite-friends-list-view-content-element {
+    padding: 10px;
+     border-bottom: 1px solid #d9d9d9;
+}
+
+.invite-friends-list-view-content-element:last-child {
+ border-bottom: none;   
+}
+
+.invite-friends-list-view-head-line2-left {
+    display: inline-block;
+}
+
+.invite-friends-list-view-head-line2-right {
+    float: right;
+    padding-top: 3px;
+}
+
+.invite-friends-list-view-content-element-wrapper {
+    max-height: 340px;
+    overflow: auto;
+}
+
+.invite-friends-search-contacts-wrapper {
+    border: 1px solid #d9d9d9;
+    
+    border-radius: 5px;
+}
+
+.invite-friends-search-contacts-mail-provider-wrapper {
+    padding: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.invite-friends-search-contacts-button-wrapper {
+    padding: 7px;
+}
+
+.invite-friends-search-contacts-button {
+    text-align: center;
+    font-weight: bold;
+}
+
+.invite-friends-search-contacts-mail-provider-image {
+    height: 40px;
 }
