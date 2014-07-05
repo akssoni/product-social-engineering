@@ -1458,3 +1458,25 @@ margin-top: -3px;
 .invite-friends-search-contacts-mail-provider-image {
     height: 40px;
 }
+
+.page-search-result-container {
+    width: 80%;
+    margin: auto;
+}
+
+.page-search-result-left-pane {
+    display: inline-block;
+    
+    width: 250px;
+}
+
+.page-search-result-right-pane {
+    display: inline-block;
+}
+
+.page-search-result-title {
+    font-size: 10px;
+font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
