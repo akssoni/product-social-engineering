@@ -1460,13 +1460,13 @@ margin-top: -3px;
 }
 
 .page-search-result-container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
 .page-search-result-left-pane {
     display: inline-block;
-    
+    vertical-align: top;
     width: 250px;
 }
 
@@ -1509,4 +1509,9 @@ font-weight: bold;
 .page-search-result-left-pane-options-2 {
     border-top-color: white;
     border-bottom-color: white;
+}
+
+.page-search-result-title-right {
+    padding-bottom: 3px;
+padding-left: 13px;
 }

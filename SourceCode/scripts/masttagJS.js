@@ -200,6 +200,62 @@ $(".product-page-add-to-wishlist").click(function(){
 	$("body").css({"overflow":"auto"});
     
      });
+    
+    
+   
+     $(".page-search-result-left-pane-options").click(function(){
+   
+      
+         
+         $(".page-search-result-right-pane-div").css({"display" : "none" });
+         
+      //    $(".page-search-result-left-pane-options").css({"border-color" : "#d9d9d9" });
+     //$(".page-search-result-left-pane-options").css({"color" : "#999999" });
+    
+     });
+    
+     
+   
+    $(".page-search-result-left-pane-options-1").click(function(){
+   
+       $(".page-search-result-right-pane-products").css({"display" : "block" });
+        
+        $(".page-search-result-left-pane-options").css({"border-color" : "#d9d9d9" });
+     $(".page-search-result-left-pane-options").css({"color" : "#999999" });
+    
+    
+      $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+     
+    
+     });
+   
+    $(".page-search-result-left-pane-options-2").click(function(){
+   
+       $(".page-search-result-right-pane-people").css({"display" : "block" });
+        
+        
+          $(".page-search-result-left-pane-options").css({"border-color" : "#d9d9d9" });
+     $(".page-search-result-left-pane-options").css({"color" : "#999999" });
+    
+        $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+    
+     });
+    
+    $(".page-search-result-left-pane-options-3").click(function(){
+   
+       $(".page-search-result-right-pane-reviews").css({"display" : "block" });
+        
+          $(".page-search-result-left-pane-options").css({"border-color" : "#d9d9d9" });
+     $(".page-search-result-left-pane-options").css({"color" : "#999999" });
+    
+        $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+    
+     });
+   
+    
 
  });
 
