@@ -1493,9 +1493,9 @@ font-weight: bold;
 }
 
 .page-search-result-left-pane-options:hover{
- cursor: pointer;
-    border-color: #00aeef;
-    color: #00aeef;
+ cursor: pointer !important;
+    border-color: #00aeef !important;
+    color: #00aeef !important;
 }
 
 .page-search-result-left-pane-options-1 {
@@ -1507,11 +1507,26 @@ font-weight: bold;
 }
 
 .page-search-result-left-pane-options-2 {
-    border-top-color: white;
-    border-bottom-color: white;
+    border-top-color: white ;
+    border-bottom-color: white ;
 }
 
 .page-search-result-title-right {
     padding-bottom: 3px;
 padding-left: 13px;
+}
+
+.page-search-result-people-element {
+    padding: 10px;
+    width: 550px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.page-search-result-people-thumbnail {
+    height: 75px;
+    width: 75px;
+    display: inline-block;
 }
