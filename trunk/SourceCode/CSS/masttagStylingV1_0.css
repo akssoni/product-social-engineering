@@ -1530,3 +1530,8 @@ padding-left: 13px;
     width: 75px;
     display: inline-block;
 }
+
+.page-search-result-people-info {
+    display: inline-block;
+    vertical-align: top;
+}
