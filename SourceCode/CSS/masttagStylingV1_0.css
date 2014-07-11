@@ -1517,7 +1517,7 @@ padding-left: 13px;
 }
 
 .page-search-result-people-element {
-    padding: 10px;
+    padding: 15px;
     width: 550px;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
@@ -1534,4 +1534,61 @@ padding-left: 13px;
 .page-search-result-people-info {
     display: inline-block;
     vertical-align: top;
+    margin-left: 10px;
+}
+
+.page-search-result-button {
+    display: inline-block;
+}
+
+.page-search-result-people-name {
+    font-size: 22px;
+display: inline-block;    
+    color: #00aeef;
+}
+
+.page-search-result-people-info-bio {
+    font-size: 12px;
+    color: #BBB;
+    margin-bottom: 2px;
+    max-width: 440px;
+}
+
+.page-search-result-people-info-bio span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.page-search-result-people-info-bio span {
+    font-weight: bold;
+}
+
+.page-search-result-people-info-line1 span {
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+.page-search-result-people-info-buttons {
+    margin-top: 8px;
+}
+
+.page-search-result-people-name-stat {
+    display: inline-block;
+    font-size: 11px;
+    color: #CCC;
+    margin-left: 5px;
+}
+
+.page-search-result-people-name-wrapper {
+    margin-bottom: 8px;
+    margin-top: 6px;
+}
+
+.page-search-result-right-pane-reviews {
+    
 }

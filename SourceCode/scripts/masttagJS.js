@@ -14,8 +14,7 @@ $(function() {
             
     
     
-    
-        $(".landing-container").shapeshift({
+     $(".landing-container").shapeshift({
                     minColumns: 1,
                     enableDrag: false,
                      gutterX : 14,
@@ -24,6 +23,14 @@ $(function() {
             
             
             });
+      
+     
+    
+        
+       
+    
+    
+    
     
     
     
@@ -250,11 +257,38 @@ $(".product-page-add-to-wishlist").click(function(){
     
     $(".page-search-result-left-pane-options-3").click(function(){
    
+        
+         
+    
+        
+        
+        
+        
+        
        $(".page-search-result-right-pane-reviews").css({"display" : "block" });
         
     
         $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
+        
+        
+        
+        
+        $(".search-container").shapeshift({
+                    minColumns: 1,
+                    enableDrag: false,
+                     gutterX : 14,
+                     gutterY : 14,
+                    columns : 3
+            
+            
+            });
+    
+   
+         $(".search-container").trigger("ss-rearrange");
+        
+        
+        
     
      });
    
