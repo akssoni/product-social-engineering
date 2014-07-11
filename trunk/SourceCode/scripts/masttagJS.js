@@ -27,7 +27,7 @@ $(function() {
      
     
         
-       
+        
     
     
     
@@ -286,6 +286,7 @@ $(".product-page-add-to-wishlist").click(function(){
     
    
          $(".search-container").trigger("ss-rearrange");
+        
         
         
         
