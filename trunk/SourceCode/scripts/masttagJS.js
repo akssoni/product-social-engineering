@@ -222,6 +222,14 @@ $(".product-page-add-to-wishlist").click(function(){
          
           $(".page-search-result-left-pane-options-2").css({"border-top-color" : "#FFF" });
           $(".page-search-result-left-pane-options-2").css({"border-bottom-color" : "#FFF" });
+         
+         
+         
+         $(".page-search-result-left-pane-options-list-2").css({"border-top-color" : "#FFF" });
+         $(".page-search-result-left-pane-options-list-3").css({"border-top-color" : "#FFF" });
+         $(".page-search-result-left-pane-options-list-4").css({"border-top-color" : "#FFF" });
+         $(".page-search-result-left-pane-options-list-4").css({"border-bottom-color" : "#FFF" });
+          
     
      });
     
@@ -253,13 +261,22 @@ $(".product-page-add-to-wishlist").click(function(){
         $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
     
+        
+        
+      //  $(this).animate({"height": "200px"}, "slow");
+        
+        
      });
     
     $(".page-search-result-left-pane-options-3").click(function(){
-   
         
+        
+        
+        
+     //   var curHeight = $(this).height();
+    //     $(".page-search-result-left-pane-options-2").animate({"height": curHeight}, "slow");
          
-    
+    // $(this).animate({"height": "200px"}, "slow");
         
         
         
@@ -293,6 +310,94 @@ $(".product-page-add-to-wishlist").click(function(){
     
      });
    
+    
+    
+    /* this function is for List view page */
+    
+     $(".page-search-result-left-pane-options-list-2").click(function(){
+        
+        
+        
+        
+       // var curHeight = $(this).height();
+         
+         $(".page-search-result-left-pane-options-list-3").animate({"height": "16px"}, "slow");
+         
+         $(this).animate({"height": "200px"}, "slow");
+        
+         
+           $(".page-search-result-left-pane-options-list-3-sublist").css({"display" : "none" });
+      
+        
+      $(".page-search-result-left-pane-options-list-2-sublist").css({"display" : "block" });
+        
+        
+       $(".page-search-result-right-pane-reviews").css({"display" : "block" });
+        
+    
+        $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+        
+        
+        
+        
+        $(".search-container").shapeshift({
+                    minColumns: 1,
+                    enableDrag: false,
+                     gutterX : 14,
+                     gutterY : 14,
+                    columns : 3
+            
+            
+            });
+    
+   
+         $(".search-container").trigger("ss-rearrange");
+        
+        
+        
+        
+    
+     });
+    
+    
+    $(".page-search-result-left-pane-options-list-3").click(function(){
+        
+        
+        
+        
+        var curHeight = $(this).height();
+         $(".page-search-result-left-pane-options-list-2").animate({"height": "16px"}, "slow");
+         
+         $(this).animate({"height": "200px"}, "slow");
+        
+          $(".page-search-result-left-pane-options-list-2-sublist").css({"display" : "none" });
+      
+        
+        $(".page-search-result-left-pane-options-list-3-sublist").css({"display" : "block" });
+        
+        
+       $(".page-search-result-right-pane-people").css({"display" : "block" });
+        
+    
+        $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+        
+        
+        
+
+        
+        
+        
+        
+    
+     });
+    
+    
+    
+    
+    
+    
     
 
  });

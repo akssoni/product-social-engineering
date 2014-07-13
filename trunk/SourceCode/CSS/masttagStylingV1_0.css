@@ -1511,6 +1511,27 @@ font-weight: bold;
     border-bottom-color: white ;
 }
 
+.page-search-result-left-pane-options-list-1 {
+    border-radius: 5px 5px 0 0;
+}
+
+.page-search-result-left-pane-options-list-3 {
+    
+    border-top-color: white ;
+  
+    
+   
+}
+
+.page-search-result-left-pane-options-list-2 {
+    border-top-color: white ;
+ 
+}
+
+
+
+
+
 .page-search-result-title-right {
     padding-bottom: 3px;
 padding-left: 13px;
@@ -1591,4 +1612,21 @@ display: inline-block;
 
 .page-search-result-right-pane-reviews {
     
+}
+
+.page-search-result-left-pane-options-list-2-sublist {
+    display: none;
+}
+
+.page-search-result-left-pane-options-list-3-sublist {
+    display: none;
+}
+
+.page-search-result-left-pane-options-list-4 {
+    border-top-color: white ;
+   border-bottom-color: white ;
+}
+
+.page-search-result-left-pane-options-list-5 {
+     border-radius: 0 0 5px 5px;
 }
