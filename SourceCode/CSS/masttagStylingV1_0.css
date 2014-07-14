@@ -1616,10 +1616,21 @@ display: inline-block;
 
 .page-search-result-left-pane-options-list-2-sublist {
     display: none;
+    
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: normal;
+    
 }
 
 .page-search-result-left-pane-options-list-3-sublist {
     display: none;
+    
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .page-search-result-left-pane-options-list-4 {
@@ -1629,4 +1640,19 @@ display: inline-block;
 
 .page-search-result-left-pane-options-list-5 {
      border-radius: 0 0 5px 5px;
+}
+
+.page-search-result-left-pane-options-list-sublist-item-head {
+    margin-bottom: 7px;
+    
+}
+
+.page-search-result-left-pane-options-list-sublist-item {
+    margin-bottom: 3px;
+}
+
+.page-search-result-left-pane-options-list-sublist-item:HOVER {
+    text-decoration: underline;
+    color: #00aeef;
+    
 }
