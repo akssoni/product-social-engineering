@@ -323,6 +323,9 @@ $(".product-page-add-to-wishlist").click(function(){
         
         
         
+        $(".page-search-result-title-right").html("REVIEWS");
+         
+        
         
        // var curHeight = $(this).height();
          
@@ -369,9 +372,10 @@ $(".product-page-add-to-wishlist").click(function(){
     $(".page-search-result-left-pane-options-list-3").click(function(){
         
         
+         $(".page-search-result-title-right").html("FRIENDS");
+       
         
-        
-        var curHeight = $(this).height();
+      
          $(".page-search-result-left-pane-options-list-2").animate({"height": "16px"}, "slow");
          
          $(this).animate({"height": "143px"}, "slow");
@@ -399,6 +403,10 @@ $(".product-page-add-to-wishlist").click(function(){
      });
     
      $(".page-search-result-left-pane-options-list-1").click(function(){
+         
+         
+          $(".page-search-result-title-right").html("SCORE");
+       
    
         $(".page-search-result-left-pane-options-list-2").animate({"height": "16px"}, "slow");
          $(".page-search-result-left-pane-options-list-3").animate({"height": "16px"}, "slow");
@@ -418,6 +426,9 @@ $(".product-page-add-to-wishlist").click(function(){
      });
     
      $(".page-search-result-left-pane-options-list-4").click(function(){
+         
+          $(".page-search-result-title-right").html("OWN LIST");
+       
    
         $(".page-search-result-left-pane-options-list-2").animate({"height": "16px"}, "slow");
          $(".page-search-result-left-pane-options-list-3").animate({"height": "16px"}, "slow");
@@ -438,6 +449,9 @@ $(".product-page-add-to-wishlist").click(function(){
     
     
       $(".page-search-result-left-pane-options-list-5").click(function(){
+          
+           $(".page-search-result-title-right").html("WISH LIST");
+       
    
         $(".page-search-result-left-pane-options-list-2").animate({"height": "16px"}, "slow");
          $(".page-search-result-left-pane-options-list-3").animate({"height": "16px"}, "slow");
