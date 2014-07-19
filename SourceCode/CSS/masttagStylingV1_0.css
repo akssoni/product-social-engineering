@@ -178,13 +178,13 @@ background-repeat: no-repeat;
 
 .page-master-subheader-product-info {
     display: inline-block;
-    
+    color: white;
     vertical-align: top;
     margin-top: 29px;
 }
 
 .page-master-subheader-product-info-rating i{
-   color: #00aeef;
+   color: white;
 }
 
 .masttag-regular-button {
@@ -230,6 +230,7 @@ background-repeat: no-repeat;
 
 .page-master-subheader-product-social-stat-button-div {
     display: inline-block;
+    border: 1px solid #00AEEF;
 }
 
 .page-master-subheader-product-social-stat {
@@ -240,6 +241,7 @@ background-repeat: no-repeat;
 .page-master-subheader-product-other-images {
     display: inline-block;
     margin-top: 65px;
+    color: white;
 }
 
 .page-master-subheader-product-other-images-thumbnail-div { 
@@ -257,6 +259,7 @@ background-repeat: no-repeat;
 
 .page-master-subheader-product-ratingstat {
     display: inline-block;
+    color: white;
 }
 
 .page-master-header-right {
@@ -292,7 +295,7 @@ background-repeat: no-repeat;
     border-bottom: 1px solid #e7e7e7;
     padding-right: 4%;
     padding-left: 4%;
-   
+   background: #00AEEF;
     height: 115px;
 }
 
@@ -622,12 +625,12 @@ vertical-align: sub;
 }
 
 .page-master-subheader-product-info-hasttags {
-    color: #ccc;
+    color: white;
     
 }
 
 .page-master-subheader-product-social-stat-count {
-    
+    color: white;
 }
 
 .page-master-subheader-product-social-stat-buttons {
@@ -1216,18 +1219,21 @@ color: #bbbbbb;
     border-bottom: none;
 }
 
-.landing-page-master-header {
-    text-align: center;
-}
 
 .landing-page-master-header-logo {
     margin-right: 0px;
 }
 
 .landing-page-master-header-wrapper {
-    background: #f8f8f8;
+    background: #00aeef;
     padding-bottom: 70px;
 }
+
+.landing-page-master-header {
+    text-align: center;
+    background: white;
+}
+
 
 .landing-page-review-head-with-line {
      font-size: 12px;
@@ -1235,7 +1241,7 @@ color: #ccc;
 }
 
 .landing-page-search-wrapper {
-     padding-top: 10px;
+     padding-top: 30px;
     text-align: center;
 }
 
@@ -1268,6 +1274,7 @@ padding-left: 9px;
     padding-top: 84px;
     padding-bottom: 70px;
     font-weight: bold;
+    color: white;
 }
 
 .landing-page-subheader-two-image {
@@ -1282,13 +1289,13 @@ padding-left: 9px;
 
 .landing-page-subheader-two-right-top {
     font-size: 19px;
-    color: #999;
+    color: white;
     margin-bottom: 28px;
 }
 
 .landing-page-subheader-two-right-bottom {
     font-size: 14px;
-    color: #999;
+    color: white;
 }
 
 .landing-page-subheader-two-right-button-div1 {
@@ -1857,4 +1864,9 @@ margin-top: 12px;
 .page-master-subheader-product-thumbnail {
     display: inline-block;
 margin-top: 20px;
+    margin-right: 15px;
+}
+
+.page-master-subheader-height-filler {
+    height: 10px;
 }
