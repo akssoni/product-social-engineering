@@ -232,6 +232,15 @@ $(".product-page-add-to-wishlist").click(function(){
          $(".page-search-result-left-pane-options-list-4").css({"border-bottom-color" : "#FFF" });
           
          
+         
+         
+          $(".page-search-setting-left-pane-options-2").css({"border-top-color" : "#FFF" });
+         $(".page-search-setting-left-pane-options-3").css({"border-top-color" : "#FFF" });
+        
+          $(".page-search-setting-left-pane-options-4").css({"border-top-color" : "#FFF" });
+        
+          $(".page-search-setting-left-pane-options-4").css({"border-bottom-color" : "#FFF" });
+        
     
      });
     
