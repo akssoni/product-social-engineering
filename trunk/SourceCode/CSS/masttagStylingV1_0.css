@@ -1853,3 +1853,8 @@ margin-top: 12px;
     margin-left: 20px;
     margin-top: 20px;
 }
+
+.page-master-subheader-product-thumbnail {
+    display: inline-block;
+margin-top: 20px;
+}
