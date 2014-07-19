@@ -489,7 +489,7 @@ $(".product-page-add-to-wishlist").click(function(){
    
        $(".page-setting-result-right-pane-option-1").css({"display" : "block" });
         
-    $(".page-search-result-title-right").html("GENRAL ACCOUNT SETTING");
+    $(".page-search-result-title-right").html("GENERAL ACCOUNT SETTING");
     
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
