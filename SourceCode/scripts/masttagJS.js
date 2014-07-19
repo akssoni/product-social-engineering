@@ -176,10 +176,6 @@ var flagnoti1 = 0;
     
     
 $(".product-page-add-to-wishlist").click(function(){
-//function showLB2New() {
-    
-    
-    //alert("akshay");
 	        
 	        var hite = $(document).height();   // returns height of browser viewport
 
@@ -208,6 +204,10 @@ $(".product-page-add-to-wishlist").click(function(){
     
      });
     
+    
+    
+    
+    /* Search Page */
     
    
      $(".page-search-result-left-pane-options").click(function(){
@@ -317,7 +317,7 @@ $(".product-page-add-to-wishlist").click(function(){
    
     
     
-    /* this function is for List view page */
+    /* these functions are for List view page */
     
      $(".page-search-result-left-pane-options-list-2").click(function(){
         
@@ -470,9 +470,10 @@ $(".product-page-add-to-wishlist").click(function(){
     
      });
     
+     /* End of List view page */
     
     
-    
+      /* these functions are for account setting page */
     
     
 
