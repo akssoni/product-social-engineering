@@ -475,6 +475,66 @@ $(".product-page-add-to-wishlist").click(function(){
     
       /* these functions are for account setting page */
     
+     $(".page-search-setting-left-pane-options-1").click(function(){
+   
+       $(".page-setting-result-right-pane-option-1").css({"display" : "block" });
+        
+    $(".page-search-result-title-right").html("GENRAL ACCOUNT SETTING");
+    
+      $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+     
+    
+     });
+    
+    $(".page-search-setting-left-pane-options-2").click(function(){
+   
+       $(".page-setting-result-right-pane-option-2").css({"display" : "block" });
+        
+    $(".page-search-result-title-right").html("PROFILE");
+    
+      $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+     
+    
+     });
+    
+    $(".page-search-setting-left-pane-options-3").click(function(){
+   
+       $(".page-setting-result-right-pane-option-3").css({"display" : "block" });
+        
+    $(".page-search-result-title-right").html("EMAIL NOTIFICATIONS");
+    
+      $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+     
+    
+     });
+    
+    $(".page-search-setting-left-pane-options-4").click(function(){
+   
+       $(".page-setting-result-right-pane-option-4").css({"display" : "block" });
+        
+    $(".page-search-result-title-right").html("WEB NOTIFICATIONS");
+    
+      $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+     
+    
+     });
+    
+    $(".page-search-setting-left-pane-options-5").click(function(){
+   
+       $(".page-setting-result-right-pane-option-5").css({"display" : "block" });
+        
+    $(".page-search-result-title-right").html("HAPPY TO HELP");
+    
+      $(this).css({"border-color" : "#00aeef" });
+     $(this).css({"color" : "#00aeef" });
+     
+    
+     });
+    
     
 
  });
