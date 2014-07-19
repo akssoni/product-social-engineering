@@ -219,7 +219,8 @@ $(".product-page-add-to-wishlist").click(function(){
           $(".page-search-result-left-pane-options").css({"border-color" : "#d9d9d9" });
      $(".page-search-result-left-pane-options").css({"color" : "#999999" });
          
-         
+      $(".page-search-result-left-pane-options").css({"font-weight" : "normal" });
+        
           $(".page-search-result-left-pane-options-2").css({"border-top-color" : "#FFF" });
           $(".page-search-result-left-pane-options-2").css({"border-bottom-color" : "#FFF" });
          
@@ -230,6 +231,7 @@ $(".product-page-add-to-wishlist").click(function(){
          $(".page-search-result-left-pane-options-list-4").css({"border-top-color" : "#FFF" });
          $(".page-search-result-left-pane-options-list-4").css({"border-bottom-color" : "#FFF" });
           
+         
     
      });
     
@@ -244,6 +246,7 @@ $(".product-page-add-to-wishlist").click(function(){
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
      
+     $(this).css({"font-weight" : "bold" });
     
      });
     
@@ -266,7 +269,8 @@ $(".product-page-add-to-wishlist").click(function(){
         $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
     
-        
+         $(this).css({"font-weight" : "bold" });
+    
         
       //  $(this).animate({"height": "200px"}, "slow");
         
@@ -293,7 +297,8 @@ $(".product-page-add-to-wishlist").click(function(){
         $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
         
-        
+         $(this).css({"font-weight" : "bold" });
+    
         
         
         $(".search-container").shapeshift({
@@ -346,7 +351,8 @@ $(".product-page-add-to-wishlist").click(function(){
         $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
         
-        
+         $(this).css({"font-weight" : "bold" });
+    
         
         
         $(".search-container").shapeshift({
@@ -392,7 +398,8 @@ $(".product-page-add-to-wishlist").click(function(){
         $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
         
-        
+         $(this).css({"font-weight" : "bold" });
+    
         
 
         
@@ -422,6 +429,7 @@ $(".product-page-add-to-wishlist").click(function(){
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
      
+     $(this).css({"font-weight" : "bold" });
     
      });
     
@@ -443,7 +451,8 @@ $(".product-page-add-to-wishlist").click(function(){
     
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
-     
+      $(this).css({"font-weight" : "bold" });
+    
     
      });
     
@@ -467,6 +476,7 @@ $(".product-page-add-to-wishlist").click(function(){
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
      
+     $(this).css({"font-weight" : "bold" });
     
      });
     
@@ -483,7 +493,8 @@ $(".product-page-add-to-wishlist").click(function(){
     
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
-     
+      $(this).css({"font-weight" : "bold" });
+    
     
      });
     
@@ -496,6 +507,7 @@ $(".product-page-add-to-wishlist").click(function(){
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
      
+     $(this).css({"font-weight" : "bold" });
     
      });
     
@@ -507,7 +519,8 @@ $(".product-page-add-to-wishlist").click(function(){
     
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
-     
+      $(this).css({"font-weight" : "bold" });
+    
     
      });
     
@@ -519,7 +532,8 @@ $(".product-page-add-to-wishlist").click(function(){
     
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
-     
+      $(this).css({"font-weight" : "bold" });
+    
     
      });
     
@@ -531,6 +545,7 @@ $(".product-page-add-to-wishlist").click(function(){
     
       $(this).css({"border-color" : "#00aeef" });
      $(this).css({"color" : "#00aeef" });
+     $(this).css({"font-weight" : "bold" });
      
     
      });
