@@ -128,10 +128,15 @@ $(function() {
     
     $(".page-master-header-account-info ul li").width($(".page-master-header-account-info").width()-2);
     
-   //  $('textarea').autosize(); 
-    
+    $("textarea").autosize({callback: function(){
+ // alert("fsef");
+        
+        $(".container").trigger("ss-rearrange");
+        
+}}); 
+  //  $('textarea').autosize();
  
-
+ //$(".search-container").trigger("ss-rearrange");
 
 
 $('#scrollbar3').tinyscrollbar();
