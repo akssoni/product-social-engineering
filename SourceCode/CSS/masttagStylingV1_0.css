@@ -408,6 +408,8 @@ text-align: center;
 .product-page-comment-small-textarea-img {
     display: inline-block;
     vertical-align: top;
+    margin-left: 1px;
+margin-top: 1px;
 }
 
 .page-product-master-col3-comment {
@@ -437,10 +439,23 @@ text-align: center;
 .product-page-comment-small-textarea-div {
     border: 1px solid #EEEEEE;
     margin-top: 5px;
+    padding: 4px;
 }
 
 .product-page-comment-small-textarea {
     border: none;
+    
+    overflow: hidden;
+word-wrap: break-word;
+resize: horizontal;
+height: 17px;
+line-height: 9px;
+margin-left: 2px;
+margin-right: 2px;
+width: 148px;
+resize: none;
+    
+    
 }
 
 .page-product-master-col-header {
