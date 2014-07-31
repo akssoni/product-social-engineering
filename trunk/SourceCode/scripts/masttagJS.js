@@ -131,7 +131,7 @@ $(function() {
     $("textarea").autosize({callback: function(){
  // alert("fsef");
         
-        $(".container").trigger("ss-rearrange");
+       $(".container").trigger("ss-rearrange");
         
 }}); 
   //  $('textarea').autosize();
