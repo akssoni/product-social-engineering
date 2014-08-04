@@ -56,11 +56,34 @@ $(function() {
     ];
  
     
+    
+    
+    $( "#project" ).keyup(function( event ) {
+        
+        
+        if(($("#project").val().length)>0){
+        
+        $(".page-master-header-searchbox").css('border','1px solid #00aeef');
+        
+        }
+        
+        else{
+         
+            
+             $(".page-master-header-searchbox").css('border','1px solid #e7e7e7');
+        }
+        
+    });    
+    
+    
+    
+   
+    
     if($("#project").length != 0) {
     
-    
+   
     $( "#project" ).autocomplete({
-      minLength: 0,
+      minLength: 1,
       source: projects,
       focus: function( event, ui ) {
         $( "#project" ).val( ui.item.label );
@@ -125,6 +148,11 @@ $(function() {
     };
  
      }
+    
+    
+    
+    
+    
     
     $(".page-master-header-account-info ul li").width($(".page-master-header-account-info").width()-2);
     
