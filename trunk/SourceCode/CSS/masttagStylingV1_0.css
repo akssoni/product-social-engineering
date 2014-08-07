@@ -30,6 +30,9 @@ textarea, input{
     outline: none;
     
     border: none;
+    
+    font-family: latoregular;
+    font-size: 12px;
 }
 .page-master-header {
     height: 50px;
@@ -1908,4 +1911,8 @@ margin-left: 2px;
 margin-right: 2px;
 width: 100%;
     resize: none;
+    
+    font-family: latoregular;
+    font-size: 12px;
+    
 }
