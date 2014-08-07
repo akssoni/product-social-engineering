@@ -291,6 +291,7 @@ background-repeat: no-repeat;
     position: absolute;
     right: 5px;
     top: 7px;
+    color: #b7b7b7;
 }
 
 .page-master-subheader {
@@ -514,18 +515,20 @@ text-align: center;
     border: 1px solid #e7e7e7;
     
    
-    background: #ececec;
+    background: #FFF;
+    border-bottom-color: #fff;
+    
 }
 
 .ui-autocomplete li span{
- color: #00aeef   
+ color: #00aeef!important;   
     
 }
 
 
 .ui-autocomplete li:last-child{
       border-radius: 0 0 3px 3px;
-    
+    border-bottom-color: #e7e7e7;
 }
 
 
@@ -536,8 +539,11 @@ text-align: center;
 
 .ui-autocomplete li:hover{
  
-    background: #00aeef;
-    color: #fff;   
+    background: #FFF;
+    color: #00aeef;  
+    border-color: #00aeef;
+    
+    font-weight: bold;
 }
 
 .ui-autocomplete li:hover span{
@@ -743,15 +749,15 @@ z-index: 1000;
 }
 
 #tooltip {
-   background: #ececec;
+   background: #FFF;
 border: 1px solid #e7e7e7;
 border-radius: 3px;
 
-left: 8%;
+left: 11%;
 position: absolute;
 top: 46px;
 visibility: hidden;
-width: 330px;
+width: 450px;
     z-index: 999;
 }
 
@@ -817,7 +823,7 @@ width: 330px;
 	display: none;
 }
 #tip-arrow-nested {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ececec;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FFF;
 border-style: dashed dashed solid;
 border-width: 0 10px 10px;
 height: 0;
@@ -1268,7 +1274,7 @@ color: #ccc;
 
 .landing-page-search-text-div {
     display: inline-block;
-    
+    border: 1px solid #e7e7e7;
     vertical-align: top;
     position: relative;
 }
