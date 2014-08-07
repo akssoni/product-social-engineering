@@ -52,7 +52,19 @@ $(function() {
         label: "GalaxyS5",
         desc: '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
         icon: "jquery_32x32.png"
-      }
+      },
+        {
+        value: "Lumia",
+        label: "Lumia",
+        desc: '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
+        icon: "jquery_32x32.png"
+      },
+        {
+        value: "Lumia",
+        label: "Lumia",
+        desc: '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
+        icon: "jquery_32x32.png"
+      }   
     ];
  
     
@@ -77,6 +89,43 @@ $(function() {
     
     
     
+    
+     $( "#project-landing" ).keyup(function( event ) {
+        
+        
+        if(($("#project-landing").val().length)>0){
+        
+        $(".landing-page-search-text-div").css('border','1px solid #00aeef');
+        
+        }
+        
+        else{
+         
+            
+             $(".landing-page-search-text-div").css('border','1px solid #e7e7e7');
+        }
+        
+    });    
+    
+    
+    
+      $( "#project-lightbox" ).keyup(function( event ) {
+        
+        
+        if(($("#project-lightbox").val().length)>0){
+        
+        $(".product-page-wishlist-lightbox-filter-search-text").css('border','1px solid #00aeef');
+        
+        }
+        
+        else{
+         
+            
+             $(".product-page-wishlist-lightbox-filter-search-text").css('border','1px solid #e7e7e7');
+        }
+        
+    });    
+    
    
     
     if($("#project").length != 0) {
@@ -95,10 +144,14 @@ $(function() {
       }
     })
     .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-      return $( "<li>" )
+     
+        
+        
+        
+        return $( "<li>" )
         .append( "<a><img src='img/threeiPhone.png' height='30' width='30' style='margin: 8px;'></img><div style='display: inline-block; vertical-align: top; margin:5px;'>" + item.label + "<br><span>" + item.desc + "</span></div></a>" )
         .appendTo( ul );
-    };
+   };
     
     
 }
@@ -108,7 +161,7 @@ $(function() {
      if($("#project-lightbox").length != 0) {
     
     $( "#project-lightbox" ).autocomplete({
-      minLength: 0,
+      minLength: 1,
       source: projects,
       focus: function( event, ui ) {
         $( "#project-lightbox" ).val( ui.item.label );
@@ -130,7 +183,7 @@ $(function() {
     
      if($("#project-landing").length != 0) {
     $( "#project-landing" ).autocomplete({
-      minLength: 0,
+      minLength: 1,
       source: projects,
       focus: function( event, ui ) {
         $( "#project-landing" ).val( ui.item.label );
