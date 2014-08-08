@@ -1916,3 +1916,55 @@ width: 100%;
     font-size: 12px;
     
 }
+
+.page-master-subheader-product-owner {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-top: 83px;
+}
+
+.page-master-subheader-product-owner-list {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.page-master-subheader-product-owner-list-details-element {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.page-master-subheader-product-owner-list-details-element-image {
+    font-size: 30px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+   
+}
+
+.page-master-subheader-product-owner-list-years {
+    margin-left: 15px;
+}
+
+.page-master-subheader-product-owner-list-years div{
+    width: 63px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.page-master-subheader-product-owner-list-years div span{
+   font-size: 18px;
+    padding-left: 2px;
+    
+}
+
+.page-master-subheader-product-owner-list-details {
+    
+}
+
+.page-master-subheader-product-owner-list-details-element-name {
+font-size: 12px;   
+    overflow: hidden;
+    height: 28px;
+}
