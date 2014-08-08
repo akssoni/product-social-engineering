@@ -230,12 +230,17 @@ var flagnoti1 = 0;
 			e.stopPropagation();
 			if (flagnoti1 == 0) {
 
+                $('#tip').css('color', '#00aeef');
+                
                // $('#scrollbar3').tinyscrollbar();
 				$('#tip-arrow').css('visibility', 'visible');
                 $('#tip-arrow-nested').css('visibility', 'visible');
 				$('#tooltip').css('visibility', 'visible');
 				flagnoti1 = 1;
 			} else {
+                
+                 $('#tip').css('color', '#555');
+                
 				$('#tip-arrow').css('visibility', 'hidden');
                 $('#tip-arrow-nested').css('visibility', 'hidden');
 				$('#tooltip').css('visibility', 'hidden');
@@ -246,6 +251,8 @@ var flagnoti1 = 0;
 		});
 
 		$("body").click(function() {
+            
+             $('#tip').css('color', '#555');
 			$('#tip-arrow').css('visibility', 'hidden');
             $('#tip-arrow-nested').css('visibility', 'hidden');
 			$('#tooltip').css('visibility', 'hidden');
