@@ -1,9 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-<title>Masttag - Product Name</title>   
+    <head>	
+        
+        
+        <title>Musttag - iPhone 5S</title>   
 
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-base.css" />
+<script src="./scripts/jquery.js"></script>   
+<script src="./scripts/jquery.autosize.min.js"></script> 
+     
+   
+<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script> 
+    <script src="./scripts/jquery.tinyscrollbar.min.js"></script>
+        
+        <script src="./scripts/html5.js"></script> 
+        
+        <link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-base.css" />
 <noscript>
 <link rel="stylesheet" type="text/css" href="CSS/unsemantic-grid-mobile.css" />    
 </noscript>
@@ -21,27 +33,59 @@
     
 </script>
 <script src="./scripts/adapt.min.js"></script>   
-<script src="./scripts/jquery.js"></script>   
-<script src="./scripts/html5.js"></script>  
 
-     
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>   
-    <script src="./scripts/jquery.autosize.min.js"></script> 
-<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script> 
-    <script src="./scripts/jquery.tinyscrollbar.min.js"></script>
+        
+        
+        
 <script src="./scripts/masttagJS.js"></script>     
     
-<script>
 
-</script>
-
+  
+        
+        
       
     
 <link rel="stylesheet" type="text/css" href="CSS/masttagStylingV1_0.css" />        
+
         
-</head>
-<body>
-<div class="page-master-header">
+        
+        
+        
+        
+        
+        
+		<script src="./scripts/shapeshiftJQ.js"></script>
+		
+        <style>
+        .container {
+    //border: 1px dashed #ccc;
+    position: relative;
+           width: 85%;
+            margin: auto;
+}
+
+.container > div {
+   // background: #EEE;
+   // height: 100px;
+    position: absolute;
+    width: 220px;
+}
+
+.container > div[data-ss-colspan='2'] { width: 454px; }
+
+.container .ss-placeholder-child {
+    background: transparent;
+    border: 1px dashed red;
+}
+        
+        </style>
+        
+        
+	</head>
+	<body>
+		
+        
+        <div class="page-master-header">
     
 <div class="page-master-header-left">
 <div class="page-master-header-logo">
@@ -57,7 +101,7 @@
 </div>
 <div class="page-master-header-right">
 <div class="page-master-header-searchbox">
-    <input type="text" id="project" class="page-master-header-search-text" autocomplete="on" />
+    <input type="text" id="project" class="page-master-header-search-text" placeholder="Search for products, brands and people" autocomplete="on" />
     <i class="fa fa-search page-master-search-logo"></i>
 </div>
     
@@ -84,9 +128,17 @@
     
 </div>
 </div>
-<div class="page-master-subheader grid-container">
-    <div class="page-master-subheader-product-details grid-25 mobile-grid-50">
-    <div class="page-master-subheader-product-thumbnail"></div>
+        
+        
+      
+        
+        
+        <div class="page-master-subheader grid-container">
+    <div class="page-master-subheader-product-details grid-30 mobile-grid-50">
+    <div class="page-master-subheader-product-thumbnail">
+         <img src="img/iPhone5S.png" width="75" height="75" />
+        
+    </div>
     <div class="page-master-subheader-product-info">
     <div class="page-master-subheader-product-info-name">iPhone 5S</div>
     <div class="page-master-subheader-product-info-rating">
@@ -114,13 +166,13 @@
         <div class="masttag-regular-button page-master-subheader-product-social-stat-button-div product-page-add-to-wishlist">
             Tag to Wish List
         </div>
-        <div class="masttag-regular-button page-master-subheader-product-social-stat-button-div">
+        <div class="masttag-regular-button page-master-subheader-product-social-stat-button-div product-page-add-to-ownlist">
             Tag to Own List
         </div>
     </div>
         
     </div>
-    <div class="page-master-subheader-product-other-images grid-25 mobile-grid-50">
+    <div class="page-master-subheader-product-other-images grid-20 mobile-grid-50">
     <div class="page-master-subheader-product-other-images-thumbnail-div">
         <img src="img/ProductThumbnails.png" width="30" height="30" />    
     </div>
@@ -146,14 +198,25 @@
     </div>
     
 </div>
-<div class="page-product-master-content-wrapper grid-container">
-   <div class="page-product-master-col1 grid-20 mobile-grid-50">
+        
+        
+        
+        
+        
+        
+        
+        
+		<div class="container">
+    <div>
+            
     <div class="page-product-master-col-header">
         
     ABOUT
         
-       </div>
-    <div class="page-product-master-col1-content">
+       </div>        
+         
+        
+         <div class="page-product-master-col1-content">
        <div class="page-product-master-col1-content-one-info"> 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue, urna a pellentesque consectetur, elit eros pulvinar nisl, non aliquam felis mi non felis. Maecenas mattis vehicula est, ac adipiscing nulla venenatis vel. Vestibulum vel vulputate dui. Etiam a nibh nulla. Donec vitae dui enim.
        </div>
@@ -165,9 +228,14 @@
             View Features and tech specs
             
             </div>
-    </div>
-       
-    <div class="page-product-master-col-header">
+    </div>  
+        
+        
+        
+        
+        
+        
+         <div class="page-product-master-col-header">
         
     EXPERT REVIEWS
         
@@ -223,10 +291,14 @@
         </div>
         
     </div>
-       
+        
+        
+        
+        
     </div>
-    <div class="page-product-master-col2-big grid-40 mobile-grid-50">
-    <div class="page-product-master-col-header">
+    <div data-ss-colspan='2'>  
+            
+       <div class="page-product-master-col-header">
     <div class="page-product-col2-div-header">    
      
         <i class="fa fa-pencil-square-o"></i>
@@ -242,8 +314,8 @@
     <div id="tip-arrow2-nested"></div>
             
         </div>
-       </div>
-        
+       </div>   
+          
         <div class="page-product-col2-comment-div-wrapper">
             
             <div class="page-product-col2-comment-div">
@@ -254,9 +326,7 @@
                 
                 <div class="page-product-col2-comment-div-upper-div-textarea">
                     
-                    <textarea class="page-product-col2-comment-div-upper-textarea">
-                    
-                    </textarea>
+                    <textarea class="page-product-col2-comment-div-upper-textarea" placeholder="Write review . . . .  "></textarea>
                     
                 </div>
                 
@@ -286,102 +356,19 @@
         
             
         </div>
-   
-    
         
         
-         <div class="page-product-master-col3-comment product-page-comment-small">
-            <div class="product-page-comment-small-header product-page-comment-small-header-with-image">
-                <img class="product-page-comment-small-header-image" src="img/threeiPhone.png" />
-                
-                </div>
             
-             <div class="product-page-comment-small-comment-wrapper">
-            <div class="product-page-comment-small-comment-info">
-                
-               <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
-                </div>
-            
-            <div class="product-page-comment-small-textarea-div">
-                <div class="product-page-comment-small-textarea-img">
-                    <img src="img/userthumbnail.png" width="22" height="22" />    
-                </div>
-                <textarea class="product-page-comment-small-textarea">
-                
-                </textarea>
-                
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="product-page-col2-nested-wrapper">
-        <div class="product-page-col2-nested-div-left grid-50">
-      <div class="page-product-master-col1-content">
-        <div class="page-product-master-col1-expert-review review-with-stars">
-        <div class="review-head-with-stars">
-            <div class="review-head-with-stars-image">
-            <img src="img/userthumbnail.png" height="30">
-            </div>
-            <div class="review-head-with-stars-info">
-               <div class="review-head-with-stars-name">
-                   Sheldon
-                </div>
-                <div class="review-head-with-stars-stars">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
-                </div>
-                
-            </div>
-        </div>
-        <div class="review-head-with-stars-content">
-            
-           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
-            
-        </div>
-        <div class="review-head-with-stars-content-footer">   
-           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
-           </div>
-        </div>
     </div>
-    </div>
-    <div class="product-page-col2-nested-div-right grid-50">
-     <div class="page-product-master-col1-content">
-        <div class="page-product-master-col1-expert-review review-with-stars">
-        <div class="review-head-with-stars">
-            <div class="review-head-with-stars-image">
-            <img src="img/userthumbnail.png" height="30">
-            </div>
-            <div class="review-head-with-stars-info">
-               <div class="review-head-with-stars-name">
-                   Sheldon
-                </div>
-                <div class="review-head-with-stars-stars">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
-                </div>
-                
-            </div>
-        </div>
-        <div class="review-head-with-stars-content">
+    <div>
             
-           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
             
-        </div>
-        <div class="review-head-with-stars-content-footer">   
-           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
-           </div>
-        </div>
-    </div>
-    </div>
-   
-        </div>
-        
-        
-    </div>
-    <div class="page-product-master-col3 grid-20 mobile-grid-50">
     <div class="page-product-master-col-header">
         
      
-       </div>
+       </div>  
+        
+        
         <div class="page-product-master-col3-comment">
             <div class="product-page-comment-small-header">
                 <div class="product-page-comment-small-header-headline">
@@ -409,46 +396,20 @@
                 <div class="product-page-comment-small-textarea-img">
                     <img src="img/userthumbnail.png" width="22" height="22" />    
                 </div>
-                <textarea class="product-page-comment-small-textarea">
-                
-                </textarea>
-                
-                </div>
-            </div>
-            
-        </div>
-        <div class="page-product-master-col3-comment product-page-comment-small">
-            <div class="product-page-comment-small-header product-page-comment-small-header-with-image">
-                <img class="product-page-comment-small-header-image" src="img/threeiPhone.png" />
-                
-                </div>
-            
-             <div class="product-page-comment-small-comment-wrapper">
-            <div class="product-page-comment-small-comment-info">
-                
-                <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
-                
-               
-                </div>
-            
-            <div class="product-page-comment-small-textarea-div">
-                <div class="product-page-comment-small-textarea-img">
-                    <img src="img/userthumbnail.png" width="22" height="22" />    
-                </div>
-                <textarea class="product-page-comment-small-textarea">
-                
-                </textarea>
+                <textarea class="product-page-comment-small-textarea" placeholder="Your comment"></textarea>
                 
                 </div>
             </div>
             
         </div>
         
-        
-        
-    
+            
     </div>
-    <div class="page-product-master-col4 grid-20 mobile-grid-50">
+    
+    <div>
+            
+            
+            
     <div class="page-product-master-col-header">
         
      FRIEND OWNER OF PRODUCT
@@ -474,7 +435,11 @@
             
             
         </div>
-    <div class="page-product-master-col-header">
+            
+    </div>
+    <div>
+            
+        <div class="page-product-master-col-header">
         
      YOUR REVIEW
        </div>
@@ -496,16 +461,84 @@
         </div>
         <div class="review-head-with-stars-content">
             
-           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+           Donec adipiscing tortor non lectus porta laoreet. rtor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
             
         </div>
         <div class="review-head-with-stars-content-footer">   
            <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
            </div>
         </div>
-    </div>
+    </div> 
+            
+      
         
-        <div class="page-product-col3-newsfeed">
+        
+            
+    </div>
+    <div data-ss-colspan='2'>
+            
+            
+            
+    <div class="page-product-master-col3-comment product-page-comment-small">
+            <div class="product-page-comment-small-header product-page-comment-small-header-with-image">
+                <img class="product-page-comment-small-header-image" src="img/threeiPhone.png" />
+                
+                </div>
+            
+             <div class="product-page-comment-small-comment-wrapper">
+            <div class="product-page-comment-small-comment-info">
+                
+               <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+                </div>
+            
+            <div class="product-page-comment-small-textarea-div">
+                <div class="product-page-comment-small-textarea-img">
+                    <img src="img/userthumbnail.png" width="22" height="22" />    
+                </div>
+                <textarea class="product-page-comment-small-textarea" placeholder="Your comment"></textarea>
+                
+                </div>
+            </div>
+            
+        </div>        
+            
+            
+    </div>
+   
+  
+            
+            
+    <div>
+            <div class="page-product-master-col3-comment product-page-comment-small">
+            <div class="product-page-comment-small-header product-page-comment-small-header-with-image">
+                <img class="product-page-comment-small-header-image" src="img/threeiPhone.png" />
+                
+                </div>
+            
+             <div class="product-page-comment-small-comment-wrapper">
+            <div class="product-page-comment-small-comment-info">
+                
+               <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+                </div>
+            
+            <div class="product-page-comment-small-textarea-div">
+                <div class="product-page-comment-small-textarea-img">
+                    <img src="img/userthumbnail.png" width="22" height="22" />    
+                </div>
+                <textarea class="product-page-comment-small-textarea" placeholder="Your comment"></textarea>
+                
+                </div>
+            </div>
+            
+        </div>        
+            </div>    
+            
+            
+            <div>
+                
+                
+                
+                 <div class="page-product-col3-newsfeed">
             
             <div class="page-product-newsfeed-col3-multiple page-product-col3-newsfeed-div">
                 
@@ -563,22 +596,191 @@
             
             
         </div>
-        
-        
-        
+                
+                
+                
+            </div>    
+            
+            
+            
+            
+            <div>
+            
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
     </div>
-    
-    
-</div>
-<div class="page-footer-regular">
-    
-Page footer
-    
-</div> 
-    
-    
-    
-    <div id="tooltip">
+            
+            
+            </div>
+          
+            
+            <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+            
+             <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+            
+            
+             <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+            
+             <div>
+            
+            
+            <div class="page-product-master-col1-content">
+        <div class="page-product-master-col1-expert-review review-with-stars">
+        <div class="review-head-with-stars">
+            <div class="review-head-with-stars-image">
+            <img src="img/userthumbnail.png" height="30">
+            </div>
+            <div class="review-head-with-stars-info">
+               <div class="review-head-with-stars-name">
+                   Sheldon
+                </div>
+                <div class="review-head-with-stars-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="review-head-with-stars-content">
+            
+           Donec adipiscing tortor non lectus porta laoreet. Pellentesque ac sapien vestibulum, placerat lectus non, tristique ipsum. Cum sociis natoque penatibus et magnis dis parturient montes. 
+            
+        </div>
+        <div class="review-head-with-stars-content-footer">   
+           <span>Tag</span><span> Share</span><span> <i class="fa fa-tag"></i> 11</span><span> <i class="fa fa-comments-o"></i> 2</span><span> 1 hour ago</span>
+           </div>
+        </div>
+    </div>
+            
+            </div>
+            
+            
+    </div>
+
+        
+        
+        
+        <div id="tooltip">
 
 		<div class="notifications-header">Notifications</div>
 
@@ -655,8 +857,460 @@ Page footer
 
 
 	</div>
+
+
     
+
+
+
+	<div id="overlay">
+
+<div class="product-page-add-to-wishlist-lightbox">
+        
+    <div class="product-page-wishlist-lightbox-header">
+        Tag products to ownlist and wishlist
+        
+    </div>    
+    <div class="product-page-wishlist-lightbox-body">
+     <div class="product-page-wishlist-lightbox-filter-search">
+        
+         <div class="product-page-wishlist-lightbox-filter-search-dropdown">
+             
+           
+   <select>
+      <option>Here is the first option</option>
+      <option>The second option</option>
+   </select>
+
+             
+            </div> 
+         
+         
+         
+         
+         
+         <div class="product-page-wishlist-lightbox-filter-search-text page-master-header-searchbox">
+         
+         <input type="text" id="project-lightbox" class="page-master-header-search-text ui-autocomplete-input" autocomplete="off">
+         <i class="fa fa-search page-master-search-logo"></i>
+         </div>
+         
+        
+        </div>
+    
+    <div class="product-page-wishlist-lightbox-filter-search-result">
+    
+    Showing most owned product
+        
+    </div>
+    
+    
+        
+       
+        
+        
+        
+        <div class="product-page-wishlist-lightbox-body-line">
+            <div class="product-page-wishlist-lightbox-body-element">
+                
+                <img class="product-page-wishlist-lightbox-body-element-image" src="img/threeiPhone.png">
+           <div class="product-page-wishlist-lightbox-body-element-content">
+               
+               <div class="product-page-wishlist-lightbox-body-element-product-name">
+                   
+                   Ford Fusion
+                </div>   
+               <div class="product-page-wishlist-lightbox-body-element-rating-stats">
+                   
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1">
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-1">
+                   <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                   </div>
+                        
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-2">
+                     
+                        <span> <i class="fa fa-tag"></i> 11</span>
+                        <span> <i class="fa fa-facebook"></i> 11</span>
+                        <span> <i class="fa fa-twitter"></i> 11</span>
+                        
+                    </div>    
+                        </div>
+                        
+                   
+                   
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2">
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-1">
+                           Reviews 3
+                        </div>
+                       
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-2">
+                           Owners 3
+                           </div>
+                       
+                    </div>   
+                   
+                </div>   
+               
+               <div class="product-page-wishlist-lightbox-body-element-buttons">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-wrapper">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-1">
+                       Tag to Own list
+                       </div>
+                       
+                    <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-2">
+                       Tag to Wish list
+                       </div>   
+                </div>   
+               
+            </div>   
+            
+            </div>    
+            
+            
+        </div>    
+        
+        
+         <div class="product-page-wishlist-lightbox-body-element">
+                
+                <img class="product-page-wishlist-lightbox-body-element-image" src="img/threeiPhone.png">
+           <div class="product-page-wishlist-lightbox-body-element-content">
+               
+               <div class="product-page-wishlist-lightbox-body-element-product-name">
+                   
+                   Ford Fusion
+                </div>   
+               <div class="product-page-wishlist-lightbox-body-element-rating-stats">
+                   
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1">
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-1">
+                   <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                   </div>
+                        
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-2">
+                     
+                        <span> <i class="fa fa-tag"></i> 11</span>
+                        <span> <i class="fa fa-facebook"></i> 11</span>
+                        <span> <i class="fa fa-twitter"></i> 11</span>
+                        
+                    </div>    
+                        </div>
+                        
+                   
+                   
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2">
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-1">
+                           Reviews 3
+                        </div>
+                       
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-2">
+                           Owners 3
+                           </div>
+                       
+                    </div>   
+                   
+                </div>   
+               
+               <div class="product-page-wishlist-lightbox-body-element-buttons">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-wrapper">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-1">
+                       Tag to Own list
+                       </div>
+                       
+                    <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-2">
+                       Tag to Wish list
+                       </div>   
+                </div>   
+               
+            </div>   
+            
+            </div>    
+            
+            
+        </div>    
+        
+             <div class="product-page-wishlist-lightbox-body-element">
+                
+                <img class="product-page-wishlist-lightbox-body-element-image" src="img/threeiPhone.png">
+           <div class="product-page-wishlist-lightbox-body-element-content">
+               
+               <div class="product-page-wishlist-lightbox-body-element-product-name">
+                   
+                   Ford Fusion
+                </div>   
+               <div class="product-page-wishlist-lightbox-body-element-rating-stats">
+                   
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1">
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-1">
+                   <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                   </div>
+                        
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-2">
+                     
+                        <span> <i class="fa fa-tag"></i> 11</span>
+                        <span> <i class="fa fa-facebook"></i> 11</span>
+                        <span> <i class="fa fa-twitter"></i> 11</span>
+                        
+                    </div>    
+                        </div>
+                        
+                   
+                   
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2">
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-1">
+                           Reviews 3
+                        </div>
+                       
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-2">
+                           Owners 3
+                           </div>
+                       
+                    </div>   
+                   
+                </div>   
+               
+               <div class="product-page-wishlist-lightbox-body-element-buttons">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-wrapper">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-1">
+                       Tag to Own list
+                       </div>
+                       
+                    <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-2">
+                       Tag to Wish list
+                       </div>   
+                </div>   
+               
+            </div>   
+            
+            </div>    
+            
+            
+        </div>    
+        
+        
+        
+        </div>
+        
+        <div class="product-page-wishlist-lightbox-body-line">
+            <div class="product-page-wishlist-lightbox-body-element">
+                
+                <img class="product-page-wishlist-lightbox-body-element-image" src="img/threeiPhone.png">
+           <div class="product-page-wishlist-lightbox-body-element-content">
+               
+               <div class="product-page-wishlist-lightbox-body-element-product-name">
+                   
+                   Ford Fusion
+                </div>   
+               <div class="product-page-wishlist-lightbox-body-element-rating-stats">
+                   
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1">
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-1">
+                   <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                   </div>
+                        
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-2">
+                     
+                        <span> <i class="fa fa-tag"></i> 11</span>
+                        <span> <i class="fa fa-facebook"></i> 11</span>
+                        <span> <i class="fa fa-twitter"></i> 11</span>
+                        
+                    </div>    
+                        </div>
+                        
+                   
+                   
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2">
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-1">
+                           Reviews 3
+                        </div>
+                       
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-2">
+                           Owners 3
+                           </div>
+                       
+                    </div>   
+                   
+                </div>   
+               
+               <div class="product-page-wishlist-lightbox-body-element-buttons">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-wrapper">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-1">
+                       Tag to Own list
+                       </div>
+                       
+                    <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-2">
+                       Tag to Wish list
+                       </div>   
+                </div>   
+               
+            </div>   
+            
+            </div>    
+            
+            
+        </div>    
+        
+        
+         <div class="product-page-wishlist-lightbox-body-element">
+                
+                <img class="product-page-wishlist-lightbox-body-element-image" src="img/threeiPhone.png">
+           <div class="product-page-wishlist-lightbox-body-element-content">
+               
+               <div class="product-page-wishlist-lightbox-body-element-product-name">
+                   
+                   Ford Fusion
+                </div>   
+               <div class="product-page-wishlist-lightbox-body-element-rating-stats">
+                   
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1">
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-1">
+                   <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                   </div>
+                        
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-2">
+                     
+                        <span> <i class="fa fa-tag"></i> 11</span>
+                        <span> <i class="fa fa-facebook"></i> 11</span>
+                        <span> <i class="fa fa-twitter"></i> 11</span>
+                        
+                    </div>    
+                        </div>
+                        
+                   
+                   
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2">
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-1">
+                           Reviews 3
+                        </div>
+                       
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-2">
+                           Owners 3
+                           </div>
+                       
+                    </div>   
+                   
+                </div>   
+               
+               <div class="product-page-wishlist-lightbox-body-element-buttons">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-wrapper">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-1">
+                       Tag to Own list
+                       </div>
+                       
+                    <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-2">
+                       Tag to Wish list
+                       </div>   
+                </div>   
+               
+            </div>   
+            
+            </div>    
+            
+            
+        </div>    
+        
+             <div class="product-page-wishlist-lightbox-body-element">
+                
+                <img class="product-page-wishlist-lightbox-body-element-image" src="img/threeiPhone.png">
+           <div class="product-page-wishlist-lightbox-body-element-content">
+               
+               <div class="product-page-wishlist-lightbox-body-element-product-name">
+                   
+                   Ford Fusion
+                </div>   
+               <div class="product-page-wishlist-lightbox-body-element-rating-stats">
+                   
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1">
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-1">
+                   <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                   </div>
+                        
+                    <div class="product-page-wishlist-lightbox-body-element-rating-stats-line1-2">
+                     
+                        <span> <i class="fa fa-tag"></i> 11</span>
+                        <span> <i class="fa fa-facebook"></i> 11</span>
+                        <span> <i class="fa fa-twitter"></i> 11</span>
+                        
+                    </div>    
+                        </div>
+                        
+                   
+                   
+                   <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2">
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-1">
+                           Reviews 3
+                        </div>
+                       
+                       <div class="product-page-wishlist-lightbox-body-element-rating-stats-line2-2">
+                           Owners 3
+                           </div>
+                       
+                    </div>   
+                   
+                </div>   
+               
+               <div class="product-page-wishlist-lightbox-body-element-buttons">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-wrapper">
+                   <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-1">
+                       Tag to Own list
+                       </div>
+                       
+                    <div class="product-page-wishlist-lightbox-body-element-buttons-button product-page-wishlist-lightbox-body-element-buttons-button-2">
+                       Tag to Wish list
+                       </div>   
+                </div>   
+               
+            </div>   
+            
+            </div>    
+            
+            
+        </div>    
+        
+        
+        
+        </div>
+        </div>
+    <div class="product-page-wishlist-lightbox-footer">
+        
+        <div>
+            Can't find what are you looking for? 
+            <div class="product-page-wishlist-lightbox-footer-button">
+                Tag new+
+            </div>    
+            
+        </div>    
+        
+        
+       
+        </div>
+        
+        <div class="product-page-add-to-wishlist-lightbox-close">X</div>
+    </div>    
+
+</div>
 </body>
-
-
 </html>
