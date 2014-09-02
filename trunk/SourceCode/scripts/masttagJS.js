@@ -268,6 +268,12 @@ var flagnoti1 = 0;
 		
     
     
+    
+    /* Light boxes all pages */
+    
+    
+    /*  add to wishlist */
+    
 $(".product-page-add-to-wishlist").click(function(){
 	        
 	        var hite = $(document).height();   // returns height of browser viewport
@@ -297,7 +303,47 @@ $(".product-page-add-to-wishlist").click(function(){
     
      });
     
+
+    /*  Sign in @landing page */
     
+    
+    $(".landing-page-subheader-two-right-bottom-log-in").click(function(){
+	        
+	        var hite = $(document).height();   // returns height of browser viewport
+
+	    var wth = $(window).width();   // returns width of browser viewport
+	  
+
+	    $("#overlay").css({"display" : "block", "height" : ""+hite+"px", "width" : ""+wth+"px" });
+	   $(".lightbox-landing-page-login").css({"display" : "block" });
+	   
+	    $("body").css({"overflow":"hidden"});
+	    
+	   
+	       
+	        });
+    
+    
+    
+    $(".lightbox-landing-page-login-close").click(function(){
+   
+        
+   // alert("akshay");    
+        $("#overlay").css({"display" : "none" });
+	$(".lightbox-landing-page-login").css({"display" : "none" });
+
+	$("body").css({"overflow":"auto"});
+    
+     });
+
+    
+    
+    
+    
+    
+    
+    
+    /* End of light boxes */
     
     
     /* Search Page */
