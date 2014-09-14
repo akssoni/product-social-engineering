@@ -2027,3 +2027,7 @@ border-radius: 5px 5px 0 0;
     display: inline-block;
     cursor: pointer;
 }
+
+.landing-page-login-lightbox-upper {
+    border-bottom: 1px solid #d9d9d9;
+}
