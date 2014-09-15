@@ -2031,3 +2031,10 @@ border-radius: 5px 5px 0 0;
 .landing-page-login-lightbox-upper {
     border-bottom: 1px solid #d9d9d9;
 }
+
+.landing-page-login-lightbox-button-login {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
