@@ -699,6 +699,55 @@ $(".product-page-add-to-wishlist").click(function(){
      });
     
     
+    
+    
+    $(".page-product-user-ask-a-expert-link").click(function(){
+   
+         $(".page-product-user-ask-a-expert-link").css({"color" : "#555" });
+          $(".page-product-user-write-a-review-link").css({"color" : "#999" });
+        
+       $(".page-product-user-ask-a-expert").css({"display" : "block" });
+        $("#tip-arrow2").css({"display" : "block" });
+       
+        $("#tip-arrow2-nested").css({"display" : "block" });
+       
+        
+        
+     $(".page-product-user-write-a-review").css({"display" : "none" });
+         $("#tip-arrow1").css({"display" : "none" });
+       
+        $("#tip-arrow1-nested").css({"display" : "none" });
+       
+    
+       $(".container").trigger("ss-rearrange");
+     
+    
+     });
+    
+    
+    $(".page-product-user-write-a-review-link").click(function(){
+   
+        $(".page-product-user-write-a-review-link").css({"color" : "#555" });
+         $(".page-product-user-ask-a-expert-link").css({"color" : "#999" });
+        
+       $(".page-product-user-ask-a-expert").css({"display" : "none" });
+       
+        $("#tip-arrow2").css({"display" : "none" });
+       
+        $("#tip-arrow2-nested").css({"display" : "none" });
+       
+        
+     $(".page-product-user-write-a-review").css({"display" : "block" });
+        
+        $("#tip-arrow1").css({"display" : "block" });
+       
+        $("#tip-arrow1-nested").css({"display" : "block" });
+    
+      $(".container").trigger("ss-rearrange");
+    
+     });
+    
+    
 
  });
 
