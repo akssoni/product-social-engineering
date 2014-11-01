@@ -364,7 +364,9 @@ background-repeat: no-repeat;
     display: inline-block;
     margin-right: 5px;
     position: relative;
+    cursor: pointer;
 }
+
 
 .page-product-col2-comment-div-upper-photo {
     height: 78px;
