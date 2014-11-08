@@ -948,7 +948,7 @@ input {
 }
 .landing-page-master-header-wrapper {
     background: #00aeef;
-    padding-bottom: 70px;
+  //  padding-bottom: 70px;
 }
 .landing-page-master-header {
     text-align: center;
@@ -982,7 +982,7 @@ input {
 .landing-page-subheader-one {
     font-size: 35px;
     text-align: center;
-    padding-top: 84px;
+    padding-top: 70px;
     padding-bottom: 70px;
     font-weight: bold;
     color: white;
@@ -1619,4 +1619,49 @@ input {
 
 .sign-up-page-form-line {
     margin-top: 10px;
+}
+
+.signup-form-dropdown {
+    display: inline-block;
+    margin-right: 10px;
+    
+    
+    border: 1px solid #DDD;
+background: #F9F9F9;
+border-radius: 3px;
+//padding: 5px;
+color: #888;
+font-size: 13px;
+    
+    
+    
+}
+
+.signup-form-dropdown ul {
+    
+     border: 1px solid #DDD;
+background: #F9F9F9;
+border-radius: 0 0 3px 3px;
+    
+}
+
+.signup-form-dropdown li:hover {
+    
+     border: 1px solid #DDD;
+background: #FFF;
+border-radius: 3px;
+    
+}
+
+
+
+.signup-form-lable {
+   display: inline-block;
+margin-left: 25px;
+margin-right: 20px;
+width: 50px;
+}
+
+.sign-up-page-form-line-dropdown {
+    margin-top: 20px;
 }

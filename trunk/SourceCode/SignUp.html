@@ -40,8 +40,53 @@
         
         
 <script src="./scripts/masttagJS.js"></script>     
-    
+  
 
+        
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>        
+        
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">        
+        
+        
+<script>
+  $(function() {
+    $( "#signup-form-year" ).menu({ 
+        
+        position: { my: "left BOTTOM", at: "left bottom+100" },
+        icons: { submenu: "ui-icon-carat-2-n-s" }
+    
+    
+    });
+      
+      $( "#signup-form-day" ).menu({ 
+        
+        position: { my: "left BOTTOM", at: "left bottom+100" },
+        icons: { submenu: "ui-icon-carat-2-n-s" }
+    
+    
+    });
+      
+       $( "#signup-form-month" ).menu({ 
+        
+        position: { my: "left BOTTOM", at: "left bottom+100" },
+        icons: { submenu: "ui-icon-carat-2-n-s" }
+    
+    
+    });
+      
+      
+       $( "#signup-form-gender" ).menu({ 
+        
+        position: { my: "left BOTTOM", at: "left bottom+23" },
+        icons: { submenu: "ui-icon-carat-2-n-s" }
+    
+    
+    });
+      
+  });
+  </script>
+ 
   
         
         
@@ -81,6 +126,18 @@
 }
         
         </style>
+        
+        
+         <style>
+  .ui-menu { width: 90px; }
+      
+      .ui-widget .ui-widget {
+
+max-height: 200px;
+overflow-x: auto;
+}
+      
+  </style>
         
         
 	</head>
@@ -164,6 +221,287 @@
                  
                  
              </div>
+             
+             
+             <div class="sign-up-page-form-line sign-up-page-form-line2 sign-up-page-form-line-dropdown">
+                 
+           
+            <div class="signup-form-lable">Birthday</div>
+                 
+               
+       
+       
+     
+                 
+               <!-- Month dropdown -->
+                   <ul id="signup-form-month" class="signup-form-dropdown">
+  
+  <li>Month
+    <ul>
+       <li value="01">January</li>
+    <li value="02">February</li>
+    <li value="03">March</li>
+    <li value="04">April</li>
+    <li value="05">May</li>
+    <li value="06">June</li>
+    <li value="07">July</li>
+    <li value="08">August</li>
+    <li value="09">September</li>
+    <li value="10">October</li>
+    <li value="11">November</li>
+    <li value="12">December</li>
+    </ul>
+  </li>
+  
+  
+</ul>     
+<!-- Day dropdown -->
+                   <ul id="signup-form-day" class="signup-form-dropdown">
+  
+  <li>Day
+    <ul>
+       <li value="01">01</li>
+    <li value="02">02</li>
+    <li value="03">03</li>
+    <li value="04">04</li>
+    <li value="05">05</li>
+    <li value="06">06</li>
+    <li value="07">07</li>
+    <li value="08">08</li>
+    <li value="09">09</li>
+    <li value="10">10</li>
+    <li value="11">11</li>
+    <li value="12">12</li>
+    <li value="13">13</li>
+    <li value="14">14</li>
+    <li value="15">15</li>
+    <li value="16">16</li>
+    <li value="17">17</li>
+    <li value="18">18</li>
+    <li value="19">19</li>
+    <li value="20">20</li>
+    <li value="21">21</li>
+    <li value="22">22</li>
+    <li value="23">23</li>
+    <li value="24">24</li>
+    <li value="25">25</li>
+    <li value="26">26</li>
+    <li value="27">27</li>
+    <li value="28">28</li>
+    <li value="29">29</li>
+    <li value="30">30</li>
+    <li value="31">31</li>
+    </ul>
+  </li>
+                 </ul>       
+                 <!-- Year dropdown -->
+                 
+                    <ul id="signup-form-year" class="signup-form-dropdown">
+  
+  <li>Year
+    <ul>
+       <li value="2007">2007</li>
+	<li value="2006">2006</li>
+	<li value="2005">2005</li>
+	<li value="2004">2004</li>
+	<li value="2003">2003</li>
+	<li value="2002">2002</li>
+	<li value="2001">2001</li>
+	<li value="2000">2000</li>
+	<li value="1999">1999</li>
+	<li value="1998">1998</li>
+	<li value="1997">1997</li>
+	<li value="1996">1996</li>
+	<li value="1995">1995</li>
+	<li value="1994">1994</li>
+	<li value="1993">1993</li>
+	<li value="1992">1992</li>
+	<li value="1991">1991</li>
+	<li value="1990">1990</li>
+	<li value="1989">1989</li>
+	<li value="1988">1988</li>
+	<li value="1987">1987</li>
+	<li value="1986">1986</li>
+	<li value="1985">1985</li>
+	<li value="1984">1984</li>
+	<li value="1983">1983</li>
+	<li value="1982">1982</li>
+	<li value="1981">1981</li>
+	<li value="1980">1980</li>
+	<li value="1979">1979</li>
+	<li value="1978">1978</li>
+	<li value="1977">1977</li>
+	<li value="1976">1976</li>
+	<li value="1975">1975</li>
+	<li value="1974">1974</li>
+	<li value="1973">1973</li>
+	<li value="1972">1972</li>
+	<li value="1971">1971</li>
+	<li value="1970">1970</li>
+	<li value="1969">1969</li>
+	<li value="1968">1968</li>
+	<li value="1967">1967</li>
+	<li value="1966">1966</li>
+	<li value="1965">1965</li>
+	<li value="1964">1964</li>
+	<li value="1963">1963</li>
+	<li value="1962">1962</li>
+	<li value="1961">1961</li>
+	<li value="1960">1960</li>
+	<li value="1959">1959</li>
+	<li value="1958">1958</li>
+	<li value="1957">1957</li>
+	<li value="1956">1956</li>
+	<li value="1955">1955</li>
+	<li value="1954">1954</li>
+	<li value="1953">1953</li>
+	<li value="1952">1952</li>
+	<li value="1951">1951</li>
+	<li value="1950">1950</li>
+	<li value="1949">1949</li>
+	<li value="1948">1948</li>
+	<li value="1947">1947</li>
+	<li value="1946">1946</li>
+	<li value="1945">1945</li>
+	<li value="1944">1944</li>
+	<li value="1943">1943</li>
+	<li value="1942">1942</li>
+	<li value="1941">1941</li>
+	<li value="1940">1940</li>
+	<li value="1939">1939</li>
+	<li value="1938">1938</li>
+	<li value="1937">1937</li>
+	<li value="1936">1936</li>
+	<li value="1935">1935</li>
+	<li value="1934">1934</li>
+	<li value="1933">1933</li>
+	<li value="1932">1932</li>
+	<li value="1931">1931</li>
+	<li value="1930">1930</li>
+	<li value="1929">1929</li>
+	<li value="1928">1928</li>
+	<li value="1927">1927</li>
+	<li value="1926">1926</li>
+	<li value="1925">1925</li>
+	<li value="1924">1924</li>
+	<li value="1923">1923</li>
+	<li value="1922">1922</li>
+	<li value="1921">1921</li>
+	<li value="1920">1920</li>
+	<li value="1919">1919</li>
+	<li value="1918">1918</li>
+	<li value="1917">1917</li>
+	<li value="1916">1916</li>
+	<li value="1915">1915</li>
+	<li value="1914">1914</li>
+	<li value="1913">1913</li>
+	<li value="1912">1912</li>
+	<li value="1911">1911</li>
+	<li value="1910">1910</li>
+	<li value="1909">1909</li>
+	<li value="1908">1908</li>
+	<li value="1907">1907</li>
+	<li value="1906">1906</li>
+	<li value="1905">1905</li>
+	<li value="1904">1904</li>
+	<li value="1903">1903</li>
+	<li value="1902">1902</li>
+	<li value="1901">1901</li>
+	<li value="1900">1900</li>
+    </ul>
+  </li>
+                 </ul>         
+       
+                 
+           
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+  </div>
+                 
+                
+             
+                <div class="sign-up-page-form-line sign-up-page-form-line2 sign-up-page-form-line-dropdown">
+                 
+           
+            <div class="signup-form-lable">Gender</div>
+                 
+               
+       
+       
+     
+                  
+               <!-- Gender dropdown -->
+                   <ul id="signup-form-gender" class="signup-form-dropdown">
+  
+  <li>Gender
+    <ul>
+       <li value="01">Male</li>
+    <li value="02">Female</li>
+    
+    </ul>
+  </li>
+  
+  
+</ul>     
+
+           
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+  </div>
+             
+             
+             
+             <div class="sign-up-page-note">  By clicking Sign Up you agree to Musttag Terms, Privacy policy and Cookie policy
+             
+             </div>     
+             
+             <div class="masttag-regular-solid-button sign-up-page-button">Log In</div>
+             
+             <div> Or </div>
+             
+             <div> <div class="landing-page-login-lightbox-button">
+               
+                
+                
+             <div class="landing-page-subheader-two-right-button-div1"><i class="fa fa-facebook"></i> 
+                
+                </div> 
+                
+                <div class="landing-page-subheader-two-right-button-div2">Log In with Facebook</div>
+               
+            </div>
+             <div class="landing-page-login-lightbox-button">
+               
+                
+                
+             <div class="landing-page-subheader-two-right-button-div1"><i class="fa fa-twitter"></i> 
+                
+                </div> 
+                
+                <div class="landing-page-subheader-two-right-button-div2">Log In with Twitter</div>
+               
+            </div>
+             
+             
+             </div>     
+             
+                 
+             </div>
+             
+             
+             
              
          
          </div>
